@@ -1,0 +1,487 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>How to remove existing things</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>How to debug your errors</div>
+   <p><p>While modding it is pretty common to break things accidentally, so here are a few tips for when you don't know why something's not working as intended:</p></p>
+
+
+<ol>
+    <li><p><strong>Take a look at the stonehearth.log file.</strong> It is inside the folder where Stonehearth is installed, and it gets overwritten every time you run the game.
+    If there's some file that couldn't be loaded properly, it will be mentioned in the log (sometimes errors will only appear inside the log, instead of popping up in the game). You can also output text to the stonehearth.log from within your mod's Lua files. <a href="https://discourse.stonehearth.net/t/how-to-log-from-your-mod/5222">Instructions</a>.</p></li>
+    <li><p><strong>Make sure that your mod is enabled</strong> before starting a game. If you had something wrong in your manifest, it might get marked as invalid or outdated in the Mods menu, and the game won't load your mod.</p></li>
+    <li><p><strong>Verify your JSON files</strong> with <a href="https://jsonlint.com">JsonLint</a>. This will tell you if you had any missing or trailing commas, which is a common typo that will make the game not read your files correctly. You can also compare your JSON files with other files from the game with <a href="http://www.jsondiff.com/">JSON Diff</a>. This tool will tell you the differences even if the key-value pairs are in different order, it's good for checking if you've missed some key or value.</p></li>
+    <li><p><strong>Search for typos in your aliases, or in your localization strings</strong>. They might have some wrong letter and therefore they reference something that doesn't exist, or you forgot to prefix your aliases with the correct namespace in your files. You can also open your mod with SHED and it will tell you if something's pointing to unexisting files. It's also common to forget to prefix the mixintos and overrides with the mod's namespace. <br/>
+    Also, if you copy-paste text from some document (such as a .pdf file, or a .doc file), there might be invisible characters that the game considers invalid, so be careful with that.</p></li>
+    <li><p><strong>Test on a new game instead of on a savefile</strong>. Some changes won't be applied for old entities, so you'll need to create new ones in order to see them.</p></li>
+</ol>
+
+
+
+<p>In general, when an error pops up inside the game, it <strong>will have a trace of the code that failed</strong>, so you should be able to figure out the problem by looking at that code. Even if the trace points to files from the stonehearth mod, the errors may be caused by wrong data from your mod. <br/>
+These errors will also be printed in the stonehearth.log, so if the game closes, you can still check the log until you reopen the game. </p>
+
+
+
+<p><strong>If your game crashed</strong> while testing your mod and now it won't open, check the Task Manager and see if you have Stonehearth.exe processes running in the background. Right-click on them and select "End Task" if needed. <br/>
+On extreme cases, it might be due to your user_settings.json (located inside the same folder than the stonehearth.log). You can try removing it and restarting the game (the file will be re-created).</p>
+
+
+
+<h2><a name="DebuggingUI"></a>Debugging the UI</h2>
+
+
+
+<p><strong>For UI errors</strong>, which usually appear at the right side of the screen, <strong>you must always reload the UI</strong> (with F5 or the button in the error dialog). It might be in an inconsistent state and you won't be able to continue using it correctly unless you reload it. If you forgot to take a look at the trace in the error dialog, you can look at the stonehearth.log too (provided you haven't restarted the game).</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/>Reloading the UI will make any non-UI error reappear, even if you've already closed them. Simply close them again if you've already checked all of them.</p>
+
+
+
+<p>If you make mods related to the UI, you can make use of the CEF debugger, provided you have Google Chrome installed:</p>
+
+
+
+<ol>
+    <li>With the game running, open Chrome.</li>
+    <li>In the address bar, type <strong>localhost:1338</strong> and press Enter.
+    <img src="../../../images/essentials/debugging/ui_port.png" alt="ui_port"/></li>
+    <li>Click on the "Stonehearth UI" link. Other links might appear if you're not inside the game (for example, if you're loading a game).</li>
+    <li>When you need to reload the debugger, make sure that the address is only <strong>localhost:1338</strong>, as the browser will append parameters to it as you use it.</li>
+    <li>Also make sure that you only have one instance of Stonehearth running, otherwise the port might change and not respond to the instance that you want.</li>
+</ol>
+
+
+
+<p>Examples of use:</p>
+
+
+
+<ol>
+    <li>You can inspect UI elements. Click on the "Inspect element" tool, then go to the game, and hover over any UI elements. You might need to open the UI view you want to inspect before activating this tool.
+    <img src="../../../images/essentials/debugging/inspect_element_tool.png" alt="inspect_element_tool"/></li>
+    <li>Click on the one you want to inspect, and go to the browser. It will be selected in the HTML, and you can check all its properties, temporarily tweak its CSS, etc.
+    <img src="../../../images/essentials/debugging/inspecting_element.png" alt="inspecting_element"/>
+    <img src="../../../images/essentials/debugging/inspected_element.png" alt="inspected_element"/></li>
+    <li>You can also check for Javascript warnings and errors in the web console.
+    <img src="../../../images/essentials/debugging/web_console.png" alt="web_console"/></li>
+    <li>And you can debug your Javascript code with the CEF debugger.
+    <img src="../../../images/essentials/debugging/cef_debugger.png" alt="cef_debugger"/></li>
+</ol>
+
+
+
+<h2>Testing your mods faster</h2>
+
+
+
+<p>In order to test your mods more easily you can use the <strong>debugtools</strong> that come bundled with the game. Instructions on how to use them <a href="../debugtools/debugtools_mod/index.html">here</a>. Some of the commands from the default console can be used by shift+clicking an entity in the game. This is faster than having to type the command in the console.</p>
+
+
+
+<p>Tired of starting new games every time you need to test a new change?
+You can <strong>shorten the world generation</strong> step by adding this to your user_settings.json file at the same level than the "user_id" node:</p>
+
+
+
+<pre><code>  "mods" : {
+     "stonehearth" : {
+        "world_generation" : {
+           "method" : "tiny"
+        }
+     }
+  }
+</code></pre>
+
+<p>You might already have these "mods" : { "stonehearth" : {} } keys in your settings so just paste the "world_generation" node at the corresponding level (but remember to add commas where needed). This will generate a tiny world so it will take less time to load it.
+<img src="../../../images/essentials/debugging/tiny_world_ui.png" alt="tiny_world_ui"/>
+<img src="../../../images/essentials/debugging/tiny_world_terrain.png" alt="tiny_world_terrain"/></p>
+
+
+
+<h2>Microworld</h2>
+
+
+<p>You can also create your own test worlds with the help of this mod. Can be found <a href="https://github.com/stonehearth/microworld">here</a>.
+This mod, once configured in your user_settings.json, will skip the main menu and load directly your test world, which is much faster.</p>
+
+
+
+<h2>Loading savefiles</h2>
+
+
+<p>If you want to fix save compatibility for your own mods, there's a faster way to load a specific savefile for testing. You can add these keys to your user_settings.json at the same level than your user_id:</p>
+
+
+
+<pre><code>  "game" : {
+       "load_game" : "test_save"
+   }
+</code></pre>
+
+<p>Remember to add commas where needed so that the JSON is still valid. The value for "load_game" should be the name of the folder of the savefile you want to load.</p>
+
+
+
+<p>Don't forget to remove this key or prefix it with an underscore ("_load_game") to invalidate it, whenever you want to run the normal game again.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

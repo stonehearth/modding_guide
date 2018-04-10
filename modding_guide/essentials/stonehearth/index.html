@@ -1,0 +1,486 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>How to remove existing things</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>The Stonehearth mod</div>
+   <p><h2>How mods are written today</h2></p>
+
+<p>First, a quick explanation of how modders were changing the game in the first alphas.<sup><a href="#ref-1">[1]</a></sup> <br/>
+The Stonehearth game content is stored in the "stonehearth.smod" file in your installation directory. This is just a renamed zip file. You can unzip it and get a peek at all the images, models, and data files within. To mod the game modders unzip the file, find a particular game asset, and overwrite it with their own version. This works, but it has lots of problems...</p>
+
+
+
+<p>It requires changing files that the game installer owns. If you install a newer version of the game, it will blow away the changes that the mod has made.
+It's difficult to manage multiple mods that are all trying to overwrite different pieces of the Stonehearth mod.
+Multiple mods can't make changes to the same game object. They're both trying to overwrite the same file, and only one can win.
+So, here's our plan for addressing the current state of affairs.</p>
+
+
+
+<h2>Anatomy of a mod</h2>
+
+
+<p>A Stonehearth mod consists of:</p>
+
+
+
+<ol>
+    <li>A directory with the mod files</li>
+    <li>A manifest.json file in the directory describing the mod  </li>
+</ol>
+
+
+
+<p>A Stonehearth mod is just a file or directory that sits in the "mods" directory in your Stonehearth installation directory (mods from the Steam workshop reside on a different directory). If the game sees a directory or .smod file (which is just a renamed zip file of a directory!) it will try to load it as a mod when the game starts. If a file and directory have the same name (like /foo vs foo.smod), the game chooses to load the directory, not the smod file.</p>
+
+
+
+<h3>How to start modding</h3>
+
+
+<p>To start modding Stonehearth, first we want to know the structure of the Stonehearth mod itself.
+Let's go to the folder where Stonehearth is installed:</p>
+
+
+
+<ul>
+    <li>If you installed it with the Humble Bundle installer, this will normally be at <code>C:\Program Files (x86)\Stonehearth</code>. </li>
+    <li>If you have installed it via Steam, then the folder will be at <code>C:\Program Files (x86)\Steam\SteamApps\common\Stonehearth</code>.</li>
+</ul>
+
+
+
+<p>Inside of this folder, you will see a folder called <code>mods</code>. Open it, and you will see the main mods that shape the game. <br/>
+They are always required to run the game, and you can get glitches and bugs if you mess directly with their files.</p>
+
+
+
+<blockquote>
+    <p><a name="FileExtensions"></a><img src="../../../images/common/edit_big.png" alt="icon"/> For easier modding, turn on the file extensions on the windows explorer. <br/>
+    <strong>For Windows 7</strong>, open the Control Panel and click on "Appearance and Personalization".  Now, click on "File Explorer Options" (can also appear as "Folder Options"), and go to the "View" tab. In this tab, under Advance Settings, you will see the option "Hide extensions for known file types". Uncheck this option, then click "Apply" and "OK". <br/>
+    <img src="../../../images/essentials/stonehearth/show_extensions_w7.png" alt="show_extensions_w7"/>
+    <strong>For Windows 8/8.1/10</strong>, open any folder, select the "View" tab at the top, and check "File name extensions".
+    <img src="../../../images/essentials/stonehearth/show_extensions.png" alt="show_extensions"/></p>
+</blockquote>
+
+
+
+<p>Now, select the stonehearth.smod file, and rename it so that the extension is .zip instead of .smod.
+<img src="../../../images/essentials/stonehearth/changing_the_extension.png" alt="changing_the_extension"/></p>
+
+
+
+<p>Then, unzip the stonehearth.zip with the built-in Windows option (right-click the file, select "Extract here") or use any compression software of your liking (7-Zip, Winrar,etc). It might take a while to extract all the files.</p>
+
+
+
+<p>Make sure that after uncompressing, you have a folder named <code>stonehearth</code> inside which there are the game files. Some methods for unzipping files might get the stonehearth folder inside another folder called stonehearth; in that case, cut it and paste it one level above, so that the contents get merged. <br/>
+If the folder is not in that path, the game won't be able to start.</p>
+
+
+
+<p>Example of extra inner folder for a mod, and how it should be:
+<img src="../../../images/essentials/managing/bad_unzipping.png" alt="bad_unzipping"/>
+<img src="../../../images/essentials/managing/good_unzipping.png" alt="good_unzipping"/></p>
+
+
+
+<p>Let's take a peek at the contents of the <code>stonehearth</code> folder (you can leave the .zip file there, it won't cause any problems).
+You should see something like this:
+<img src="../../../images/essentials/stonehearth/stonehearth_files.png" alt="stonehearth_files"/></p>
+
+
+
+<p>Down below the folders you will find some Lua files and the manifest.json, the core of the mod. <br/>
+For easier referencing, most of the modders use the same folder structure than in the <code>stonehearth</code> mod, but it's not required. As you can see, the folder names are very descriptive, although sometimes it can be tricky to find what you're searching for if you're not sure of what it is (an entity? a component? a service?).</p>
+
+
+
+<blockquote>
+    <p><strong>Most of the usual modding is done by copy-pasting files from the Stonehearth mod into your own mod, and modifying them.</strong></p>
+</blockquote>
+
+
+
+<p>So, leaving this folder unzipped while modding is useful, but remember to delete it when downloading new updates for the game, or you will get a <a href="../managing/unmanaged/index.html#ModConflicts">conflict</a> and possibly errors when starting a new game after the update. </p>
+
+
+
+<p>Alternatively, you can copy the stonehearth.smod to another directory outside the <code>mods</code> folder, rename it, and unzip it for reference.</p>
+
+
+
+<p>There are example mods released by the developers for new modders. You can download them and start tinkering with them without being overwhelmed by the huge amount of files that the stonehearth mod has. There's a <a href="../startermods/index.html">section</a> in this guide dedicated to them.</p>
+
+
+
+<h2>Final notes</h2>
+
+
+<p>You can use any game file as reference for your mod. Be careful when the game is still in development, since releasing a mod that makes use of <a href="../modding_scope/index.html#UnreleasedContent">unreleased/wip</a> content is not allowed.</p>
+
+
+
+<h3>References</h3>
+
+
+<p><a name='ref-1'>[1]</a>: From <a href="http://www.stonehearth.net/desktop-tuesday-a-peek-inside-the-modding-api/">http://www.stonehearth.net/desktop-tuesday-a-peek-inside-the-modding-api/</a></p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

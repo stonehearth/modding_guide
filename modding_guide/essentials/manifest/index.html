@@ -1,0 +1,579 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>How to remove existing things</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>The manifest</div>
+   <p><h2>Your first mod</h2></p>
+
+<p>To start making your mod, create a folder inside the Stonehearth/mods directory. You can name the folder however you want, but it can ONLY contain alphanumeric characters, hyphens and underscores. We also tend to use lowercase only for the folder name.</p>
+
+
+
+<blockquote>
+    <p><img src="../../../images/common/row_alert2.png" alt="icon"/> If you're going to upload your mod to the Steam Workshop, you should create your mod folder via the <a href="../managing/workshop/index.html#UploadWorkshop">Mods menu</a>. Alternatively, you can develop your mod in the Stonehearth/mods folder, and when it's ready, generate the mod folder through the Mods menu, copy-paste the contents of your mod, and edit the content of the auto-generated manifest so that it includes your additions.</p>
+
+    <p>From there on, you should either continue developing your mod inside the auto-generated mod folder, or disable that mod and develop the one inside the mods folder, repeating the steps above whenever you need to push your update to the Workshop. Steps in this guide will refer to the mods folder (unmanaged mods), but you can develop your mod inside the auto-generated folder for the Workshop if you want.</p>
+</blockquote>
+
+
+
+<p>Create a text file inside your mod folder and name it <code>manifest.json</code> (make sure the extension is .json and not .json.txt or the like. Enable showing <a href="../stonehearth/index.html#FileExtensions">file extensions</a> so you can see the actual format of the file).
+Now, open it with the text editor of your choice and copy/paste this data in it:</p>
+
+
+
+<pre><code>  {
+     "info": {
+        "name": "My First Mod",
+        "namespace": "my_first_mod",
+        "version": 3
+     }
+  }
+</code></pre>
+
+
+<p>Here you can change the name to any name you want (e.g.: "Candy Land"). You MUSN'T change the version number.
+As for the namespace, it's usually some abbreviated form of the name, and we tend to keep it lowercase to avoid typos.
+It can only contain alphanumeric characters, hyphens and underscores. Usually the namespace matches the folder's name.</p>
+
+
+
+<p>And that's it. Your first mod is complete. Run Stonehearth, open the Mods menu, and you should see your mod listed there by the namespace. This mod doesn't do anything yet, but first we need to learn the structure of the manifest and how to work with the files.</p>
+
+
+
+<h2>What is the manifest?</h2>
+
+
+
+<p>The manifest is a list of all the assets and code in the mod.</p>
+
+
+
+<p>The minimum required fields in the manifest are inside this section called "info":</p>
+
+
+
+<ol>
+    <li><p>The <strong>namespace</strong> of the mod. <br/>
+    This will be used to distinguish the identifiers of your mod's content from other mod's content. You will be using it in your files so try to keep it short and unique. It can only contain alphanumeric characters, hyphens and underscores, using spaces or other characters is not allowed.</p></li>
+    <li><p>The <strong>version</strong>. <br/>
+    <img src="../../../images/common/row_alert2.png" alt="icon"/> The <code>"version"</code> key of the "info" section refers to the modding API version, not to your mod version. It is used to outdate automatically old mods when the API version is changed. To make your mod compatible with the current version of the game, always ensure that it has the same value than the one in the current <code>stonehearth</code> mod.</p></li>
+    <li><p>The <strong>name</strong> of the mod. <br/>
+    A name or title for your mod. In the past, the name had to match exactly the folder's name, but now you can use any character for the name, as long as you use the namespace for your aliases.</p></li>
+</ol>
+
+
+
+<h3>Optional fields</h3>
+
+
+<p>There can be other optional keys inside the "info" section of the manifest, that affect the way they are displayed in the Mods menu:</p>
+
+
+
+<pre><code>  "required" : true
+</code></pre>
+
+<p>This is only used for the main mods required to run the game (radiant, stonehearth). It displays them as checked and disabled in the Mods tab, so that players won't uncheck them accidentally. The other default mods also have the "is_base_mod" key, to highlight them in the Mods menu. These two keys allow to differentiate the base game content from the external mods, so you shouldn't use them.</p>
+
+
+
+<pre><code>  "deferred_load" : true
+</code></pre>
+
+<p>This can be observed in the hotloaded manifests. If you specify this field, the manifest won't be loaded right away, instead it will wait until you invoke it manually from JSON or Lua. In the past, we were able to hotload mods this way, but nowadays we can have deferred manifests inside a normal mod, which is way more convenient than having a separate mod. See the guide on hotloading manifests <a href="#">here</a>.</p>
+
+
+
+<pre><code>  "client_only": true
+</code></pre>
+
+<p>This is a tag to prevent the mod from being compared when a player joins a multiplayer game. The game won't try to synchronize client-only mods (such as localization mods).</p>
+
+
+
+<pre><code>  "is_debug_mod": true
+</code></pre>
+
+<p>Same as above. This will tag a mod as a mod used for debugging (for example, the "debugtools" mod that comes bundled with the game) and won't be synchronized when playing multiplayer. It will be labeled as "Debug Mod" in the Mods menu.</p>
+
+
+
+<pre><code>  "default_enabled": false
+</code></pre>
+
+<p>Use this tag inside the "info" section if you want your mod to be disabled by default.</p>
+
+
+
+<pre><code>  "author" : "Your name"
+</code></pre>
+
+<p>This is an optional field. It won't have any effect in game but you can include your name or nickname there to remember who made that mod.</p>
+
+
+
+<p>JSON allows for writing any key/value you want, so as long as the game doesn't treat it as a special keyword you can add other keys here.</p>
+
+
+
+<h2>Structure of the manifest</h2>
+
+
+<p>In the <code>stonehearth</code>'s manifest you can see other sections below the "info" one. They are used to reference all the assets in the game. Now we will cover briefly what do each of them do, and refer to specific sections in the guide for examples on how to use them.</p>
+
+
+
+<h3>The aliases</h3>
+
+
+<p>An alias is a nickname to reference a game object. We can declare an alias and associate it with the file path to get to the data file that describes that object. Later on, inside our mod's files, we can reference that game object by using its alias (always prefixed by the namespace of our mod plus a colon), which is way shorter than having to write the whole path to the file. Let's see a short example from the stonehearth manifest:</p>
+
+
+
+<pre><code>  "aliases": {
+     "medium_oak_tree" : "file(entities/trees/oak_tree/medium_oak_tree)"
+  }
+</code></pre>
+
+<p><a name="Filepaths"></a><img src="../../../images/common/gold.png" alt="icon"/>You may have noticed that the path looks a bit strange. There are several ways in which we can specify the paths. These are all equivalent:</p>
+
+
+<blockquote>
+    <pre><code> "medium_oak_tree" : "file(entities/trees/oak_tree/medium_oak_tree)"
+ "medium_oak_tree" : "file(entities/trees/oak_tree/medium_oak_tree/medium_oak_tree.json)"
+ "medium_oak_tree" : "/stonehearth/entities/trees/oak_tree/medium_oak_tree/medium_oak_tree.json"
+</code></pre>
+<p>The syntax for the first one is shorthand for the second one, but it's only applicable if it's a JSON file inside a folder that has the same name as that file. If the file is a Lua file (or a .png, .qb, etc.), you will have to specify the whole path.  </p>
+
+<p>The <strong>"file()"</strong> used to wrap the paths will start searching in the current folder. This is important to know because we can use this syntax to reference files from within other files, but the path to those files will not be the same depending on which folder we are in. More <a href="../mixins/index.html#RelativePaths">examples</a> on this later.</p>
+</blockquote>
+
+
+
+<p>Not all the files in our mod need to have an alias, but sometimes it can be handy to have extra aliases for certain files, not just for entities.</p>
+
+
+
+<p>The aliases (the keys) should only contain letters, numbers, underscores and colons. You can use uppercase and lowercase, but stonehearth's convention is to only use lowercase and separate sections with colons (for organization) and then use underscores to separate words (you could also use hyphens, but the convention is using underscores). Using a mix of uppercase and lowercase is confusing, and you risk of making typos, so by default we only use lowercase for our JSON keys. Using spaces is also not recommended.</p>
+
+
+
+<p>For a full example of a mod, go to the <a href="../startermods/index.html">starter mods</a> section.</p>
+
+
+
+<h3>Mixintos and Overrides</h3>
+
+
+<p>These sections don't appear in the stonehearth manifest, but are the basics for modding. They are covered in the <a href="../mixintos_overrides/index.html">next sections</a> of the guide.</p>
+
+
+
+<h3>Functions</h3>
+
+
+<p>The keys listed inside the "functions" section are aliases for functions. They all list the path of the controller that has the definition of the function, and an endpoint, which refers to the client or the server, depending on where the function is meant to be run.</p>
+
+
+
+<h3>Controllers</h3>
+
+
+<p>A controller is a Lua file containing a utility class that stores data and functions (and isn't a component, service, call handler, etc). It has some behaviors that make initializing / loading / destroying easier. In the stonehearth manifest you can find aliases for the controllers of the different jobs, traits, scenarios, inventory trackers, etc.</p>
+
+
+
+<h3>Components</h3>
+
+
+<p>A component is a reusable blob of code that describes a related set of details about an entity. Components include things like ai/actions, an entity's render rig, it's carried items, its stats, etc. If any game logic of any sort is associated with an entity, there is likely a component attached to that entity covering that game logic. If you create a new component, you need to add it into this section of your manifest.</p>
+
+
+
+<h3>UI</h3>
+
+
+<p>This section of the manifest declares the files that define the different UI views. It contains keys for lists of all the HTML files, Javascript (js) files, and Less files (a variant of CSS).</p>
+
+
+
+<h3>Locales</h3>
+
+
+
+<pre><code>  "default_locale":"en"
+</code></pre>
+
+<p>This key is what allows for localization (more about how to localize your mod on the specific <a href="../localization/index.html">section</a> of the guide).</p>
+
+
+
+<h3>Other sections</h3>
+
+
+<p>There can be other sections in the manifest, such as "game", "client_init_script"/"server_init_script", "component_renderers", "invariant_renderers", "client_controllers", "client_components", ... but we won't be explaining those here. You can check them out in the <a href="#">Scripting Reference</a>.</p>
+
+
+
+<p>There will be documentation on how to create components, call handlers, UI views, etc. either in the advanced sections of the guide or in the Scripting Reference (TBD).</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

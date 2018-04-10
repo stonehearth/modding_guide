@@ -1,0 +1,534 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>How to remove existing things</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Small intro to JSON</div>
+   <p><p>In Stonehearth, we use <a href="https://www.json.org/">JSON</a> for our data files (those that are not 3D models / 2D images / scripts / etc).
+JSON files are text files with a certain format to them, they're a way of structuring information into objects. Here's a brief list of the basic rules to write data in JSON for Stonehearth mods.</p></p>
+
+
+<h2>Writing JSON</h2>
+
+
+<p>JSON objects are usually made up of key-value pairs, or lists of information. In some programming languages, a collection of key-value pairs is called a dictionary, because it resembles the structure of a set of words linked to their definitions.
+Since JSON is read by a computer program, it uses punctuation: things like brackets and commas to delineate the ends of lines. Without proper punctuation, the program won't know how to read the data from the JSON files.</p>
+
+
+
+<h3>Objects</h3>
+
+
+<p>The basic piece of punctuation in JSON is the curly brace.
+To denote that an object is a JSON object it must be between curly braces. So all of our JSON files start and end with curly braces:</p>
+
+
+
+<pre><code>  {
+
+  }
+</code></pre>
+
+<p>As in any coding language, if you open a curly brace / parenthesis / bracket or the like, you always have to make sure to close it.</p>
+
+
+
+
+<h3>Strings</h3>
+
+
+<p>The first thing that we want to put in this object is a key-value pair. The key in a JSON object is the way by which the program identifies the data that it's gonna use later. For example:</p>
+
+
+
+<pre><code>  {
+     "game_name" : "Stonehearth"
+  }
+</code></pre>
+
+<p>In this case, the key is "game_name". In JSON, keys are ALWAYS something we call <em>strings</em>. Strings are words or sentences, composed by letters, numbers, spaces, or any of the characters that you normally use when you're writing. Even though strings can have spaces in them, we tend not to like that when using them for keys, so if we need to separate several words for easier reading, we use underscores instead. For Stonehearth, we also tend to use lowercase for all the keys, that way we avoid typos if we had mixed uppercase and lowercase in them.</p>
+
+
+
+<p>Strings are ALWAYS put inside quotes (some programming languages allow strings inside single quotes too, but for JSON we use double quotes).
+The key ("game_name") is separated from the value ("Stonehearth", also a string) by a colon. It doesn't matter if you put spaces around the colon, but the file is easier to read if you do.</p>
+
+
+
+<p>In the example we have a JSON object with only one key-value pair. When our object has more than one pair on its list, we need to separate each pair with a comma. This way the program that reads the JSON knows where to stop reading a line. The last item in the list won't have a comma at the end. Like this:</p>
+
+
+
+<pre><code>  {
+     "game_name" : "Stonehearth",
+     "genre" : "City Builder/Sim/Sandbox"
+  }
+</code></pre>
+
+
+<blockquote>
+    <p><img src="../../../images/common/row_alert2.png" alt="icon"/> We CAN'T have duplicate keys at the same level inside a JSON object. Keys are identifiers, so if instead of "genre" (in the example) we had written "game_name" again, even with a different value, the program that reads the JSON would have trouble determining which one is the correct value that we want to assign to that key.</p>
+</blockquote>
+
+
+<h3>Numbers</h3>
+<p>When we need to write values that are not strings, we don't need to use quotes. For example, for using numbers, we write them like this:</p>
+
+
+
+<pre><code>  {
+     "num_days" : 7,
+     "scale" : 0.5,
+     "temperature" : -10
+  }
+</code></pre>
+
+<h3>Booleans</h3>
+<p>In programming languages there's also a data type called "boolean", used to represent Yes/No values (for example, we could use a boolean to represent whether a checkbox is checked or not).
+In JSON we can also represent those Yes/No values, by writing "true" or "false" without quotes:</p>
+
+
+
+<pre><code>  {
+     "is_enabled" : true,
+     "finished" : false
+  }
+</code></pre>
+
+<h3>Arrays</h3>
+<p>If we need to write a list of things inside a JSON object, we can use an array. An array is a collection of values, they don't have keys, they're ONLY values. These values are separated by commas too. The array MUST begin and end with a bracket. For example:</p>
+
+
+
+<pre><code>  {
+     "days" : [ "Sunday", "Monday", "Thursday" ],
+     "colors" : [
+        "red",
+        "blue",
+        "yellow"
+     ],
+     "some_numbers" : [ 1, 4.5, 6 ]
+  }
+</code></pre>
+<p>JSON arrays can have values of different types, but normally we use them with the same type (e.g.: all of the values are strings, or numbers, or objects, etc). As you can see, it doesn't matter if we write each value on a different line, or all on the same line, as long as they're separated by commas. Notice that the last element in the array doesn't have a comma at the end before the closing bracket.</p>
+
+
+
+<h3>Nested objects</h3>
+
+
+<p>Lastly, we can also use other JSON objects as values. Which means we can nest objects and arrays, and even make arrays of objects. We can also have an empty object as a value, which can be useful sometimes. For example:</p>
+
+
+
+<pre><code>  {
+     "raid": {
+        "difficulty" : 3,
+        "enemies" : [
+           {
+              "name" : "Evil Zombie",
+              "model" : "zombie1.obj",
+              "scale" : 1.5
+           },
+           {
+              "name" : "Skeleton (Weak)",
+              "model" : "skeleton2.obj",
+              "scale" : 2
+           }
+        ],
+        "boss" : {
+           "name" : "Titan",
+           "attributes" : [
+              "speed", "strength", "health" 
+           ],
+           "random_spawn_points" : [
+              [0, 1], 
+              [21, 3], 
+              [34, 7], 
+              [50, 10]
+           ]
+        },
+        "is_enabled" : false
+     },
+     "empty_object" : {}
+  }
+</code></pre>
+
+<p>Notice that each item inside the "enemies" array is an object. Each item inside "random_spawn_points" is an array in itself, and we can have duplicate keys (the "name" ones), because they're inside different objects and at different levels inside the JSON object. Like so, in Stonehearth files you'll see nested arrays and nested objects all the time.</p>
+
+
+
+<p>There's also a special value called "null" which is written without quotes (like "true" and "false"). It usually represents the absence of a value, as opposed to an empty object (since you can't have a key without a value). We don't use null very often in our JSON files so we haven't added it to this list.</p>
+
+
+
+<h3>Last notes</h3>
+
+
+<p>In this modding guide, we might use different words to refer to the JSON keys, for example fields, keys, nodes, aliases, URIs, entries, or sections, depending on the context.</p>
+
+
+
+<p>If you're having trouble with the JSON files in your mod, you can use an online tool called <a href="https://jsonlint.com/">JSONLint</a>. You can copy the content of your whole JSON file, paste it there, and validate it. Many times the JSON is broken because there's a comma where there shouldn't be, or you forgot to close some quotes, or have some repeated key at the same level, or any other inconsistency in your file that makes the JSON invalid and therefore the game can't read it.</p>
+
+
+
+<p>Also, since the order of the key-value pairs is irrelevant inside the JSON file, you might find it difficult to know if you have the same fields than another file from the game sometimes. To check that, you can use <a href="http://www.jsondiff.com/">JSON Diff</a>. It's an online tool that will show you the differences between two JSON objects even if the order of the key-value pairs is different between them.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

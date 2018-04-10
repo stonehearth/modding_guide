@@ -1,0 +1,380 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>How to remove existing things</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Programming Languages</div>
+   <p><p>The core engine of Stonehearth is written in C++11 and Open GL. We use the Horde3d engine for rendering, with a few custom node types, custom extensions, and lots of our own shaders. We write all the gameplay and AI in Lua. Finally, we use JavaScript and HTML for the UI.</p></p>
+
+
+<p>We use <a href="http://www.minddesk.com/">Qubicle</a> for all the voxel art. Stonehearth consumes .qb files natively and our resource file format is just JSON, so it's really easy to get new art assets into the game. We used 3DSMax for rigging and animation (later we switched to Maya), but the animation file format is, again, just JSON. The 2D art are .png files, created with Photoshop.<sup><a href="#ref-1">[1]</a></sup></p>
+
+
+
+<p>It's easy to create mods for Stonehearth using only JSON, and there's a variety of free tools for creating the 2D / 3D art.</p>
+
+
+
+
+<h3>References</h3>
+
+
+<p><a name='ref-1'>[1]</a>: From <a href="https://discourse.stonehearth.net/t/questions-answers-stonehearth-information-thread-updated-31st-july-2014/279/7">https://discourse.stonehearth.net/t/questions-answers-stonehearth-information-thread-updated-31st-july-2014/279/7</a></p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

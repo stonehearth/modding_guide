@@ -1,0 +1,527 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>How to remove existing things</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>The default console</div>
+   <p><p>Stonehearth comes with a built-in console too, but it can only execute a handful of predefined commands. This is different from the Lua console from debugtools, which was added way later. The default console appears at the top of the screen inside the game.</p></p>
+
+
+<p>Press <code>Ctrl+C</code> to open the console. Press <code>Ctrl+C</code> or <code>Esc</code> to close it. You can make it taller / shorter by dragging up and down the control located at the bottom right above the bar.
+<img src="../../../../images/essentials/debugtools/default_commands.png" alt="default_commands"/></p>
+
+
+
+<p>If we enable the debugtools mod, it will have many more advanced commands that can come very handy (for example, the <strong>promote_to</strong> command).
+Type <strong>help</strong> and press <code>Enter</code> to get the list of available commands.</p>
+
+
+
+<p>Some of these advanced commands can be executed faster by holding <code>Shift</code> and clicking on an entity. A small window will appear with a list of applicable commands. Click on one of them to execute it.
+<img src="../../../../images/essentials/debugtools/shift_click.png" alt="shift_click"/></p>
+
+
+
+<p>These are all the commands from the default console after enabling debugtools. Mind that some of them might not work anymore, or there exists a faster command to do the same than they do. Let's group them for ease of reading:</p>
+
+
+
+<h3>Commands for speeding up testing:</h3>
+
+
+<p>Many of these commands require us to have an entity selected before we execute them. Some of them have arguments, such as aliases / URIs or numbers.</p>
+
+
+
+<ul>
+    <li><p><strong>add_citizen</strong> - Adds a new hearthling to your town. Optionally specify a job (must specify full alias for mods). Usage: add_citizen shepherd</p></li>
+    <li><p><strong>promote_to</strong> - Instantly promotes the selected hearthling to the specified job (must specify full alias for mods, i.e. fancy_mod:jobs:fancy_chef). Usage: promote_to footman</p></li>
+    <li><p><strong>add_exp</strong> - Adds experience points to the currently selected entity's job. If no exp amount is given, will level up to the next level. Usage: add_exp 1000</p></li>
+    <li><p><strong>add_gold</strong> - Adds gold to the current player's inventory. It will spawn gold chests at the town's banner. A negative value will subtract gold. Usage: add_gold 1000</p></li>
+    <li><p><strong>teleport</strong> - Teleports the selected entity, or the passed in entity id. Will bring up a flag at the cursor to select a location. Usage: teleport 12345</p></li>
+    <li><p><strong>destroy</strong> - Destroys an entity. Arg 0 is id of the entity. If no argument is provided, destroys the currently selected entity. Usage: destroy 12345</p></li>
+    <li><p><strong>destroy_immediately</strong> - Destroys an entity immediately. Might not run other code that normally runs when someone is killed, like drop loot, etc. Arg 0 is id of the entity. If no argument is provided, destroys the currently selected entity. Usage: destroy_immediately 12345</p></li>
+    <li><p><strong>ib</strong> - Instantly builds the selected building, or arg 0. Usage: ib object://game/12345</p></li>
+    <li><p><strong>im</strong> - Instantly mines the selected mining zone, or arg 0. Usage: im object://game/12345</p></li>
+    <li><p><strong>add_buff</strong> - Adds the specified buff URI to the currently selected entity. Usage: add_buff stonehearth:buffs:starving</p></li>
+    <li><p><strong>remove_buff</strong> - Removes the specified buff URI from the currently selected entity. Usage: remove_buff stonehearth:buffs:starving</p></li>
+    <li><p><strong>add_trait</strong> - Adds the trait to the currently selected entity. Usage: add_trait stonehearth:traits:night_owl</p></li>
+    <li><p><strong>remove_trait</strong> - Removes the trait from the currently selected entity. Usage: remove_trait stonehearth:traits:night_owl</p></li>
+    <li><p><strong>fill_storage</strong> - Fills the selected storage with the specified uri. If no uri specified, defaults to oak logs. Usage: fill_storage stonehearth:resources:wood:oak_log</p></li>
+    <li><p><strong>grow</strong> - Tells the selected entity to grow (either farm crops or animals). Ex: Make a lamb grow into a sheep. Usage: grow</p></li>
+    <li><p><strong>decay</strong> - Makes a food decay immediately. Usage: decay</p></li>
+    <li><p><strong>renew</strong> - Tells the selected entity to renew its resource. Ex: Make sheep grow wool again or depleeted silkweed grow. Usage: renew</p></li>
+    <li><p><strong>reproduce</strong> - Select a pasture and force that pasture to reproduce an animal. Usage: reproduce</p></li>
+    <li><p><strong>increase_city_tier</strong> - Increases the city tier of the settlement by 1</p></li>
+    <li><p><strong>set</strong> - Sets the attribute on the selected entity to the specified value. Usage: set spirit 6</p></li>
+    <li><p><strong>set_attr</strong> - Sets the attribute on the selected entity to the specified value. Usage: set_attr health 10</p></li>
+    <li><p><strong>set_blink</strong> - Make your hearthlings move a little bit faster... (will make them skip the 'walk to this location' actions, instantly teleporting to where they think they should go)</p></li>
+    <li><p><strong>set_health</strong> - Sets the health on the selected entity to the specified value. Usage: set_health 10</p></li>
+    <li><p><strong>set_resource</strong> - Sets the expendable resource on the selected entity to the specified value. Usage: set_resource health 10</p></li>
+    <li><p><strong>set_happiness</strong> - Sets the current happiness of the currently selected entity.</p></li>
+    <li><p><strong>set_time</strong> - Sets the game time to the time passed in. Usage: set_time 1:25PM</p></li>
+    <li><p><strong>set_amenity</strong> - Changes player amenity/relationship with the selected entity's faction (friendly, neutral, or hostile). Usage: set_amenity hostile</p></li>
+    <li><p><strong>make_friendly</strong> - Makes the player friendly with the selected entity's faction</p></li>
+    <li><p><strong>make_hostile</strong> - Makes the player hostile with the selected entity's faction</p></li>
+    <li><p><strong>make_neutral</strong> - Makes the player neutral with the selected entity's faction</p></li>
+    <li><p><strong>make_hungry</strong> - Makes the selected entity hungry if the entity has the calories attribute. The entity will try to eat if it has a calorie observer. Usage: make_hungry</p></li>
+    <li><p><strong>make_full</strong> - Makes the selected entity full if the entity has the calories resource. If no entity selected, everyone is made full. Usage: make_full</p></li>
+    <li><p><strong>make_sleepy</strong> - Makes the selected entity exhaustedly sleepy if the entity has the sleepiness attribute. The entity will try to sleep if it has a sleepiness observer. Usage: make_sleepy</p></li>
+    <li><p><strong>make_hurt</strong> - Makes the selected entity have low health. Usage: make_hurt</p></li>
+    <li><p><strong>make_lonely</strong> - Makes the selected entity have a low social satisfaction. Usage: make_lonely</p></li>
+    <li><p><strong>add_thought</strong> - Adds the specified thought key (format is mod_namespace:thoughts:category:..) to the currently selected entity. Usage: add_thought stonehearth:thoughts:hunger:hungry</p></li>
+    <li><p><strong>remove_thought</strong> - Removes the specified thought key (format is mod_name:thought_type:category:name) from the currently selected entity. Usage: remove_thought stonehearth:thoughts:hunger:hungry</p></li>
+    <li><p><strong>unlock</strong> - Manually unlocks the given crop or recipe for the given job. Example usage: unlock corn stonehearth:jobs:farmer</p></li>
+    <li><p><strong>release</strong> - releases the pet in a bait trap</p></li>
+    <li><p><strong>get_score</strong> - Get the town's score for specified score type. Usage: get_score military_strength</p></li>
+    <li><p><strong>change_score</strong> - Changes the specified score on the selected entity by the specified amount. Usage: change_score nutrition -10</p></li>
+    <li><p><strong>reset_scores</strong> - Resets all the scores on the selected entity to their starting values. Usage: reset_scores</p></li>
+    <li><p><strong>show_animation_text</strong> - Enable to display text over a hearthling's head that shows what animation they are currently playing. Need to restart / reload game to have it take effect. Usage: show_animation_text true/false</p></li>
+    <li><p><strong>show_untranslated</strong> - Use to display untranslated strings with *** around them. Usage: show_untranslated true/false</p></li>
+    <li><p><strong>spawn_effect</strong> - Spawns an effect on the selected entity, with the option to loop the effect indefinitely.  Can add a delay between spawn loops (in ms).  Usage: spawn_effect /stonehearth/data/effects/level_up true 1000</p></li>
+    <li><p><strong>spawn_encounter</strong> - Spawns the encounter specified. WARNING: Only for testing purposes, may cause lasting issues if game is saved after using cmd. Arguments should be: campaign, encounter, arc. Usage: spawn_encounter ambient_threats create_necromancer_crypt trigger</p></li>
+    <li><p><strong>add_conversation_subject</strong> - Adds a conversation subject with optional sentiment into the entity's social component. Usage: add_conversation_subject goblins --sentiment=1</p></li>
+    <li><p><strong>add_journal</strong> - Force adds a journal entry for the selected hearthling. Usage: add_journal dreams</p></li>
+</ul>
+
+
+
+<h3>Commands for working around the bugs:</h3>
+
+
+<p>These commands can be used when encountering certain types of bugs, to help fixing the game state. As modders, we don't use these that often.</p>
+
+
+
+<ul>
+    <li><p><strong>ai_reconsider</strong> - Calls reconsider on the selected entity</p></li>
+    <li><p><strong>destroy_npc_stockpiles</strong> - Destroys stockpiles of the npc player (Arg 0). If no argument is provided, destroys stockpiles of all npcs. Usage: destroy_npc_stockpiles goblins</p></li>
+    <li><p><strong>destroy_scaffolding</strong> - Destroy All Scaffolding</p></li>
+    <li><p><strong>dump_backpack</strong> - Instantly drops on to the ground all items in the selected hearthling's backpack. Usage: dump_backpack</p></li>
+    <li><p><strong>dump_inaccessible_items</strong> - Dumps all the items in a town's inventory that are not in the world or in storage. These items will be dumped around the town banner.</p></li>
+    <li><p><strong>fixup_components</strong> - If there are any components missing on this entity, we will attempt to add them</p></li>
+    <li><p><strong>reset</strong> - Resets the entity's location to a proper one on the ground. Usage: reset</p></li>
+    <li><p><strong>reset_location</strong> - Resets the entity's location to a proper one on the ground. Can also pass in a new location. Usage: reset_location {optional x y z}</p></li>
+    <li><p><strong>select</strong> - Selects the entity with id = Arg 0. Usage: select 12345</p></li>
+    <li><p><strong>select_storage</strong> - Select's the storage that contains the entity, if it has one.</p></li>
+</ul>
+
+
+
+<h3>Other commands for general stuff:</h3>
+
+
+
+<ul>
+    <li><p><strong>dump_building</strong> - Dumps the selected building to a qubicle file.</p></li>
+    <li><p><strong>get_game_mode</strong> - Displays the game mode of the current game. Usually either peaceful or normal</p></li>
+    <li><p><strong>set_game_speed</strong> - Sets the game speed to the default game speed multiplied by the specified amount. Usage: set_game_speed 5</p></li>
+    <li><p><strong>world_seed</strong> - Returns the world seed of the current world. Usage: world_seed</p></li>
+    <li><p><strong>help</strong> - Prints out all the registered console commands.</p></li>
+    <li><p><strong>now</strong> - Returns radiant.gamestate.now()</p></li>
+    <li><p><strong>get_config</strong> - Gets the configuration value from user_settings.config. Usage: get_config foo.bar.baz</p></li>
+    <li><p><strong>set_config</strong> - Sets the specified configuration value. Usage: set_config foo.bar.baz {value = 1}</p></li>
+    <li><p><strong>get_entity_info</strong> - Return info about an entity, even if the entity has been destroyed. Pass in id of the entity. Usage: get_entity_info 82215</p></li>
+    <li><p><strong>get_global_vision</strong> - Returns list of all objects in global vision of the caller's population</p></li>
+    <li><p><strong>get_cost</strong> - Get the cost of the selected building, or arg 0. Usage: get_cost object://game/12345</p></li>
+    <li><p><strong>get_conversation_actives</strong> - Gets all active conversation subjects for an entity.</p></li>
+    <li><p><strong>get_conversation_subject</strong> - Gets a conversation subject with optional sentiment into the entity's social component. Usage: get_conversation_subject goblins</p></li>
+    <li><p><strong>get_current_interaction</strong> - Gets current interaction of selected entity</p></li>
+</ul>
+
+
+
+<h3>Developer commands for debugging various things:</h3>
+
+
+<p>As modders, it's unlikely we'll be using these commands, but here's the list in case we need them.</p>
+
+
+
+<ul>
+    <li><p><strong>call</strong> - A generic handler to call any registered route.</p></li>
+    <li><p><strong>collect_cpu_profile</strong> - Collects a profile of the LUA code for the specified duration, in ms.  Default is 30s.  Usage: collect_cpu_profile 150000</p></li>
+    <li><p><strong>destroy_all</strong> - Destroy all entities with the same uri as the selected entity. Note: Must load up the Entity Tracker first.</p></li>
+    <li><p><strong>dump_cache_stats</strong> - Displays spatial cache stats.</p></li>
+    <li><p><strong>dump_lua_heaps</strong> - Dumps lua heaps (make sure lua.enable_memory_profiler is set to true in user_settings.)</p></li>
+    <li><p><strong>dump_memory_stats</strong> - Dumps a table of all tracked client and server memory</p></li>
+    <li><p><strong>dump_trace_stats</strong> - Dumps a table of all tracked client and server memory</p></li>
+    <li><p><strong>load_entity_tracker</strong> - Tells the debugtools entity tracker to load up all the entities. you can then inspect them in the object browser after typing 'debugtools'</p></li>
+    <li><p><strong>navgrid_viz</strong> - Enables different nav grid visualizations. Usage: navgrid_viz [navgrid | water_tight | topology | none]</p></li>
+    <li><p><strong>print_ai_stack</strong> - prints the ai's current coroutine stack trace</p></li>
+    <li><p><strong>query_pf</strong> - Runs the query pathfinder command. No arguments.</p></li>
+    <li><p><strong>show_item_ids</strong> - Makes it so item palettes will show a list of all the item ids in its list of items. Usage: show_item_ids</p></li>
+    <li><p><strong>show_pathfinder_time</strong> - </p></li>
+    <li><p><strong>step_plan</strong> - Step the currently selected building's plan</p></li>
+    <li><p><strong>toggle_profile_long_ticks</strong> - Enables/disables per-game-tick profiling of the LUA code (recorded whenever lua evaluation takes more than a game tick.)</p></li>
+    <li><p><strong>toggle_select_building_subpart</strong> - </p></li>
+</ul>
+
+
+
+<h3>Deprecated commands:</h3>
+
+
+
+<ul>
+    <li><p><strong>hotload_manifest</strong> - hot load a manifest. (This command should not be used any more. See the <a href="#">hotloaded mods</a> section for more info).</p></li>
+    <li><p><strong>hot_reload</strong> - Clears the json cache so that changed json files on the client will reload again. Useful for testing particle effects. (Add this to your user_settings.json at the same level than the "user_id" to apply this permanently: "enable_renderer_file_watcher" : true). Usage: hot_reload</p></li>
+</ul>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

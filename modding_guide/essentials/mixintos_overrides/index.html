@@ -1,0 +1,527 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>How to remove existing things</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Mixintos and overrides</div>
+   <p><p>Using Mixintos and Overrides, you'll be able to modify content in the Stonehearth mod (or in any mod, actually) without tampering with the mod's internal files. Both mixintos and overrides are specified in your mod's manifest.</p></p>
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> Remember to add commas only when <a href="../json/index.html">needed</a>, or the game won't be able to read your manifest and it won't be able to load your mod. See these other <a href="../debugging/index.html">tips</a> for debugging.</p>
+
+
+
+<h2>The Mixinto</h2>
+
+
+<p>A "mixinto" allows for pushing content into existing files from a different mod. An outside mod (like your mod!) specifies what content to push into a destination data file. Mixintos only work for JSON files, we can't add to nor modify Lua/HTML/Javascript/other types of files with them.</p>
+
+
+
+<p>Let's take a look at the manifest from the <code>rayyas_children</code> mod, which uses mixintos to inject content into the <code>stonehearth</code> mod. This is the "mixintos" node from its manifest (located at the same level than "info"):</p>
+
+
+
+<pre><code>  "mixintos": {
+     "stonehearth:playable_kingdom_index": "file(data/rc_playable_kingdom_index.json)",
+     "stonehearth:data:gm_index": "rayyas_children:data:gm_index",
+     "stonehearth:farmer:initial_crops": "file(data/rc_initial_crops.json)",
+     "stonehearth:building_templates:index": "file(data/saved_objects/building_templates_index.json)",
+     "stonehearth:data:sound_constants": "rayyas_children:data:sound_constants",
+     "stonehearth:gm:campaigns:arcs:ambient_threats": "file(data/mixintos/encounters/rc_ambient_threats_arc.json)"
+  }
+</code></pre>
+
+<p>As you can see, the keys on the left are references to assets from the stonehearth mod, while the values on the right refer to files in the rayyas_children mod that contain the data that we want to mix into those assets. In the "mixintos" node we can use either aliases or paths, for both keys and values.</p>
+
+
+
+<p>For mixintos, we ALWAYS need to prefix the keys on the left with the <strong>namespace</strong> of the other mod plus a <strong>colon</strong>, in this case <code>"stonehearth:"</code>. If it's a path, it should be in the form <strong><code>"/&lt;other_mod_namespace&gt;/..."</code></strong> (in the example above, instead of the alias "stonehearth:data:gm_index" we could have used the path "/stonehearth/data/gm/gm_index.json").</p>
+
+
+
+<p>This way the game knows exactly which file from which mod do we want to alter, since it's easy to have files with the same name in different mods.</p>
+
+
+
+<p>If you use aliases for the values (on the right) inside the "mixintos" node, make sure they are always prefixed by the namespace of your mod, too. If you use paths, they can be either <a href="../mixins/index.html#RelativePaths">relative</a> or <a href="../mixins/index.html#AbsolutePaths">"absolute"</a>.</p>
+
+
+
+<p>Our mixintos don't need to be an exact copy of the original file from the other mod, they can contain just the part that we want to add or modify. For example, this is what the rc_playable_kingdom_index.json mixinto looks like:</p>
+
+
+
+<pre><code>  {
+     "kingdoms": {
+        "rayyas_children" : "rayyas_children:kingdoms:rayyas_children"
+     }
+  }
+</code></pre>
+
+<p>And this is the original playable_kingdom_index.json from the stonehearth mod:</p>
+
+
+
+<pre><code>  {
+     "type": "index",
+     "kingdoms": {
+        "the_ascendancy": "stonehearth:kingdoms:ascendancy"
+     }
+  }
+</code></pre>
+
+<p>In the mixinto, we need to specify the parent nodes (in this case, "kingdoms") so that the game will know exactly at which level of the JSON nodes inject our content. After applying the mixinto from rayyas_children, the playable_kingdom_index from stonehearth will be read by the game as the following, effectively adding a new kingdom to the list of available choices:</p>
+
+
+
+<pre><code>  {
+     "type": "index",
+     "kingdoms": {
+        "the_ascendancy": "stonehearth:kingdoms:ascendancy",
+        "rayyas_children" : "rayyas_children:kingdoms:rayyas_children"
+     }
+  }
+</code></pre>
+
+<p>For most of the cases, we will create aliases for our new entities, then inject them via mixinto into the corresponding files from the stonehearth mod. Examples would be adding new crafting recipes, new factions, new biomes, new traits, new commands, etc.</p>
+
+
+
+<h2>Modifying content using mixintos</h2>
+
+
+<p>We can change existing content with mixintos, if the value we want to change is not an object nor an array. For example, we can change the scale of an existing entity using a mixinto like this one:</p>
+
+
+
+<pre><code>  {
+     "components": {
+        "render_info": {
+           "scale": 0.8
+        }
+     }
+  }
+</code></pre>
+
+<p>In this case, the final value after the files have been merged will be the one from our mixinto.</p>
+
+
+
+<h2>The Override</h2>
+
+
+<p>Mixintos are used to modify or enhance the content in a mod. An override will completely overwrite that asset. Here's the syntax for adding an override in the manifest (the "overrides" node is located at the same level than "info"):</p>
+
+
+
+<pre><code>  "overrides": {
+     "/stonehearth/entities/critters/poyo/poyo.qb": "file(sandy_poyo/sandy_poyo_tan.qb)"
+  }
+</code></pre>
+
+<p>Just like with mixintos, we specify an alias (preceded by the namespace of the mod we want to modify plus a colon) or an <a href="../mixins/index.html#AbsolutePaths">"absolute"</a> path (if for example the specific asset doesn't have an alias for it) and then we tell which file of our mod do we want to override it with, either with an alias (preceded by our mod's namespace plus a colon), or with a <a href="../manifest/index.html#Filepaths">path</a> (either <a href="../mixins/index.html#RelativePaths">relative</a> or <a href="../mixins/index.html#AbsolutePaths">"absolute"</a>). </p>
+
+
+
+<p>While mixintos allow for many mods to add content to the same files, overrides completely replace that file. This means that if two mods override the same file, only one of them will win, which can cause compatibility problems. Thus, overriding is not recommended for code files, but it can be useful for things like swapping models or images in some cases. </p>
+
+
+
+<p>For example, the override above (which pertains to a deferred manifest) is applied when we choose to play in the desert biome, and changes the .qb model of poyos to be more fitting with the desert theme.</p>
+
+
+
+<h2>Injecting content using overrides</h2>
+
+
+<p>We can add certain type of content using overrides, too. This is useful when we need to add animations to hearthlings, for example, since the list of effects for those is not an index, just a path to a folder inside the stonehearth mod, so there's no file that we can mixinto to.</p>
+
+
+
+<p>In order to do this, we can specify a path that doesn't exist in the stonehearth mod, pointing to the file in our mod. Animations are specified in effect files, so we would have an effect file that references an animation in our mod's folder. This is how it would look in our manifest, in the overrides node:</p>
+
+
+
+<pre><code>  "overrides" : {
+     "/stonehearth/data/rigs/entities/humans/effects/my_effect.json" : "/my_mod_namespace/my_effect.json",
+     "/stonehearth/data/rigs/entities/humans/animations/female/my_anim.json": "/my_mod_namespace/animations/female/my_anim.json",
+     "/stonehearth/data/rigs/entities/humans/animations/male/my_anim.json": "/my_mod_namespace/animations/male/my_anim.json"
+  }
+</code></pre>
+
+<p>Of course you can have the same path in your mod so that your files are organized in the same way than in the stonehearth mod, if you want.</p>
+
+
+
+<p>In this case, "my_effect.json" does not exist in the stonehearth mod, only in our mod, but by specifying it like this in the manifest, the game will think that it really has that non-existent file and will override it with our content. When will this effect/animation be played is another issue.</p>
+
+
+
+<h2>Mod compatibility</h2>
+
+
+<p>As you can guess, when several mods mixinto the same file all the new content will be read. If the mixintos change specific values, it will happen the same than with overrides, only one mod will win, so be aware of your changes to notify users of possible incompatibilities with mods that touch the same files as yours.</p>
+
+
+
+
+<!-- Hakz, I say!! https://discourse.stonehearth.net/t/strange-question/33910/2 -->
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

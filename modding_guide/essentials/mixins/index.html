@@ -1,0 +1,559 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>How to remove existing things</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Mixins</div>
+   <p><p>We have encountered mixins in previous sections of the guide. They are not to be confused with "mixintos". <br/>
+A mixin allows an entity definition to pull in content from the mixin file.  Using mixins you can define common data parameters and re-use them across multiple entity definitions. </p></p>
+
+
+<p>Here's a massively abbreviated version of the Stonehearth mod's manifest file.</p>
+
+
+
+<pre><code>  {
+     "info" : {
+        "name" : "Stonehearth"
+     },
+     "aliases" : {
+        "medium_oak_tree" : "file(entities/trees/oak_tree/medium_oak_tree)",
+        "mixins:tree" : "file(mixins/tree)"
+     }
+  }
+</code></pre>
+
+<p>Here's what <code>entities/trees/oak_tree/medium_oak_tree/medium_oak_tree.json</code> looks like (at the time this guide was written):</p>
+
+
+
+<pre><code>  {
+     "mixins": "stonehearth:mixins:tree",
+     "type": "entity",
+     "components": {
+        "model_variants": {
+           "default": {
+              "models": [
+                 {
+                    "type": "one_of",
+                    "items": [
+                       "file(medium_oak_tree.qb)",
+                       "file(medium_oak_tree_2.qb)",
+                       "file(medium_oak_tree_3.qb)"
+                    ]
+                 }
+              ]
+           }
+        },
+        "stonehearth:resource_node": {
+           "resource": "stonehearth:resources:wood:oak_log",
+           "durability": 9
+        },
+        "mob": {
+           "model_origin": { "x": -0.5, "y": 0, "z": 0.5 },
+           "region_origin": { "x": 0.5, "y": 0, "z": 0.5 },
+           "align_to_grid": [
+              "x",
+              "z"
+           ]
+        },
+        "destination": {
+           "region": [
+              {
+                 "min": { "x": -2, "y": 0, "z": -2 },
+                 "max": { "x": 3, "y": 1, "z": 3 }
+              }
+           ]
+        },
+        "region_collision_shape": {
+           "region": [
+              {
+                 "min": { "x": -2, "y": 0, "z": -2 },
+                 "max": { "x": 3, "y": 16, "z": 3 }
+              }
+           ]
+        }
+     },
+     "entity_data": {
+        "stonehearth:evolve_data": {
+           "next_stage": "stonehearth:trees:oak:large",
+           "evolve_time": "5d"
+        },
+        "stonehearth:catalog": {
+           "display_name": "i18n(stonehearth:entities.trees.oak_tree.medium_oak_tree.display_name)",
+           "description": "i18n(stonehearth:entities.trees.oak_tree.medium_oak_tree.description)",
+           "subject_override": "stonehearth:trees:oak:large"
+        }
+     }
+  }
+</code></pre>
+
+<p>Now notice the "mixins" line at the top of the file. We refer to the mixin by the alias specified in the manifest, preceded by the name of the mod that declares it plus a colon.</p>
+
+
+
+<p>Here's the definition of the tree mixin:
+mixins/tree/tree.json</p>
+
+
+
+<pre><code>  {
+     "type": "mixin",
+     "mixins": "stonehearth:mixins:placed_object",
+     "components": {
+        "render_info": {
+           "scale": 1
+        },
+        "stonehearth:resource_node": {
+           "harvest_overlay_effect": "stonehearth:effects:chop_overlay_effect",
+           "harvester_effect": "chop",
+           "description": "chop_tree"
+        }
+     },
+     "entity_data": {
+        "stonehearth:catalog": {
+           "category": "plants"
+        },
+        "stonehearth:render_materials": {
+           "hud": "materials/ghost_item.json"
+        },
+        "stonehearth:on_destroy": {
+           "effect": "stonehearth:effects:terrain:tree_harvest"
+        }
+     }
+  }
+</code></pre>
+
+<p>Notice that the type is "mixin". And surprise! It also pulls other mixins in its definition ("stonehearth:mixins:placed_object"). It is a convenient way to reuse data and code. You don't need to have a "mixins" node in all your files, only in the ones that benefit from it. You can use either paths or aliases for them, and the files you reference in the "mixins" node don't have to be of type "mixin". They can be of any type.</p>
+
+
+
+<p>You can specify more than one mixin by using an array, for example, this is the definition of cobblestone_fence_gate.json:</p>
+
+
+
+<pre><code>  {
+     "type": "entity",
+     "mixins": [
+        "file(cobblestone_fence_gate_ghost.json)",
+        "stonehearth:mixins:portals:double_gate",
+        "stonehearth:mixins:basic_destructable_door"
+     ],
+     "components": {
+        "stonehearth:entity_forms": {
+           "iconic_form": "file(cobblestone_fence_gate_iconic.json)",
+           "ghost_form": "file(cobblestone_fence_gate_ghost.json)",
+           "placeable_on_ground": true
+        }
+     },
+     "entity_data": {
+        "stonehearth:net_worth": {
+           "value_in_gold": 6,
+           "rarity": "common",
+           "shop_info": {
+              "buyable": true,
+              "sellable": true,
+              "shopkeeper_level": 1,
+              "shopkeeper_type": "caravan"
+           }
+        },
+        "stonehearth:territory": {
+           "marks_territory": true
+        }
+     }
+  }
+</code></pre>
+
+<p>Notice the brackets of the array for the "mixins" node. The first mixin is specified as a path, and the other ones as aliases.</p>
+
+
+
+<h3><a name="RelativePaths"></a>About relative paths</h3>
+
+
+<p>Observe the mixin "file(cobblestone_fence_gate_ghost.json)" of the example above. Since the cobblestone_fence_gate_ghost.json file is inside the same folder than cobblestone_fence_gate.json (which references it), <strong>"file()"</strong> will search for cobblestone_fence_gate_ghost.json inside this same folder:
+<img src="../../../images/essentials/mixins/mixin_in_same_folder.png" alt="mixin_in_same_folder"/></p>
+
+
+
+<p>If it had been inside another folder, we would use "file(other_folder/cobblestone_fence_gate_ghost.json)". For example, if we had it like in this picture, we'd say "file(mixins/cobblestone_fence_gate_ghost.json)":
+<img src="../../../images/essentials/mixins/mixin_in_inner_folder.png" alt="mixin_in_inner_folder"/></p>
+
+
+
+<p>If it had been outside of the folder where cobblestone_fence_gate.json is, we would have used "file(../cobblestone_fence_gate_ghost.json)":
+<img src="../../../images/essentials/mixins/mixin_outside.png" alt="mixin_outside"/></p>
+
+
+
+<p>And if it had been on a folder outside, we would have used "file(../other_folder/cobblestone_fence_gate_ghost.json)". In the case of this picture it would be "file(../mixins/cobblestone_fence_gate_ghost.json)":
+<img src="../../../images/essentials/mixins/mixin_in_outer_folder.png" alt="mixin_in_outer_folder"/></p>
+
+
+
+<p>As you can see, for every directory that we go up from the folder inside which is the file that contains references to the paths, we append one <code>../</code> at the beginning of the path.</p>
+
+
+
+<h3><a name="AbsolutePaths"></a>About absolute paths</h3>
+
+
+<p>An alternative to using "file()" when we don't have an alias for a certain asset would be using an "absolute" path, which would start from the namespace of the mod, and will travel the sub-directories starting from where the manifest is. Like so: "/stonehearth/entities/construction/cobblestone_fence_gate/cobblestone_fence_gate_ghost.json" </p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

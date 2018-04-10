@@ -1,0 +1,513 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>How to remove existing things</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Entities and components</div>
+   <p><p>All things in Stonehearth are made of entities and components.</p></p>
+
+
+<h2>Entities</h2>
+
+
+<p>An entity is an object that exists in the world. Every thing you see in Stonehearth (that isn't a piece of UI) is an entity. Ex: trees, hearthlings, rabbits, logs.</p>
+
+
+
+<p>The entities.lua file in <code>Stonehearth\mods\radiant\modules</code> describes a lot of what you can do with an entity. However, entities contain very little data about themselves in themselves. They store almost all of their behavior inside components.</p>
+
+
+
+<p>You can find all the entities from the game inside the <code>mods\stonehearth\entities</code> directory. Some are inside the <code>mods\stonehearth\jobs</code> directory (such as the workbenches or the different jobs outfits).</p>
+
+
+
+<p>An entity is represented by a text file containing JSON describing that entity. This file describes which components should be added to the entity. The entity may inherit other components if it has <a href="../mixins/index.html">mixins</a>, etc. Here's an excerpt from small_boulder.json :</p>
+
+
+
+<pre><code>  {
+     "type": "entity",
+     "mixins": "stonehearth:mixins:boulder",
+     "components": {
+        "model_variants": {
+           "default": {
+              "models": [
+                 "file(small_boulder_1.qb)"
+              ]
+           }
+        },
+        "stonehearth:resource_node": {
+           "durability": 1
+        },
+        "mob": {
+           "model_origin": { "x": -0.5, "y": 0, "z": 0.5 },
+           "region_origin": { "x": -0.5, "y": 0, "z": 0.5 },
+           "align_to_grid": [
+              "x",
+              "z"
+           ]
+        },
+     },
+     "entity_data": {
+        "stonehearth:catalog": {
+           "display_name": "i18n(stonehearth:entities.boulders.small_boulder.display_name)",
+           "description": "i18n(stonehearth:entities.boulders.small_boulder.description)"
+        },
+        "stonehearth:appeal": {
+           "appeal": -1
+        }
+     }
+  }
+</code></pre>
+
+<p>These are the different keys or nodes that we can find in these JSON files:</p>
+
+
+
+<ul>
+    <li><p>"type" : "entity" <br/>
+    This indicates what this JSON file is describing. In this case, it's an entity. Other files might contain a "type" of "index", "mixin", or "job", for example.  When the file is consumed by our code, our code will thus know how to interpret the rest of it.</p></li>
+    <li><p>"mixins" : "stonehearth:mixins:boulder" <br/>
+    This key lets you refer to another JSON file. All keys from that other file are incorporated into this one, and duplicate keys are merged together. So if both files have a "components" key, the final file will have the child components from both files. More on mixins in the <a href="../mixins/index.html">next section of the guide</a>.</p></li>
+</ul>
+
+
+
+<h2>Components</h2>
+
+
+
+<ul>
+    <li>"components" : { ... } <br/>
+    All components associated with an entity by default are declared inside the "components" key.</li>
+</ul>
+
+
+
+<p>Here's a simple example from arch_backed_chair.json :</p>
+
+
+
+<pre><code>  {
+     "mixins": "file(arch_backed_chair_ghost.json)",
+     "components": {
+        "stonehearth:entity_forms": {
+           "iconic_form" : "file(arch_backed_chair_iconic.json)",
+           "ghost_form" : "file(arch_backed_chair_ghost.json)",
+           "placeable_on_ground" : true
+        },
+        "region_collision_shape": {
+           "region": [
+              {
+                 "min" : { "x" : 0, "y" : 0, "z" : 0 },
+                 "max" : { "x" : 1, "y" : 2, "z" : 1 }
+              }
+           ]
+        }
+     },
+     "entity_data": {
+        "stonehearth:net_worth": {
+          "value_in_gold": 6,
+          "rarity": "common",
+          "shop_info": {
+             "buyable": true,
+             "sellable": true,
+             "shopkeeper_level": 1,
+             "shopkeeper_type": "caravan"
+          }
+        }
+     }
+  }
+</code></pre>
+
+<p>In this case, both "stonehearth:entity_forms" and "region_collision_shape" are components that will be added to the entity when it is created. Others will be added based on whatever is in the mixin arch_backed_chair_ghost.json.</p>
+
+
+
+<p>Different components can be added/removed from the file as we add/remove functionality from the entity. Writing Stonehearth is very much an exercise in defining and implementing the reusable components that describe the many interactions in the game.</p>
+
+
+
+<p>So, when thinking about your mods, think about the entities you want to add and the pieces of functionality that belong to each item you want to add to the game. Can they be broken down into generic, re-usable components? What data is required for each?</p>
+
+
+
+<p>The component's name will change based on its mod, and whether it's implemented in C++ or Lua. For modding, we can only create components in Lua. 
+How to create your own components will be covered in <a href="#">advanced sections</a> of the guide.</p>
+
+
+
+<ul>
+    <li>"entity_data" : { ... } <br/>
+    Entity Data can be added to an entity via its JSON file. It is a way to attach read-only, always-true-across-all-instances data to an entity.</li>
+</ul>
+
+
+
+<blockquote>
+    <p>The data can then be accessed again in Lua via <code>get_entity_data()</code>. This allows components and other Lua scripts to make use of it:</p>
+</blockquote>
+
+
+
+<pre><code>  foo = radiant.entities.get_entity_data(my_chair, "stonehearth:net_worth").value_in_gold
+</code></pre>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>
