@@ -67,7 +67,7 @@
       
 
    <li>
-      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Unmanaged mods</a>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
       <ul>
 
 
@@ -361,7 +361,7 @@
 <blockquote>
     <p><img src="../../../images/common/row_alert2.png" alt="icon"/> If you're going to upload your mod to the Steam Workshop, you should create your mod folder via the <a href="../managing/workshop/index.html#UploadWorkshop">Mods menu</a>. Alternatively, you can develop your mod in the Stonehearth/mods folder, and when it's ready, generate the mod folder through the Mods menu, copy-paste the contents of your mod, and edit the content of the auto-generated manifest so that it includes your additions.</p>
 
-    <p>From there on, you should either continue developing your mod inside the auto-generated mod folder, or disable that mod and develop the one inside the mods folder, repeating the steps above whenever you need to push your update to the Workshop. Steps in this guide will refer to the mods folder (unmanaged mods), but you can develop your mod inside the auto-generated folder for the Workshop if you want.</p>
+    <p>From there on, you should either continue developing your mod inside the auto-generated mod folder, or disable that mod and develop the one inside the mods folder, repeating the steps above whenever you need to push your update to the Workshop. Steps in this guide will refer to the mods folder (local mods), but you can develop your mod inside the auto-generated folder for the Workshop if you want.</p>
 </blockquote>
 
 
@@ -425,13 +425,6 @@ It can only contain alphanumeric characters, hyphens and underscores. Usually th
 </code></pre>
 
 <p>This is only used for the main mods required to run the game (radiant, stonehearth). It displays them as checked and disabled in the Mods tab, so that players won't uncheck them accidentally. The other default mods also have the "is_base_mod" key, to highlight them in the Mods menu. These two keys allow to differentiate the base game content from the external mods, so you shouldn't use them.</p>
-
-
-
-<pre><code>  "deferred_load" : true
-</code></pre>
-
-<p>This can be observed in the hotloaded manifests. If you specify this field, the manifest won't be loaded right away, instead it will wait until you invoke it manually from JSON or Lua. In the past, we were able to hotload mods this way, but nowadays we can have deferred manifests inside a normal mod, which is way more convenient than having a separate mod. See the guide on hotloading manifests <a href="#">here</a>.</p>
 
 
 
