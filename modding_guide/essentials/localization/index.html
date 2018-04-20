@@ -1,5 +1,9 @@
 <head>
    <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Localization</title>
 </head>
 <body id="documentation">
    <!-- the header of the page -->
@@ -358,6 +362,13 @@
 
 
 
+<p>In order to enable localization for your mod, you need to add this key to your manifest. Usually we put it below the "info" section to avoid forgetting about it (remember to add commas where needed!) :</p>
+
+
+
+<pre><code>  "default_locale" : "en"
+</code></pre>
+
 <p>Localization in the game works this way: for every text that we want to be translatable, we create a key in the stonehearth/locales/en.json file. Then, in our JSON files, we reference that key wrapping it inside <strong>"i18n()"</strong>.
 For example, this is how we specify the name and description of the brightbell window box:</p>
 
@@ -393,6 +404,10 @@ For example, this is how we specify the name and description of the brightbell w
 </code></pre>
 
 <p>So we use "i18n()" and inside it we write the namespace of our mod, a colon, and then the hierarchy of keys that we set up in the language file, separated by dots. When the game loads this file, it will replace the i18n() string with the actual translation we specified in our language file.</p>
+
+
+
+<p>For quick testing, we can write plain text instead of "i18n(...)" and the game should be able to read it fine. But later we'll have to change it as explained above to make it translatable.</p>
 
 
 

@@ -1,5 +1,9 @@
 <head>
    <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Mixintos and overrides</title>
 </head>
 <body id="documentation">
    <!-- the header of the page -->
@@ -492,9 +496,9 @@
 
 
 <pre><code>  "overrides" : {
-     "/stonehearth/data/rigs/entities/humans/effects/my_effect.json" : "/my_mod_namespace/my_effect.json",
-     "/stonehearth/data/rigs/entities/humans/animations/female/my_anim.json": "/my_mod_namespace/animations/female/my_anim.json",
-     "/stonehearth/data/rigs/entities/humans/animations/male/my_anim.json": "/my_mod_namespace/animations/male/my_anim.json"
+     "stonehearth/data/rigs/entities/humans/effects/my_effect.json" : "/my_mod_namespace/my_effect.json",
+     "stonehearth/data/rigs/entities/humans/animations/female/my_anim.json": "/my_mod_namespace/animations/female/my_anim.json",
+     "stonehearth/data/rigs/entities/humans/animations/male/my_anim.json": "/my_mod_namespace/animations/male/my_anim.json"
   }
 </code></pre>
 
@@ -503,6 +507,11 @@
 
 
 <p>In this case, "my_effect.json" does not exist in the stonehearth mod, only in our mod, but by specifying it like this in the manifest, the game will think that it really has that non-existent file and will override it with our content. When will this effect/animation be played is another issue.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> Notice that the paths in these overrides (the paths to files that don't exist inside the stonehearth mod) <strong>don't</strong> start by a forward slash. For this type of overrides they must be declared this way, otherwise they won't work. <br/>
+Other full paths in the manifest and the rest of files must start by a forward slash unless specified otherwise. Some of them will work fine either with or without the slash but for consistency we'll be using the same syntax throughout our examples.</p>
 
 
 
