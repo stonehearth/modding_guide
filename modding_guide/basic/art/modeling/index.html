@@ -1,0 +1,778 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Creating models</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+      <ul>
+
+
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+      <ul>
+
+
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+   
+
+
+
+   </ul>
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Creating models</div>
+   <p><p><!-- 1- how to model with free tools, how to prepare and export models to get them right in the mod 
+Some useful links in https://discourse.stonehearth.net/t/one-rule-to-ring-them-all/16926/24-->
+This guide will only explain how to import and export the models, and some other tips. For how to create and add items to the game, refer to <a href="../../adding_items/index.html">this page</a>.</p></p>
+
+
+<h2>Tools for voxel modeling</h2>
+
+
+<p>The team uses Qubicle Constructor 1.0 for creating the 3D models for the game. It is a paid program. The current version of Qubicle (at the time this guide was written) is Qubicle 3.0.</p>
+
+
+
+<p>As for free tools, <a href="https://ephtracy.github.io/">Magicavoxel</a>, <a href="https://discourse.stonehearth.net/t/stonevox-3d-community-voxel-modeler-for-stonehearth/8664">StoneVox</a> and <a href="https://blackflux.com/node/11">VoxelShop</a> should help you if you can't afford a paid program.</p>
+
+
+
+
+<!--### Considerations on tools
+We'll add explanations on basic modeling with different programs so that you can choose whichever you want.
+-->
+
+
+
+<h2>The usual pipeline for modders</h2>
+
+
+<p>Normally modders will find the asset they want in the game files, import it into their program of choice, edit it, and then export it again for using it on their mods.
+This is the easiest thing to do since it helps figuring out the scale and position. Comparing different items will also help.</p>
+
+
+
+<p>The basic scale is:</p>
+
+
+
+<ul>
+    <li>Terrain, trees, and building blocks have a scale of 1.</li>
+    <li>The rest of the items you create with a 3D program will automatically get a scale of 0.1 (1/10 of a block).</li>
+</ul>
+
+
+
+<p>You can easily see this by checking the hearthlings. A hearthling face is 13 voxels wide, and a hearthling in game occupies a little more than 1 terrain block.
+A wood log is 10x10x10 voxels inside Qubicle, and exactly 1 block inside the game.</p>
+
+
+
+<p>You can make the model with less voxels and then <a href="../../adding_items/item_scale/index.html">enlarge or reduce it in the game with JSON</a>. The amount of voxels will depend on the level of detail you want to achieve.
+Too many voxels/details are bad for performance, however.</p>
+
+
+
+<h2>About matrices / layers</h2>
+
+
+<p>With matrices we refer to different layers in the 3D model. This is terminology from Qubicle, for other programs you might see it as "layers".</p>
+
+
+
+<p>If your model has different movable parts, each of them will have to be in a different matrix. Make sure that the size of each of these matrices is exactly the same, so that the parts are correctly aligned to one another.</p>
+
+
+
+<p>The matrix size doesn't matter in the end, but for easier modeling you can give it some room around your model so that you can add more voxels if you want to (you can't add voxels outside of a matrix/layer, it's like a bounding box). This might be different depending on the voxel editor of your choice, though.</p>
+
+
+
+<p>Usually your model will be touching the bottom of the matrix, since that will align it with the floor in game, but there are some exceptions.</p>
+
+
+
+<blockquote>
+    <p><img src="../../../../images/common/edit_big.png" alt="icon"/> If your model is going to be a static object with only 1 part (for example, a chair) you can use Magicavoxel. However, Magicavoxel is not suited for models that are meant to be animated, like armor, living creatures, doors, or certain types of workbenches. Hopefully, in future versions of Magicavoxel we might get the option to export several layers on the same qb file.</p>
+</blockquote>
+
+
+
+<h2>Alignment of the models</h2>
+
+
+<p>You might see that some objects (like weapons, or wall-mounted items) are aligned weirdly when you open their model in your voxel editor. This is because the attachment point corresponds to the center in the program (at 0,0,0). In Qubicle, most of the Stonehearth models are not centered but instead expand on one of the quadrants.</p>
+
+
+
+<p>However there are some models that require you to center them around (0,0,0) in your program of choice. Bad aligned models will appear at wrong places after placing them into the game, so make sure to double check this.</p>
+
+
+
+<p>This is one of the reasons why most modders import a similar object and edit over it, so that the centering is correct.</p>
+
+
+
+<p>Since models can have an odd number of voxels, they might look off-centered by a little, but that's no problem because we will adjust their center on the JSON file. For adjusting the model origin in JSON, see <a href="#">this page</a>.</p>
+
+
+
+<h2>Naming matrices / layers</h2>
+
+
+<p>This is very important for items like armor, or creatures that reuse existing rigs (for example, if you wanted to create your own population by reskinning an existing one).</p>
+
+
+
+<p>For other items the name is not that important, but for animated ones make sure that their matrices are all correctly named. If you edited an existing model, they will probably have the correct names already (unless you imported other objects in your file for reference, in that case they might have changed to something we don't want).</p>
+
+
+
+<p>You can of course create your own creatures from scratch, but make sure you name your matrices accordingly, so that later the task of animating is easier.</p>
+
+
+
+<p>For reference, when modeling armor or outfits, here's the exact names that you should use for the layers (notice that with "left" and "right" we refer to the sides of the hearthling, not ours):
+<img src="../../../../images/art/modeling/human_body_parts_names.png" alt="human_body_parts_names"/>
+<img src="../../../../images/art/modeling/human_feet_parts_names.png" alt="human_feet_parts_names"/>
+It's not needed to have all the layers for the armor. If you copy an existing one, you'll see that many of them are missing.
+Here are the layer names for the left hand. For the right side (which is mirrored), replace all the "left"s with "right"s:
+<img src="../../../../images/art/modeling/human_left_hand_parts_names.png" alt="human_left_hand_parts_names"/></p>
+
+
+
+<h2>Modeling an item with Qubicle</h2>
+
+
+<p>Disclaimer: the development team uses Qubicle 1.0 Master edition for making the models. Nowadays you would only be able to purchase the most recent version, Qubicle 3.0.</p>
+
+
+
+<p>For renaming matrices in Qubicle, you can select the matrix and press F2.</p>
+
+
+
+<h3>Importing models into Qubicle</h3>
+
+
+<p>A quick way of importing existing qb models into Qubicle is by dragging and dropping them into the main modeling area. You can import several models into the same scene, but depending on which version of Qubicle you're using, the names of the matrices might change to something we don't want.</p>
+
+
+
+<h3>Exporting with Qubicle</h3>
+
+
+<p>Settings needed for exporting the QB models:</p>
+
+
+
+<ul>
+    <li>Compression must be unchecked. The game can't read compressed QB models.</li>
+    <li>Z-Axis must be Right-Handed. This will correctly align the model with the in-game axes.</li>
+    <li>Individual export must be unchecked, otherwise each matrix will be exported into separate files.
+    <img src="../../../../images/art/modeling/qb_export_settings.png" alt="qb_export_settings"/></li>
+</ul>
+
+
+
+<p>If you happen to use an older version of Qubicle, the export settings are mostly the same. In Qubicle 1, the option color format should be "RGBA" and the "Single Object" option should be checked only if you want all your matrices to be merged into a single one. Uncheck it to keep your matrices separated within the same exported file (e.g. for animation).</p>
+
+
+
+<h2>Modeling an item with Magicavoxel</h2>
+
+
+<p><strong>Disclaimer</strong>: At the time this guide was written, the latest version of Magicavoxel was 0.99.1 (alpha). With this version, some old functionality is not available, but we can work with layers in the model, which wasn't previously available. Unfortunately, when exporting to qb, every layer will be exported to a different qb file, so you might want to create the item in the same layer then split it into different layers in Voxelshop.</p>
+
+
+
+<h3>Importing models into Magicavoxel</h3>
+
+
+
+<p>This program can be a little finicky, so here's some instructions to import models into the latest version of MagicaVoxel:</p>
+
+
+
+<ol>
+    <li>Drag and drop the QB model into the palettes area. This will import the palette.</li>
+    <li>Drag and drop the QB model again into the model area. This will import the model and apply the correct palette that we just imported.</li>
+</ol>
+
+
+
+<p>The layers won't be kept when importing either, they will get merged into a single object.</p>
+
+
+
+<h3>Exporting with Magicavoxel</h3>
+
+
+<p>With Magicavoxel 0.99.1, you can click on export (on the lower right) and select "qb".
+<img src="../../../../images/art/modeling/export_magicavoxel.png" alt="export_magicavoxel"/>
+This will export all the objects present in the world, each one in a different file.
+Currently there's no option to export all of the objects (layers) in a single file. </p>
+
+
+
+<h2>Modeling an item with Voxelshop</h2>
+
+
+<p>Many modders model in Magicavoxel, then export the model and import it into Voxelshop to split it into different layers (if the model needs to have several layers).
+For this to be efficient, note down the size of the layer when you're working in Magicavoxel, so that you know which size to use for the bounding box in Voxelshop.</p>
+
+
+
+<p>Voxelshop will optimize the size of the layer when exporting, which we don't want when modeling items with several parts for Stonehearth, so we need to use correctly the bounding box that the program provides.</p>
+
+
+
+<h3>Importing models into Voxelshop</h3>
+
+
+<p>You can import models via the File->Import option, but only one will be shown (unlike in Qubicle, where we can drag and drop many models and all will be shown in the same scene). Voxelshop will correctly display the colors and layers of the imported model, just like Qubicle. There might be an extra empty layer in the Layer list, but you can either delete it or when re-exporting the model Voxelshop will ignore it as long as it's empty.</p>
+
+
+
+<p>When importing an existing model into Voxelshop, it might appear outside of the bounding box. That is because the bounding box center is at 0,0,0, while the model object corner is at 0,0,0 (because of how the model was exported with Qubicle).</p>
+
+
+
+<p>So first of all, select all the model and move it inside the bounding box (or do it layer by layer), making sure it is centered on the 3 views. Then when exporting, make sure to use the bounding box as matrix. This will keep the size of the bounding box for all pieces, so they will be correctly aligned with each other.</p>
+
+
+
+<h3>Exporting with Voxelshop</h3>
+
+
+<p>When selecting to export to QB format in Voxelshop, the description of the different export settings will tell you if the option needs to be checked or unchecked for Stonehearth. But just in case, here's a list of the options and the value they must have:</p>
+
+
+
+<ul>
+    <li>Use compression : unchecked</li>
+    <li>Use bounding box as matrix : checked</li>
+    <li>Use origin as zero : unchecked</li>
+    <li>Use visibility mask encoding : unchecked</li>
+    <li>Use right handed z-axis orientation : checked
+    <img src="../../../../images/art/modeling/voxelshop_export_settings.png" alt="voxelshop_export_settings"/></li>
+</ul>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

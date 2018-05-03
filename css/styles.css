@@ -119,6 +119,10 @@ pre {
    word-wrap: break-word;   
 }
 
+:not(pre) > code {
+	background-color: #f0efe7;
+}
+
 dt {
     font-weight: bold;
     line-height: 21px;
