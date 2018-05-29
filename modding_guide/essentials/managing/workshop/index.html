@@ -534,6 +534,7 @@
     <li><a href="#InstallWorkshop">Installing</a></li>
     <li><a href="#UninstallWorkshop">Uninstalling</a></li>
     <li><a href="#UploadWorkshop">Uploading your own mods</a></li>
+    <li><a href="#UploadTemplates">Uploading building templates</a></li>
 </ul>
 
 
@@ -569,7 +570,7 @@
 
 <ol>
     <li>Go to the Mods menu from the main menu, and find the mod you wish to uninstall.</li>
-    <li>Hover over it, and click on "Unsubscribe". Alternatively, you can click on "View in Workshop" and unsubscribe from the Workshop itself.
+    <li>Hover over it, and click on "Unsubscribe from mod" (the red X button). Alternatively, you can click on "View mod in workshop" (the button with the Steam icon) and unsubscribe from the Workshop itself.
     <img src="../../../../images/essentials/managing/downloaded.png" alt="downloaded"/>
     <img src="../../../../images/essentials/managing/unsuscribing.png" alt="unsuscribing"/></li>
     <li>The mod will be effectively deleted from your computer once you completely exit the game. There might be empty folders left, that's the way Steam handles unsubscribing.</li>
@@ -577,7 +578,7 @@
 
 
 
-<p>For reference, the Workshop mods you subscribe to are downloaded inside this location: C:\Program Files (x86)\Steam\steamapps\workshop\content\253250. Since they're not in the usual Stonehearth mods folder, you can hover over them in the Mods menu and click on "Open Folder", if you need to browse them.
+<p>For reference, the Workshop mods you subscribe to are downloaded inside this location: C:\Program Files (x86)\Steam\steamapps\workshop\content\253250. Since they're not in the usual Stonehearth mods folder, you can hover over them in the Mods menu and click on "Open mod folder" (the button with the folder icon), if you need to browse them.
 <img src="../../../../images/essentials/managing/workshop_downloads.png" alt="workshop_downloads"/></p>
 
 
@@ -589,7 +590,7 @@
 <h2><a name="UploadWorkshop"></a>Instructions for uploading mods to the Steam Workshop:</h2>
 
 
-<p>Workshop mods require a special formatting so they <strong>must</strong> be created from our UI. They can't be uploaded in zip/smod or any compressed format.</p>
+<p>Workshop mods require a Steam file ID so they <strong>must</strong> be created from our UI in order to generate it. They can't be uploaded in zip/smod or any compressed format.</p>
 
 
 
@@ -600,30 +601,60 @@
     <img src="../../../../images/essentials/managing/create_ws_mod_form.png" alt="create_ws_mod_form"/>
     A <strong>title/name</strong> for your mod and a <strong>namespace</strong>. The namespace can only contain alphanumeric characters, hyphens and underscores. Spaces and other characters are not allowed. Try to keep it short and unique.</p></li>
     <li><p>If your mod is going to be exclusively a translation mod, check the <strong>"Is this a translation mod?"</strong> checkbox. This will add a special tag that will allow different players to keep their own translation mods active when they join a multiplayer game, so that each player can play in their own language.</p></li>
+    <li><p>If your mod is going to add building templates, check the <strong>"Is this a building templates mod?"</strong> checkbox. This will add a special tag that will allow you to add building templates to your mod very easily. More instructions <a href="#UploadTemplates">here</a>.</p></li>
     <li><p>Click on "Create". This will create the mod folder and a pre-filled manifest for you. The mod will appear in the Workshop Uploads list, and the mod folder will be automatically opened so you can start adding content to it.
     <img src="../../../../images/essentials/managing/ws_mod_just_created.png" alt="ws_mod_just_created"/>
     <img src="../../../../images/essentials/managing/steam_uploads_mod.png" alt="steam_uploads_mod"/></p></li>
     <li><p>The Workshop mods that you upload will live inside its own folder (<strong>"steam_uploads"</strong>) instead of inside the "mods" folder.
-    Don't copy them there because you will get a <a href="../unmanaged/index.html#ModConflicts">conflict</a> inside the game (having two mods with the same namespace), and you would have to disable or remove one of them.</p>
-    <blockquote>
-        <p><img src="../../../../images/common/row_alert2.png" alt="icon"/> Mods inside the "steam_uploads" folder will have their folders named with a bunch of numbers. <strong>Don't rename these folders</strong>. They're IDs that Steam needs to read and they have to match the auto-generated "steam_file_id" inside the "info" section of the manifest. They're used for updating the mod in the Workshop.</p>
-    </blockquote></li>
+    Don't copy them there because you will get a <a href="../unmanaged/index.html#ModConflicts">conflict</a> inside the game (having two mods with the same namespace), and you would have to disable or remove one of them.</p></li>
     <li><p>You can browse your new mod in the workshop right now, but its visibility will be hidden so that you can add content to it before making it public. It might take a while for Steam to update the workshop, however, so you might see a blank page for a while.
     <img src="../../../../images/essentials/managing/first_upload_to_ws.png" alt="first_upload_to_ws"/></p></li>
     <li><p>Add content to your mod.</p></li>
-    <li><p>Once you're satisfied with your mod, go to the Mods menu once again and hover over your mod in the Workshop Uploads list. Click on "Upload".
+    <li><p>Once you're satisfied with your mod, go to the Mods menu once again and hover over your mod in the Workshop Uploads list. Click on the "Upload mod to workshop" button (the green icon with the arrow).
     <img src="../../../../images/essentials/managing/ws_mod_just_created.png" alt="ws_mod_just_created"/></p></li>
     <li><p>A new form will appear.
     <img src="../../../../images/essentials/managing/update_ws_mod_form.png" alt="update_ws_mod_form"/>
     Fill in the <strong>title</strong> (it'll be the name displayed at the Workshop, can be different than your mod's title/inner name), a <strong>description</strong> for your mod, change the <strong>visibility</strong> if you want to (by default it'll be Public, unlike when we created the mod), and optionally add some custom <strong>tags</strong> (separated by commas), upload a <strong>preview image</strong>, or add some initial <strong>changelog notes</strong>. Make sure you agreed to the <strong>terms of service</strong> too before proceeding.</p></li>
     <li><p>Click on Upload. The mod will start uploading to Steam (a progress bar will be shown in the list), and once it's finished, the Steam overlay will automatically open, showing your mod in the Workshop.
     <img src="../../../../images/essentials/managing/updating_ws_mod.png" alt="updating_ws_mod"/></p></li>
-    <li><p>Next time you change your mod's content, you can click on "Update" from the Mods menu and change any field from that form, and the contents of the mod will get updated to the workshop.</p></li>
+    <li><p>Next time you change your mod's content, you can click on "Update" from the Mods menu and change any field from that form, and the contents of the mod will get updated to the workshop. <br/>
+    <img src="../../../../images/common/row_alert2.png" alt="icon"/> Make sure your manifest is valid before trying to upload or update your mod to the workshop. No error messages should appear in the Mods menu for your mod.</p></li>
 </ol>
 
 
 
 <p>You can develop your mod inside the mods folder instead of the steam_uploads folder if you want, then create a new mod from the Mods menu so that a Steam file ID is generated, copy paste your mod contents to that folder, and edit the auto-generated manifest to include the missing keys. But you'll have to disable or remove the one in the mods folder after uploading it to Steam, since the game will consider it a conflict (you'll have 2 mods with the same namespace).</p>
+
+
+
+<h2><a name="UploadTemplates"></a>Instructions for uploading building templates as a mod:</h2>
+
+
+<p>The mods menu includes an easy way to redistribute a pack of building templates as a mod.</p>
+
+
+
+<p>First create a mod as explained above, and make sure to check the <strong>"Is this a building templates mod?"</strong> checkbox. Once it appears in the Workshop Uploads list, click on the <strong>"Edit this mod's list of templates"</strong> button, which has an icon for editing templates.
+<img src="../../../../images/essentials/managing/template_mod_created.png" alt="template_mod_created"/>
+A new window will appear and let you choose from your existing building templates:
+<img src="../../../../images/essentials/managing/choosing_templates.png" alt="choosing_templates"/>
+<img src="../../../../images/common/gold.png" alt="icon"/> The templates will be copied to your mod, but they won't be deleted from the main game. If you later decide to add other templates, or remove some of them your mod, you can do so through this menu too (only the templates from your mod will be affected by the deletion).</p>
+
+
+
+<p>Once you click 'OK', a confirmation dialog will appear:
+<img src="../../../../images/essentials/managing/confirm_templates.png" alt="confirm_templates"/>
+In the mods list, there will be an arrow button at the right for the mods that have building templates. Clicking on it will expand / collapse the list of templates that the mod has (which is convenient if you need to see which templates are in which mod):
+<img src="../../../../images/essentials/managing/viewing_templates.png" alt="viewing_templates"/>
+<img src="../../../../images/essentials/managing/viewing_sh_templates.png" alt="viewing_sh_templates"/></p>
+
+
+
+<p>Lastly, remember to upload your mod to the Workshop like explained in the <a href="#UploadWorkshop">above section</a> (step 9 onwards). The <strong>"Building Templates"</strong> tag will appear automatically for your mod in the upload form.</p>
+
+
+
+<p>The game will show the templates from these mods in the building editor's template list as expected.</p>
 
    
 </div>

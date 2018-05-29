@@ -538,6 +538,7 @@ Steam Workshop mods are automatically updated, and require extra steps for uploa
     <li><a href="#InstallManual">Installing</a></li>
     <li><a href="#UninstallManual">Uninstalling</a></li>
     <li><a href="#UploadManual">Uploading your own mods</a></li>
+    <li><a href="#UploadTemplates">Uploading building templates</a></li>
 </ul>
 
 
@@ -647,6 +648,57 @@ With the game closed, navigate to that directory and delete the corresponding mo
 
 
 <p>For updating local mods, you need to replace the entire .smod file / plain folder by hand with the new version for that mod.</p>
+
+
+
+<h2><a name="UploadTemplates"></a>Instructions for uploading building templates as a mod:</h2>
+
+
+<p>The Mods menu includes an easy way to redistribute a pack of building templates as a mod.</p>
+
+
+
+<p>First create a mod with a basic <a href="../../manifest/index.html">manifest</a>. Then, create a folder inside your mod's folder and name it "building_templates":
+<img src="../../../../images/essentials/managing/template_mod_folder.png" alt="template_mod_folder"/></p>
+
+
+
+<p>In your manifest, add <strong>"is_building_template_mod" : true</strong> inside your manifest's "info" section and save the changes (remember to add commas where needed):</p>
+
+
+
+<pre><code>  {
+     "info": {
+        "name": "My Templates Mod",
+        "namespace": "my_templates",
+        "version": 3,
+        "is_building_template_mod" : true
+     }
+  }
+</code></pre>
+
+
+<p>Now in the Mods menu, hover over your mod and click on the <strong>"Edit this mod's list of templates"</strong> button, which has an icon for editing templates.
+A new window will appear and let you choose from your existing building templates:
+<img src="../../../../images/essentials/managing/choosing_templates.png" alt="choosing_templates"/>
+<img src="../../../../images/common/gold.png" alt="icon"/> The templates will be copied to your mod, but they won't be deleted from the main game. If you later decide to add other templates, or remove some of them your mod, you can do so through this menu too (only the templates from your mod will be affected by the deletion).</p>
+
+
+
+<p>Once you click 'OK', a confirmation dialog will appear:
+<img src="../../../../images/essentials/managing/confirm_templates.png" alt="confirm_templates"/>
+In the mods list, there will be an arrow button at the right for the mods that have building templates. Clicking on it will expand / collapse the list of templates that the mod has (which is convenient if you need to see which templates are in which mod):
+<img src="../../../../images/essentials/managing/viewing_templates.png" alt="viewing_templates"/>
+<img src="../../../../images/essentials/managing/viewing_sh_templates.png" alt="viewing_sh_templates"/></p>
+
+
+
+<p>Lastly, remember to zip your mod and upload it like explained in the <a href="#UploadManual">above section</a>. <br/>
+<img src="../../../../images/common/row_alert2.png" alt="icon"/> If you compress your mod, you won't be able to view / edit its templates from the Mods menu. First you'll need to uncompress it.</p>
+
+
+
+<p>The game will show the templates from these mods in the building editor's template list as expected.</p>
 
    
 </div>
