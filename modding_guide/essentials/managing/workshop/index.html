@@ -744,7 +744,7 @@
 <h2><a name="UploadWorkshop"></a>Instructions for uploading mods to the Steam Workshop:</h2>
 
 
-<p>Workshop mods require a Steam file ID so they <strong>must</strong> be created from our UI in order to generate it. They will be automatically converted to .smod files when uploading them to the Workshop, but you'll still be able to edit your local version without needing to uncompress it.</p>
+<p>Workshop mods require a Steam file ID so they <strong>must</strong> be created from our UI in order to generate it. They will be automatically converted to .smod files when uploading them to the Workshop, but you'll still be able to edit your local version without needing to uncompress it. Building templates mods won't be compressed, so that players can still see their images in the Mods menu.</p>
 
 
 
@@ -778,11 +778,6 @@
 
 
 <p>You can develop your mod inside the mods folder instead of the steam_uploads folder if you want, then create a new mod from the Mods menu so that a Steam file ID is generated, copy paste your mod contents to that folder, and edit the auto-generated manifest to include the missing keys. But you'll have to disable or remove the one in the mods folder after uploading it to Steam, since the game will consider it a conflict (you'll have 2 mods with the same namespace).</p>
-
-
-
-<p><img src="../../../../images/common/row_alert2.png" alt="icon"/>If your mod was uploaded to the workshop as a plain folder, and players have already downloaded it, they'll need to unsubscribe, restart and subscribe again in order to get the latest smod version. Otherwise their local copies won't be updated correctly. <br/>
-Players can check if they have plain files or a .smod by clicking on the folder icon of the corresponding subscribed mod in the Mods menu. For building templates, they won't be compressed, so that players can still see their images in the Mods menu.</p>
 
 
 
