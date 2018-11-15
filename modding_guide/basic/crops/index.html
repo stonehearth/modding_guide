@@ -1,0 +1,943 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Adding crops</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Adding crops</div>
+   <p><p>In the stonehearth mod there are crops that produce edible items, tree saplings (which are placeable items), herbs and fiber resources (which are used as ingredients for crafting recipes). But you can make them produce other type of items, if you want.</p></p>
+
+
+<ul>
+    <li><a href="#CreatingCrops">Creating the crop</a></li>
+    <li><a href="#FoodContainers">Creating the ripe product</a>
+    <ul>
+        <li><a href="#Servings">Creating a serving</a></li>
+    </ul></li>
+    <li><a href="#CropsList">Adding our crop to the list of available crops</a></li>
+    <li><a href="#UnlockingCrops">Unlocking crops</a></li>
+    <li><a href="#SHED">Creating a crop with SHED</a></li>
+</ul>
+
+
+
+<h2><a name="CreatingCrops"></a>Creating the crop</h2>
+
+
+
+<ol>
+    <li><p>First let's copy an existing crop from the stonehearth mod to our mod. For this example, we'll copy the turnip crop. We can find all the crops inside the <code>stonehearth/entities/crops</code> directory.</p></li>
+    <li><p>Now we rename our copied files and directories as always. We're going to make a tomato crop for this example.</p></li>
+    <li><p>Then we modify the files. The crop's JSON file defines an entity and must have the following components: </p>
+
+    <ul>
+        <li><p><strong>"model_variants" : {}</strong> -- each entry here describes the model to use at a stage of the crop's existence. They can range from tiny to fully grown, to wilted. The name you use for the variant here will be used later in the file. We also define a "default" variant that can be used by other scripts that don't care about the stages of the crop.</p></li>
+        <li><p><strong>"mob" : {}</strong> -- the mob component, here we define the <strong>"model_origin"</strong> to center the model over the fallow field, and <strong>"mob_collision_type"</strong> of "clutter" so that hearthlings can clip through them.</p></li>
+        <li><p><strong>"stonehearth:crop"</strong> -- this is the crop component. It needs the following data:</p>
+        <ul>
+            <li><strong>"resource_pairings" : {}</strong> -- takes names of stages and maps them to the output if the crop is harvested at that stage. We map the model variant name of the full grown crop to the alias of the output item and the name of the rotten variant to an empty string, so that when harvested it just gets destroyed.</li>
+            <li><strong>"harvest_threshhold"</strong> -- defines what stage the crop must get to before is is automatically harvested by the farmers.</li>
+            <li><strong>"plant_overlay_effect"</strong> -- deprecated field that is no longer in use by the crop component, it can be ignored.</li>
+        </ul></li>
+        <li><p><strong>"stonehearth:growing"</strong> -- this defines how often growth happens (moving the crop from one stage to the next) and what to change the description/model to at each stage.</p>
+        <ul>
+            <li><strong>"growth_period"</strong> -- amount of time that must elapse between growth stages. Defined by Xn, where X is a number and n is a m for minutes, h for hours, and d for days (in-game time).</li>
+            <li><strong>"preferred_seasons" : {}</strong> -- list of the crop preferred growing seasons for each biome. The key is the biome alias and the value is an array of strings that contains only the preferred seasons' names from that biome for our crop. Planting crops in their non-preferred seasons will make them grow more slowly.          </li>
+            <li><strong>"growth_stages"</strong> -- an array of JSON objects, each containing 3 properties describing each growth stage: <strong>"model_name"</strong> (which references a model variant defined above), <strong>"name"</strong> and <strong>"description"</strong> (localized strings that will appear in the unit frame when we click on the crop model). <br/>
+            Notice the empty objects ( <strong>{ }</strong> ) between the ripe stage and the rotten stage. They are used to wait N times * growth_period in the ripe stage, so you have enough time to harvest them before they rot. You can add / remove as many of them as you want.</li>
+            <li><strong>"growth_check_script"</strong> -- defines an optional file (e.g.: "file(corn.lua)") containing a "growth_check" function that can be called on reaching each stage of growth to see if we are capable of going on to the next stage. Just create a Lua script that contains a class with a function with this signature <code>growth_check(entity, target_growth_stage, growth_attempts)</code> and that returns a number representing a stage (check the growing component's <code>_grow</code> function to see how this is used). <br/>
+            Nowadays no crop in the game makes use of this field, since there are many other places where crop growth can be affected (weather / seasons, town bonuses...) so this option adds micromanagement and it's hard to balance, but it can be used to implement things like soil fertility (producing better crops, adding another resource_pairing), crops that only grow at night, etc.</li>
+        </ul></li>
+    </ul>
+
+    <p>  For the "entity_data", we'll leave the <strong>"net_worth"</strong> as is, because this file represents the crop while it's in the farming field (not "buyable" / "sellable"), and the <strong>"value_in_gold"</strong> will count for the agriculture score of our town's net worth, so we'll leave it at 1 (otherwise the net worth might increase too fast, since each crop adds to the score).</p>
+
+    <p>  For the catalog, we'll make sure the localization strings for the name and description point to our mod (this is the name and description that will appear on the farmer's crops list when selecting a farm field), and that the material tags include "crop".</p></li>
+    <li><p>We edit our QB models according to the number of stages we want our crop to have and take a screenshot for the icon, which will be shown in the crops list in the UI.</p></li>
+    <li><p>Finally, we add an alias for our crop in our manifest:</p>
+
+<pre><code>...
+"aliases": {
+   "crops:tomato_crop": "file(entities/crops/tomato_crop)"
+},
+...
+</code></pre></li>
+</ol>
+
+
+
+<h2><a name="FoodContainers"></a>Creating the ripe product</h2>
+
+
+<p>Crops produce different items when they are harvested, based on what is specified in the "resource_pairings" map.</p>
+
+
+
+<p>Since we're adding a tomato crop in our example, now we'll create its output, a basket of tomatoes.</p>
+
+
+
+<ol>
+    <li><p>We'll copy the turnip food item. All the edibles are inside <code>stonehearth/entities/food</code>.</p></li>
+    <li><p>As always, we'll rename the files, edit the QB models and take a screenshot for the icon for the UI.</p></li>
+    <li><p>Let's check the tomato_basket.json file:</p>
+
+<ul>
+    <li><p>It has a <strong>mixin</strong> (<code>"mixins": "stonehearth:mixins:food_decay"</code>). The properties inside this mixin will be used by the food_decay service to make the basket rot after some time (and eventually disappear).</p></li>
+    <li><p>It has two <strong>model_variants</strong>, one for the normal basket and another one for when the basket rots. Optionally there's a <strong>"mob"</strong> component if we need to adjust the model origin.</p></li>
+    <li><p>It has a <strong>stacks</strong> component:</p>
+
+<pre><code>"stonehearth:stacks": {
+   "max_stacks": 10
+}
+</code></pre>
+
+<p>This is how many crops must be put into the basket before it is ready to be carried to a stockpile for consumption. In this case, hearthlings will harvest 10 tomato crops (when possible) before dropping the basket. <br/>
+The number of stacks doesn't apply for crafting. In crafting ingredients, it's the quantity of items what matters.</p></li>
+    <li><p>In the <strong>entity_data</strong>, we have the <strong>net_worth</strong> data as always, and a neutral <strong>appeal</strong> (0).</p></li>
+    <li><p>The <strong>catalog</strong> includes <strong>"is_item"</strong>, a <strong>"category"</strong>, many <strong>"material_tags"</strong> so we make sure it is properly tagged and restocked, and an extra key, <strong>"subject_override"</strong>.</p>
+
+    <p><a name="SubjectOverrides"></a>This key points to an alias that will be used when hearthlings talk. It will make it so that instead of talking about a basket of tomatoes, they will talk about the tomato crop (a picture of a tomato crop will appear in the thought bubble, instead of a picture of a tomato basket).</p>
+
+    <p>We edit the localization keys, the material tags and the subject override to point to our mod.</p></li>
+    <li><p>Then we have the <strong>"stonehearth:food_container"</strong> info, because this item is a food container: </p>
+    <ul>
+        <li><strong>"effect"</strong> points to the name of an effect file that will be played when retrieving items from the basket.</li>
+        <li><strong>"food"</strong> points to the alias of the serving's JSON file (see below).</li>
+        <li><strong>"stacks_per_serving"</strong> is the number of stacks that will decrease from the basket whenever we get a serving from it to eat. If the remaining stacks are 0 or less, the basket will disappear.</li>
+    </ul></li>
+</ul></li>
+    <li><p>Finally, don't forget to add an alias for our tomato basket in our manifest:</p>
+
+<pre><code>"aliases": {
+   "crops:tomato_crop": "file(entities/crops/tomato_crop)",
+   "food:tomato:tomato_basket" : "file(entities/food/tomato/tomato_basket)"
+},
+</code></pre>
+
+<p>  The alias must match what we added for the resource_pairings in our crop's json file.</p></li>
+</ol>
+
+
+
+<h3><a name="Servings"></a>Creating a serving</h3>
+
+
+<p>Usually, crops produce baskets of food that are then used as serving containers for meals.
+Any food item that can be eaten (not just a cooking ingredient) must have a serving entity associated with it (defined in the entity_data's "stonehearth:food_container" section).</p>
+
+
+
+<ol>
+    <li><p>We already copied the serving files when we copied the stonehearth/entities/food/turnip folder. Now we'll do the usual renaming and editing.</p>
+
+    <p>  <a name="DestroyOnUncarry"></a>The tomato_serving.json file doesn't have many properties, these are the new ones that haven't been explained before, under <strong>"entity_data"</strong>:</p>
+    <ul>
+        <li><strong>"stonehearth:item"</strong> -- this data is used in a couple of places like the inventory controller, resource call handler, and the carry block component. It has a couple of properties:
+        <ul>
+            <li>The <strong>"category"</strong> field is not really used, since "category" is nowadays part of the catalog data.</li>
+            <li>The <strong>"destroy_on_uncarry"</strong> flag, which determines that this item will be destroyed if it gets dropped to the ground.</li>
+        </ul></li>
+    </ul></li>
+    <li><p>We add an alias for our serving in our manifest, so that we can use it in the basket's JSON file. Now the aliases section looks like this:</p>
+
+<pre><code>"aliases": {
+   "crops:tomato_crop": "file(entities/crops/tomato_crop)",
+   "food:tomato:tomato_basket" : "file(entities/food/tomato/tomato_basket)",
+   "food:tomato:tomato_serving": "file(entities/food/tomato/tomato_serving)"
+},
+</code></pre></li>
+</ol>
+
+
+
+<h2><a name="CropsList"></a>Adding our crop to the list of available crops</h2>
+
+
+
+<ol>
+    <li><p>Add a mixinto to the all_crops.json file:</p>
+
+<pre><code>"mixintos": {
+   "stonehearth/services/server/farming/data/all_crops.json" : "file(services/server/farming/data/all_crops.json)"
+}
+</code></pre>
+
+<p>  The mixinto looks like this:</p>
+
+<pre><code>{
+   "crops": {
+      "tomato": {
+         "crop_type": "more_crops:crops:tomato_crop",
+         "ordinal": 1,
+         "level_requirement": 1
+      }
+   }
+}
+</code></pre>
+
+<p>  We add the alias of our new crop, an ordinal for the list of crops, and a level requirement for the farmer in order to unlock our crop. In this example we used level requirement of 1 so it will be unlocked by default.</p></li>
+    <li><p>We add a mixinto to the <code>services/server/farming/data/initial_crops.json</code>:</p>
+
+<pre><code>"mixintos": {
+   "stonehearth:farmer:all_crops" : "file(services/server/farming/data/all_crops.json)",
+   "stonehearth:farmer:initial_crops" : "file(services/server/farming/data/initial_crops.json)"
+}
+</code></pre>
+
+<p>  The mixinto looks like this:</p>
+
+<pre><code>{
+   "crops_by_kingdom": {
+      "stonehearth:kingdoms:ascendancy": {
+         "tomato": true
+      },
+      "rayyas_children:kingdoms:rayyas_children": {
+         "tomato": true
+      },
+      "northern_alliance:kingdoms:northern_alliance": {
+         "tomato": true
+      },
+      "another_kingdom:kingdoms:another_kingdom": {
+         "tomato": true
+      }
+   }
+}
+</code></pre>
+
+<p>  We can add it for any kingdoms we want to, even if players might not have installed the mods that add them. It will be applied when the kingdom is chosen, so here we can decide whether our crop will be in the crop list by default or if that kingdom will have to unlock it with seeds, etc.</p>
+
+<p>  If we don't add this mixinto, we'll have to provide other way for the players to unlock our crop.</p></li>
+    <li><p>Finally, let's test that our crop can be planted, that it grows and that it can be correctly harvested (and eaten, if it's an edible crop).</p>
+
+    <p>  For faster testing, we can select a hearthling and use the <strong>promote_to farmer</strong> command in the <a href="../../essentials/debugtools/default_console/index.html">default console</a>. </p>
+
+    <p>  If we have the <a href="../../essentials/debugtools/debugtools_mod/index.html">debugtools</a> mod enabled, we can also shift+click on the hearthling and click on "Make Hungry" so that they try to eat from our basket. We can also force grow a crop by holding shift and clicking on it, then clicking on "grow".
+      <img src="../../../images/basic/crops/crop_list.png" alt="crop_list"/>
+      <img src="../../../images/basic/crops/testing_crops.png" alt="testing_crops"/></p></li>
+</ol>
+
+
+
+<h2><a name="UnlockingCrops"></a>Unlocking crops</h2>
+
+
+<p>There are several ways to manually unlock crops when we don't add them to the initial_crops list, although the code used underneath is mostly the same.</p>
+
+
+
+<ul>
+    <li><p>Unlock a crop via an encounter. The example would be the heirloom crop from the Amberstone campaign. It is an encounter of type "script", we unlock the crop in that script. You can reuse it if you need. The code just retrieves the job info controller of the farmer and calls its <code>manually_unlock_crop</code> function:</p>
+
+<pre><code>local farmer_job = stonehearth.job:get_job_info(player_id, "stonehearth:jobs:farmer")
+farmer_job:manually_unlock_crop("crop_id_from_all_crops_list")
+</code></pre></li>
+    <li><p><a name="Seeds"></a>Unlock the crop via a consumable. These consumables have a command in the unit frame to use them. In the case of crop seeds, they will add the crop to the list of crops and the box of seeds will disappear. The code that the command uses to unlock a crop is the same used for the encounter above, but with different parameters since it's a function that's also called for other types of consumables, so it has to share the same name and parameters.</p>
+
+<p>  We can create a box of seeds by copying one from <code>stonehearth/entities/consumables/seeds</code> and modifying the files. In the JSON file of the root entity there's this part in "entity_data" where we can declare the crop to unlock:</p>
+<pre><code>"stonehearth:consumable": {
+   "script": "stonehearth:consumables:scripts:unlock_crop",
+   "crop": "tomato"
+}
+</code></pre>
+<p>  Then we would give the box of seeds to the player via an encounter, loot, or by making a recipe for them, etc.</p>
+
+<p>  If we want to add them to the possible rewards from the foreign crops trader, we can add a mixinto to <code>stonehearth/data/gm/campaigns/trader/arcs/encounters/returning_crop_trader_encounter.json</code> (this file is a different one in the rayyas_children mod, so we can add another mixinto to it too).</p></li>
+    <li><p>Unlock the crop by calling the <code>add_crop_type</code> function in the farming service in a custom Lua script (passing the session and the alias of the crop as arguments). This forceful way of adding crops is not recommended. The game does not use it, it's only used in autotests for quick testing.</p></li>
+</ul>
+
+
+
+<h2><a name="SHED"></a>Creating a crop with SHED</h2>
+
+
+<p>The steps are the same than when cloning any other entity. You'll need to clone the crop, basket and serving entities separately in SHED, and later add the mixinto to the crops list manually.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

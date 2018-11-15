@@ -1,0 +1,948 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Ore veins</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Ore veins</div>
+   <p><p><a name="OreVeins"></a>Ores and other resources can drop from mining. We can create our own resource veins that will spawn inside the terrain, and make them drop more of a certain resource.</p></p>
+
+
+<ol>
+    <li><p>First, create a mining resource. This can be anything, and we'll use it as a drop from mining. You can copy an existing resource from <code>stonehearth/entities/resources</code>.</p>
+
+<p>  In our example, we copied <code>lump_of_coal</code> and renamed it to <code>emerald</code>:</p>
+
+<pre><code>{
+   "mixins": "stonehearth:mixins:item_properties",
+   "type": "entity",
+   "components": {
+      "model_variants": {
+         "default": {
+            "models": [
+               "file(emerald.qb)"
+            ]
+         }
+      }
+   },
+   "entity_data": {
+      "stonehearth:net_worth": {
+         "value_in_gold": 1,
+         "rarity": "common",
+         "shop_info": {
+            "buyable": true,
+            "sellable": true,
+            "shopkeeper_level": 1,
+            "shopkeeper_type": "caravan"
+         }
+      },
+      "stonehearth:catalog": {
+         "display_name": "i18n(mineral_mod:entities.resources.emerald.display_name)",
+         "description": "i18n(mineral_mod:entities.resources.emerald.description)",
+         "icon": "file(emerald.png)",
+         "is_item": true,
+         "category": "resources",
+         "material_tags": ["stockpile_ore", "emerald" "resource", "gem"]
+      },
+      "stonehearth:appeal": {
+         "appeal": -2
+      }
+   }
+}
+</code></pre>
+
+<p>  The model will be used for the iconic/restockable resource. If this resource is going to be used for building, you can add the stacks inside the components:</p>
+
+<pre><code>"stonehearth:stacks": {
+   "max_stacks": 60
+}
+</code></pre>
+
+<p>  That way the resource will last for N blocks while building with it. You would also need to add your resource to the list of building resources for this to work.</p>
+
+<p>  Make sure to rename <code>coal</code> (or whatever resource name) in the material_tags to something unique and that it has a valid storage filter.</p></li>
+    <li><p>Add an alias for your resource in the manifest:</p>
+
+<pre><code>"aliases" : {
+   "resources:emerald": "file(entities/resources/emerald)"
+}
+</code></pre></li>
+    <li><p>Make your resource be dropped from mining:</p>
+
+<p>  To do this, we need to add our resource to the <code>stonehearth/services/server/mining/mining_loot_tables.json</code> file via a mixinto:</p>
+
+<pre><code>"mixintos" : {
+   "stonehearth:mining:base_loot_table" : "file(mixintos/mining_loot_tables_mixinto.json)"
+}
+</code></pre>
+
+<p>  Our mixinto file would look like this:</p>
+
+<pre><code>{
+   "mineable_blocks": {
+      "rock": {
+         "entries": {
+            "default": {
+               "items": {
+                  "emerald": {
+                     "uri": "minerals_mod:resources:emerald",
+                     "weight": 50
+                  }
+               }
+            }
+         }
+      },
+      "emerald": {
+         "entries": {
+            "default": {
+               "num_rolls": 1,
+               "items": {
+                  "none": {
+                     "uri": "",
+                     "weight": 100
+                  },
+                  "gem": {
+                     "uri": "minerals_mod:resources:emerald",
+                     "weight": 50
+                  }
+               }
+            }
+         }
+      }
+   }
+}
+</code></pre>
+
+<p>  This is a <a href="../../misc_json/index.html#LootTables">loot table</a> that lists terrain types and the items that can drop when we mine them.</p>
+
+<p>  This bit of data is telling us to add our resource to the "rock" loot table and give it a weight of 50. Check the numbers in <code>stonehearth/services/server/mining/mining_loot_tables.json</code> before adjusting this weight. If your number is too low, your resource will not drop much (if at all). If your number is too high, it will outweight every other resource and nothing else will drop!<sup><a href="#ref-1">[1]</a></sup></p>
+
+<p>  There are other loot tables in the <code>mining_loot_tables</code> that you can add your resource to if you so desire. Rock is just the most logical one to start with.</p>
+
+<p>  There exist files in the biomes folder called <code>temperate_mining_loot_table.json</code>, <code>desert_mining_loot_table.json</code> and <code>arctic_mining_loot_table.json</code>. These files are for any additional mining loot tables you want to add that are specific to that biome type only. You can mixinto to them in this same way to make your resource dependent on the biome. The generic one we used will be applied for all the biomes. <sup><a href="#ref-1">[1]</a></sup></p>
+
+<p>  The keys inside <strong>"mineable_blocks"</strong> correspond to values from the <strong>"kind"</strong> keys in <code>stonehearth/data/terrain/terrain_blocks.json</code>. That way the resources will drop no matter which color of rock, grass, etc we mine.</p></li>
+    <li><p>Add your resource to the terrain blocks:</p>
+
+<p>  Since we added "emerald" as an entry in "mineable_blocks", we need to ensure that a terrain type called "emerald" exists. Our mixinto to <code>terrain_blocks.json</code> looks like this:</p>
+
+<pre><code>{
+   "block_types" : {
+       "emerald" :               { "tag" :   550, "kind" : "emerald" }
+   },
+   "selectable_kinds" : {
+      "emerald" :       "mineral_mod:terrain:ui:emerald"
+   }
+}
+</code></pre>
+
+<p>  We add a new key called "emerald", assign a <strong>tag</strong> (which is a unique number, check the other ones in terrain_blocks.json to avoid duplicates) to it, and also a <strong>"kind"</strong> which is our entry name in "mineable_blocks". The "kind" can be a different string than the main key string.</p>
+
+<p>  We also add it inside the <strong>"selectable_kinds"</strong> section. This is so that we can click on our ore vein and its name will be shown in the unit frame. The alias it points to corresponds to this file:</p>
+
+<pre><code>{
+   "mixins": "stonehearth/entities/terrain/ui/ore_block/ore_block.json",
+   "components": {},
+   "entity_data": {
+      "stonehearth:catalog": {
+         "display_name": "i18n(mineral_mod:entities.terrain.ui.emerald_block.display_name)",
+         "description": "i18n(mineral_mod:entities.terrain.ui.emerald_block.description)"
+      }
+   }
+}
+</code></pre>
+
+<p>  Make sure the "mixins" point to the stonehearth mod and adjust the name and description of our terrain type.</p></li>
+    <li><p>Indicate the color for your new terrain block type.</p>
+
+<p>  Currently this has to be done via a mixinto to the biomes generation_data files, which means we'll need to inject this mixinto for all the biomes where we'll spawn our ore vein, otherwise its color will be a default one (an almost black red):</p>
+
+<pre><code>"mixintos" : {
+   "stonehearth:mining:base_loot_table" : "file(mixintos/mining_loot_tables_mixinto.json)",
+   "stonehearth/data/biome/temperate_generation_data.json" : "file(data/biome/ore_color_mixinto.json)",
+   "stonehearth/data/biome/desert_generation_data.json" : "file(data/biome/ore_color_mixinto.json)",
+   "stonehearth/data/biome/arctic_generation_data.json" : "file(data/biome/ore_color_mixinto.json)"
+}
+</code></pre>
+
+<p>  The mixinto will look like this:</p>
+
+<pre><code>{
+   "palettes": {
+       "spring": {
+          "emerald": "#4EA85A"
+       },
+       "summer": {
+          "emerald": "#4EA85A"
+       },
+       "autumn": {
+          "emerald": "#4EA85A"
+       },
+       "winter": {
+          "emerald": "#4EA85A"
+       }
+   }
+}
+</code></pre>
+
+<p>  We add an entry with our terrain type (the main keys inside <strong>"block_types"</strong> from terrain_blocks.json) for each season, and link it to the color that we want for our ore vein in hexadecimal format. Terrain blocks don't admit custom render materials, they will all use the same shader (hardcoded in the C++ side). Water has a separate renderer.</p>
+
+<p>  <img src="../../../../images/common/gold.png" alt="icon"/> <a name="SafeMixintos"></a>We can add mixintos to files from other mods even if the players don't have those mods installed. Warnings that those files couldn't be found will be written to the stonehearth.log, but won't pop up in the game. If there are too many warnings from several mods, the game might take a bit longer to start.</p></li>
+    <li><p>Finally, we can create our ore vein and add it as a static scenario so that it spawns in the terrain.</p>
+
+<p>  Copy <code>stonehearth/scenarios/static/terrain/coal_vein</code> (or any other ore vein), rename it and edit it:</p>
+
+<pre><code>{
+   "mixins" : "stonehearth/scenarios/static/terrain/ore_vein/ore_vein.json",
+   "name" : "emerald_vein",
+   "kind" : "emerald",
+   "weight" : 75
+}
+</code></pre>
+
+<p>  Make sure the "mixins" point to the stonehearth mod. The <strong>"weight"</strong> will be used together with the other ore veins, so check the other files so that your ore has enough chances to spawn.</p>
+
+<p>  Other fields we can include in this JSON file that have defaults in <code>ore_vein.json</code> are:</p>
+
+<ul>
+    <li><p><strong>habitat_types" : ["mountains"]</strong> -- will make it spawn only in the habitats declared here. Normally we want ore veins to spawn only in the "mountains" habitat.</p></li>
+    <li><p><strong>"size" : { "width" : 88, "length" : 88 }</strong> -- this is the default size that the scenario will take when calculating its spawn location.</p></li>
+    <li><p><strong>"unique" : false</strong> -- more than one vein of this resource type can spawn in the same map.</p></li>
+    <li><p><strong>"data" : {}</strong> -- there are several properties we can customize here, and will be used to create the veins in <code>stonehearth/services/server/mining/ore_generator.lua</code>. These are their default values:</p>
+    <ul>
+        <li><strong>"num_veins_min" : 2</strong> -- minimum number of veins of this type that will spawn in the map.</li>
+        <li><strong>"num_veins_max" : 4</strong> -- maximum number of veins of this type that will spawn in the map. The total number is random between min and max.</li>
+        <li><strong>"vein_length_min" : 44</strong> -- minimum length for the vein.</li>
+        <li><strong>"vein_length_max" : 72</strong> -- maximum length for the vein. The final length will be a random number of blocks between min and max.</li>
+        <li><strong>"vein_radius" : 2</strong> -- the radius of the veins (so total width of the veins is 4 blocks by default).</li>
+        <li><strong>"mother_lode_radius_min" : 3</strong> -- minimum radius for the mother lode.</li>
+        <li><strong>"mother_lode_radius_max" : 5</strong> -- maximum radius for the mother lode. Final radius will be random between min and max, so the final width will be double of that.</li>
+    </ul></li>
+</ul>
+
+<p>  Add the mixinto to the scenario index:</p>
+
+<pre><code>"mixintos" : {
+   "stonehearth:mining:base_loot_table" : "file(mixintos/mining_loot_tables_mixinto.json)",
+   "stonehearth/data/biome/temperate_generation_data.json" : "file(data/biome/ore_color_mixinto.json)",
+   "stonehearth/data/biome/desert_generation_data.json" : "file(data/biome/ore_color_mixinto.json)",
+   "stonehearth/data/biome/arctic_generation_data.json" : "file(data/biome/ore_color_mixinto.json)",
+   "stonehearth:scenarios:scenario_index" : "file(scenarios/scenario_index.json)"
+}
+</code></pre>
+
+<p>  The mixinto will look like this:</p>
+
+<pre><code>{
+   "static" : {
+      "scenarios" : [
+         "file(static/terrain/emerald_vein)"
+      ]
+   }
+}
+</code></pre></li>
+    <li><p>Test that your ore vein appears in the map.</p>
+
+    <p>  This might take a while since the placement is random. Promote a combat unit with <a href="../../../essentials/debugtools/debugtools_mod/index.html">debugtools</a> and make them run around the edge of a mountain until you spot a vein of your resource. Then click on it to check the unit frame, and order your hearthlings to mine it to see that your resource is being dropped. Also mine rock or whatever other terrain type you used in the mining loot table and check that the drops are working.
+      <img src="../../../../images/basic/static_scenarios/ore_vein.png" alt="ore_vein"/></p></li>
+</ol>
+
+
+
+<h3>References</h3>
+
+
+<p><a name='ref-1'>[1]</a>: From <a href="https://discourse.stonehearth.net/t/tutorial-adding-mining-resources-updated-for-alpha-18/16994">https://discourse.stonehearth.net/t/tutorial-adding-mining-resources-updated-for-alpha-18/16994</a></p>
+
+
+
+<p>Older tutorial: <a href="https://discourse.stonehearth.net/t/tutorial-adding-mining-resources/10658">https://discourse.stonehearth.net/t/tutorial-adding-mining-resources/10658</a></p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

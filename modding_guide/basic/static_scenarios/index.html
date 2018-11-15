@@ -1,0 +1,842 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Static scenarios</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Static scenarios</div>
+   <p><p>Static scenarios are static elements that appear on the map and are created at world generation time. They can be shown by default, or hidden until the hearthlings clear the fog of war. They're separate from the biome files.</p></p>
+
+
+<p>They are managed in the <code>static_scenario_service.lua</code> file.</p>
+
+
+
+<p>These are different types of static scenarios we can create with just data (you can also create your <a href="#CustomScenarios">own types</a> of static scenario, using custom scripts):</p>
+
+
+
+<ul>
+    <li><a href="ore_veins/index.html">Ore veins</a></li>
+    <li><a href="nests_ruins/index.html#Ruins">Ruins</a></li>
+    <li><a href="landmarks/index.html">Landmarks</a></li>
+    <li><a href="nests_ruins/index.html#CritterNests">Critter nests</a></li>
+</ul>
+
+
+
+<p>Dynamic scenarios were deprecated a long time ago in favor of the game master's encounter system.</p>
+
+
+
+<p>The starting tutorial that was made for the Ascendancy kingdom was also implemented using scenarios, most of its data is inside <code>stonehearth/data/tutorial</code>.</p>
+
+
+
+<p>Inside <code>scenario_index.json</code> we can find the scenarios that are applied to the game. We'll also find the categories that we can use for each scenario, so we can create our own category by adding it to this section via a mixinto:</p>
+
+
+
+<pre><code>  "categories" : {
+     "terrain" : {
+        "density" : 12,
+        "priority" : 0,
+        "location_type" : "surface",
+        "activation_type" : "immediate"
+     }
+  }
+</code></pre>
+
+<p>Each category has these fields:</p>
+
+
+
+<ul>
+    <li><strong>"density"</strong> -- scenarios are weighted by their volume so that a density of 1 means every cell is occupied. A 10x10 scenario takes up the same volume as 100 1x1 scenarios. For their densities to be equal, the 10x10 scenario should be selected 100x less frequently.</li>
+    <li><strong>"priority"</strong> -- so that some scenarios can spawn before other ones, they get ordered first by priority, then by area, then by weight.</li>
+    <li><strong>"location_type"</strong> -- either <strong>"surface"</strong> or <strong>"underground"</strong>.</li>
+    <li><strong>"activation_type"</strong> -- <strong>"immediate"</strong> will make the scenario appear during world generation, <strong>"revealed"</strong> will make it appear when the hearthlings clear the fog of war where it is located.</li>
+</ul>
+
+
+
+<p>For the landmark scenarios, we have other categories:</p>
+
+
+
+<pre><code>  "terrain_feature_common" : {
+     "density" : 100,
+     "max_count": [2,2,3,3,3,4,4],
+     "prevents_categories_in_same_tile": ["terrain_feature_common", "terrain_feature_rare"],
+     "priority" : "random",
+     "location_type" : "surface",
+     "activation_type" : "immediate"
+  }
+</code></pre>
+
+<p>They have a couple more properties:</p>
+
+
+
+<ul>
+    <li><p><strong>"density"</strong>, <strong>"location_type"</strong> and <strong>"activation_type"</strong> are the same than for the categories above.  </p></li>
+    <li><p><strong>"priority"</strong> is <strong>"random"</strong>, they are treated in a separate set from those that have a numerical priority, and will be chosen randomly.</p></li>
+    <li><p><strong>"max_count"</strong> is an array of numbers. A random number will be chosen from it to represent how many landmarks of this category to spawn on a map.  </p>
+
+    <p>  In this example there's three 3's, and two 2's and 4's, which means 3 is more likely to be chosen, so there will be more times when 3 landmarks of this category will spawn in a map, other times there will be only 2, or 4.</p></li>
+    <li><p><strong>"prevents_categories_in_same_tile"</strong> is an array of other categories of scenarios that we don't want to appear in the same tile as this category.</p></li>
+</ul>
+
+
+
+<h2><a name="CustomScenarios"></a>Custom static scenario types</h2>
+
+
+<p>Scenarios can be implemented using a JSON file to hold the data, and a Lua script. Then we can reuse that JSON file as a mixin to implement different scenarios of that type (just like we do for ore veins, ruins, critter nests and landmarks).</p>
+
+
+
+<p>The concrete JSON files will then be added to the scenario index, and the game will know how to spawn them.</p>
+
+
+
+<p>If we want to create our own custom static scenario type, our JSON file will need to have these fields:</p>
+
+
+
+<pre><code>  "name" : "my_custom_scenario",
+  "size" : {
+     "width" : 16,
+     "length" : 16
+  },
+  "weight" : 10,
+  "unique" : false,
+  "script" : "file(my_custom_scenario.lua)",
+  "data" : {
+     "entity_footprint_length" : 1,
+     "quantity" : {
+        "min" : 2,
+        "max" : 5
+     }
+  }
+</code></pre>
+
+<p>Then, our custom script should look like this:</p>
+
+
+
+<pre><code>  local MyCustomScenario = class()
+
+  function MyCustomScenario:__init()
+  end
+
+  function MyCustomScenario:initialize(properties, context, services)
+     -- Here we can retrieve the data from the JSON's "data" block like this:
+     local data = properties.data
+
+     -- Here goes our custom code. We can use the parameter called services
+     -- to call functions from
+     -- stonehearth/services/server/static_scenario/scenario_modder_services.lua
+  end
+
+  return MyCustomScenario
+</code></pre>
+
+<p><a name="RequiringFiles"></a>We can require any additional classes or Lua files, but if they're from the stonehearth mod, we need to prefix them by <code>stonehearth.</code>. For example, to require the same files than in the <code>qb_to_terrain.lua</code> script, we'd write this:</p>
+
+
+
+<pre><code>  local landmark_lib = require 'stonehearth.lib.landmark.landmark_lib'
+  local Point3 = _radiant.csg.Point3
+</code></pre>
+
+<p>And after that we'd declare the class for our scenario.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

@@ -1,0 +1,879 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Color and material maps</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Color and material maps</div>
+   <p><p><strong>Color maps</strong> are something that we can use for adding color variety to our items. They are used together with <strong>material maps</strong>. The existing color maps and material maps can be found inside <code>stonehearth/data/materials</code>.</p></p>
+
+
+<p>These maps can be used to apply color palettes or rendering materials to a QB model or to parts of it, either via JSON or dinamically in a Lua script.</p>
+
+
+
+<blockquote>
+    <p><strong>Some context:</strong> Objects look for a default "stonehearth:render_materials" material in their entity_data when being created (see the <code>item_properties.json</code> mixin for an example). We can change this default material with a mixinto so that the item has a custom default material, or we can use a material map to apply different materials and shaders to it.</p>
+</blockquote>
+
+
+
+<ul>
+    <li><a href="#ColorMaps">Randomizing colors</a></li>
+    <li><a href="#RenderMaterials">Applying render materials</a></li>
+    <li><a href="shaders/index.html#RenderMaterials">Render materials and shaders</a></li>
+</ul>
+
+
+
+<h2><a name="ColorMaps"></a>Randomizing colors</h2>
+
+
+<p>One of the uses of the color maps is to allow for the same .qb model to have random colors every time we spawn it in the game (this can also be achieved by using different .qb models instead).</p>
+
+
+
+<ol>
+    <li><p>Let's start by creating a color_map and adding an alias for it into our manifest:</p>
+
+<pre><code>"aliases" : {
+   "color_map:flower" : "file(data/materials/color_maps/flower_color_map.json)"
+}
+</code></pre>
+
+<p><a name="ColorMap"></a>The <code>flower_color_map.json</code> file looks like this:</p>
+
+<pre><code>{
+   "#FC6EFE" : "silent_woods:flower:hilight",
+   "#A438A5" : "silent_woods:flower:midtone",
+   "#761B76" : "silent_woods:flower:shadows"
+}
+</code></pre>
+
+<p>The JSON keys refer to the colors from our QB model in hexadecimal format. You can add as many keys as you need, but if you later modify the model, make sure to update the color entries here too, otherwise the color map won't take effect.</p>
+
+<p>The values for the keys inside the color_map can be named anything. We usually write them like URIs, prefixed by the name of our mod, but they are just identifiers that we will be using in the material maps. If you don't want to apply a random color to a certain part of your model, simply don't add the color of that part to your color map.</p>
+
+<p>It doesn't matter which colors the QB model has, because we'll be remapping them with this. For example, the models for the different hairstyles of the hearthlings are purple and pink, but you won't see those colors inside the game, because a color palette is applied to them.</p></li>
+    <li><p><a name="MaterialMap"></a>Now let's create a material map that maps these color zones to other colors. Let's call this file <code>flower_red_material_map.json</code>, for example:</p>
+
+<pre><code>{
+   "silent_woods:flower:hilight" : {
+      "color" : "#DB6D5C"
+   },
+   "silent_woods:flower:midtone" : {
+      "color" : "#A94839"
+   },
+   "silent_woods:flower:shadows" : {
+      "color" : "#5F241B"
+   }
+}
+</code></pre>
+
+<p>Here we change the color tagged with <code>"silent_woods:flower:hilight"</code> ("#FC6EFE") to "#DB6D5C". Same for the other colors.
+Let's create a copy of this file, name it <code>flower_blue_material_map.json</code>, and assign different colors to each entry.</p></li>
+    <li><p>Lastly, let's assign the color and material maps to our entity. To do that, in our entity <strong>ghost</strong> JSON file, we add them to the render_info component (it could also be in the JSON file for the iconic, or wherever you declare the QB model that you want to alter):</p>
+
+<pre><code>...
+"components": {
+   "render_info": {
+      "color_map": "silent_woods:color_map:flower",
+      "material_maps": [
+         {
+            "type": "one_of",
+            "items" : [
+               "/silent_woods/data/materials/material_maps/flower_red_material_map.json",
+               "/silent_woods/data/materials/material_maps/flower_blue_material_map.json"
+            ]
+         }
+      ]
+   },
+   ...
+},
+...
+</code></pre>
+
+<p>With <strong>"type" : "one_of"</strong>, only one of the material maps will be chosen. This way, whenever we spawn our flower in the game, it will either be red or blue, and not the original colors of the QB model.</p>
+
+<p>Once the flower is spawned, it will keep the chosen color even if we move it or undeploy it. For ghosts though, they will have a different random color each time (since a new ghost is generated every time we move or place the item). You can, however, apply one material map to the ghost and a different material map to the entity, that way you can control which colors will be applied on every situation.</p></li>
+</ol>
+
+
+
+<blockquote>
+    <p><img src="../../../images/common/gold.png" alt="icon"/> The "one_of" type can also be used for randomizing QB models. </p>
+</blockquote>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> When testing, if you notice that no matter how many times you spawn the item, it always has the same color, try adding this inside the "render_info" component where you declared the color / material maps:</p>
+
+
+
+<pre><code>    "cache_model_geometry": false
+</code></pre>
+
+<p>Model geometry is cached by default for performance reasons, but there are some places in Lua files where we disable it, so for some entities the random color will work even if they don't have "cache_model_geometry" set to false in their JSON files. <!-- For example, on fixup post load of population_faction.lua it loads the json without caching.-->
+<img src="../../../images/basic/color_maps/color_maps.png" alt="color_maps"/></p>
+
+
+
+<h2><a name="RenderMaterials"></a>Applying render_materials</h2>
+
+
+<p>We can also apply a different render material using material maps. It will make the color be rendered differently, for example to make it shiny, semi-transparent, or emissive. You can use existing materials from the stonehearth mod before trying to make your own ones.</p>
+
+
+
+<ol>
+    <li><p>First, let's make a color map like we did before. But this time let's reuse an entry from an existing material map. This is <code>silent_woods/data/materials/color_maps/nightdew_color_map.json</code>:</p>
+
+<pre><code>{
+   "#204C7A": "stonehearth:glowing",
+   "#20598D": "stonehearth:glowing",
+   "#24619A": "stonehearth:glowing",
+   "#8895AE": "stonehearth:glowing"
+}
+</code></pre>
+
+<p>  The <strong>"stonehearth:glowing"</strong> makes reference to an entry in <code>stonehearth/data/materials/material_maps/mob_material_map.json</code> and in <code>stonehearth/data/materials/material_maps/natural_material_map.json</code>.</p></li>
+    <li><p>Now we add our color map and a matching material map to our entity. So, inside <code>nightdew_ghost.json</code> we have the render_info like this:</p>
+
+<pre><code>"render_info": {
+   "scale": 0.15,
+   "color_map": "stonehearth:color_map:natural",
+   "material_maps": [
+      "/stonehearth/data/materials/material_maps/natural_material_map.json"
+   ]
+},
+</code></pre>
+
+<p>  Notice that the "material_maps" array contains just entries, and not an object like in the previous example of randomizing colors. We can add several material maps this way, if we want all of them to be applied (for example, if our color map's entries are in different material maps).</p>
+
+<p>  Let's take a look at <code>natural_material_map.json</code>:</p>
+<pre><code>{
+   "stonehearth:glowing" : {
+      "render_material" : "materials/glowy_voxel.material.json"
+   },
+   "stonehearth:shiny" : {
+      "render_material" : "materials/shiny.material.json"
+   },
+   "stonehearth:voxel" : {
+      "render_material" : "materials/voxel.material.json"
+   },
+   "stonehearth:transparent_glow" : {
+      "render_material" : "materials/transparent_with_depth_bloom.material.json"
+   }
+}
+</code></pre>
+
+<p>  Here we have the <strong>"stonehearth:glowing"</strong> entry at the top. Instead of pointing to a color, it points to a render material. There are other entries here, so if we had used them for some entry in our color map, they would have been applied for those colors too.</p>
+
+<p>  The path defined in <strong>"render_material"</strong> points to a file inside <code>stonehearth/data/horde</code>. Even if we used our own material map file inside our mod, the game will read the material file from the stonehearth mod if we declare it like this:</p>
+
+<pre><code>"render_material" : "materials/glowy_voxel.material.json"
+</code></pre>
+
+<p>  If we want the game to read a material file from inside our mod, we'd have to write the full path like this:</p>
+
+<pre><code>"render_material" : "/silent_woods/data/horde/materials/glowy_voxel.material.json"
+</code></pre></li>
+    <li><p>Let's test that the render material is applied to our entity (if there's some problem with it, a message will appear in the stonehearth.log informing that the game couldn't load the material):</p></li>
+</ol>
+
+
+
+<p><img src="../../../images/basic/color_maps/render_materials.png" alt="render_materials"/></p>
+
+
+
+<p>You can read more about render materials and shaders <a href="shaders/index.html">here</a>.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

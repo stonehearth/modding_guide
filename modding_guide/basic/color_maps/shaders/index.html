@@ -1,0 +1,1038 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Materials and shaders</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Materials and shaders</div>
+   <ul>
+    <li><a href="#PipelinesContexts">Pipelines and contexts</a></li>
+    <li><a href="#RenderMaterials">Render materials</a></li>
+    <li><a href="#GLSL">GLSL, the shader language</a></li>
+    <li><a href="#Testing">Testing shaders</a></li>
+</ul>
+
+
+
+<h2><a name="PipelinesContexts"></a>Pipelines and contexts</h2>
+
+
+<p>In Stonehearth we use a renderer called Horde3D, and <strong>pipelines</strong> and <strong>contexts</strong> are constructs of that renderer. A pipeline is an XML file that describes what gets rendered when in a frame.</p>
+
+
+
+<p>It indicates <strong>when</strong> a thing gets rendered implicitly by the order of the commands in the file, and it indicates <strong>what</strong> gets rendered by specifying a context in the attribute of a given command.</p>
+
+
+
+<p>You can find them in <code>stonehearth/data/horde/pipelines</code>.</p>
+
+
+
+<p>For example, this is the fog of war pipeline (<code>fow.pipeline.xml</code>):</p>
+
+
+
+<pre><code>  &lt;Pipeline name="FOW"&gt;
+     &lt;Setup&gt;
+        &lt;GlobalRenderTarget id="FogOfWarRT" /&gt;
+     &lt;/Setup&gt;
+     &lt;CommandQueue&gt;
+        &lt;Stage id="FogOfWar_RT"&gt;
+           &lt;SwitchTarget target="FogOfWarRT" /&gt;
+           &lt;ClearTarget colBuf0="true" depthBuf="true" col_A="0.33" /&gt;
+           &lt;DrawGeometry scene="0" context="HEIGHT" forceLodLevel="0" cached="false"/&gt;
+           &lt;DrawGeometry context="FOW_RT_EXPLORED" forceLodLevel="0" cached="false"/&gt;
+        &lt;/Stage&gt;
+    &lt;/CommandQueue&gt;
+  &lt;/Pipeline&gt;
+</code></pre>
+
+<p>Let's take a single command as an example from this:</p>
+
+
+<pre><code>  &lt;DrawGeometry context="FOW_RT_EXPLORED" forceLodLevel="0" cached="false"/&gt;
+</code></pre>
+<p>Here, <code>DrawGeometry</code> is the command, and <code>FOW_RT_EXPLORED</code> is the context. The other attributes are arguments passed to the DrawGeometry command.</p>
+
+
+
+<p>The context is essentially a tag to tell the renderer what to draw. In this case, all of the objects with a material that has the <code>FOW_RT_EXPLORED</code> context will be rendered, and the shader specified in that context for that material will be used to do the rendering.</p>
+
+
+
+<p>There are two main pipelines in the game, <code>forward</code> and <code>forward_postprocess</code>. The forward_postprocess pipeline is the high quality renderer. You can add your own contexts to the pipelines by overwriting the .xml files (which might be bad for compatibility with other mods, if someone else overrides those same files) or just implement one or more of the existing contexts in your shaders.</p>
+
+
+
+<p>More info about Horde3D pipelines <a href="http://www.horde3d.org/docs/html/_pipeline.html">here</a>. (Note that Stonehearth's version of Horde3D is slightly different, but this is mostly correct.)</p>
+
+
+
+<h2><a name="RenderMaterials"></a>Render materials</h2>
+
+
+<p>Inside <code>stonehearth/data/horde/materials</code> we have a bunch of JSON files that end with ".material.json". This is just a naming convention in the same way our cubemitter files (particle effects) end with ".cubemitter.json".</p>
+
+
+
+<p>These are the materials that define how to render the 3D models inside the game.</p>
+
+
+
+<p>Let's take a look to <code>glowy_voxel.material.json</code>:</p>
+
+
+
+<pre><code>  {
+     "materials" : {
+        "VOXEL" : {
+           "name" : "materials/voxel.material.json",
+           "inputs" : [
+              {
+                 "name" : "glossy",
+                 "bind_to_material_input" : "glossy"
+              }
+           ]
+        }
+     },
+     "shaders" : {
+        "EMISSIVE" : {
+           "state" : "states/voxel/replace.state",
+           "shader" : "shaders/color_only.shader"
+        },
+        "EMISSIVE_ADD" : {
+           "state" : "states/voxel/add.state",
+           "shader" : "shaders/color_only.shader"
+        }
+     }
+  }
+</code></pre>
+
+<p>There are relative paths here. If we were to copy this file to our mod and use it for one of our entities, these paths would be read from the <code>stonehearth/data/horde</code> directory by default, unless we change them to <a href="../../../essentials/mixins/index.html#AbsolutePaths">absolute paths</a> referencing our mod's folder.</p>
+
+
+
+<p>Materials are composable. A material can optionally specify 'sub-materials' to include in itself, inside the <strong>"materials"</strong> entry. All sub-materials are included and flattened (recursively) to create the new material.</p>
+
+
+
+<p>Materials that include materials can still specify shaders, and those contexts will override the included materials.</p>
+
+
+
+<p>The <strong>"shaders"</strong> entry points to states and shaders. All <strong>.shader</strong> files are written in GLSL, and only contain one vertex program and one fragment program. Shaders used in the game can be found in <code>stonehearth/data/horde/shaders</code>.</p>
+
+
+
+<p>Shader state (blending, etc) has been disentangled from shader declaration, and so can be reused as well (you can find them inside <code>stonehearth/data/horde/states</code>).</p>
+
+
+
+<p>A material therefore declares the contexts being implemented, and binds shaders, shader states, and uniform inputs to create a context. It can also declare uniform inputs to the material, and bind them to shader uniforms. These material-level inputs form the 'interface' to the material, if you like. Example from <code>starfield.material.json</code>:</p>
+
+
+
+<pre><code>  {
+     "shaders" : {
+        "STARFIELD" : {
+           "state" : "states/voxel/stars.state",
+           "shader" : "shaders/starfield.shader",
+           "inputs" : [
+              {
+                 "name" : "brightness",
+                 "default" : [1.0, 1.0, 1.0, 1.0],
+                 "bind_to_material_input" : "brightness"
+              }
+           ]
+        },
+        "STARFIELD_DEFERRED" : {
+           "state" : "states/voxel/stars_deferred.state",
+           "shader" : "shaders/starfield.shader",
+           "inputs" : [
+              {
+                 "name" : "brightness",
+                 "default" : [1.0, 1.0, 1.0, 1.0],
+                 "bind_to_material_input" : "brightness"
+              }
+           ]
+        }
+     },
+     "inputs" : [
+        {
+           "name" : "brightness",
+           "default" : [1.0, 1.0, 1.0, 1.0]
+        }
+     ]
+  }
+</code></pre>
+
+
+<p>No attempt is made to deal with multiple conflicting shaders from different materials; the winner is the one that wins.</p>
+
+
+
+<p>Also, you cannot adjust an included material's shader uniforms; you can ONLY adjust the material's inputs. Think of shader uniform defaults as private variables, and material uniforms as public, overridable variables.</p>
+
+
+
+<p>Let's check out <code>ghost_item.json</code> as an example. Here, <code>transparent_with_depth.material.json</code> exposes the "alpha" uniform in its "inputs" section. We rewire it to be bound to our own "alpha" input:</p>
+
+
+
+<pre><code>  {
+     "materials" : {
+        "SELECTABLE" : {
+           "name" : "materials/selected.material.json"
+        },
+        "TRANSPARENT" : {
+           "name" : "materials/transparent_with_depth.material.json",
+           "inputs" : [
+             {
+               "name" : "alpha",
+               "bind_to_material_input" : "alpha"
+             }
+           ]
+         }
+     },
+     "inputs" : [
+        {
+           "name" : "alpha",
+           "default" : [0, 0, 0, 0.3]
+        }
+     ]
+  }
+</code></pre>
+
+<h2><a name="GLSL"></a>GLSL, the shader language</h2>
+<p>There's a lot to GLSL and good resources out there, so we won't go over all of it here. We will go over the basics though, and point you to where you can learn more.</p>
+
+
+
+<p>Shaders are programs that run on your GPU to render triangles. As we mentioned above Stonehearth uses two types of shader programs: vertex programs and fragment programs.</p>
+
+
+
+<p>Vertex programs take the vertices of a model one at a time as input and transform them for consumption of the fragment programs. The typical first step is to transform the position of the vertex to camera space so it appears in the correct place on the screen.</p>
+
+
+
+<p>The vertex program in <code>color_only.shader</code> looks like this:</p>
+
+
+
+<pre><code>  #include "shaders/utilityLib/vertCommon.glsl"
+
+  uniform mat4 viewProjMat;
+
+  attribute vec3 vertPos;
+  attribute vec4 color;
+
+  varying vec4 outColor;
+
+  void main() {
+     outColor = color;
+     gl_Position = viewProjMat * calcWorldPos(vec4(vertPos, 1.0));
+  }
+</code></pre>
+
+<p>It takes the color from each vertex and puts it in <code>outColor</code> for the fragment shader, and transforms <code>vertPos</code> to camera space by first calculating the world position with a helper function that was imported from <code>vertCommon.glsl</code> then multiplying the view projection matrix.</p>
+
+
+
+<p>The fragment shader calculates the color of each fragment, where a fragment is basically a pixel on the screen. The <code>varying</code> values in the vertex shader are interpolated over the fragments that make up the face of the triangle being rendered. So if we have <code>varying float x</code>, and the value of x is 1.0 for one vertex, and it's 0.0 in another vertex in the same triangle, the fragment in between the two will get x = 0.5 automatically.</p>
+
+
+
+<p>The fragment program in <code>color_only.shader</code> looks like this:</p>
+
+
+
+<pre><code>  varying vec4 outColor;
+
+  void main() {
+     gl_FragColor = outColor.rgba;
+  }
+</code></pre>
+
+<p>Here we're saying that every interpolated color gets assigned to the output color with no changes.</p>
+
+
+
+<p>.shader files in Stonehearth have three sections:</p>
+
+
+
+<ul>
+    <li><strong>[[FX]]</strong> for declaring inputs to our shader.</li>
+    <li><strong>[[VS]]</strong> for declaring vertex shaders.</li>
+    <li><strong>[[FS]]</strong> for declaring fragment shaders.</li>
+</ul>
+
+
+
+<p>Separate .glsl files can be imported inside the shaders, which can be useful for sharing GLSL code between shaders.</p>
+
+
+
+<p>The full <code>color_only.shader</code> file looks like this:</p>
+
+
+
+<pre><code>  [[FX]]
+
+  [[VS]]
+  #include "shaders/utilityLib/vertCommon.glsl"
+
+  uniform mat4 viewProjMat;
+
+  attribute vec3 vertPos;
+  attribute vec4 color;
+
+  varying vec4 outColor;
+
+  void main() {
+     outColor = color;
+     gl_Position = viewProjMat * calcWorldPos(vec4(vertPos, 1.0));
+  }
+
+  [[FS]]
+
+  varying vec4 outColor;
+
+  void main() {
+     gl_FragColor = outColor.rgba;
+  }
+</code></pre>
+
+
+<p><img src="../../../../images/common/edit_big.png" alt="icon"/><strong>Technical note</strong>: in Stonehearth our shaders are written using a slightly older version of GLSL, which means we have some deprecated keywords like 'varying' and 'attribute'. They are still valid in compatibility contexts, more information on that can be found <a href="https://gamedev.stackexchange.com/questions/29672/in-out-keywords-in-glsl">here</a>.</p>
+
+
+
+<p>For more information on GLSL you can dive into their docs <a href="https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language">here</a>.</p>
+
+
+
+<h2><a name="Testing"></a>Testing shaders</h2>
+
+
+<p>You can enable this property in your user_settings.json to be able to test changes to shaders and cubemitter files without needing to restart the game:</p>
+
+
+<pre><code>  "enable_renderer_file_watcher" : true
+</code></pre>
+<p>It should be at the same level than your user_id, make sure to add commas where needed.</p>
+
+
+
+<p><img src="../../../../images/common/row_alert2.png" alt="icon"/> This option might not always work as expected. You may need to reload the game for the changes to take effect in some cases. Beware of crashes due to wrong filepaths or invalid values in your rendering-related files.</p>
+
+
+
+<p>Making new render materials and shaders is pretty complex, but if you're feeling adventurous, feel free to copy the existing shaders and tinker with them. Players might have older graphic cards which don't support some of the properties so be careful when creating shaders.</p>
+
+
+
+<p><img src="../../../../images/common/row_alert2.png" alt="icon"/>For reference, Stonehearth uses OpenGL 4.1 for the high quality renderer, but the low quality renderer works with older drivers, so you should use old style GLSL. You can specify the version of the program to compile at the top of the shader with the <code>#version</code> pragma. See <a href="https://github.com/mattdesl/lwjgl-basics/wiki/GLSL-Versions">this page</a> for a reference. However, note that if you use syntax and functions that are exclusive from recent versions like the 4.1, your shaders might break when compiled by older GPU drivers because they don't support those functions.</p>
+
+
+
+<p><img src="../../../../images/common/gold.png" alt="icon"/> Sometimes a shader will cause visual glitches that can be avoided if you split the affected voxels to a separate matrix or layer in the QB model (for models that have materials applied only to some of their colors).</p>
+
+
+
+<p><img src="../../../../images/basic/color_maps/render_materials_layers.png" alt="render_materials_layers"/></p>
+
+
+
+<p><img src="../../../../images/common/row_alert2.png" alt="icon"/> In the current version of the game, it is a known issue that entities that have render materials won't show an outline when trying to select them. The parts of the model that have the custom render material will show an incorrect selection color.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

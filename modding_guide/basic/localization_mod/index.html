@@ -1,0 +1,938 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Translating mods</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Translating mods</div>
+   <p><p>Translations for the game can be provided as mods. We can also provide translations for mods from other players.</p></p>
+
+
+<ul>
+    <li><a href="#StartermodLocale">The startermod_locale mod</a></li>
+    <li><a href="#TranslationMod">How it works</a></li>
+    <li><a href="#I18NData">How to translate en.json</a></li>
+    <li><a href="#ProperNouns">Translating proper nouns</a></li>
+    <li><a href="#Fonts">How to change the fonts of the game</a></li>
+    <li><a href="#Localization">Enabling localization in your mod</a></li>
+</ul>
+
+
+
+<h2><a name="StartermodLocale"></a>The startermod_locale mod</h2>
+
+
+<p>To make a fan translation of the stonehearth mod or of any other mod, we can use the <strong>startermod_locale</strong> mod as a template.</p>
+
+
+
+<p><img src="../../../images/common/gold.png" alt="icon"/> If you create the translation mod through the <a href="../../essentials/managing/workshop/index.html#UploadWorkshop">Create New Mod button</a> in the Mods menu, make sure to tick the "Is this a translation mod?" checkbox so that the mod gets properly tagged as <code>"client_only"</code>. Otherwise, make sure this property is set to true in the "info" section of your manifest.</p>
+
+
+
+<p>Download <a href="https://github.com/stonehearth/startermod_locale">startermod_locale</a> from Github. Unzip it into the "mods" folder and make sure the folder is called startermod_locale and that it has the correct structure so that it can be loaded without <a href="../../essentials/managing/unmanaged/index.html#ModConflicts">conflicts</a>.</p>
+
+
+
+<p>Inside the startermod_locale folder, you should see a manifest.json file, a added_languages.json file and a translations folder which has 2 folders in it representing the two mods that existed at the moment this mod was created (stonehearth and rayyas_children). Inside each of those folders there will be 2 files named en-XA.json and en-DEV.json.</p>
+
+
+
+<p>The startermod_locale mod adds a pseudolocalization of stonehearth's and rayya children's en.json files. The en-DEV.json file is the plain english used to generate en-XA.json. Pseudolocalization replaces all the characters in stonehearth's en.json file with characters that have accents. This mimics what foreign languages will look like when displayed in the game.</p>
+
+
+
+<p>When you start up Stonehearth with this mod installed, open the Settings menu and go to the System tab. You will see that a language named "[!!Ēņģľĭšħ!!]" and a language named "English(Dev)" will be added to the list of languages. Select the "[!!Ēņģľĭšħ!!]" language and click "OK" to see how it changes the game's language.</p>
+
+
+
+<p>Any untranslated strings will appear in the original language (English).</p>
+
+
+
+<h2><a name="TranslationMod"></a>How it works</h2>
+
+
+<p>The startermod_locale's manifest.json has a mixinto for <code>supported_languages.json</code>:</p>
+
+
+
+<pre><code>    "mixintos" : {
+       "stonehearth/locales/supported_languages.json" : "file(added_languages.json)"
+    }
+</code></pre>
+
+<p>This causes all the data in <code>added_languages.json</code> to be added to the list of supported languages recognized by the stonehearth mod.</p>
+
+
+
+<p>added_languages.json specifies two new languages, en-XA and en-DEV like so:</p>
+
+
+
+<pre><code>    {
+       "languages": {
+          "en-XA": {
+             "display_name": "[!!Ēņģľĭšħ!!]"
+          },
+          "en-DEV": {
+             "display_name": "English(Dev)"
+          }
+       }
+    }
+</code></pre>
+
+<p>The value for <strong>"display_name"</strong> is what the settings language dropdown will show for the name of the language. You can use this to display the name of a language in its native form.</p>
+
+
+
+<p>The name ("en-XA") is the language code of the translation (see: <a href="http://www.science.co.il/Language/Locale-codes.asp">http://www.science.co.il/Language/Locale-codes.asp</a>). Most languages and language variants have a language code. In this case, "en" means English and the "XA" is a made up name for the pseudolocale. The German translation will be de-DE.json, and the Chinese Mandarin translation will be zh-CN.json.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> If you have a region specific translation, the last 2 letters of the translation file's name MUST be capitalized!</p>
+
+
+
+<p>Then, back to startermod_locale's manifest.json, we add the translations provided by this mod using overrides:</p>
+
+
+
+<pre><code>  "overrides": {
+     "stonehearth/locales/en-XA.json": "file(translations/stonehearth/en-XA.json)",
+     "stonehearth/locales/en-DEV.json": "file(translations/stonehearth/en-DEV.json)",
+     "rayyas_children/locales/en-XA.json": "file(translations/rayyas_children/en-XA.json)",
+     "rayyas_children/locales/en-DEV.json": "file(translations/rayyas_children/en-DEV.json)"
+  }
+</code></pre>
+
+<p>These overrides will act as if you added <a href="../../essentials/mixintos_overrides/index.html#OverrideNonExisting">new files</a> under the stonehearth/locales/ and rayyas_children/locales/ directories.</p>
+
+
+
+<p>The files that are pointed to are the en-XA.json / en-DEV.json files under the translations folder. These are the files that contain all the translated strings.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> For your translation mod, copy the "en.json" from <code>stonehearth/locales</code>, the examples provided with this example mod don't contain all the strings from the latest version of the game. Copy the en.json from the rayyas_children and northern_alliance mods too, and from any other mod you wish to translate.</p>
+
+
+
+<h2><a name="I18NData"></a>How to translate en.json</h2>
+
+
+<p>Only translate strings that come after a colon (':') in the JSON file. You can more easily view the JSON on a website such as <a href="http://codebeautify.org/jsonviewer">http://codebeautify.org/jsonviewer</a>, using text editors with syntax highlighting, or using translation tools like community member thk's <a href="https://discourse.stonehearth.net/t/tkhs-translation-helper-program-downloadable/5086">Json Translate Helper</a>.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> Do not modify the strings that come on the left side of a ':'. Also, do not modify strings that are surrounded by brackets ('[' or ']').</p>
+
+
+
+<p>Example:</p>
+
+
+
+<pre><code>    ...
+    "ai": {
+       "actions": {
+          "status_text": {
+             "chase_entity": "chasing [name(data.target)]",
+    ...
+</code></pre>
+
+<p>Here, the string that needs to be translated is "chasing [name(data.target)]". <br/>
+DO NOT translate the "[name(data.target)]" portion. This is a special string replacement.</p>
+
+
+
+<p>The name of the target will replace "[name(data.target)]" in the game (if a hearthling is chasing a goblin named "Jib", the game will replace "[name(data.target)]" with "Jib" and the final string will read: "chasing Jib").</p>
+
+
+
+<p>The replacement is character sensitive, so do not change whether the string is upper or lower case, and do not replace any of the string with a different key. It is best to copy and paste the special portion into your translated text.</p>
+
+
+
+<p>You can, however, move "[name(data.target)]" around to different locations within the string. <br/>
+For example, the japanese translated file might show something like this:</p>
+
+
+
+<pre><code>    ...
+    "ai": {
+       "actions": {
+          "status_text": {
+             "chase_entity": "[name(data.target)]を追う",
+    ...
+</code></pre>
+
+<p>The Chinese file might look like:</p>
+
+
+
+<pre><code>    ...
+    "ai": {
+       "actions": {
+          "status_text": {
+             "chase_entity": "追逐[name(data.target)]",
+    ...
+</code></pre>
+
+<h2><a name="ProperNouns"></a>Translating proper nouns</h2>
+<p>The names for hearthlings, monsters and towns are not stored in the en.json file. If you wish to translate those too, you can add mixintos to the files under <code>stonehearth/services/server/population/data</code>. See <a href="../../essentials/removing/index.html#MixintypeOverride">here</a> for a full example.</p>
+
+
+
+<h2><a name="Fonts"></a>How to change the font of the game</h2>
+
+
+<p>Some languages have characters that one or more of the default fonts from the game don't support. If you want to change them, do the following in your translation mod:</p>
+
+
+
+<ol>
+    <li><p>Find the font that you want to change. To do this:</p>
+    <ul>
+        <li>With the game open and showing the UI piece that uses that font, type <code>localhost:1338</code> in your browser, and click on "Stonehearth UI".
+        <img src="../../../images/essentials/debugging/ui_port.png" alt="ui_port"/></li>
+        <li>Then activate the "Inspect element" button and go back to the game.
+        <img src="../../../images/essentials/debugging/inspect_element_tool.png" alt="inspect_element_tool"/></li>
+        <li>Click on the text that has the concerning font and go back to the browser. In the 'Style' tab you should find the name of the font in one of the CSS styles (font-family property).
+        <img src="../../../images/basic/localization_mod/finding_game_font.png" alt="finding_game_font"/></li>
+    </ul></li>
+    <li><p>The fonts of the game can be found in <code>stonehearth/ui/root/css/fonts</code>. Once you find the folder corresponding to the font you want to change, check which formats does it use (woff, ttf, eot, svg...). You can use an online tool like <a href="https://onlinefontconverter.com/">this one</a> to convert fonts<sup><a href="#ref-1">[1]</a></sup>, if you're missing a file for a specific format.</p></li>
+    <li><p>Override the fonts: copy your new fonts into your mod and create overrides in your manifest for each of the font files you want to replace (.woff, .ttf, .eot, .svg).</p>
+
+<p>  Alternatively, if you have your own @font-face defined in a stylesheet, you can override only the variables.less file, which is inside <code>stonehearth/ui/root/css</code>. Add an import for your font (make sure the path for your font is absolute): </p>
+<pre><code>@import "/my_translation/ui/root/css/fonts/my_font/stylesheet.css";
+</code></pre>
+<p>  and change any of the typography variables to point to your imported font.</p></li>
+    <li><p>Optionally override any other .less file if you see that the translated text overflows the UI, or you want to change the font size, etc.</p>
+
+    <p><img src="../../../images/common/row_alert2.png" alt="icon"/> Remember that overriding .less files will not be compatible with other mods that also override the same files.</p>
+
+    <p>Your new fonts will be applied even when the player hasn't chosen your language in the System settings, as long as your translation mod is enabled.</p></li>
+</ol>
+
+
+
+<h2><a name="Localization"></a>Enabling localization in your mod</h2>
+
+
+<p>If you are creating your own content mod that has translatable strings (not a mod that is purely translation), you need to specify a <strong>"default_locale"</strong> in the mod's manifest.json in order to tell the game that your mod contains locale data:</p>
+
+
+
+<pre><code>    {
+       "info" : {
+          "name" : "rayyas_children",
+          "namespace" : "rayyas_children",
+          "version" : 3
+       },
+       "default_locale": "en"
+    }
+</code></pre>
+
+<p>This tells the game that if the main stonehearth game is running in a language for which your mod doesn't have support, it will know to load the english translation file by default.</p>
+
+
+
+<p>If a localization path doesn't exist in your en.json file because you spelled it wrong somewhere, it will display in the game as is ("i18n(my_namespace:my_broken_item.my_display_name)"). More on localization <a href="../../essentials/localization/index.html">here</a>.</p>
+
+
+
+
+<h3>References</h3>
+
+
+<p><a name='ref-1'>[1]</a>: From <a href="https://discourse.stonehearth.net/t/first-steps-for-translation/21077">https://discourse.stonehearth.net/t/first-steps-for-translation/21077</a></p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

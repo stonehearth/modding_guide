@@ -1,0 +1,971 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Loadouts and shops</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Loadouts and shops</div>
+   <ul>
+    <li><a href="#Loadouts">Loadouts</a></li>
+    <li><a href="#Shops">Shops</a></li>
+</ul>
+
+
+
+<h2><a name="Loadouts"></a>Loadouts</h2>
+
+
+<p>One of the embarkation screens is a list of loadouts to choose from. You can modify this list using mixintos to remove some of the existing loadouts or add your own combinations.</p>
+
+
+
+<p>In addition to each loadout, every kingdom starts with a default crafting talisman and a couple of items from a default resource, both defined in their population JSON file.</p>
+
+
+
+<p>To add a new loadout:</p>
+
+
+
+<ol>
+    <li><p>Make a mixinto to the file that contains the loadouts:</p>
+<pre><code>"mixintos": {
+   "stonehearth:loadouts": "file(data/loadouts/loadouts.json)"
+}
+</code></pre></li>
+    <li><p>Add your custom loadout in the mixinto file:</p>
+
+<pre><code>{
+   "loadouts": {
+      "colorful_garden": {
+         "ordinal": 5,
+         "display_name": "i18n(my_mod:data.loadouts.colorful_garden.display_name)",
+         "description": "i18n(my_mod:data.loadouts.colorful_garden.description)",
+         "tooltip": "i18n(my_mod:data.loadouts.colorful_garden.tooltip)",
+         "splash": "file(images/colorful_garden/splash.png)",
+         "seal": "file(images/colorful_garden/seal.png)",
+         "content": {
+            "blue_tulip": {
+               "ordinal": 1,
+               "display_name": "i18n(my_mod:data.loadouts.items.blue_tulip)",
+               "type": "entity",
+               "uri": "stonehearth:plants:cactus:tulip:blue",
+               "icon": "/stonehearth/entities/plants/cactus_tulip_plant/blue/cactus_tulip_blue_plant.png",
+               "amount": 10
+            },
+            "red_tulip": {
+               "ordinal": 2,
+               "display_name": "i18n(my_mod:data.loadouts.items.red_tulip)",
+               "type": "entity",
+               "uri": "stonehearth:plants:cactus:tulip:red",
+               "icon": "/stonehearth/entities/plants/cactus_tulip_plant/red/cactus_tulip_red_plant.png",
+               "amount": 10
+            },
+            "yellow_tulip": {
+               "ordinal": 3,
+               "display_name": "i18n(my_mod:data.loadouts.items.yellow_tulip)",
+               "type": "entity",
+               "uri": "stonehearth:plants:cactus:tulip:yellow",
+               "icon": "/stonehearth/entities/plants/cactus_tulip_plant/yellow/cactus_tulip_yellow_plant.png",
+               "amount": 10
+            },
+            "gold": {
+               "ordinal": 4,
+               "display_name": "i18n(stonehearth:data.loadouts.items.gold)",
+               "type": "gold",
+               "icon": "/stonehearth/data/loadouts/images/items/gold.png",
+               "uri": "stonehearth:loot:gold",
+               "amount": 100
+            }
+         }
+      }
+   }
+}
+</code></pre></li>
+</ol>
+
+
+
+<p>We add an entry with a custom identifier inside <strong>"loadouts"</strong>. The properties are self-explanatory. The <strong>"splash"</strong> and the <strong>"seal"</strong> are the images that appear on the right when we select the loadout. The <strong>"tooltip"</strong> is the text that appears at the bottom of the selected loadout on the right.</p>
+
+
+
+<p>If we want to add some amount of gold, we use <strong>"type" : "gold"</strong>, instead of <strong>"type" : "entity"</strong>.</p>
+
+
+
+<p>Sometimes the <strong>"display_name"</strong> of the items will be long and not fit into the UI, so we can use some custom abbreviated names here:
+<img src="../../../../images/basic/misc_json/loadouts.png" alt="loadouts"/></p>
+
+
+
+<p>To remove an existing loadout, use <a href="../../../essentials/removing/index.html#MixintypeRemove">mixintypes</a>.</p>
+
+
+
+<p>Example mod from a community member that adds many loadouts: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1360030491">Specialized Loadouts</a></p>
+
+
+
+<h2><a name="Shops"></a>Shops</h2>
+
+
+<p>Shops in the game are managed through encounters. We can also prevent an item from being buyable or sellable.</p>
+
+
+
+<p>For example, these are the net worth properties inside the "entity_data" of <code>stonehearth/entities/furniture/wooden_chair/wooden_chair.json</code>:</p>
+
+
+
+<pre><code>  "stonehearth:net_worth": {
+     "value_in_gold": 4,
+     "rarity": "common",
+     "shop_info": {
+        "buyable": true,
+        "sellable": true,
+        "shopkeeper_level": 1,
+        "shopkeeper_type": "caravan"
+     }
+  }
+</code></pre>
+
+<p><a name="NetWorth"></a>The <strong>"value_in_gold"</strong> is the money we receive when we sell this item in a shop (can be higher depending on item quality or town bonuses). It's also the contribution to the town's net worth (non-resource and non-edible items, plus buildings, crops and pastures contribute to the total net worth of your town).</p>
+
+
+
+<p>By default, the shopkeeper will sell items at their value_in_gold * SALE_MULTIPLIER. This multiplier is defined in <code>constants.json</code>, under the "score" : { "shop" : {} } constants, so we can change it.</p>
+
+
+
+<p>The <strong>"rarity"</strong> is used to determine the rarity of the items in the shop. Possible values are:</p>
+
+
+<pre><code>    "junk" / "common" / "uncommon" / "rare"
+</code></pre>
+
+<p>Inside the <strong>"shop_info"</strong> we can determine if this item should be <strong>"buyable"</strong>, <strong>"sellable"</strong>, and if so, the <strong>"shopkeeper_level"</strong> of the shops that can sell it. The <strong>"shopkeeper_type"</strong> is a legacy field not used any more. It can be omitted.</p>
+
+
+
+<p>All shops have a small chance to sell items of fine quality (but not of excellent nor mastercraft quality), if those items have this:</p>
+
+
+<pre><code>    "stonehearth:item_quality": {
+       "variable_quality": true
+    }
+</code></pre>
+<p>inside their entity_data (this property also allows crafters to craft higher quality versions of the item, if they have unlocked that job perk).</p>
+
+
+
+<p>When we reach a new town tier, new shops become available (based on the shopkeeper_level), but old shops can still appear (with less chance).
+Higher tier shops will contain items with a shopkeeper level that's the same or less than the level specified for the shop.</p>
+
+
+
+<p>Let's add a new shop to the list of tier 1 shops so that it can randomly appear in the game:</p>
+
+
+
+<ol>
+    <li><p>Copy <code>stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_1_shops/stonecutter_shop_1.json</code> to your mod.</p></li>
+    <li><p>Rename it to <code>custom_shop_1.json</code>, for example, and let's edit the fields:</p>
+<ul>
+    <li><p><strong>"type": "encounter"</strong> -- this file represents an encounter.</p></li>
+    <li><p><strong>"encounter_type": "shop"</strong> -- the encounter type is "shop".</p></li>
+    <li><p><strong>"unique": true</strong> -- this encounter is unique, only one of this kind can run at the same time.</p></li>
+    <li><p><strong>"in_edge": "custom_shop_1"</strong> -- here we use the encounter name that we'll mixinto in the list of encounters for the "trader" arc (see next step).</p></li>
+    <li><p><strong>"shop_info": {}</strong> -- the parameters for the shop:</p>
+<ul>
+    <li><p><strong>"title"</strong> -- a title that will be shown as the shop notification.</p></li>
+    <li><p><strong>"name"</strong> -- the name for the shop, it will appear at the top of the shop window.</p></li>
+    <li><p><strong>"inventory": {}</strong> -- the contents of the shop:</p>
+<ul>
+    <li><p><strong>"shopkeeper_level": 1</strong> -- the items of this shop have this shopkeeper level in their entity_data's net worth info as explained above.</p></li>
+    <li><p><strong>"shopkeeper_gold": 600</strong> -- the maximum gold that the shopkeeper has to buy items from you. It might increase depending on town bonuses etc. Normally for your items to appear in the 'Sell' tab of the shop they must be inside a storage or stockpile.</p></li>
+    <li><p><strong>"overall_price_multiplier": 2</strong> -- optional field. If we include it, all items in this shop will be sold at (value_in_gold * SALE_MULTIPLIER) * overall_price_multiplier.</p></li>
+    <li><p><strong>"entries": []</strong> -- an array of objects describing the contents of the shop. There's two types of entries, we can add as many as we need:</p>
+
+<pre><code>{
+   "items_matching": {
+      "clay_stuff": {
+         "category": [
+            "furniture",
+            "storage"
+         ],
+         "material": [
+            "clay"
+         ]
+      }
+   },
+   "quantity": {
+      "min": 0,
+      "max": 6
+   }
+}
+</code></pre>
+
+<p>In this one, we have an <strong>"items_matching"</strong> key, inside which there's an identifier. Inside the identifier, we have <strong>"category"</strong>, which is a list of categories from the catalog info, and optionally <strong>"material"</strong>, which is a list of tags from the material tags of the items.</p>
+
+<p>Then, we have another entry with the <strong>"quantity"</strong>, which will be random between the <strong>"min"</strong> and <strong>"max"</strong> values for each item that matches the above.</p>
+
+<p>The shop will have all the items from the game that match one of these categories AND have the material in their material_tags, if we declared that key. Currently there's no list with all the categories used in the game, but you can check different items to find out their categories.</p>
+
+<p>The other type of entry is this:</p>
+<pre><code>{
+   "items": [
+      "stonehearth:cleric:talisman",
+      "stonehearth:herbalist:talisman"
+   ],
+   "quantity": {
+      "min": 5,
+      "max": 10
+   }
+}
+</code></pre>
+<p>An <strong>"items"</strong> list which includes aliases of items, and the <strong>"quantity"</strong> for them, defined like above. This way we can ensure that certain items will appear in our shop regardless of their categories (but make sure they are buyable).</p>
+
+<p>Optionally, we can include this key below "quantity" for any of the entries:</p>
+<pre><code>"price_multiplier": 3
+</code></pre>
+<p>This will make the items from this particular entry be sold at (value_in_gold * SALE_MULTIPLIER) * price_multiplier.</p></li>
+</ul></li>
+</ul></li>
+</ul></li>
+    <li><p>Add a mixinto to <code>caravan_shops_arc.json</code>:</p>
+<pre><code>"mixintos" : {
+   "stonehearth/data/gm/campaigns/trader/arcs/caravan_shops_arc.json" : "file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)"
+}
+</code></pre>
+
+<p>  The mixinto will look like this:</p>
+<pre><code>{
+   "encounters": {
+      "custom_shop_1": "file(encounters/tier_1_shops/custom_shop_1.json)"
+   }
+}
+</code></pre></li>
+    <li><p>Add another mixinto for <code>tier_1_shops.json</code> in your manifest:</p>
+<pre><code>"mixintos" : {
+   "stonehearth/data/gm/campaigns/trader/arcs/caravan_shops_arc.json" : "file(data/gm/campaigns/trader/arcs/caravan_shops_arc.json)",
+   "stonehearth/data/gm/campaigns/trader/arcs/encounters/tier_1_shops/tier_1_shops.json" : "file(data/gm/campaigns/trader/arcs/encounters/tier_1_shops/tier_1_shops.json)"
+}
+</code></pre>
+
+<p>  The mixinto will look like this:</p>
+<pre><code>{
+   "out_edge": {
+      "out_edges": [
+         {
+            "out_edge": "custom_shop_1",
+            "type": "weighted_edge",
+            "weight": 1
+         }
+      ]
+   }
+}
+</code></pre></li>
+    <li><p>Finally, let's check that our shop can appear in the game.</p>
+
+    <p>  First make sure that your town goes through the banner celebration so that we ensure we are on tier 1.</p>
+
+    <p>  Then, open the <a href="../../../essentials/debugtools/debugtools_mod/index.html#CampaignBrowser">campaign browser</a>, click on the node names of the trader campaign encounters to open the small window and click on 'Trigger Now' until you reach the 'spawn shop' encounter.</p>
+
+    <p>  Since the shops are random and we used the same weight for our custom shop, we'll need to trigger the encounter a bunch of times and close the other shops until we see it appear:
+      <img src="../../../../images/basic/misc_json/trader_campaign.png" alt="trader_campaign"/>
+      <img src="../../../../images/basic/misc_json/shop_notification.png" alt="shop_notification"/></p>
+
+    <p>  Rayya's children has a different trader campaign, so we'll need to add another mixinto in their arc in order to include our custom shop for them too.
+      Northern alliance reuses the Ascendancy one.
+      <img src="../../../../images/basic/misc_json/custom_shop.png" alt="custom_shop"/></p></li>
+</ol>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

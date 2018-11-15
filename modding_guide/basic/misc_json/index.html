@@ -1,0 +1,924 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Miscellaneous JSON</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Miscellaneous JSON</div>
+   <p><p><!-- Hotkeys / restricting building templates by job-->
+These are explanations about some expressions we can find for certain properties and components in the JSON files:</p></p>
+
+
+<ul>
+    <li><a href="#TimeExpressions">Time expressions</a></li>
+    <li><a href="#LootTables">Loot tables</a></li>
+    <li><a href="#WeightedSets">Weighted sets</a></li>
+</ul>
+
+
+
+<h2><a name="TimeExpressions"></a>Time expressions</h2>
+
+
+<p>Along many of the guides you will encounter properties that will have time expressions as their value.</p>
+
+
+
+<p>These time expressions are strings representing in-game time, which will be parsed by the code. Examples:</p>
+
+
+<pre><code>  "duration" : "3d"
+</code></pre>
+<p>Stands for 3 days.</p>
+
+
+<pre><code>  "duration" : "40h"
+</code></pre>
+<p>Stands for 40 hours.</p>
+
+
+<pre><code>  "duration" : "15m"
+</code></pre>
+<p>Stands for 15 minutes.</p>
+
+
+<pre><code>  "duration" : "1s"
+</code></pre>
+<p>Stands for 1 second.</p>
+
+
+<pre><code>  "duration": "3d40h15m1s"
+</code></pre>
+<p>Stands for 3 days plus 40 hours, 15 minutes and 1 second.</p>
+
+
+
+<p>We can append extra time expressions to these times using "+", like this:</p>
+
+
+<pre><code>  "delay" : "3d+40h"
+</code></pre>
+<p>This means 'choose a random amount of time between "3 days" and "3 days and 40 hours"'.
+We use this kind of expressions to add more randomness to the game. This way, events and encounters don't need to happen always at the same hour, which also helps with performance, since they're more distributed over time.</p>
+
+
+
+<p>There are properties that will define times in a different way, such as:</p>
+
+
+<pre><code>  "time" : "6:00"
+</code></pre>
+<p>to represent 6AM, or</p>
+
+
+<pre><code>  "end_time" : 1200
+</code></pre>
+<p>to represent an amount of realtime milliseconds (notice that this one is not a string).</p>
+
+
+
+<p>When editing copied files from the stonehearth mod always make sure you're using the correct type of value for each field.</p>
+
+
+
+<h2><a name="LootTables"></a>Loot tables</h2>
+
+
+<p>The chance of getting anything when you kill, harvest or mine something is given by a loot table. Loot tables work based on something called a <a href="#WeightedSets">weight</a>.<sup><a href="#ref-1">[1]</a></sup></p>
+
+
+
+<p>The loot_drops component has these fields:</p>
+
+
+
+<ul>
+    <li><p><strong>"force_auto_loot": true</strong> -- optional field that will mark the drop for auto loot regardless of the auto loot option from the game settings. It will only work if the drops have the correct player_id.</p></li>
+    <li><p><strong>"entries"</strong> -- a dictionary of one or more loot table entries (the entry names can be any string). Each entry has the following properties:</p>
+    <ul>
+        <li><p><strong>"roll_type"</strong> : either <strong>"each_of"</strong> or <strong>"some_of"</strong>. Will default to "some_of" when omitted.</p>
+        <ul>
+            <li><strong>"each_of"</strong> will cause all entries and items below this point to be added to a list to give to the player as loot.</li>
+            <li><strong>"some_of"</strong> will cause either single or multiple random entries or items listed in the entry to be added to a list to give to the player as loot based on the <strong>"num_rolls"</strong> value.   </li>
+        </ul></li>
+        <li><p><strong>"num_rolls"</strong> :</p>
+        <ul>
+            <li>Can be a table with keys <strong>"min"</strong> and <strong>"max"</strong></li>
+            <li>Can be a number</li>
+            <li>Can be omitted (which will default to 1)</li>
+            <li>When the type "each_of" is used, this value applies to all # of drops per item within it.   </li>
+        </ul></li>
+        <li><p><strong>"items"</strong> : dictionary mapping of unique string name (make something up!) to entries with keys <strong>"type"</strong>, <strong>"uri"</strong>, <strong>"weight"</strong>, and <strong>"num_rolls"</strong>.</p>
+        <ul>
+            <li><strong>"type"</strong> can be either <strong>"item"</strong> or <strong>"bag"</strong>. Defaults to "item" when omitted.
+            <ul>
+                <li><strong>"item"</strong> is a uri for an item (a chair, a bed, a weapon).</li>
+                <li><strong>"bag"</strong> is a uri for another list of items/bags (another loot_table just like this one).</li>
+            </ul></li>
+            <li>If unique string name is <strong>"none"</strong> or <strong>"uri"</strong> is an empty string, no drop is created if it is rolled.</li>
+            <li>If <strong>"weight"</strong> is omitted, defaults to 1. Non-integer values are ok.</li>
+            <li><strong>"num_rolls"</strong>: same possible values than explained above.</li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<p>Example from <code>entling.json</code>:</p>
+
+
+
+<pre><code>  "stonehearth:loot_drops": {
+   "entries": {
+      "default": {
+         "num_rolls": {
+            "min": 1,
+            "max": 1
+         },
+         "items": {
+            "ore": {
+               "uri": "stonehearth:resources:wood:oak_log",
+               "weight": 10
+            }
+         }
+      }
+   }
+}
+</code></pre>
+
+<p>Example from <code>goblin_tent.json</code>:</p>
+
+
+
+<pre><code>  "stonehearth:loot_drops": {
+     "force_auto_loot": true,
+     "entries": {
+        "default": {
+           "items": {
+              "skin": {
+                 "uri": "stonehearth:loot_bag:goblin_tent",
+                 "weight": 1,
+                 "type": "bag"
+              }
+           }
+        }
+     }
+  }
+</code></pre>
+
+<p>You can find a longer example inside <code>stonehearth/lib/loot_table/loot_table.lua</code>.</p>
+
+
+
+<p>Other files also make use of the loot table syntax even if they're not using the loot_drops component. For example, we can find a field called "resource_loot_table" in <code>small_oak_tree.json</code>, for a chance to drop seeds in addition to the wood:</p>
+
+
+
+<pre><code>  "stonehearth:resource_node": {
+     "durability": 6,
+     "resource": "stonehearth:resources:wood:oak_log",
+     "resource_loot_table": {
+        "entries": {
+           "optional": {
+              "num_rolls": {
+                 "min": 1,
+                 "max": 1
+              },
+              "items": {
+                 "none": {
+                    "uri": "",
+                    "weight": 8
+                 },
+                 "pelt": {
+                    "uri": "stonehearth:trees:oak:seed",
+                    "weight": 1
+                 }
+              }
+           }
+        }
+     }
+  }
+</code></pre>
+
+<h2><a name="WeightedSets"></a>Weighted sets</h2>
+<p>We use weighted sets in many of the JSON files. With them we can give more priority or more chances for an entry to be chosen when we draw a random one (for example, choosing a random weather, a random encounter, random loot...).</p>
+
+
+
+<p>Weights are a handy way to assign a probability of something without assigning a strict probability. A probability is a value between 0 (never happen) and 1 (always happens). So if you are using probability the numbers in your table have to add up to 1 always. So if you add something new or pull something out, you have to calculate your numbers all over again.<sup><a href="#ref-1">[1]</a></sup></p>
+
+
+
+<p>Weights are a bit different! A weight merely states how likely something is relative to something else.</p>
+
+
+
+<p>Say you want A to drop 5 times as often as B. B has an arbitrary weight of 2. Therefore A must have a weight of 10, 5 times as much as B. So currently, we have a total weight of 12. 2/12 times we see B and 10/12 times we see A.</p>
+
+
+
+<p>What if we want to add item C with a weight of 8 (4 times as common as B)? Now we have a total weight of 20, giving 10/20 times we'll see A, 2/20 times we'll see B and 8/20 times we'll see C. The relative chance of each item dropping is preserved, but the chance of A and B dropping is now less than it was before. This is important.<sup><a href="#ref-1">[1]</a></sup></p>
+
+
+
+<p><img src="../../../images/basic/misc_json/weights.png" alt="weights"/></p>
+
+
+
+<p>Check the numbers in the file you're mixinto'ing to before adjusting this weight. If your number is too low, your item will not drop much (if at all). If your number is too high, it will outweight every other item and nothing else will drop!</p>
+
+
+
+<h3>References</h3>
+
+
+<p><a name='ref-1'>[1]</a>: From <a href="https://discourse.stonehearth.net/t/tutorial-adding-mining-resources-updated-for-alpha-18/16994">https://discourse.stonehearth.net/t/tutorial-adding-mining-resources-updated-for-alpha-18/16994</a></p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>
