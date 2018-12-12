@@ -1,0 +1,1354 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Testing your mod</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Testing your mod</div>
+   <p><p>There are several mods that can help us test our own mods, besides using debugtools. Usually we'll create our own test files inside of them, there's no need to make a separate mod with mixintos just for testing your custom mods.</p></p>
+
+
+<ul>
+    <li><a href="#Microworld">Microworld</a>
+    <ul>
+        <li><a href="#SetupMicroworld">Setup Microworld</a></li>
+        <li><a href="#DefaultWorlds">Default worlds</a></li>
+        <li><a href="#CustomWorlds">How to create your own custom worlds</a></li>
+    </ul></li>
+    <li><a href="#StonehearthTests">Stonehearth tests</a>
+    <ul>
+        <li><a href="#SetupTests">Setup stonehearth_tests</a></li>
+    </ul></li>
+    <li><a href="#Autotests">Stonehearth autotests</a>
+    <ul>
+        <li><a href="#CustomAutotests">How to create your own custom autotests</a></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="Microworld"></a>Microworld</h2>
+
+
+<p>The microworld mod helps us to test our mod faster, by creating a custom test world where we can use debug tools to spawn our modded entities, without having to go through the embarkation process every time we want to test something.</p>
+
+
+
+<p>For testing biomes, however, there's no easy way, since you will want to check the whole map generation, not just a flat tiny world.</p>
+
+
+
+<h3><a name="SetupMicroworld"></a>Setup Microworld</h3>
+
+
+<p>The <strong>microworld</strong> mod comes bundled with the game now (you can also find it on <a href="https://github.com/stonehearth/microworld">Github</a>).</p>
+
+
+
+<ol>
+    <li><p>Go to the Mods menu from the main menu, search for it in the Local mods column, and enable the <code>"Microworld for Tests"</code> mod.</p></li>
+    <li><p>Close the game.</p></li>
+    <li><p>Edit your <code>user_settings.json</code> file.</p>
+
+<ul>
+    <li><p>If you installed the game with the Humble Bundle installer, it will normally be at <code>C:\Program Files (x86)\Stonehearth</code>.</p></li>
+    <li><p>If you have installed it via Steam, then it will be at <code>C:\Program Files (x86)\Steam\steamapps\common\Stonehearth</code>.</p></li>
+</ul>
+
+<p>  Some of these keys might already exist, in that case add only what's missing.</p>
+
+<pre><code>{
+   "user_id": "your_user_id",
+   "game" : {
+      "main_mod" : "microworld"
+   },
+   "mods" : {
+      "microworld" : {
+         "world" : "harvest_test"
+      }
+   }
+}
+</code></pre>
+
+<p>  The <strong>"main_mod"</strong> key tells the game which mod should be loaded as the main mod. In this case, we'll load the Microworld mod first, which will skip the logo / main menu screens and will load directly a small world. Make sure to invalidate this key whenever you want to play the game again (<code>"_main_mod" : "microworld"</code>), or use the Esc menu to go back to the Main menu or load a savefile.</p>
+
+<p>  The <strong>"world"</strong> option inside the settings for the microworld mod points to <code>"harvest_test"</code> in this case (by default it will run the <code>mini_game</code> world). All the test worlds, located inside the <code>microworld/worlds</code> directory, end their names by <code>_world.lua</code>. You must follow that naming convention in order for the mod to run the test. For instance, if your test world is called <code>mytest_world.lua</code>, in the user_settings you will specify it as <code>"mytest"</code>.</p></li>
+    <li><p>Finally, start the game.</p></li>
+</ol>
+
+
+
+<p>You can also run this mod from the command line (make sure that the mod is enabled first!):</p>
+
+
+<pre><code>  Stonehearth.exe --game.main_mod=microworld --mods.microworld.world=harvest_test
+</code></pre>
+
+<h3><a name="DefaultWorlds"></a>Default worlds</h3>
+<p>There exist 4 test worlds in the microworld mod (at the time this page was written): <code>data_driven_world.lua</code>, <code>harvest_test_world.lua</code>, <code>mini_game_world.lua</code> and <code>settlement_test_world.lua</code>.</p>
+
+
+
+<p>You can try changing your user_settings to see what each of them has. For the data_driven world, you'll need to add an extra key:</p>
+
+
+
+<pre><code>  "mods" : {
+     "microworld" : {
+        "world" : "data_driven",
+        "data_driven_index" : "microworld:data_driven:world:profession_test"
+     }
+  }
+</code></pre>
+
+<p>The <strong>"data_driven_index"</strong> key points to an alias defined in the microworld manifest. You can add more aliases there for your custom worlds.</p>
+
+
+
+<h3><a name="CustomWorlds"></a>How to create your own custom worlds</h3>
+
+
+<p>You can find many functions to create objects in your custom worlds inside <code>microworld/micro_world.lua</code>, and you can also use code from the game or other mods.</p>
+
+
+
+<ul>
+    <li><p>The <code>data_driven_world.lua</code> world uses JSON data from the <code>data/data_driven_world</code> subfolder in order to generate the custom world. You can try that approach if you don't want to use Lua.</p>
+
+    <p>  As explained above, you need to add an alias to the microworld's manifest to add your data driven world, use the <strong>"data_driven"</strong> world in your user_settings together with the <strong>"data_driven_index"</strong> of your custom JSON world.</p>
+
+    <p>  In the JSON files you can specify the size of the world, the citizens you want to spawn and where, items to spawn and where, chunks of terrain and where, etc. Take a look at the examples inside <code>data/data_driven_world</code>, and at the comments inside <code>data_driven_world.lua</code>.</p></li>
+    <li><p>The rest of worlds are written in Lua. This is the minimum code needed to create a micro world:</p>
+
+<pre><code>local MicroWorld = require 'micro_world'
+local SettlementTest = class(MicroWorld)
+
+function SettlementTest:__init()
+   self[MicroWorld]:__init(100)
+   self:create_world()
+   -- More code
+end
+
+return SettlementTest
+</code></pre>
+
+<p>  We require the <code>micro_world.lua</code> file in the first line, which contains the <code>Microworld</code> class. Then we instantiate the Microworld class, and define an <code>__init()</code> function for our object to initialize our custom world. Inside it, we call the initialization function from the Microworld class passing the diameter (in number of blocks) that we want for our test world, and call the <code>create_world()</code> function (also from the Microworld class) to actually create the flat terrain. Finally, we return our object.</p>
+
+<p>  We can create more functions in our class if we need to. There are already many functions in <code>micro_world.lua</code> that are useful to prepare a test world, you can call them like we called the <code>create_world()</code> function, and pass any parameters that you need. For example, the <code>create_world()</code> function can receive a kingdom URI and a biome URI as arguments, to generate the test world with them.</p>
+
+<p>  <a name="Warning"></a><img src="../../../images/common/row_alert2.png" alt="icon"/> Note that microworld attempts to simulate a regular game but it does not actually go through the same game flow as a regular game. For example, we have to manually initialize the services we want to use in <code>MicroWorld:create_world</code>. So if you're running into a bug that only happens in tests, it may be due to the tests themselves as opposed to the game. Generally the tests should match the game behavior but it isn't guaranteed.</p></li>
+</ul>
+
+
+
+<h2><a name="StonehearthTests"></a>Stonehearth tests</h2>
+
+
+<p>These tests are pretty similar to the Microworld worlds explained above. The <code>stonehearth_tests</code> mod makes use of the <code>microworld</code> mod to generate test worlds, so you'll need to enable both in the Mods menu if you plan to use the <code>stonehearth_tests</code> mod.</p>
+
+
+
+<p>The development team used this mod to manually test features in isolation as they were being developed, or to try reproducing bugs in small environments.</p>
+
+
+
+<p>You have plenty of examples to reuse in this mod, so if you're new to coding, you can fiddle with Lua here until you feel comfortable enough to attempt more complex things in your mod.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> The same warning <a href="#Warning">stated above</a> for microworld can also be applied for the stonehearth_tests mod. For example, when running tests you'll notice that the game master service hasn't been initialized (the Campaign Browser debug tool looks blank when you open it - thankfully it has a button to start it from the UI). So you'll need to initialize them manually. Also, multiplayer doesn't work unless you do the things listed in <code>multiplayer_test.lua</code>.</p>
+
+
+
+<h3><a name="SetupTests"></a>Setup stonehearth_tests</h3>
+
+
+<p>The <strong>stonehearth_tests</strong> mod now comes bundled with the game.</p>
+
+
+
+<ol>
+    <li><p>Go to the Mods menu from the main menu, find the <code>"Microworld for Tests"</code> and <code>"Stonehearth Unit Tests"</code> mods in the Local mods column, and enable both of them.</p></li>
+    <li><p>Close the game.</p></li>
+    <li><p>Edit your <code>user_settings.json</code> file.</p>
+
+<ul>
+    <li><p>If you installed the game with the Humble Bundle installer, it will normally be at <code>C:\Program Files (x86)\Stonehearth</code>.</p></li>
+    <li><p>If you have installed it via Steam, then it will be at <code>C:\Program Files (x86)\Steam\steamapps\common\Stonehearth</code>.</p></li>
+</ul>
+
+<p>  Some of these keys might already exist, in that case add only what's missing.</p>
+
+<pre><code>{
+   "user_id": "your_user_id",
+   "game" : {
+      "main_mod" : "stonehearth_tests"
+   },
+   "mods" : {
+      "stonehearth_tests" : {
+         "test" : "pet_test"
+      }
+   }
+}
+</code></pre>
+
+<p>  The <strong>"main_mod"</strong> key tells the game which mod should be loaded as the main mod. In this case, we'll load the <code>stonehearth_tests</code> mod first, which will skip the logo / main menu screens and will load directly a small test world. Make sure to invalidate this key whenever you want to play the game again (<code>"_main_mod" : "stonehearth_tests"</code>), or use the Esc menu to go back to the Main menu or load a savefile.</p>
+
+<p>  The <strong>"test"</strong> option inside the settings for the stonehearth_tests mod points to <code>"pet_test"</code> in this case. When you create your own custom test world you can change it for the name of your Lua file. All the tests, located inside the <code>stonehearth_tests</code> directory, end their names by <code>_test.lua</code> by convention. Unlike with the Microworld mod, we do have to declare the whole name of the file (minus the extension) in the <code>"test"</code> field in the user_settings.json, like in the example above.</p></li>
+    <li><p>Finally, start the game.</p></li>
+</ol>
+
+
+
+<p>You can also run this mod from the command line (make sure that both this and the Microworld mods are enabled first!):</p>
+
+
+<pre><code>  Stonehearth.exe --game.main_mod=stonehearth_tests --mods.stonehearth_tests.test=pet_test
+</code></pre>
+
+<h2><a name="Autotests"></a>Stonehearth autotests</h2>
+<p>We can create automated tests that will compare expected results with actual results so that we don't have to test features manually. They're useful to verify that regressions weren't introduced after changing some code.</p>
+
+
+
+<p><img src="../../../images/common/gold.png" alt="icon"/> Keep in mind that we may not be able to automate some things, and that issues that an autotest reproduces sometimes are not reproducible in the game and viceversa. Try to avoid flaky tests that sometimes pass and sometimes fail.</p>
+
+
+
+<p>To create our own automated tests, we have two mods that now come bundled with the game. The <code>stonehearth_autotest</code> mod requires the <code>autotest_framework</code> mod in order to work, so you'll have to enable both in your user_settings.json if you plan to run autotests:</p>
+
+
+
+<ol>
+    <li><p>Go to the Mods menu from the main menu, search for the <code>"Autotest Framework"</code> and <code>"Stonehearth Autotests"</code> mods in the Local mods column, and enable both of them.</p></li>
+    <li><p>Close the game.</p></li>
+    <li><p>Edit your <code>user_settings.json</code> file.</p>
+
+<ul>
+    <li><p>If you installed the game with the Humble Bundle installer, it will normally be at <code>C:\Program Files (x86)\Stonehearth</code>.</p></li>
+    <li><p>If you have installed it via Steam, then it will be at <code>C:\Program Files (x86)\Steam\steamapps\common\Stonehearth</code>.</p></li>
+</ul>
+
+<p>  Some of these keys might already exist, in that case add only what's missing.</p>
+
+<pre><code>{
+   "user_id": "your_user_id",
+   "game" : {
+      "main_mod" : "stonehearth_autotest"
+   },
+   "mods" : {
+      "stonehearth_autotest" : {
+         "options" : {
+            "run_forever" : false,
+            "num_times" : 10,
+            "exit_on_complete" : false,
+            "continue_on_failure" : true,
+            "pause_on_error" : true,
+            "script" : "/stonehearth_autotest/tests/end_to_end/harvest_autotests.lua",
+            "function" : "long_*",
+            "group" : "nightly"
+         }
+      }
+   }
+}
+</code></pre>
+
+<p>  The <strong>"main_mod"</strong> key tells the game which mod should be loaded as the main mod. In this case, we'll load the <code>stonehearth_autotest</code> mod first (careful when typing, it doesn't end by an 's'). Make sure to invalidate this key whenever you want to play the game again (<code>"_main_mod" : "_stonehearth_autotest"</code>), or use the Esc menu to go back to the Main menu or load a savefile.</p>
+
+<p>  Then we have several <strong>"options"</strong> that we can use:</p>
+
+<ul>
+    <li><p><strong>"run_forever"</strong> -- optional. If we set to <strong>true</strong>, it will run the specified tests forever until we close the game.</p></li>
+    <li><p><strong>"num_times"</strong> -- optional. Run each test a specified number of times.</p></li>
+    <li><p><strong>"exit_on_complete"</strong> -- optional. When <strong>false</strong>, will leave the game open after the last test finishes, instead of automatically closing the game.</p></li>
+    <li><p><strong>"continue_on_failure"</strong> -- optional. When <strong>true</strong>, tests will continue executing even if one of them failed.</p></li>
+    <li><p><strong>"pause_on_error"</strong> -- optional. When <strong>true</strong>, will pause the execution when a test fails, to be able to check the state of the game.</p></li>
+    <li><p><strong>"script"</strong>, <strong>"function"</strong> and <strong>"group"</strong> -- with these we define which autotests we want to run. If we don't specify a script nor a group, the group called <code>"all"</code> will be executed. To find the available groups, look in the <strong>"groups"</strong> keys from <code>stonehearth_autotest/tests/index.json</code>.</p>
+
+<p> We can run a single script instead of a group of scripts. In that case, specify the whole path to the Lua file containing the autotests in the <strong>"script"</strong> option. By convention, we end our autotests files with <code>_autotests.lua</code>.</p>
+
+<p> We can also run a specific test from a script. To do that, define which script contains the test in the <strong>"script"</strong> option, and then write the name of the test in the <strong>"function"</strong> option. For example:</p>
+
+<pre><code>"script" : "/stonehearth_autotest/tests/end_to_end/harvest_autotests.lua",
+"function" : "clear_test"
+</code></pre>
+
+<p> We can also use a couple of pseudo regular expressions for the <strong>"function"</strong> option. For example, this will run all tests from <code>death_autotests.lua</code> that begin with <code>regression_</code> :</p>
+
+<pre><code>"script" : "/stonehearth_autotest/tests/end_to_end/death_autotests.lua",
+"function" : "regression_*"
+</code></pre>
+
+<p> And this will run all the tests from <code>death_autotests.lua</code> that don't begin by <code>regression_</code> :</p>
+
+<pre><code>"script" : "/stonehearth_autotest/tests/end_to_end/death_autotests.lua",
+"function" : "!regression_*"
+</code></pre>
+
+<p> Notice the exclamation point, and the asterisk.</p></li>
+</ul></li>
+    <li><p>Finally, start the game. Depending on your options, the window will / won't be closed automatically after the tests finish running. Also, you might be interested in increasing the logging level for the <code>autotest_framework</code> mod. The framework will print which scripts and tests are being executed, (and also which tests failed, together with a message) in the stonehearth.log. Tests that pass won't print any special message when they finish.</p></li>
+</ol>
+
+
+
+<p>You can also run this mod from the command line (make sure that both the <code>autotest_framework</code> and <code>stonehearth_autotest</code> mods are enabled first!):</p>
+
+
+<pre><code>  Stonehearth.exe --game.main_mod=stonehearth_autotest --mods.stonehearth_autotest.options.script=stonehearth_autotest/tests/end_to_end/harvest_autotests.lua
+</code></pre>
+
+<h3><a name="CustomAutotests"></a>How to create your own custom autotests</h3>
+<p>Most of the autotests are located inside <code>stonehearth_autotest/tests/end_to_end</code>, you can take a look at those to see how they work. Autotests are run at speed 4 by default, many of them rely on the game being that fast. Unlike with the microworld mod, we don't need to manually create the terrain, a default size will be used.</p>
+
+
+
+<p>In general, follow these steps:</p>
+
+
+
+<ol>
+    <li><p>Create a Lua file inside the (e.g.) <code>stonehearth_autotest/tests/end_to_end</code> folder. For example <code>my_mod_autotests.lua</code>.</p></li>
+    <li><p>Add your Lua file to the "scripts" array inside a group from the <code>stonehearth_autotest/tests/index.json</code> file.</p></li>
+    <li><p>Edit your Lua file. Initially it will look something like this:</p>
+
+<pre><code>local my_tests = {}
+
+function my_tests.verify_this_and_that(autotest)
+
+   autotest:success()
+end
+
+return my_tests
+</code></pre>
+
+<p>  All the tests that you add must call <code>autotest:success()</code> when the success condition is met, otherwise they'll fail. Then, you can make them fail if a failing condition is met by calling <code>autotest:fail</code> with a descriptive message of why it failed:</p>
+
+<pre><code>autotest:fail('failed to complete this thing')
+</code></pre>
+
+<p>  In general, autotests will have the following structure:</p>
+
+<ul>
+    <li><p>They will first set up a scenario by creating some entities.</p></li>
+    <li><p>Then start listening for events that signal the success (sometimes the failure too) of the test.</p></li>
+    <li><p>Then start some tasks by clicking in the UI or fiddling with internal values in Lua, in order to produce the success condition.</p></li>
+    <li><p>Then wait for a while to give the game time to execute the above.</p></li>
+    <li><p>Then fail (a timeout that will only be reached if the success condition wasn't met on time).</p></li>
+</ul>
+
+<p>  For example:</p>
+
+<pre><code>-- Verify that a hearthling can die when guts reach 0 and that the tombstone is generated
+function death_tests.memorialize_death(autotest)
+   local worker = autotest.env:create_person(5, 5, { job = 'worker', resources = { health = 0, guts = 8} })
+
+   autotest.util:listen(radiant, 'radiant:entity:post_create', function (e)
+         if e.entity:get_uri() == 'stonehearth:tombstone' then
+            autotest:success()
+         end
+      end)
+
+   autotest:sleep(5000)
+   autotest:fail('failed to die')
+end
+</code></pre>
+
+<p>  In order to find the helper functions used in the autotests, you'll need to take a look at the <code>autotest_framework</code> files. For instance, in the example above we call <code>autotest.env.create_person()</code>, which is a function from <code>autotest_framework/lib/server/autotest_environment.lua</code>.</p>
+
+<p>  The function <code>autotest.util.listen()</code> is a wrapper function from <code>autotest_framework/lib/server/autotest_util_server.lua</code> (you can find other helper functions there, such as <code>fail_if_expired(timeout)</code>).</p>
+
+<p>  <img src="../../../images/common/row_alert2.png" alt="icon"/>Any time you listen to an event in your autotests you must use one of the wrappers defined there, so that the autotest framework can clean them up correctly no matter if the tests passes or fails (otherwise, some listeners might still exist when the next test is executing, and might fire at the wrong time, throwing errors).</p>
+
+<p>  The <code>autotest:success()</code>, <code>autotest:fail()</code> and <code>autotest:sleep()</code> functions are defined in <code>autotest_framework/lib/server/autotest_instance.lua</code>, which controls the actual execution of the autotests. The parameter to the <code>sleep()</code> function is a number representing milliseconds.</p>
+
+<p>  Other common functions used in the tests are located in <code>autotest_framework/lib/server/autotest_ui_server.lua</code>. And of course, you can use code from the game (like retrieving components, etc).</p>
+
+<p>  Be careful since some things might still remain from test to test if you don't reset / clean them up, such as open UI menus.</p></li>
+</ol>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

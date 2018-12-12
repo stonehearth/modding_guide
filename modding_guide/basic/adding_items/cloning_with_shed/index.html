@@ -11,6 +11,7 @@
       <header>
 <div class='logo'>
 </div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
@@ -322,6 +323,18 @@
 
    <li>
       <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
 
@@ -664,6 +677,290 @@
 </li>
 
    
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
    </ul>
 
 
@@ -701,7 +998,7 @@
       <img src="../../../../images/basic/adding_items/search_bar.png" alt="search_bar"/>
       Now, we're gonna clone it into our mod.</p>
 
-    <p>  <img src="../../../../images/common/row_alert2.png" alt="icon"/>If we plan on creating a recipe for this item, we could clone the recipe instead, because that will attempt to clone the produced item too. But currently cloning of recipes is bugged, so let's clone only the item.</p>
+    <p>  <img src="../../../../images/common/row_alert2.png" alt="icon"/>If we plan on creating a recipe for this item, we could clone the recipe instead, because that will attempt to clone the produced item too. However, if it's a new item for an existing crafter from the stonehearth mod, we'd need to edit the recipe file outside of SHED, and setup the mixinto to the recipes index also outside of SHED.</p>
 
     <p>  Right-click on it in the treeview and click on "Clone".
       <img src="../../../../images/basic/adding_items/context_menu.png" alt="context_menu"/></p></li>
@@ -710,7 +1007,7 @@
       Now we'll type something to replace all the "table_for_one"s for the folders and filenames. In our case, we want the item to be called "custom_table": <img src="../../../../images/basic/adding_items/replacement_text.png" alt="replacement_text"/> We could have added more replacement texts using the "+" button at the top-right if we wanted to. Now click on the "Clone!" button.</p></li>
     <li><p>A list with all the files and aliases that will be created will apear:
       <img src="../../../../images/basic/adding_items/cloned_files.png" alt="cloned_files"/>
-      Take some seconds to review it to make sure everything's correct (you can uncheck those that you don't want to be created), then click on "Accept".</p></li>
+      Take some seconds to review it to make sure everything's correct (you can uncheck those that you don't want to be created), then click on "Accept". It might take a bit to refresh the view, wait until SHED recovers.</p></li>
     <li><p><a name="AutoLocalization"></a> Let's click on our cloned item in the treeview and check that there are no errors. 
       <img src="../../../../images/basic/adding_items/just_cloned.png" alt="just_cloned"/></p>
 

@@ -1,0 +1,1165 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Buffs</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Buffs</div>
+   <p><p>Buffs (both positive and negative) are temporary changes to an entity's attributes. They are applied in response to a situation or event. For example, sleeping on the ground may add the groggy buff to a hearthling, causing them to be slower for a few hours after waking up. </p></p>
+
+
+<p>The buffs component is used to add, remove and keep track of all the buffs/debuffs that a hearthling currently has. The buff data that we declare in a JSON file is then managed by the <code>stonehearth/components/buffs/buff.lua</code> controller.</p>
+
+
+
+<p>The existing buffs can be found inside <code>stonehearth/data/buffs</code>. There might be some more in subfolders of <code>stonehearth/jobs</code>.</p>
+
+
+
+<ul>
+    <li><a href="#CreatingBuffs">Creating buffs</a></li>
+    <li><a href="#ApplyingBuffs">Applying and removing buffs</a></li>
+    <li><a href="#Testing">Testing buffs</a></li>
+</ul>
+
+
+
+<h2><a name="CreatingBuffs"></a>Creating buffs</h2>
+
+
+<p>We can easily create buffs that modify some attributes from the hearthlings with just JSON, or do some more complex things with a small Lua script. Don't forget to add an alias for your buff in your manifest!</p>
+
+
+
+<p>These are the properties that we can find in the buff's JSON file:</p>
+
+
+
+<ul>
+    <li><p><strong>"type" : "buff"</strong> -- we declare that this file represents a buff.</p></li>
+    <li><p><strong>"axis"</strong> -- either <strong>"buff"</strong>, <strong>"neutral"</strong> or <strong>"debuff"</strong>. This will positionate the buff icon in different rows in the unit frame when we select the hearthling.</p></li>
+    <li><p><strong>"display_name"</strong> -- a localized name for the buff to display in its tooltip in the UI.</p></li>
+    <li><p><strong>"description"</strong> -- a localized description for the buff's tooltip.</p></li>
+    <li><p><strong>"icon"</strong> -- an icon for the buff.</p></li>
+    <li><p><strong>"duration"</strong> -- a <a href="../../basic/misc_json/index.html#TimeExpressions">time expression</a> for the duration of the buff (in-game time). The buff will be automatically removed once this duration ends. If this field is not included, the buff will be permanent.</p></li>
+    <li><p><strong>"persistent"</strong> -- whether this buff should be stored when the game is saved or not; leave it as <strong>false</strong> if the logic to add the buff is run by other scripts on load. When <strong>true</strong>, it will be reapplied automatically on load by the buff controller (<code>buff.lua</code>).</p></li>
+    <li><p><strong>"repeat_add_action"</strong> -- what to do if the buff is readded when it hasn't finished its duration yet. It can be either <strong>"renew_duration"</strong>, which will restart the duration, <strong>"extend_duration"</strong>, which will sum the duration of the buff to the current time left, or <strong>"stack_and_refresh"</strong>, which will add a stack to the buff and restart its duration.</p>
+
+    <p>  If this field is not included, the buff will continue with its current duration until it expires.</p></li>
+    <li><p><strong>"max_stacks"</strong> -- used only when "repeat_add_action" is "stack_and_refresh". This is the maximum number of times that the buff can be stacked (each stack will reapply the modifiers on top of the current values).</p></li>
+    <li><p><strong>"cooldown_buff"</strong> -- optional field, points to an URI of a buff that will get applied when this buff's duration expires. While the cooldown buff is active, you won't be able to reapply this buff. You can see an example in the hothead buff (furious/winded buffs).</p></li>
+    <li><p><strong>"invisible_to_player"</strong> -- optional field, <strong>false</strong> by default. When <strong>true</strong>, the buff will not appear in the unit frame when we select the entity. This is useful if what the buff does should not be conveyed to the player (e.g. if it just sets a flag for use in other scripts, etc. For example, we use a swimming buff to change the hearthling's posture when they're in water and make them move slower).</p></li>
+    <li><p><strong>"effect"</strong> -- optional field. URI of the effect that will run when the buff is added (for example, the stamina tonic makes an orange cloud of particles to appear on the hearthlings for a second when it is used).</p></li>
+    <li><p><strong>"modifiers" : {}</strong> -- here we can modify attributes and stats. They are defined like for <a href="../traits/index.html#AttributeModifiers">traits</a>, only that the key here is called <strong>"modifiers"</strong>, not "attribute_modifiers".</p>
+
+<p>  For example, if we add this in our buff's JSON file:</p>
+<pre><code>"modifiers" : {
+   "speed" : {
+      "add" : 20
+   }
+}
+</code></pre>
+<p>  in the game we'll see it when hovering over the attribute in the Attributes tab of the character sheet. That way we know which buff is modifying the attribute and how much:
+  <img src="../../../images/intermediate/buffs/attribute_modifiers.png" alt="attribute_modifiers"/>
+  Both attribute modifiers and properties will be automatically undone if the buff/trait gets removed.</p></li>
+    <li><p><strong>"properties": []</strong> -- optional field. An array of properties that we can use in scripts. Same than for <a href="../traits/index.html#Properties">traits</a>.</p></li>
+    <li><p><strong>"script"</strong> -- optional field. URI of the script that will run when the buff is added and removed. You can reuse existing scripts from the stonehearth mod too. Look for buffs that are close in functionality to what you want to implement. The script structure is as follows:</p>
+
+<pre><code>local MyBuffScript = class()
+
+function MyBuffScript:on_buff_added(entity, buff)
+   local info = buff._json.script_info
+end
+
+function MyBuffScript:on_buff_removed(entity, buff)
+   -- Here we can clean up stuff created by the buff
+   -- E.g. destroying timers, listeners, etc.
+end
+
+return MyBuffScript
+</code></pre>
+<p>  The entity argument is the entity to which the buff has been added/removed and the buff argument represents the buff controller, so we can retrieve info from the JSON file as shown above.</p></li>
+    <li><p><strong>"script_info" : {}</strong> -- if we declared a script for this buff, we can define data for it here (actually we can include any field in the JSON file to retrieve it in the buff's script, so this field could have been called "data" if you wanted).</p></li>
+    <li><p><strong>"injected_ai": {}</strong> -- we can inject AI through buffs. The syntax is the same than when <a href="../../basic/wearables/index.html#AI">injecting AI via an equipment piece</a>.</p></li>
+    <li><p><strong>"set_posture": "stonehearth:swimming"</strong> -- we can set the posture of the hearthling like this. The key of the posture is defined in the postures.json file from the entity's rig.</p></li>
+</ul>
+
+
+
+<p>You might see a "tags" property in some of the existing buffs. It's no longer in use, so you can omit it.</p>
+
+
+
+
+<!-- 
+* **"short_description"** <- only the sleeping buff uses it. It seems to be used in attribute tooltips when they show buff icons. But the only existing case doesnt have modifiers (if you have short description dont use modifiers because in citizen character sheet js we order by attribute based on modifiers)
+-->
+
+
+
+
+<h2><a name="ApplyingBuffs"></a>Applying and removing buffs</h2>
+
+
+<p>There are several ways to apply buffs to entities:</p>
+
+
+
+<ul>
+    <li><p>Via <a href="../../basic/wearables/index.html#Buffs"><strong>"injected_buffs"</strong></a> property in an equipment piece. This will apply the buff as soon as the equipment piece is equipped by the entity. Normally we use buffs without duration for this case, so that they only expire if the equipment piece is unequipped.</p></li>
+    <li><p>Via <strong>"inflictable_debuffs"</strong> property in the entity_data of an entity (e.g. a monster) or of an equipment piece (a weapon, normally). For example, undead have a 50% chance of inflicting this debuff while they're fighting:</p>
+
+<pre><code>"entity_data": {
+   "stonehearth:buffs": {
+      "inflictable_debuffs": {
+         "infection": {
+            "uri": "stonehearth:buffs:undead_infection",
+            "chance": 0.5
+         }
+      }
+   }
+}
+</code></pre>
+<p>  Remember that here we're not adding the buff to the entity that has this entity data, but to other entities hit in combat.</p></li>
+    <li><p>Via <strong>"inflictable_debuffs"</strong> property in combat attacks. Same syntax than above (an identifier linking to the URI of the buff and the chance).</p></li>
+    <li><p>By using a consumable item: some of the tonics have a command in them that runs a function when we click on it. This function looks for the following info from the entity_data of the consumable:</p>
+
+<pre><code>"stonehearth:consumable": {
+   "script": "stonehearth:consumables:scripts:buff_town",
+   "buff": "stonehearth:buffs:courage_tonic"
+}
+</code></pre>
+<p>  The script will apply the buff to all the hearthlings. You can reuse it or use it as an example.</p></li>
+    <li><p>In a Lua script (we can also pass an extra parameter with options):</p>
+
+<pre><code>entity:get_component('stonehearth:buffs'):add_buff('silent_woods:buffs:spooked')
+-- Also possible:
+radiant.entities.add_buff(entity, buff_uri)
+</code></pre></li>
+</ul>
+
+
+
+<p>Buffs are removed when:</p>
+
+
+
+<ul>
+    <li><p>Their duration expires.</p></li>
+    <li><p>The equipment piece that applied them is unequipped.</p></li>
+    <li><p>In a Lua script (we can also pass an extra parameter as a flag for removing all the stacks):</p>
+
+<pre><code>entity:get_component('stonehearth:buffs'):remove_buff('silent_woods:buffs:spooked')
+-- Also possible:
+radiant.entities.remove_buff(entity, buff_uri)
+</code></pre></li>
+</ul>
+
+
+
+
+<h2><a name="Testing"></a>Testing buffs</h2>
+
+
+<p>We can easily add buffs to check that they're working as intended, even before hooking them to an equipment piece or in a script.</p>
+
+
+
+<p>Once we add an alias for our buff in our manifest, we can select a hearthling in the game, open the <a href="../../essentials/debugtools/default_console/index.html">default console</a> and type:</p>
+
+
+
+<pre><code>  add_buff my_mod:buffs:my_buff
+</code></pre>
+
+<p>and press Enter. We should be able to see the icon of the buff next to the unit frame of the hearthling. If the buff is invisible to players, we can open the <a href="../../essentials/debugtools/debugtools_mod/index.html#ObjectBrowser">Object browser</a>, click on the value for the buffs component, and check that it's listed there.</p>
+
+
+
+<p>We can also remove a buff in the same way, using the <code>remove_buff</code> command.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

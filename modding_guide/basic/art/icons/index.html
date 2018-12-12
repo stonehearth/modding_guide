@@ -1,0 +1,1152 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Creating 2D assets</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Creating 2D assets</div>
+   <p><p>The game uses images in different parts of the UI. Many of them were created in Photoshop, but you can use any program to make them.</p></p>
+
+
+<ul>
+    <li><a href="#ImageSize">Image size</a></li>
+    <li><a href="#DynamicPortraits">Dynamic portraits</a></li>
+    <li><a href="#GeneratedIcons">Generated icons</a></li>
+    <li><a href="#StaticPortraits">Static portraits</a></li>
+    <li><a href="#UIIcons">UI icons</a>
+    <ul>
+        <li><a href="#StyleGuide">Style guide</a></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="ImageSize"></a>Image size</h2>
+
+
+<p>For icons and recipe images, we usually take a screenshot with our voxel editor, and maybe add some darker outline to it with an illustration program (6px black with 40%-60% opacity). The size for these images is usually 300x300 pixels, but it can vary (make sure they're square).</p>
+
+
+
+<p>Here's how you can take a screenshot in Qubicle 1:</p>
+
+
+
+<ul>
+    <li><p>Open your QB model and don't touch the camera.</p></li>
+    <li><p>Go to the top menu, click on Render, then on 'Render Settings...'</p></li>
+    <li><p>Set the resolution to 300x300 in the small text boxes at the right and click OK to apply the changes.</p></li>
+    <li><p>In the menu bar that's right above the scene area, click on RES. GATE to enable visualizing the resolution gate.</p></li>
+    <li><p>Pan your camera so that the model is inside it, trying to make it as big as possible without going out of the frame but leaving some margin so that the image is balanced. For some models you might want to rotate the view a little too.</p>
+
+    <p>  <img src="../../../../images/art/icons/resolution_gate.png" alt="resolution_gate"/></p></li>
+    <li><p>Now go to the Render menu again, click on 'Render As...' and save your image.</p></li>
+    <li><p>You might want to edit it in Photoshop or similar to add the border. Mind that the image has the background transparent, if you save it solid the game would show the background white.</p></li>
+</ul>
+
+
+
+
+<!--
+Here's how you can take a screenshot in Magicavoxel:
+Here's how you can take a screenshot in Voxelshop: https://discourse.stonehearth.net/t/moai-personal-thread/20070/28
+Here's how you can take a screenshot in Goxel:
+-->
+
+
+
+
+<h2><a name="DynamicPortraits"></a>Dynamic portraits</h2>
+
+
+<p>For dynamic portraits, such as those for hearthlings and pets (which are taken internally by the game), we need to add some info in the entity's JSON file.
+This is from <code>rabbit.json</code>, inside its "entity_data" section:</p>
+
+
+
+<pre><code>  "stonehearth:portrait": {
+     "portrait_types": {
+        "headshot": {
+           "camera": {
+              "pos": [
+                 17,
+                 0.8,
+                 -27
+              ],
+              "look_at": [
+                 0,
+                 0.6,
+                 0
+              ],
+              "fov": 45
+           }
+        }
+     }
+  }
+</code></pre>
+
+<p>We add <strong>"stonehearth:portrait" : {}</strong>. The information inside is used by portrait_renderer_service.lua. Currently the portraits only have <strong>"portrait_types" : { "headshot": {} }</strong> but you can customize the portrait you want to display in the UI (see portrait_renderer_service.lua and Javascript files that make use of the portrait service, like <code>citizens.js</code>, <code>show_team_workshop.js</code>, <code>unit_frame.js</code> and <code>select_roster.js</code>).</p>
+
+
+
+<p>The properties for the headshot are the position of the camera, the look_at, and fov (field of view, how close or far from the camera we are). You can adjust these values if your entity is too small or too big and the portrait doesn't look good in the unit frame.</p>
+
+
+
+<h3><a name="GeneratedIcons"></a>Generated icons</h3>
+
+
+<p>The game also auto-generates icons for items for the thought bubbles, and caches them in the <code>saved_objects/generated_icons</code> directory. Some of the topics that hearthlings can chat about don't have a 3D representation, they are passed as a 2D static image that already exists (for example, the weather icons).</p>
+
+
+
+<p>These icons are often taken for the iconic form of the entities, because it's the item that the hearthlings have interacted with (by carrying it). They are known to show hollow surfaces where the item had material maps applied, though.
+If you need to adjust the camera for a generated portrait for the thoughts (sometimes it may clip through the item) use these fields instead for your entity data, and adjust the values until you get the desired result:</p>
+
+
+
+<pre><code>  "stonehearth:portrait": {
+      "portrait_types": {
+         "icon": {
+            "center": { "x": 0, "y": 0.3, "z": 0.8 },
+            "rotation": { "x": 0, "y": 15, "z": 45 },
+            "extra_distance": 0.5,
+            "fov": 30,
+            "animation": "custom.json",
+            "animation_time_ms": 42
+         }
+      }
+   }
+</code></pre>
+
+<p>Since the icons are cached, you might have to clear the generated_icons folder for the portrait to be taken again.</p>
+
+
+
+<h2><a name="StaticPortraits"></a>Static portraits</h2>
+
+
+<p>For portraits for the campaign dialogs, we use static images made with our voxel editor, these are not auto-generated.
+They range in size from 200x200 pixels to 400x400 pixels, most of them being 300x300 pixels. But it's up to your choice. You can also create your own encounter type that uses a custom UI and custom CSS (Less), which can rescale the image if it's too big or small.</p>
+
+
+
+<h2><a name="UIIcons"></a>UI icons</h2>
+
+
+<p>You will already have these icons if you copy the existing files from the stonehearth mod, but just in case you want to make them from scratch, here are their sizes:</p>
+
+
+
+<ul>
+    <li>The size of buff icons is 46 x 51 pixels.</li>
+    <li>The size of trait icons is 60 x 40 pixels.</li>
+    <li>The size of job perks icons is 74 x 74 pixels.</li>
+    <li>The size of weather icons is 100 x 100 pixels.</li>
+    <li>The size of start menu icons is 74 x 74 pixels (there are some narrower exceptions).</li>
+</ul>
+
+
+
+<p>For the crafting workshop's UI, choose one that's similar to your crafter's theme and edit the images. All the images are in .png so it's easy to edit them. Make sure to use an application that supports transparency.</p>
+
+
+
+<!-- it is possible that we shipped 1 psd of a workshop somewhere, so it would be even easier I guess, although the final image is only 1, and it depends on the Less and the js too so you shouldn't wander too far in your design unless you want to create your own crafting system-->
+
+
+
+<p>Same for customizing the rest of UI elements from the game.</p>
+
+
+
+<h3><a name="StyleGuide"></a>Style guide</h3>
+
+
+<p>For hand-made 2D icons we have a <a href="../../../../files/StonehearthTraitIconStyleGuide.pdf">style guide</a>, if you want to follow Stonehearth's <a href="https://www.youtube.com/watch?v=6jadSn20Vi0">style</a>.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

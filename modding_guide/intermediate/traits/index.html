@@ -1,0 +1,1199 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Traits</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Traits</div>
+   <p><p>The traits component holds a map of all of an entity's traits. For hearthlings it's added in the <code>base_human.json</code> mixin.</p></p>
+
+
+<p>Traits can be added, removed and retrieved through this component during the game. You can find all the existing traits inside <code>stonehearth/data/traits</code>.</p>
+
+
+
+<ul>
+    <li><a href="#CreatingTraits">Creating a trait</a>
+    <ul>
+        <li><a href="#AttributeModifiers">Attribute modifiers</a></li>
+        <li><a href="#Properties">Properties</a></li>
+    </ul></li>
+    <li><a href="#TraitExclusions">Trait exclusions</a></li>
+    <li><a href="#CustomTraitsIndex">Custom traits index</a></li>
+</ul>
+
+
+
+<h2><a name="CreatingTraits"></a> Creating a trait</h2>
+
+
+<p>A trait consists of a JSON file that describes features such as the display name, description, and icon.</p>
+
+
+
+<p>To create a new trait, add a new alias to your manifest.json. For example:</p>
+
+
+
+<pre><code>  "aliases": {
+     "traits:impatient" : "file(data/traits/impatient/impatient_trait.json)"
+  }
+</code></pre>
+
+<p>Then mixinto that alias entry to <code>stonehearth/data/traits/traits_index.json</code> so that it can be included in the list of traits that can be added to a new hearthling:</p>
+
+
+
+<pre><code>  "mixintos": {
+     "stonehearth:traits_index" : "file(data/traits/traits_index.json)"
+  }
+</code></pre>
+
+<p>The mixinto would look like this:</p>
+
+
+<pre><code>  {
+     "traits": {
+        "my_mod:traits:impatient": {}
+     }
+  }
+</code></pre>
+
+<p>Our <code>impatient_trait.json</code> file looks like this:</p>
+
+
+<pre><code>  {
+     "type": "trait",
+     "display_name": "i18n(my_mod:data.traits.impatient.impatient_trait.display_name)",
+     "description": "i18n(my_mod:data.traits.impatient.impatient_trait.description)",
+     "icon": "file(impatient_trait.png)",
+     "script_controller": "my_mod:trait_scripts:impatient",
+     "data": {
+        "impatient_thought": "stonehearth:thoughts:traits:got_delayed",
+        "negative_thought": "stonehearth:thoughts:traits:made_me_hurry"
+     },
+     "attribute_modifiers": {
+        "speed": {
+           "add": 30
+        },
+        "social_loss_override": {
+           "min": 0.3
+        },
+        "diligence": {
+           "add": 15
+        }
+     }
+  }
+</code></pre>
+
+<p>Traits files have these fields:</p>
+
+
+
+<ul>
+    <li><p><strong>"type" : "trait"</strong> -- this file represents a trait.</p></li>
+    <li><p><strong>"display_name"</strong> -- localized name for the trait to display in the UI.</p></li>
+    <li><p><strong>"description"</strong> -- localized description for the trait to display in the UI. You can reference the name of the hearthling that has this trait by using <code>[name(i18n_data.entity)]</code> in your description text in the <code>en.json</code> file.</p></li>
+    <li><p><strong>"icon"</strong> -- icon to display in the UI.</p></li>
+    <li><p><strong>"script_controller"</strong> -- optional field. A controller that will be created with the arguments: entity, uri, parent, args. The script can be used to create custom behavior associated with the trait.</p>
+
+    <p>  For example, the food_preference trait script (<code>stonehearth/data/traits/food_preference/food_preference_script.lua</code>) gets data from the parent trait (using the uri parameter), and uses the data to change the entity's consumption preference and also adds a thought when the entity eats a food they don't like.</p>
+
+    <p>  <img src="../../../images/common/row_alert2.png" alt="icon"/> Remember that the alias for the script controller must be added inside the <strong>"controllers"</strong> key of your manifest, not under the "aliases" key.</p></li>
+    <li><p><strong>"data"</strong> -- optional field. If we defined a script controller for the trait, we can add data inside this field to retrieve it from the controller.</p></li>
+    <li><p><strong>"attribute_modifiers"</strong> -- optional field. Modifiers for the hearthling's attributes. See <a href="#AttributeModifiers">below</a> for more details.</p></li>
+    <li><p><a name="Subjects"></a><strong>"subject_overrides"</strong> -- optional field. An array of overrides for subject matters (topics used in hearthling conversations). Each subject that is added to the hearthling has an associated opinion. The opinions are randomly chosen, unless something else overrides them. For example, the item preferences observed in the Appeal tab of the character sheet will produce positive opinions for the loved/liked items and negative opinions for the disliked items.</p>
+
+    <p>  This field is used to add permanent subject matters to the hearthling or override their opinions if they already exist. Examples can be seen in the cultist trait and in the passion_job traits. Each entry in the array has 4 keys: <strong>"subject"</strong> (the URI of the subject), <strong>"sentiment"</strong> (-1 for negative, 0 for neutral, 1 for positive), <strong>"permanent"</strong> (whether this subject should be permanent or disappear after some time) and <strong>"unvarying"</strong> (hearthlings can change their opinion about subjects when having conversations, if this property is <strong>true</strong> they won't).</p></li>
+    <li><p><strong>"properties"</strong> -- optional field. It's an array of strings, we can add like custom tags in it and check for them in Lua scripts. See <a href="#Properties">below</a> for more info.</p></li>
+</ul>
+
+
+
+<p><img src="../../../images/common/gold.png" alt="icon"/> The "magnificent_beard" trait has some properties listed in the traits index.</p>
+
+
+
+<p>The <strong>"immigration_only" : true</strong> property will make it so that this trait can only be assigned if the hearthling is an immigrant (so it will never appear randomly at the select roster screen during embarkation).</p>
+
+
+
+<p>The <strong>"gender" : "male"</strong> property will make it so that only male hearthlings can get this trait assigned. You may use this property without the "immigration_only" one, but the players will still be able to change the gender in the roster screen (which won't remove the trait).</p>
+
+
+
+<p>This trait has both properties since females don't have the facial hair feature in the customization list, so to prevent errors during embarkation it was made as "immigration_only".</p>
+
+
+
+<p>To test traits we can reroll many times in the customization screen until we get our new trait, but that takes time. Instead, let's add/remove our traits manually to the hearthlings via the default console. We can select a hearthling and type this in the default console:</p>
+
+
+<pre><code>  add_trait my_mod:traits:impatient
+  remove_trait my_mod:traits:impatient
+</code></pre>
+
+<p>Notice that the URI is passed as a parameter without quotes.
+<img src="../../../images/intermediate/traits/traits.png" alt="traits"/></p>
+
+
+
+<p>Attributes will appear in green in the Attributes tab if they're above their normal value, and in red if they're below it. Their tooltip will show the buffs that are causing the values to increase/decrease, but it won't show the traits that affect them (you can hint at that in the trait description though).</p>
+
+
+
+<h3><a name="AttributeModifiers"></a>Attribute modifiers</h3>
+
+
+<p>If a trait changes some numerical value, add it inside <strong>"attribute_modifiers"</strong> in the trait's JSON file, and have whatever manages the behavior that the numerical value changes check for the attribute value.</p>
+
+
+
+<p>Beware that attribute modifiers aren't saved and are reapply to the entity on load.</p>
+
+
+
+<p>These modifiers are managed in <code>stonehearth/lib/modifiers/modifiers_lib.lua</code>. We can also add attributes to the entity this way (for instance, the "social_loss_override" from the example above is not included by default in the hearthlings attributes, but there are scripts that check for it. We can inject new numerical values with this and check for them in other Lua files).</p>
+
+
+
+<p>The possible values for the modifiers are <strong>"add"</strong>, <strong>"multiply"</strong>, <strong>"min"</strong>, and <strong>"max"</strong>. With "add" we can also substract (if the value we provide is negative), and with "multiply" we can also divide (if we provide a decimal value; for example, to change the attribute to one fifth of its current value we'd multiply by 0.2, which is 1/5).
+Multiply is done before add, then min, then max. So if there are several buffs or traits affecting this attribute, they would get applied in that order.</p>
+
+
+
+<h3><a name="Properties"></a>Properties</h3>
+
+
+<p>We can add custom properties to the hearthlings via traits, and then in other Lua scripts check for them. For example, the social component checks for this property that is injected to hearthlings with the loner trait:</p>
+
+
+
+<pre><code>  if radiant.entities.has_property(self._entity, 'avoids_conversations_with_citizens') then
+     return -- entity doesn't initiate conversations with fellow citizens
+  end
+</code></pre>
+
+<h2><a name="TraitExclusions"></a>Trait exclusions</h2>
+<p>If you take a look at <code>traits_index.json</code> from the stonehearth mod, you'll notice that there's a <strong>"groups"</strong> key at the top. This allows to define groups of related or opposite traits to create exclusions. When rolling the traits, if the hearthling gets assigned a trait from one of these groups, they won't get assigned a different trait from within the same group (hearthlings can have either 1 or 2 traits by default).</p>
+
+
+
+<p>If our custom trait doesn't have to do with any other trait, we can define them under the <strong>"traits"</strong> key instead, like in the example above.</p>
+
+
+
+<p>We can also define exclusions for traits inside either "groups" or "traits" like this:</p>
+
+
+<pre><code>  "stonehearth:traits:green_thumb": {
+     "excludes": {
+        "stonehearth:traits:carnivore": true
+     }
+  }
+</code></pre>
+
+<p>That way we don't have to add or move the traits inside "groups", which might affect other traits (traits are only defined once in all the index file) and can exclude the same trait for different traits.</p>
+
+
+
+<h2><a name="CustomTraitsIndex"></a>Custom traits index</h2>
+
+
+<p>The base kingdoms get their traits from the "stonehearth:data:traits" index by default, but we can specify a different traits index for modded populations. In their population JSON file, add this field:</p>
+
+
+<pre><code>  "traits_index" : "my_mod:data:traits"
+</code></pre>
+
+<p>Usually NPC factions don't make use of traits, only the playable ones do.</p>
+
+
+
+<p>Mod from a community member that adds many traits to the game: <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1410871392">Kai Monkey's Traits</a></p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

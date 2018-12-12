@@ -1,0 +1,1250 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Collision and destination</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Collision and destination</div>
+   <ul>
+    <li><a href="#CollisionTypes">Collision types</a></li>
+    <li><a href="#RegionCollision">Collision regions</a>
+    <ul>
+        <li><a href="#RegionCollisionTypes">Region collision types</a></li>
+    </ul></li>
+    <li><a href="#DestinationRegions">Destination regions</a></li>
+</ul>
+
+
+
+<h2><a name="CollisionTypes"></a>Collision types</h2>
+
+
+<p>Usually we define one or more collision regions for our entities (if they need collision), but for sentient entities we normally use a predefined collision type. If hearthlings should be able to walk through that entity, we might not need to add a region_collision_shape component.</p>
+
+
+
+<p>To use the default collision types, we have to define them inside the mob component. For example:</p>
+
+
+
+<pre><code>  "mob": {
+     "mob_collision_type": "clutter"
+  }
+</code></pre>
+
+<p>The possible types are:</p>
+
+
+
+<ul>
+    <li><p><strong>"none"</strong> -- used for firepit seats (they're invisible, and hearthlings should be able to sit through them) and for the titan.</p></li>
+    <li><p><strong>"clutter"</strong> -- this type will make hearthlings be able to walk through the item. Used in small plants, windows, etc.</p>
+
+    <p>  Items with this collision type will be destroyed when their supporting block is removed. This is to prevent spam of random clutter when mining the ground (if the items don't have a collision type defined but have collision regions, then hearthlings won't be able to mine the blocks below their collision region).</p></li>
+    <li><p><strong>"tiny"</strong> -- this type is used for critters and some small objects, normally. In practice, it's the same type than "clutter" (imagine a 1x1x1 region).</p></li>
+    <li><p><strong>"humanoid"</strong> -- this is the one used by hearthlings and monsters. Imagine a 1x3x1 region.</p></li>
+    <li><p><strong>"titan"</strong> -- this is an unused type. Imagine a 7x6x7 region plus a 5x8x5 region. Items and sentient beings might end up floating too high when interacting with regions that big, and viceversa, so it's not recommended.</p></li>
+</ul>
+
+
+
+<p>We can't see these region types using debugtools, but notice how hearthlings can't dig tunnels shorter than 3 blocks, nor reach items that are in a hole that small, because they collide with the ceiling.</p>
+
+
+
+<p>It's also possible to derive the region from the QB model, but it's better for performance if it's a simpler shape. And it will be translated in world units from the original model, regardless of the scale of the model in game, so it's recommended to define your own collision regions or to use one of the types above.</p>
+
+
+
+<p>For example, this is from <code>large_boulder_1.json</code>:</p>
+
+
+
+<pre><code>  "region_collision_shape": {
+     "region_from_model": {
+        "model": "file(large_boulder_1.qb)"
+     }
+  }
+</code></pre>
+
+<p>Like trees, boulders are at the same scale than terrain (1 voxel in the model is 1 world unit), so the collision region will match. But if we had changed their scale in the JSON file to something bigger or smaller, the collision region would still be this big (since we can't define regions with decimal values).</p>
+
+
+
+<p>Like explained above, it's better to use simple rectangular shapes when possible. The "clutter" type is also good when there can be many of these entities placed at the same location.</p>
+
+
+
+<h2><a name="RegionCollision"></a>Collision regions</h2>
+
+
+<p>The collision region tells the game that a hearthling cannot walk through an object, and that we can't place any other items in that area. Without a collision region, hearthlings will be able to walk straight through the objects!</p>
+
+
+
+<p>The <strong>region_collision_shape</strong> component defines collision regions in terms of its own coordinate system. +Y is the same as the world coordinate system, but +X and +Z are the opposite. It is defined this way so that most values are positive (objects larger than 2 blocks in the X or Z direction may not have all values positive).
+<img src="../../../../images/intermediate/regions/region_collision.png" alt="region_collision"/></p>
+
+
+
+<p>If you press F11 and select an entity, you should be able to see its collision region as a transparent box with light blue edges. It usually overlaps with the destination region, so sometimes it's hard to see one or the other.</p>
+
+
+
+<p>The following is an example taken from <code>stone_chair.json</code>:</p>
+
+
+
+<pre><code>  "region_collision_shape" : {
+     "region": [
+        {
+           "min" : { "x" : 0, "y" : 0, "z" : 0 },
+           "max" : { "x" : 1, "y" : 2, "z" : 1 }
+        }
+     ]
+  }
+</code></pre>
+<p>In this example we can see that the object is 1 block wide in the X and Z directions and 2 blocks high in the Y direction, starting from the region_origin which we previously defined. Z direction is to the north and X direction is to the west as previously defined.</p>
+
+
+
+<p>You can add more than one collision shape inside the <strong>"region"</strong> array. Make sure that the "min" values are lower than the "max" values for each region.</p>
+
+
+
+<p>You can't have regions that cover fractions of a world unit. The values have to be defined in whole blocks. If you use fractional values, or if the region is not aligned with the edges of the blocks, discrete values will still be used by the game internally, so you might notice that hearthlings are not interacting at the exact places that you defined.</p>
+
+
+
+<p>By default, hearthlings can walk over any object that has a height of 1 unit, so if your collision cube is too low, hearthlings will be able to walk on top of it.</p>
+
+
+
+<p>In order to adjust our collision regions manually, we can simply add </p>
+
+
+<pre><code>  "region_collision_shape": {}
+</code></pre>
+<p>in our JSON file (the one for the root entity, NOT in the ghost!) and then open the game and use the <a href="../../../essentials/debugtools/debugtools_mod/index.html#EntityEditor">Entity editor</a> with our item. The pencil with a + sign allows to add a new collision region, the X is to remove them and we can adjust them by using the up and down arrows for each dimension:</p>
+
+
+
+<p><img src="../../../../images/intermediate/regions/collision_region.png" alt="collision_region"/></p>
+
+
+
+<p>Once you're happy with your collision regions, click on the scroll icon next to the Collision section, click on the Copy button, and paste the data in your JSON file (again remember, collision and destination regions do NOT go in the ghost JSON file).</p>
+
+
+
+<p><img src="../../../../images/intermediate/regions/copy_json.png" alt="copy_json"/></p>
+
+
+
+<h3><a name="RegionCollisionTypes"></a>Region collision types</h3>
+
+
+<p>Besides the collision types, there's also region collision types, but in most cases modders don't need to be concerned about them.</p>
+
+
+
+<ul>
+    <li><p><strong>"none"</strong> -- this is used for items like wall hangings (tapestries, paintings...), rugs and the like, and doors. They need a collision region, so that in the builder we have a box on them that we can drag to move the item around (and the builder knows in which order they should be built), but at the same time we don't want hearthlings to collide with them (since regions are full blocks size, and these are thin items).</p>
+
+    <p>  In the case of doors, it helps preventing enemies from entering houses while still allowing hearthlings to use them (although that also involves the player_id).</p></li>
+    <li><p><strong>"solid"</strong> -- most of the items have this type. When we don't define a <strong>"region_collision_type"</strong>, it will be solid by default.</p></li>
+    <li><p><strong>"platform"</strong> -- this is used for wet stones, dry stones, and more importantly, scaffolding. With this type, hearthlings can stand on top of the scaffolding and are also able to walk through its sides.</p></li>
+</ul>
+
+
+
+<p>Example from <code>throw_rug.json</code>:</p>
+
+
+
+<pre><code>  "region_collision_shape": {
+     "region_collision_type": "none",
+     "region": [
+        {
+           "min": { "x": -2, "y": 0, "z": -2 },
+           "max": { "x": 1, "y": 0.1, "z": 1 }
+        }
+     ]
+  }
+</code></pre>
+
+<h2><a name="DestinationRegions"></a>Destination regions</h2>
+<p>If hearthlings interact with our object by walking up next to it, we need to define a destination component to declare what it means to be next to our object.</p>
+
+
+
+<p>The destination component determines the area around a thing that is an acceptable distance to be standing when interacting with the thing. When declaring it in the JSON file, pass in a region around the object as a rectangle with start and end diagonal coordinates. The end coordinates are exclusive.</p>
+
+
+
+<p>By default, the game generates 4 adjacency regions as edges to the specified destination region even if we don't specify any adjacency flag. This usually means we want the destination region to be a box around the entire object (many times it's the same area than the collision region). We rarely want to stand in the diagonal corners of the objects since that's usually not close enough to the model or doesn't look good. When there is no destination, the game just assumes it is the same as the collision.</p>
+
+
+
+<p>Like with the collision regions, we can add, remove and adjust the destination regions visually in the game if we first add</p>
+
+
+<pre><code>  "destination": {}
+</code></pre>
+<p>in the components of the JSON file of the root entity (NOT the ghost!).</p>
+
+
+
+<p>Now place your item in the world, select it and open the Entity editor. Add a destination region and make sure to check the "Auto update Adjacency" checkbox too. Now you can click on any of the squares of the adjacency flags.</p>
+
+
+
+<p>You should see a transparent box with purple edges (the destination region), and transparent boxes with red edges adjacent to that region. These red boxes define which grid blocks a hearthling can stand on to be considered "next to" the object. The goal is to get the red boxes to contain the grid around the edges of the object (they have to be aligned or else bad things might happen!).</p>
+
+
+
+<p><img src="../../../../images/intermediate/regions/destination_region.png" alt="destination_region"/></p>
+
+
+
+<p>Hearthlings will walk up to any of the blocks in the adjacency region to start interacting with the object. If our destination region is high, the adjacency region will also be high (but normally it will only be one block thick since hearthlings only need 1 block to stand on the ground).</p>
+
+
+
+<p>By adjusting the destination region and the adjacency flags, we can make the hearthlings interact only from one side of the object. For example, the Potter uses the kiln only from the front side, and beds are only reachable if the blocks next to the longer sides are not occupied by collision boxes of other items.</p>
+
+
+
+<p>The possible adjacency flags are:</p>
+
+
+
+<pre><code>  "adjacency_flags": [
+     "front",
+     "left",
+     "back",
+     "right",
+     "front_left",
+     "front_right",
+     "back_left",
+     "back_right"
+  ]
+</code></pre>
+
+<p>Example of destination component from <code>clay_bed.json</code>:</p>
+
+
+
+<pre><code>  "destination": {
+     "region": [
+        {
+           "min": {
+              "x": -1,
+              "y": 0,
+              "z": -1
+           },
+           "max": {
+              "x": 2,
+              "y": 1,
+              "z": 2
+           }
+        }
+     ],
+     "adjacency_flags": [
+        "left",
+        "right"
+     ]
+  }
+</code></pre>
+
+<p>As with the origins and collision region, click the "Show Json" button next to the Destination in the Entity Editor to get the destination and collision info. Paste that text into the components section of the actual JSON file (remember, NOT in the ghost JSON file! That would cause errors).</p>
+
+
+
+<p>Always make sure that your regions work when the object is rotated! Also test to make sure that the hearthlings can walk up to your object and their animations look correct next to it.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

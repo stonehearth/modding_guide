@@ -1,0 +1,1166 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Kingdoms</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Kingdoms</div>
+   <p>Kingdoms are managed through the population service, population call handler, and <code>population_faction.lua</code>. To add our new playable kingdom we can take a look at the rayyas_children and northern_alliance mods.</p>
+
+
+
+<p>The steps for adding monster populations are similar, check this other <a href="#">page</a>.</p>
+
+
+
+<ol>
+    <li><p>Create the population files.</p>
+
+    <p>  We can copy an existing population JSON file, they're usually inside <code>stonehearth/services/server/population/data</code> (for Rayya's Children and Northern Alliance mods, they're inside their <code>data</code> folder). Let's check the properties that we can find in these files:</p>
+
+    <ul>
+        <li><p><strong>"type": "kingdom"</strong> -- this file represents a kingdom / population.</p></li>
+        <li><p><strong>"display_name"</strong> -- localized display name to show in the UI.</p></li>
+        <li><p><strong>"kingdom_id"</strong> -- an identifier for the kingdom. Try to keep it unique, and only use lowercase and underscores by convention.</p></li>
+        <li><p><strong>"favored_biome"</strong> -- URI of the favored biome. Normally favored biomes provide with enough resources for the base crafter job of your custom kingdom. When players choose to play with this kingdom in a non-favored biome, a warning will appear in the UI. </p>
+
+        <p> <img src="../../../images/common/row_alert2.png" alt="icon"/> The warning will only appear if we chose a vanilla kingdom that's not favored. For modded biomes it won't appear. Nevertheless, a "(favored)" text will appear next to the biome name, so that players know that in that biome they'll have all the resources for this kingdom's jobs.</p></li>
+        <li><p><strong>"quote"</strong> -- unused legacy field.</p></li>
+        <li><p><strong>"description"</strong> -- localized description that will appear in the list of playable kingdoms in the UI.</p></li>
+        <li><p><strong>"post_selection_description"</strong> -- a localized description that will appear in the text at the left side of the screen after we select our kingdom. You may need to start it with a space.</p></li>
+        <li><p><strong>"image"</strong> -- path to the image for the list of kingdoms. Usually 400x300 pixels.</p></li>
+        <li><p><strong>"story_board_image"</strong> -- path to the image that will appear at the right side of the screen after we select our kingdom in the first embarkation screen. Normally depicts a couple citizens of our kingdom, with a transparent background (which is filled by the chosen biome).</p></li>
+        <li><p><strong>"starting_talisman"</strong> -- URI of the first talisman that your kingdom will get. Once you place the banner, this talisman will be automatically created together with other items from the chosen loadout. Normally a talisman for a crafting job, so that the citizens can craft other talismans and unlock more jobs progressively.</p></li>
+        <li><p><strong>"starting_resource"</strong> -- URI of the starting resource. After placing the banner, two items of this resource will be created together with the above. Normally a resource so that the initial crafter can craft a basic workbench and get the town started.</p></li>
+        <li><p><strong>"job_index"</strong> -- URI of the job index for our custom kingdom. Take a look at how to create jobs to create your own custom jobs. You can also reuse the stonehearth ones if you want to.</p>
+
+        <p> <img src="../../../images/common/gold.png" alt="icon"/>We can add a <strong>"base_job"</strong> field to the jobs index to specify a different base job than <code>"stonehearth:jobs:worker"</code>. You should only have one base job since the vanilla game doesn't support more than one. Normally it's a job that doesn't require a talisman, in case the player can't craft it for whatever reason. Take a look at how the Worker job is set up.</p></li>
+        <li><p><strong>"inventory_capacity_equation"</strong> -- an equation to calculate how should the inventory capacity increase over time. For the vanilla game it's based on the number of hearthlings : <code>"math.max(num_citizens * 150, 1200)"</code>.</p></li>
+        <li><p><strong>"initial_town_name"</strong> -- a localized name that will be assigned to the town by default (the game will append a random number to it too). In the vanilla game, the first encounter of the town progression campaign allows the player to set a custom name for their town and to choose a bonus.</p></li>
+        <li><p><strong>"camp_standard"</strong> -- URI of the camp standard that will appear when we place the banner for our town. In the vanilla game, the first encounter of the town progression campaign changes this banner to look different and grant a bonus.</p></li>
+        <li><p><strong>"camp_hearth"</strong> -- optional field. We can specify a custom URI so that the firepit that appears after we place the banner is different. Mind that there are encounters in the vanilla campaigns that make use of the default firepit URI, so you may want to create your own campaigns for town progression instead.</p></li>
+        <li><p><strong>"trappable_animals"</strong> -- URI of an index of trappable animals. Used for the <code>"stonehearth:jobs:trapper"</code> job, in the trapping service.</p></li>
+        <li><p><strong>"default_material"</strong> -- a string containing material tags for the default building material. For example, for rayyas_children, when we open the builder in the UI, they will have the clay material selected by default.</p></li>
+        <li><p><strong>"ordinal"</strong> -- an ordinal to order the kingdom in the list of playable kingdoms.</p></li>
+        <li><p><strong>"roles": {}</strong> -- here's where we define how do the citizens of our new kingdom look like.</p>
+
+        <p> For playable kingdoms, we have only one role, called <strong>"default"</strong>. Inside it we normally have these entries:</p>
+
+        <ul>
+            <li><p><strong>"male"</strong> -- here we define the entities that will represent a male citizen of our population. There's a <strong>"uri"</strong> array containing the URIs of the entities (e.g. the male hearthlings), and a <strong>"given_names"</strong> array containing names for the male citizens to choose at random.</p></li>
+            <li><p><strong>"female"</strong> -- same keys than for male, but pointing to the female citizen entities and female names.</p>
+
+            <p>For hearthlings, the male/female entities basically inherit the <code>base_human.json</code> mixin, which contains all the common components and entity_data that they have, and then define their animation table (rig), and some model variants and customizations, to use in the roster screen.</p></li>
+            <li><p><strong>"surnames" : []</strong> -- an array containing surnames that will be chosen randomly for your citizens.</p></li>
+            <li><p><strong>"attribute_distribution"</strong> -- here we can change the distribution of attribute points for the initial citizens (new citizens will have completely random stats).</p>
+
+            <ul>
+                <li><p><strong>"allocated_points"</strong> -- the <strong>"min"</strong> and <strong>"max"</strong> number of attribute points. Your citizens will have a random amount of points between "min" and "max" allocated for their stats (for example, with a minimum of 5 points it's not possible to get citizens with 1 mind / 1 body / 1 spirit during embarkation).</p></li>
+                <li><p><strong>"point_limits"</strong> -- here we can modify the <strong>"min"</strong> and <strong>"max"</strong> amount of points for each of the stats (<strong>"mind"</strong>, <strong>"body"</strong>, <strong>"spirit"</strong>). These stats are attributes added in the <code>base_human.json</code> mixin, so if you're gonna reuse them (since the UI is prepared for that) make sure that your citizens have them defined in their attributes component too.</p>
+
+                <p>  Examples from the vanilla kingdoms would be the Ascendancy population, which starts with a minimum "spirit" of 2, Rayya's Children starts with a minimum "mind" of 2, and Northern Alliance starts with a minimum "body" of 2. But remember that new citizens will have completely random attributes.</p></li>
+            </ul></li>
+        </ul></li>
+        <li><p><strong>"pet_names" : {}</strong> -- this section contains arrays for pet names. Each array corresponds to an "id" defined in the "stonehearth:species" section of the entity_data of the pets. There's also a "default" array for default names in case the game can't find an appropiate key.</p></li>
+        <li><p><strong>"town_pieces" : {}</strong> -- these are pieces to compose the random town names that we can get when naming the town:</p>
+
+        <ul>
+            <li><strong>"optional_prefix"</strong> -- sometimes the town name will have a prefix from this array.</li>
+            <li><strong>"town_name"</strong> -- an array of town names for your kingdom.</li>
+            <li><strong>"suffix"</strong> -- an array of suffixes for your town name. Like the prefixes, not always will be used.</li>
+        </ul></li>
+        <li><p><strong>"task_groups": "stonehearth:data:player_task_groups"</strong> -- here we're assigning the task groups that are used for playable kingdoms. More on that in the advanced sections of the guide.</p></li>
+    </ul></li>
+    <li><p>Add an alias for the population file to the manifest.</p>
+
+<pre><code>"aliases" : {
+   "kingdoms:custom_kingdom" : "file(data/custom_kingdom.json)"
+}
+</code></pre></li>
+    <li><p>Add a mixinto to the playable kingdoms index.</p>
+
+<pre><code>"mixintos" : {
+   "stonehearth:playable_kingdom_index": "file(data/playable_kingdom_index.json)"
+}
+</code></pre>
+
+<p>  Our mixinto file will look like this:</p>
+
+<pre><code>{
+   "kingdoms": {
+      "my_kingdom_id" : "my_mod:kingdoms:custom_kingdom"
+   }
+}
+</code></pre>
+<p>  We use the "kingdom_id" as the key here, pointing to the alias of our population file.</p></li>
+    <li><p>Make sure you have all the files you need.</p>
+
+<p>  Now the kingdom should be playable. But we might want to set up additional things:</p>
+
+<ul>
+    <li><p>Custom campaigns -- by default we'll get all the campaigns that are not gated by kingdom, depending on the game difficulty that we choose. We should make a custom town progression campaign for our kingdom, or remove any campaign that we don't want using mixintos or mixintypes.</p></li>
+    <li><p><a name="SoundConstants"></a>Custom music -- by default we'll get the music from the Ascendancy kingdom. If we want to customize the music that will play for our kingdom, we need to mixinto the sound constants:</p>
+
+<pre><code>"mixintos" : {
+   "stonehearth:data:sound_constants": "file(data/sound_constants.json)"
+}
+</code></pre>
+
+<p> Our mixinto will look like this (shortened example):</p>
+
+<pre><code>{
+   "music": {
+      "kingdoms": {
+         "my_mod:kingdoms:custom_kingdom": {
+            "tier_to_day_music_track": {
+               "idle_day_music_tier_1": {
+                  "track"  : [
+                     "stonehearth:music:lvlmusic_ray_spring_1_day"
+                  ],
+                  "loop"   : false,
+                  "fade_in": 2000,
+                  "volume" : 40
+               },
+               "idle_day_music_tier_2": {
+                  "track"  : [
+                     "stonehearth:music:lvlmusic_ray_winter_2_day"
+                  ],
+                  "loop"   : false,
+                  "fade_in": 2000,
+                  "volume" : 40
+               },
+               "idle_day_music_tier_3": {
+                  "track"  : [
+                     "stonehearth:music:lvlmusic_ray_winter_3_day"
+                  ],
+                  "loop"   : false,
+                  "fade_in": 2000,
+                  "volume" : 40
+               }
+            },
+            "tier_to_night_music_track": {
+               "idle_night_music_tier_1": {
+                  "track"  : [
+                     "stonehearth:music:lvlmusic_ray_summer_2_night"
+                  ],
+                  "loop"   : false,
+                  "fade_in": 2000,
+                  "volume" : 40
+               },
+               "idle_night_music_tier_2": {
+                  "track"  : [
+                     "stonehearth:music:lvlmusic_ray_winter_2_night"
+                  ],
+                  "loop"   : false,
+                  "fade_in": 2000,
+                  "volume" : 40
+               },
+               "idle_night_music_tier_3": {
+                  "track"  : [
+                     "stonehearth:music:lvlmusic_ray_winter_3_night"
+                  ],
+                  "loop"   : false,
+                  "fade_in": 2000,
+                  "volume" : 40
+               }
+            }
+         }
+      }
+   }
+}
+</code></pre>
+<p> We've used existing tracks from the rayyas_children kingdom to show the difference (the files are in the stonehearth mod, that's why the aliases begin by <code>stonehearth</code>).</p>
+
+<p> Inside <strong>"kingdoms"</strong> we add a key with the URI of our kingdom. Then there are different sections for day and night music, and inside them, different groups depending on the town tier. We can add several tracks of music (the vanilla ones are in <strong>.ogg</strong> format, to save space), and one of them will be chosen randomly depending on the time of day and the current town tier.</p>
+
+<p> Each group also has a <strong>"loop"</strong> property, normally set to <strong>false</strong>, a <strong>"fade_in"</strong> in milliseconds, and a <strong>"volume"</strong> (from 0 to 100) in case we need to tune the volume because the music file has it too quiet/loud compared with other music/sounds in the game.</p></li>
+    <li><p>Custom UI -- we can optionally have different colors and images in the UI, like Rayya's Children and Northern Alliance do, by applying a deferred mod manifest after our kingdom is chosen. This will be covered in the <a href="#">hotloading manifests</a> section.</p></li>
+</ul></li>
+    <li><p>Finally, we can test our new kingdom. It's a lot of work to add a new kingdom but we can start by copying an existing one and after everything is renamed, go little by little adjusting all the jobs, campaigns, etc.</p></li>
+</ol>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

@@ -1,0 +1,1316 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Crafting jobs</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Crafting jobs</div>
+   <p><p>Let's create a new crafting job. We'll call it Lamplighter, they will craft fuel that will be used to light the lamps in the game (this example job comes from the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1357451622">Silent Woods</a> mod).</p></p>
+
+
+<ul>
+    <li><a href="#CraftingJob">Adding a crafting job</a></li>
+    <li><a href="#SHED">Using SHED</a></li>
+</ul>
+
+
+
+<h2><a name="CraftingJob"></a>Adding a crafting job</h2>
+
+
+<p>These are the steps to add a crafting job manually. We'll quickly go over them since the common parts have already been explained in <a href="../index.html">another page</a> and explain the features specific to crafting jobs.</p>
+
+
+
+<ol>
+    <li><p>We'll start by copying the herbalist job, for example (you can copy any other crafting job).</p></li>
+    <li><p>We rename the files replacing herbalist with lamplighter.</p></li>
+    <li><p>We add an alias for our job in our mod's manifest, as well as an alias for our job index, to use it for the mixinto:</p>
+
+<pre><code>"aliases": {
+   "jobs:index": "file(jobs/index.json)",
+   "jobs:lamplighter": "file(jobs/lamplighter/lamplighter_description.json)"
+}
+</code></pre></li>
+    <li><p>We add the alias of the controller to the "controllers" section of our manifest:</p>
+
+<pre><code>"controllers":{
+   "class:lamplighter": "file(jobs/lamplighter/lamplighter.lua)"
+}
+</code></pre></li>
+    <li><p>We add a mixinto to the jobs index to add our lamplighter job to the list of existing jobs:</p>
+
+<pre><code>"mixintos": {
+   "stonehearth:jobs:index": "silent_woods:jobs:index"
+}
+</code></pre>
+<p>  Our <code>index.json</code> file looks like this:</p>
+<pre><code>{
+    "jobs": {
+        "silent_woods:jobs:lamplighter": {
+            "description": "silent_woods:jobs:lamplighter"
+        }
+    }
+}
+</code></pre>
+
+<p>  The key of the job happens to match with the alias, which is what the <strong>"description"</strong> field points to.</p></li>
+    <li><p>We edit the <a href="../index.html#TheTalisman">talisman</a> files (<code>lamplighter_staff_talisman.json</code>, <code>lamplighter_staff.json</code>, <code>lamplighter_staff_iconic.json</code>, and all the models and images).</p>
+
+<p>  And we add aliases for both the talisman and the tool (weapon):</p>
+<pre><code>"lamplighter:staff": "file(jobs/lamplighter/lamplighter_staff)",
+"lamplighter:talisman": "file(jobs/lamplighter/lamplighter_staff/lamplighter_staff_talisman.json)"
+</code></pre></li>
+    <li><p>Now we edit the <code>lamplighter_description.json</code> file. There are many fields that are common for <a href="../index.html#JobDescription">any type of job</a>. Here are the ones that are new for crafting jobs and how to set up some of the common ones:</p>
+
+<ul>
+    <li><p><strong>"abilities"</strong> -- for our example, the <code>lamplighter_abilities.json</code> file will look like this:</p>
+
+<pre><code>{
+   "type": "entity",
+   "components": {
+      "stonehearth:equipment_piece": {
+         "injected_ai": {
+            "ai_packs": [
+               "stonehearth:ai_pack:crafting",
+               "stonehearth:ai_pack:ladders",
+               "stonehearth:ai_pack:place_item",
+               "stonehearth:ai_pack:town_alert",
+               "stonehearth:ai_pack:wimpy",
+               "stonehearth:ai_pack:panic",
+               "stonehearth:ai_pack:panic:flee",
+               "stonehearth:ai_pack:panic:cower",
+               "silent_woods:ai_pack:refueling"
+            ]
+         },
+         "injected_commands": []
+      }
+   }
+}
+</code></pre>
+
+<p> Notice that we inject the crafting AI pack so that the lamplighter knows how to craft, the town_alert so that they can rally, and some other basic AI packs that allow them to place ladders, items, and run away. We also added a custom AI pack defined in our mod (notice that the namespace is different).</p>
+
+<p> If you look at other examples from the stonehearth mod, you'll see that we can add any other AI pack here, for instance the Cook has the farming AI pack, the Herbalist has the healing AI pack, and the Engineer has the mining AI pack.</p></li>
+    <li><p><strong>"task_groups": []</strong> -- for our example, this array will look like this:</p>
+
+<pre><code>"task_groups": [
+  "stonehearth:task_groups:common_tasks",
+  "stonehearth:task_groups:restock",
+  "stonehearth:task_groups:placement",
+  "stonehearth:task_groups:build",
+  "stonehearth:task_groups:rescue",
+  "stonehearth:task_groups:crafting",
+  "stonehearth:task_groups:town_alert"
+]
+</code></pre>
+
+<p> We make sure that it includes the crafting task group, besides the usual task groups. In our case we also included the build task group but not the mining task group so the Lamplighter will be able to build but not to mine.</p></li>
+    <li><p><strong>"xp_rewards": {}</strong> -- for crafters, we set them up like this:</p>
+
+<pre><code>"xp_rewards": {
+   "craft_level_0": 15,
+   "craft_level_1": 17,
+   "craft_level_2": 19,
+   "craft_level_3": 21,
+   "craft_level_4": 23,
+   "craft_level_5": 25,
+   "craft_level_6": 27
+}
+</code></pre>
+<p>The crafter will receive those many experience points depending on the level requirement of the recipe. The amount will vary also depending on the Curiosity attribute, and the difference between the crafter level and the recipe level (check the crafter component).</p>
+
+<p>The amount of experience required to level up increases with each level, so we usually set the experience rewards incrementally. The craft_level_0 is there because in the past, the levels for jobs started from 0. The existing jobs might still use it. If you set up all of your recipes to have a level requirement of 1 or higher, you might not need it for your custom crafter.</p></li>
+    <li><p><strong>"level_data": {}</strong> -- most of the stonehearth crafters have the same perks, so you can reuse those if you want to (unlocking recipes or the ability to craft items of fine/excellent quality).</p>
+
+<p> Recipes will be automatically unlocked as the crafter reaches their level requirement, so only add that kind of perk if your crafter has recipes with a level requirement of that level. Fine/excellent quality will only be possible if the produced item has </p>
+<pre><code>"stonehearth:item_quality": {
+   "variable_quality": true
+}
+</code></pre>
+<p> in their entity_data. So only add those perks if your produced items have variable quality. For all crafters, they'll be able to start crafting fine items at level 3 (no matter the level of the recipe), and excellent items at level 5.</p></li>
+    <li><p><strong>"crafter": {}</strong> -- this field is exclusive for jobs with crafting abilities. Here we have two properties:</p>
+
+    <ul>
+        <li><strong>"work_effect"</strong> -- name of the effect file (only the name, don't end it by <code>.json</code>!) that will be played by the crafter when they are working. Normally includes an animation track, and maybe a sound track. For the Lamplighter, we'll use <code>"fiddle"</code>.</li>
+        <li><strong>"recipe_list"</strong> -- path to the recipe list JSON file. For our Lamplighter example it will be <code>"/silent_woods/jobs/lamplighter/recipes/recipes.json"</code>.</li>
+    </ul>
+
+    <p> The recipes list is organized by groups of recipes and identifiers for recipe files. You can check how to set it up <a href="../../../basic/craftables/index.html#RecipeList">here</a>.</p></li>
+    <li><p><strong>"workshop": {}</strong> -- properties for the workshop:</p>
+
+<ul>
+    <li><p><strong>"portrait"</strong> -- a path to the image of the basic workbench. Likely not in use nowadays.</p></li>
+    <li><p><strong>"workbench_type"</strong> -- URI of the path to the basic workbench. Likely not in use nowadays.</p></li>
+    <li><p><strong>"skin_class"</strong> -- an identifier for the CSS (Less) class for the workshop. In our case, <code>"lamplighter"</code>. We have to declare the <code>.less</code> file of our workshop in the <strong>"ui"</strong> section of our manifest like this:</p>
+
+<pre><code>  "ui":{
+     "less":[
+        "file(jobs/lamplighter/skin/workshop.less)"
+     ]
+  }
+</code></pre>
+
+<p>It will define the skin for our crafter's workshop in the UI. Our <code>workshop.less</code> file looks something like this:</p>
+
+<pre><code>  #craftWindow.lamplighter {
+     background: url('skin.png');
+
+     .item {
+        background-image: url('skin.png');
+     }
+
+     #craftButton {
+        position: absolute;
+        right: 10px;
+        top: -50px;
+        width: 90px;
+        height: 151px;
+        #craftButtonImage {
+           background: url('saw.png');
+        }
+     }
+
+     #orderListContainer {
+        table{
+           background: #1f1e1e;
+        }
+
+        .orderListRow {
+           background: #1f1e1e;
+        }
+     }
+  }
+</code></pre>
+
+<p>Here we can nest CSS properties and change the appearance of the workshop UI with a custom background (<code>skin.png</code> in the example above) and a custom craft button (<code>saw.png</code> in the example above). We can edit the images in an illustration program that supports transparency. Note the <code>lamplighter</code> class being used in the main element (<code>#craftWindow.lamplighter</code>).</p></li>
+    <li><p><strong>"open_sound"</strong> and <strong>"close_sound"</strong> -- aliases of sounds to play when we open and close the workshop UI that contains the list of recipes. We normally reuse sounds from the stonehearth mod, such as <strong>"stonehearth:sounds:ui:carpenter_menu:menu_open"</strong> and <strong>"stonehearth:sounds:ui:carpenter_menu:menu_closed"</strong>.</p></li>
+</ul></li>
+</ul></li>
+    <li><p>We would now proceed to edit the rest of files:</p>
+
+<ul>
+    <li><p>Files related to the workbench. Notice that the <code>workbench.json</code> file has the workshop component pointing to the job alias:</p>
+
+<pre><code>"stonehearth:workshop": {
+   "job_alias": "silent_woods:jobs:lamplighter"
+}
+</code></pre>
+<p> This is used to recognize the item as a crafter workbench, and will automatically add a command to it for the unit frame so that we can open the workshop UI for that crafter from it.</p>
+
+<p> In its entity_data, you might notice the following section:</p>
+
+<pre><code>"stonehearth:table": {
+   "drop_effect": "carry_putdown_on_table",
+   "drop_offset": { "x": 0, "y": 1.25, "z": 0 }
+}
+</code></pre>
+
+<p> These properties are used to define the effect that the crafter will play to drop the ingredients on top of the workbench, and an offset to positionate the ingredients once they're dropped and the produced items before the crafter picks them up.</p>
+
+<p> <img src="../../../../images/common/edit_big.png" alt="icon"/> We can define workbench equivalents in the entity_data of the workbench.json file too. For example:</p>
+<pre><code>"stonehearth:workshop": {
+   "equivalents": [ "stonehearth:mason:pedestal:amberstone" ]
+}
+</code></pre>
+<p> This will make it so that recipes that require the Mason's pedestal can be crafted using the Amberstone pedestal instead. Another example would be the upgraded Potter's kiln and workbench. Make sure to use the correct namespace when declaring them.</p>
+
+<p> In the entity_data of the ghost file for the workbench you might see this field:</p>
+<pre><code>"stonehearth:hide_child_entities_from_pathfinder": true
+</code></pre>
+<p> This is a flag so that hearthlings don't consider the ingredients that have been dropped on top of the workbench when they're trying to find items of that type for other AI actions.</p>
+
+<p> The iconic file for the workbench usually has the same default effect than the talismans.</p></li>
+    <li><p>We edit the files for the crafter outfit, which are the same than for any other type of <a href="../../../basic/wearables/armor/index.html">armor</a> though usually they don't include armor_data.</p></li>
+    <li><p>We edit the controller file. This is very important. Our renamed controller file will still have the same code inside so we have to rename some stuff in it.</p>
+
+<p> <img src="../../../../images/common/row_alert2.png" alt="icon"/> All jobs in the game inherit from <code>base_job.lua</code>. Crafting jobs inherit from <code>crafting_job.lua</code> instead, because that file already inherits from base_job.lua. The <code>CraftingJob</code> class defined in crafting_job.lua takes care of adding the crafter component to the hearthling and managing the experience gain for crafters when they craft a recipe.</p>
+
+<p> Our <code>lamplighter.lua</code> file would look like this after we rename Herbalist to Lamplighter and remove all the unneeded code:</p>
+
+<pre><code>local CraftingJob = require 'stonehearth.jobs.crafting_job'
+
+local LamplighterClass = class()
+radiant.mixin(LamplighterClass, CraftingJob)
+
+return LamplighterClass
+</code></pre>
+
+<p> Notice how we mixin the CraftingJob class to our LamplighterClass, to retrieve all the common code for crafters. The example above is the minimal code that a crafting class should have. In this Lua file we can add more custom functions if we need to. For example, take a look at <code>engineer.lua</code>, <code>herbalist.lua</code>, or <code>geomancer.lua</code>.</p>
+
+<p> In order to override inherited functions, we'd do this (after inheriting from the CraftingJob class and before returning our LamplighterClass class):</p>
+
+<pre><code>-- Overriding standard crafting class functions looks like this
+function LamplighterClass:promote(json_path, options)
+   -- First call the crafting class's version
+   CraftingJob.promote(self, json_path, options)
+   -- Your custom code goes here
+end
+</code></pre>
+<p> This allows us to extend the functionality if we need to add extra variables or whatever new behavior to the class.</p></li>
+</ul></li>
+    <li><p>Now we add our crafting job to the list of workshops in the start menu. We need to add this mixinto:</p>
+
+<pre><code>"mixintos" : {
+   "stonehearth/data/ui/start_menu.json" : "file(data/ui/start_menu.json)"
+}
+</code></pre>
+
+<p>  The mixinto file will look like this:</p>
+
+<pre><code>{
+   "crafter_menu": {
+      "items": {
+         "lamplighter": {
+            "name": "i18n(silent_woods:ui.game.menu.crafter_menu.items.lamplighter.display_name)",
+            "description": "i18n(silent_woods:ui.game.menu.crafter_menu.items.lamplighter.description)",
+            "class": "button",
+            "required_job": "silent_woods:jobs:lamplighter",
+            "required_job_text": "i18n(silent_woods:ui.game.menu.crafter_menu.items.lamplighter.required_job_text)",
+            "icon": "/silent_woods/jobs/lamplighter/images/lamplighter_menu_icon.png",
+            "menu_action": "show_crafter_ui",
+            "hotkey_action": "craft:lamplighter"
+         }
+      }
+   }
+}
+</code></pre>
+<p>  We add a key for our new job, a localized <strong>"name"</strong> and <strong>"description"</strong> for the tooltip, a CSS <strong>"class"</strong> (normally the same than the one that we copied), a <strong>"required_job"</strong> which is the alias of our crafter preceded by our mod's namespace plus a colon, a localized <strong>"required_job_text"</strong> which will be displayed in the tooltip when the player hasn't promoted anyone to our crafting job yet, a path to an <strong>"icon"</strong> to display for the menu item, <strong>"menu_action" : "show_crafter_ui"</strong> (which will make it so that clicking in the button will open our crafter's workshop), and <strong>"hotkey_action"</strong> which will point to a hotkey from <code>hotkeys.json</code> so that players can bind keys to open our crafter's workshop with them.</p>
+
+<p>  Mind that if we add a hotkey action here we'll have to add a mixinto to <code>stonehearth/data/hotkeys.json</code> and add the action there too.</p>
+
+<p>  <img src="../../../../images/common/row_alert2.png" alt="icon"/> Make sure to create a recipe for another crafter for your talisman to be obtainable in the game, or make it obtainable in some other way.</p></li>
+    <li><p>Finally we can test our new crafting job in the game and make sure that everything works as expected.</p>
+
+<p>  You can either stamp the required talisman with the Item Stamper debugtool and promote the hearthlings via the promotion UI, or make another crafter craft the talisman if you made a recipe for it, etc.</p>
+
+<p>  You can also promote them with the default console if you have the debugtools mod enabled, e.g.:</p>
+<pre><code>  promote_to silent_woods:jobs:lamplighter
+</code></pre>
+<p>  And then check if the workshop UI looks fine and the recipes can be crafted, etc.</p></li>
+</ol>
+
+
+
+<h2><a name="SHED"></a>Using SHED</h2>
+
+
+<p><strong>Disclaimer</strong>: These steps refer to creating a crafting job using SHED at the time that this page was written.</p>
+
+
+
+<ul>
+    <li><p>First we'll need to clone a job node from the stonehearth mod (for example, 'jobs:carpenter').</p></li>
+    <li><p>Right-click on it and click on 'Clone!'. Select your mod as the Target mod for the clone, and type the name of your crafter in the replacement text box.</p></li>
+    <li><p>Click on clone and review the dependencies. Uncheck the alias for the controller (your_mod:class:your_job) since it would be created inside the aliases node, which is something that we don't want. Click on 'Accept'.</p></li>
+    <li><p>Once SHED refreshes the view, look for the <strong>controllers</strong> node of the stonehearth mod and find (for example) the 'class:carpenter' node. Clone it replacing carpenter with the name of your custom job, but uncheck the Lua file, since we already cloned it in the previous step.</p>
+
+    <p>  This will make it so that the alias of the controller is cloned into the <strong>"controllers"</strong> section of your manifest, which is what we want.</p></li>
+    <li><p>Select the node of your cloned job and start editing the files:</p>
+
+    <ul>
+        <li>Edit the <strong>"alias"</strong>, <strong>"controller"</strong>, <strong>"talisman_uri"</strong> and any other fields with aliases so that they point to your mod's manifest. If SHED detects the file that they point to, it will highlight them in light green.</li>
+        <li>Edit the paths to the images of the perks so that they're correct. For crafting jobs, if you're going to reuse the icons from the stonehearth mod you can rewrite them as absolute paths (remove the last parenthesis and edit the first part of the path to be <code>/stonehearth/jobs/common</code>).</li>
+        <li>Save the changes.</li>
+    </ul></li>
+    <li><p>You'll have noticed that the recipes index hasn't been cloned. We have to clone it separately like we did for the controller alias.</p>
+
+    <ul>
+        <li><p>Search for the 'recipes' node under the 'jobs:carpenter' node of the stonehearth mod, right-click on it, and click on 'Clone'.</p>
+
+        <p> <img src="../../../../images/common/row_alert2.png" alt="icon"/> For easier cloning, you can try with the engineer recipe list, which has less items and will be easier to edit.</p></li>
+        <li><p>In the clone dialog, set the Target mod to your mod.</p></li>
+        <li><p>Set the replacement text for 'recipes' to 'recipes' and add a new replacement text with the + button, to replace carpenter with the name of your job (or engineer instead of carpenter if you cloned that one). This is so that the path of the cloned recipes list matches the path of our new job.</p></li>
+        <li><p>Now click on 'Clone!'. In the preview window, click on 'Uncheck All', since it's trying to clone all the produced items and we don't want that.</p></li>
+        <li><p>Check only the path for the <code>recipes.json</code> file (make sure it points to the folder where your cloned job is) and if you want to, clone one recipe JSON file too (for example, the one for the workbench, but don't clone its alias since we already have that from some steps above). Click on 'Accept'.</p></li>
+    </ul></li>
+    <li><p>After SHED refreshes, go back to your cloned job file and edit the path of the recipes list so that it points to your mod. SHED might hang for a couple seconds when editing file paths, but hopefully it shouldn't be too bad. Now you must go to File -> Reload so that the recipe list gets detected in the tree view. Be patient.</p></li>
+    <li><p>Now you can click on your cloned recipes node, delete the contents under all the "recipes" entries (you can leave the categories if you want to reuse them or add your custom ones). If you cloned the recipe of the workbench a couple steps above, you should see it highlighted in green now, and recognized by SHED in the tree view.</p></li>
+    <li><p>Finally, keep editing the models, data, etc. like mentioned in the <a href="#CraftingJob">guide above</a> until your cloned job is ready for testing. You can use the 'Localize This File' button to try auto-localizing your JSON files (mind that for some files it might not work). The UI files for the workshop will have to be added to the manifest outside of SHED, like all the mixintos.</p></li>
+</ul>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

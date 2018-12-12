@@ -15,8 +15,9 @@ body
 }
 
 header {
-   margin-bottom: 16px;
+   margin-top: 16px;
    height: 40px;
+   margin-bottom: 16px;
 }
 
 aside nav ul {
@@ -170,7 +171,7 @@ img {
 }
 
 .inner {
-   width: 920px;
+   width: 1030px;
    margin-left: auto;
    margin-right: auto;
 }
@@ -182,7 +183,7 @@ img {
 .logo {
    width: 239px;
    height: 40px;
-   float: right;
+   float: left;
    margin-right: 32px;
    text-align: right;
    background-image: url(../images/stonehearth-logo.png);
@@ -190,6 +191,7 @@ img {
    font-size: 16px;
    font-weight: bold;
    background-size: contain;
+   margin-left: 270px;
 }
 
 #content {
@@ -212,4 +214,15 @@ table {
 
 td {
    border: 1px solid black;
+   padding: 5px;
+}
+
+td:nth-child(3)
+{
+    width:50%;
+}
+
+header p {
+   float: right;
+   margin-right: 20px;
 }

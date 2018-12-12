@@ -1,0 +1,1427 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Building parts</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Building parts</div>
+   <ul>
+    <li><a href="#BuildingResources">Adding custom building resources</a></li>
+    <li><a href="#BuildingColors">Adding building colors</a></li>
+    <li><a href="#FloorPatterns">Adding floor patterns</a></li>
+    <li><a href="#WallPatterns">Adding wall patterns</a></li>
+    <li><a href="#RoofPatterns">Adding roof patterns</a></li>
+    <li><a href="#Windows">Adding windows</a></li>
+    <li><a href="#Doors">Adding doors</a></li>
+    <li><a href="#Fixtures">Decorations and furniture</a></li>
+</ul>
+
+
+
+<h2><a name="BuildingResources"></a>Adding custom building resources</h2>
+
+
+<p>We can add custom building resources to the building editor, so that our hearthlings can build with them.</p>
+
+
+
+<ol>
+    <li><p>First we'll need to create a <a href="../../basic/generic_resources/index.html">generic resource</a> to add it to <code>stonehearth/data/resource_constants.json</code>. We explain the fields related to the building editor <a href="../../basic/generic_resources/index.html#BuildingResources">here</a>. Our example looks like this:</p>
+
+<pre><code>{
+   "resources": {
+      "sugar resource": {
+         "name": "i18n(candyland:ui.data.constants.sugar_resource_name)",
+         "icon": "/candyland/entities/construction/sugar/sugar.png",
+         "stacks": 60,
+         "default_resource": "candyland:resources:sugar:sugar_cube",
+         "auto_queue_crafter_job": "stonehearth:jobs:mason",
+         "builder_icon": "/candyland/entities/resources/sugar/builder_sugar.png",
+         "builder_icon_hover": "/candyland/entities/resources/candy/builder_sugar_hover.png",
+         "builder_sound_uri": "stonehearth:sounds:building_wall_stone",
+         "tooltip": "candyland:ui.game.build_mode2.tooltips.sugar_resource"
+      }
+   }
+}
+</code></pre></li>
+    <li><p>We need to associate <a href="../../basic/customization/index.html#BuildingColors">building colors</a> with our building resource. These colors can't be already defined for other building resources. Our <code>building_brushes.json</code> file looks like this:</p>
+
+<pre><code>{
+   "always_available": {
+      "sugar resource": {
+         "colors": {
+            "#E52F1B": {
+               "display_name": "i18n(candyland:data.build.building_brushes.colors.#E52F1B)",
+                "ordinal": 1
+            },
+            "#01A712": {
+               "display_name": "i18n(candyland:data.build.building_brushes.colors.#01A712)",
+               "ordinal": 2
+            },
+            "#EBEBE8": {
+               "display_name": "i18n(candyland:data.build.building_brushes.colors.#EBEBE8)",
+               "ordinal": 3
+            },
+            "#DAB869": {
+               "display_name": "i18n(candyland:data.build.building_brushes.colors.#DAB869)",
+               "ordinal": 4
+            },
+            "#A77C3F": {
+               "display_name": "i18n(candyland:data.build.building_brushes.colors.#A77C3F)",
+               "ordinal": 5
+            }
+         }
+      }
+   }
+}
+</code></pre>
+
+<p>  All these colors will be available for rooms/walls, columns, floor, roads and stairs for our sugar resource.</p></li>
+    <li><p>Now we add our generic resource and building colors to the corresponding indexes from the stonehearth mod via a mixinto in our manifest:</p>
+
+<pre><code>"mixintos": {
+   "stonehearth:data:resource_constants" : "file(data/resource_constants.json)",
+   "stonehearth:build:brushes" : "file(data/build/building_brushes.json)"
+}
+</code></pre></li>
+    <li><p>We need to make items with "sugar" and "resource" in their material tags be obtainable in the game, by <a href="../../basic/static_scenarios/ore_veins/index.html">mining</a>, <a href="../../basic/renewable_resources/index.html">harvesting</a>, <a href="../../basic/craftables/index.html">crafting</a>, etc.</p></li>
+    <li><p>We can test that our new building resource appears in the game and that hearthlings can use it to build:
+    <img src="../../../images/intermediate/building_parts/building_resources.png" alt="building_resources"/></p></li>
+</ol>
+
+
+
+<h2><a name="BuildingColors"></a>Adding building colors</h2>
+
+
+<p>How to add custom colors to existing building resources was already explained in the <a href="../../basic/customization/index.html#BuildingColors">customization guide</a>. You can also see an example for a custom resource above.</p>
+
+
+
+<h2><a name="FloorPatterns"></a>Adding floor patterns</h2>
+
+
+<p>Floor, wall and roof patterns are added via mixintos to <code>stonehearth/data/build/building_brushes.json</code>. Patterns for floor will also be available for roads automatically.</p>
+
+
+
+<pre><code>    "mixintos" : {
+       "stonehearth:build:building_brushes" : "file(data/build/building_brushes.json)"
+    }
+</code></pre>
+
+<p>For example, our mixinto looks like this:</p>
+
+
+
+<pre><code>    {
+       "pattern": {
+          "sugar resource": {
+             "patterns": {
+                "candyland:build:brushes:pattern:green_cane_diagonal": {
+                   "icon": "/candyland/ui/game/modes/build_mode/building_designer_2/images/brushes/green_cane_diagonal.png",
+                   "display_name": "i18n(candyland:data.build.building_brushes.patterns.green_cane_diagonal)"
+                }
+             }
+          }
+       }
+    }
+</code></pre>
+
+<p>Floor patterns are listed inside the <strong>"pattern"</strong> entry, grouped by building resource. Inside the <strong>"patterns"</strong> key we have a list of URIs of our patterns (the URIs link to the QB model), and we define an <strong>"icon"</strong> for the UI and a <strong>"display_name"</strong> for the tooltip.</p>
+
+
+
+<p>Like for the colors, patterns can't be repeated for different resources, so make sure there are no duplicate URIs of patterns for the same building resource or among different resources.</p>
+
+
+
+<p>Import a QB model of an existing pattern to see how they are setup. You can find them inside <code>stonehearth/data/build/brushes/pattern</code>. Floor patterns don't need to be perfectly square, you can make rectangular shapes, or even shapes with holes. They do have to be 1 voxel high though since floors and roads are only that tall.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> It's also recommended to add the colors that you've used in your pattern to the list of available colors for the corresponding resource (if they aren't there already). Otherwise, they will be treated as wood by default in the building cost list.</p>
+
+
+
+<p>Don't forget to add the URI of the pattern to your manifest!</p>
+
+
+
+<pre><code>    "aliases" : {
+       "build:brushes:pattern:green_cane_diagonal" : "file(data/build/brushes/pattern/green_cane_diagonal/green_cane_diagonal.qb)"
+    }
+</code></pre>
+
+<p><img src="../../../images/intermediate/building_parts/floor_pattern.png" alt="floor_pattern"/></p>
+
+
+
+<h2><a name= "WallPatterns"></a>Adding wall patterns</h2>
+
+
+<p>Same than for adding floor patterns, but the mixinto will include them inside the <strong>"wall"</strong> entry:</p>
+
+
+
+<pre><code>    {
+       "wall": {
+          "sugar resource": {
+             "patterns": {
+                "candyland:build:brushes:wall:cookie_wall": {
+                   "icon": "/candyland/ui/game/modes/build_mode/building_designer_2/images/brushes/cookie_wall.png",
+                   "display_name": "i18n(candyland:data.build.building_brushes.patterns.cookie_wall)"
+                }
+             }
+          }
+       }
+    }
+</code></pre>
+
+<p>Don't forget to add the alias for your .qb model:</p>
+
+
+
+<pre><code>    "aliases" : {
+       "build:brushes:wall:cookie_wall" : "file(data/build/brushes/wall/cookie_wall/cookie_wall.qb)"
+    }
+</code></pre>
+
+<p>Much like floor patterns, you can make different shapes for the patterns but the wall should be only 1 voxel thick, otherwise you will get unexpected results when using the room / wall tools in the builder.</p>
+
+
+
+<p>The .qb model for walls is usually centered over (0,0,0) but you can make it in the positive quadrant too. If you import an existing wall pattern (they're inside <code>stonehearth/data/build/brushes/wall</code>), you'll see that you can make them shorter or taller, they don't need to have the default wall height from the game (6 blocks), the builder will know how to stretch the pattern. They can also have different lengths.</p>
+
+
+
+<p>Make sure that the colors of your pattern are also in the list of available colors for the corresponding resource (be careful not to add duplicates).
+<img src="../../../images/intermediate/building_parts/wall_pattern.png" alt="wall_pattern"/></p>
+
+
+
+<h2><a name="RoofPatterns"></a>Adding roof patterns</h2>
+
+
+<p>Roof patterns are added to the <code>building_brushes.json</code> file like the floor/wall patterns:</p>
+
+
+
+<pre><code>    {
+       "roof": {
+          "sugar resource": {
+             "patterns": {
+                "candyland:build:brushes:roof:cookie_castle_roof": {
+                   "icon": "/candyland/ui/game/modes/build_mode/building_designer_2/images/brushes/cookie_castle_roof.png",
+                   "display_name": "i18n(candyland:data.build.building_brushes.patterns.cookie_castle_roof)",
+                   "type": "flat"
+                },
+                "candyland:build:brushes:roof:cotton_candy_roof": {
+                   "icon": "/candyland/ui/game/modes/build_mode/building_designer_2/images/brushes/cotton_candy_roof.png",
+                   "display_name": "i18n(candyland:data.build.building_brushes.patterns.cotton_candy_roof)",
+                   "type": "peaked"
+                }
+             }
+          }
+       }
+    }
+</code></pre>
+
+<p>Notice that we have an extra field here for the type of roof. If it's <strong>"peaked"</strong>, the roof model will be treated like the peaked roofs from the stonehearth mod: we can make them taller or shorter, and decide which sides are slanted and which ones should drop a wall to fill the gap.</p>
+
+
+
+<p>If it's <strong>"flat"</strong>, the roof model will be treated like the rayyas_children roofs (or the castle roof): they will remain flat and we can only change the direction that they're facing.</p>
+
+
+
+<p>Roofs can only be added as patterns, since their .qb model has to be setup in a special way, to represent its different parts, such as inner/outer corners, sides, and the middle. But players are free to use the blocks tool in the building editor to create more detailed roofs or roofs with different slants (roofs from the northern_alliance mod were made using the blocks tool, for example).</p>
+
+
+
+<p>Let's take a look at the QB models for the roofs (you can find more examples inside <code>stonehearth/data/build/brushes/roof</code>). The ones for peaked roofs are setup in a 9-grid:
+<img src="../../../images/intermediate/building_parts/9_grid.png" alt="9_grid"/></p>
+
+
+
+<p>Each part is in a different matrix/layer. The names for these matrices/layers are numbers, and must be the same than in the picture above. Due to how the parts are placed and rotated in the game, the pattern will look different depending on the slants, size, etc. so this is the usual size used for peaked roofs models in the game.</p>
+
+
+
+<p>The ones for the flat roofs are in a 13-grid (to account for inner corners too):
+<img src="../../../images/intermediate/building_parts/13_grid.png" alt="13_grid"/></p>
+
+
+
+<p>Notice that the names for the matrices/layers for the inner corners end by <strong>c</strong>, and are based on the other corners. We need to use these exact names in our layers.</p>
+
+
+
+<p>For flat roofs we can make them a bit taller if we want to (for example, for the crenellations of the castle roof), and increase the size of the middle section if we want it to have a pattern. Also notice how the clay slat roof is set up. The border of the roof is aligned with the X/Z axes, while the wooden parts protude outwards.</p>
+
+
+
+<p>Make sure to add the colors you've used to the list of building colors for the corresponding resource (if they aren't there already). And don't forget to add the aliases for your .qb models to the manifest:</p>
+
+
+
+<pre><code>    "aliases" : {
+       "build:brushes:roof:cotton_candy_roof" : "file(data/build/brushes/roof/cotton_candy/cotton_candy_roof.qb)",
+       "build:brushes:roof:cookie_castle_roof" : "file(data/build/brushes/roof/cookie_castle/cookie_castle_roof.qb)"
+    }
+</code></pre>
+
+<p>Finally, test your roof patterns in the game:
+<img src="../../../images/intermediate/building_parts/roof_pattern.png" alt="roof_pattern"/></p>
+
+
+
+<h2><a name="Windows"></a>Adding windows</h2>
+
+
+<p>Windows and doors have a 'cutter' which automatically creates a hole for them when you place them in a wall when designing a building.</p>
+
+
+
+<p>We can find the windows in <code>stonehearth/entities/construction</code>. They're created like any other entity, and we can make them available through recipes, loot, etc. Copying an existing one will ensure that we're using existing categories and material tags, as well as any mixin that we might need (like "stonehearth:mixins:placed_object", for example).</p>
+
+
+
+<p>The .qb model for windows is centered over 0,0,0 (and aligned to the floor) in Qubicle.</p>
+
+
+
+<p>These are the components that are different from the usual. From wooden_window_frame_ghost.json:</p>
+
+
+
+<pre><code>    "mob": {
+       "align_to_grid": [
+          "x"
+        ]
+    }
+</code></pre>
+
+<p>This is the mob component. The <strong>"align_to_grid"</strong> array can contain <strong>"x"</strong>, <strong>"z"</strong> or both. In this case we want to ensure that the center of the qb model of the window is aligned to the nearest round value on the X axis, so that it's correctly aligned within walls. The alignment might not be obvious at first (since the position will vary depending on the model/region origins and the original position in Qubicle) but if this is not properly set up, the window will be displaced when we try to place it in a building design.</p>
+
+
+
+<pre><code>    "stonehearth:fixture": {
+       "cursor": "stonehearth:cursors:create_window",
+       "margin": {
+          "left": 0,
+          "right": 0,
+          "top": 1,
+          "bottom": 1
+       },
+       "bounds": {
+          "min": { "x": -1, "y": 0 },
+          "max": { "x": 1, "y": 2 }
+       }
+    }
+</code></pre>
+
+<p>This is the fixture component. The "cursor" field is no longer used. We have a different cursor for each of the fixture categories in the building editor now. The "margin" section is also not used anymore, it can be omitted. Nowadays we allow to place windows adjacent to each other in the walls.</p>
+
+
+
+<p>The <strong>"bounds"</strong> region, however, is mandatory. Windows and doors need this region (notice that it is defined with only X and Y points, since windows and doors are meant to cut 1 block wide walls). It's the area (including holes) that we can touch in the builder to drag the window/door around.</p>
+
+
+
+<p>For the rest of placeable entities that we can use in the builder, we need to make sure they have at least 1 collision region defined (no matter their collision type), otherwise the builder won't know how to use them properly for its calculations.</p>
+
+
+
+<pre><code>    "stonehearth:portal": {
+       "cutter": [
+          {
+             "min": { "x": -1, "y": 0 },
+             "max": { "x": 1, "y": 2 }
+          }
+       ]
+    }
+</code></pre>
+
+<p>This is the portal component. Here we specify the cutter region for the window, also defined with only X and Y points. When we're designing a building, this region will be automatically cut from walls when we place the window on them. The region is based on whole units. We can't cut fractions of building blocks. Usually it's the same size than the bounds from the fixture component, but it can be a different size.</p>
+
+
+
+<p>Windows normally have a <strong>"mob_collision_type"</strong> of <strong>"clutter"</strong>, so that hearthlings can stand very close to them, but bigger windows may also define a collision region.</p>
+
+
+
+<p><a name="MovementModifierShape"></a>The bigger ones also have a <strong>"movement_modifier_shape"</strong>. This is used so that if you place them near the ground or at the ground, hearthlings avoid walking through them. Since hearthlings prefer shorter paths, sometimes they walked through tall windows instead of using the doors. This helps with that problem. Example:</p>
+
+
+
+<pre><code>  "movement_modifier_shape": {
+     "modifier": -0.5,
+     "nav_preference_modifier": -0.5,
+     "region": [
+        {
+           "min": { "x": -1, "y": 0, "z": -1 },
+           "max": { "x": 1, "y": 3, "z": 2 }
+        }
+     ]
+  }
+</code></pre>
+
+<p>The <strong>"modifier"</strong> controls the speed at which an entity will move when within the region. The <strong>"nav_preference_modifier"</strong> affects how entities will perceive speed in that shape when conducting pathfinding. The <strong>"region"</strong> is where the modifiers will be applied, and it normally corresponds to the cutter of the window (notice that it has 3 dimensions).</p>
+
+
+
+<p>These properties are also used for roads, for example, so that hearthlings walk faster on them.</p>
+
+
+
+<h2><a name="Doors"></a>Adding doors</h2>
+
+
+<p>Doors are similar to windows, they are located under <code>stonehearth/entities/construction</code> as well. Most doors have the same mixins (from <code>stonehearth/mixins/doors</code>) to reuse the same animation table and other common properties.</p>
+
+
+
+<p>In their ghost JSON file, they have an extra property in the fixture component, called "valign", but this property is also no longer in use, like the cursor and margins. Nowadays we can place a door wherever we want in a wall.</p>
+
+
+
+<p>The portal component has the same functionality than for windows, as explained above. We also use <strong>"align_to_grid" : [ "x" ]</strong> so that they can fit inside walls.</p>
+
+
+
+<p>Normally, in the components of their ghost file (via a mixin or directly in the JSON) we indicate an animation table and a default effect, for instance:</p>
+
+
+
+<pre><code>  "render_info": {
+     "animation_table": "file(/data/rigs/entities/construction/double_door/double_door.json)"
+  },
+  "effect_list": {
+     "default": "file(/data/rigs/entities/construction/double_door/effects/closed.json)",
+     "initial_pose_animation": "closed.json"
+  }
+</code></pre>
+
+<p>The <strong>"animation_table"</strong> points to the rig (the skeleton) of the door. The <strong>"default"</strong> effect in the effect list will be the default animation that the door will play after we place it down, and <strong>"initial_pose_animation"</strong> is the name of an animation effect to pose the door when it is in ghost form.</p>
+
+
+
+<p>Normally doors are not centered over (0,0,0) in Qubicle. They are aligned to the ground on the positive quadrant. Their matrices have names so that they can reuse existing rigs for animations. Make sure to check examples from the stonehearth mod.</p>
+
+
+
+<p>In the entity's JSON file (not the ghost), we can also find these other components:</p>
+
+
+
+<ul>
+    <li><p>Inside the "stonehearth:entity_forms" component we can see the <strong>"placeable_on_walls"</strong> and <strong>"placeable_on_ground"</strong> flags. These make placement possible. For items that should only be placeable on walls we use the first one, and for items that should only be placeable on ground we use the second one.</p>
+
+    <p>  For doors, we use both since we can also put doors for tunnel entrances.</p></li>
+    <li><p>As with windows, the <a href="../regions/collision_destination/index.html#RegionCollisionTypes">"region_collision_type"</a> is "none".</p></li>
+    <li><p>It has the <strong>"sensor_list"</strong> component, which contains a list of sensors. These are entries with a custom identifier that define a radius in world units (ignore the "type" field, it's not used).</p></li>
+    <li><p>The <strong>"stonehearth:door"</strong> component only has one field, pointing to the identifier of the sensor we declared in the sensor list. Then, in the door component code we retrieve the sensor and trace it. When an entity gets inside/outside of the sensor radius, the sensor triggers some code that we can customize. In the case of doors it will play the open/close animation (and stay open if a hearthling stands close to the door).</p></li>
+    <li><p>In the entity_data we have <strong>"stonehearth:entity_radius"</strong>. This is defined in world units too. It's used to determine the distance (range) needed for combat and the like (it's static <a href="../../essentials/entities_components/index.html#EntityData">read-only data</a> so we can consult it anywhere in our code if we need to).</p></li>
+</ul>
+
+
+
+<h2><a name="Fixtures"></a>Decorations and furniture</h2>
+
+
+<p>These are created like any other placeable <a href="../../basic/adding_items/index.html">item</a>. In order for them to appear in the building editor tabs, they need to belong to one of these categories in their catalog data: decoration, construction, door, furniture, workshops, storage, window; and either you have them already in your inventory, or the crafter that can craft them has already unlocked those recipes.</p>
+
+
+
+<p>Make sure that the items that are <a href="../regions/origins/index.html#HangableItems">hangable</a> have all their properties correctly set up. The rugs / floor tiles have <strong>"stonehearth:floor_deco" : {}</strong> in the entity_data of the ghost file, which is used to allow players to place the banners of the combat commands on top of them.</p>
+
+
+
+<p>Decorations, furniture, etc. don't need the fixture component, instead they define their own collision regions. For those that can be used in the building editor, make sure that they have at least one region defined even if their <a href="../regions/collision_destination/index.html#CollisionTypes">collision type</a> is "clutter"/"tiny"/"none", so that we can drag them around in the blueprints and the builder knows how to use them in its calculations.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

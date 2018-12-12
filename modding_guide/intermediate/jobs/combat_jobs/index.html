@@ -1,0 +1,1321 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Combat jobs</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Combat jobs</div>
+   <p>Combat is controlled using many files: the combat service, combat_state / target_tables components, AI actions under <code>stonehearth/ai/actions/combat</code>, etc.</p>
+
+
+
+<p>Let's create a new combat job. We'll call it Crusader, they will be an advanced class promoted from Footman.</p>
+
+
+
+<ul>
+    <li><a href="#CombatJob">Adding a combat job</a>
+    <ul>
+        <li><a href="#CombatSkills">About attacks and defenses</a></li>
+    </ul></li>
+    <li><a href="#SHED">Using SHED</a></li>
+</ul>
+
+
+
+<h2><a name="CombatJob"></a>Adding a combat job</h2>
+
+
+<p>These are the steps to add a combat job manually. We'll quickly go over them since the common parts have already been explained in <a href="../index.html">another page</a>, and explain the features specific to combat jobs.</p>
+
+
+
+<ol>
+    <li><p>We'll start by copying the footman job, for example (you can copy any other combat job, you'll likely want to copy the archer if you want to make a ranged unit).</p></li>
+    <li><p>We rename the files replacing footman with crusader.</p></li>
+    <li><p>We add an alias for our job in our mod's manifest, as well as an alias for our job index, to use it for the mixinto:</p>
+
+<pre><code>"aliases": {
+   "jobs:index": "file(jobs/index.json)",
+   "jobs:crusader": "file(jobs/crusader/crusader_description.json)"
+}
+</code></pre></li>
+    <li><p>We add the alias of the controller to the "controllers" section of our manifest:</p>
+
+<pre><code>"controllers":{
+   "class:crusader": "file(jobs/crusader/crusader.lua)"
+}
+</code></pre></li>
+    <li><p>We add a mixinto to the jobs index to add our Crusader job to the list of existing jobs:</p>
+
+<pre><code>"mixintos": {
+   "stonehearth:jobs:index": "crusader:jobs:index"
+}
+</code></pre>
+<p>  Our <code>index.json</code> file looks like this:</p>
+<pre><code>{
+    "jobs": {
+        "crusader:jobs:crusader": {
+            "description": "crusader:jobs:crusader"
+        }
+    }
+}
+</code></pre>
+
+<p>  The key of the job happens to match with the alias, which is what the <strong>"description"</strong> field points to.</p></li>
+    <li><p>Since the <a href="../index.html#TheTalisman">talisman</a> corresponds to an actual weapon, we have created it under <code>my_mod/entities/weapons</code>. We edit its related files (<code>battle_hammer_talisman.json</code>, <code>battle_hammer.json</code>, <code>battle_hammer_iconic.json</code>, and all their models and images).</p>
+
+<p>  We also add aliases for both the talisman and the weapon:</p>
+<pre><code>"crusader:talisman": "file(entities/weapons/battle_hammer/battle_hammer_talisman.json)",
+"weapons:battle_hammer": "file(entities/weapons/battle_hammer)"
+</code></pre></li>
+    <li><p>Now we edit the <code>crusader_description.json</code> file. There are many fields that are common for <a href="../index.html#JobDescription">any type of job</a>. Here's how to set them up for combat jobs:</p>
+
+<ul>
+    <li><p><strong>"abilities"</strong> -- for our example, the <code>crusader_abilities.json</code> file will look like this:</p>
+
+<pre><code>{
+   "type": "entity",
+   "components": {
+      "stonehearth:equipment_piece": {
+         "injected_ai": {
+            "ai_packs": [
+               "stonehearth:ai_pack:patrolling",
+               "stonehearth:ai_pack:wimpy",
+               "stonehearth:ai_pack:panic:flee",
+               "stonehearth:ai_pack:combat_control"
+            ]
+         },
+         "injected_buffs": [
+            "stonehearth:buffs:combat_basics"
+         ],
+         "military_score": 20
+      }
+   },
+   "entity_data": {
+      "stonehearth:combat:melee_attacks": [
+         {
+            "name": "combat_1h_forehand_spin",
+            "effect": "combat_1h_forehand_spin",
+            "active_frame": 21,
+            "cooldown": 8000,
+            "priority": 1
+         }
+      ],
+      "stonehearth:combat:melee_defenses": [
+         {
+            "name": "combat_1h_dodge",
+            "effect": "combat_1h_dodge",
+            "active_frame": 8,
+            "cooldown": 12000,
+            "priority": 1
+         }
+      ]
+   }
+}
+</code></pre>
+
+<p> Notice that we inject the patrolling AI pack so that the crusader knows how to patrol, a buff common for all combat units that increases their attributes, and an initial attack and defense skill (animation effects).</p>
+
+<p> The <strong>"military_score"</strong> property inside the equipment_piece component will make it so that the town's military score increases by the value defined there every time we promote someone to, in this case, Crusader. In the stonehearth mod only the advanced combat units have it. This way we can automatically increase / decrease the score by a higher amount every time we promote / demote a hearthling to a combat job.</p>
+
+<p> Military score (which you'll see in the town overview menu) is based on the weapons / tools / armor of the hearthlings, plus the combat units that we have (via these abilities files). Some aspects of the game will scale based on your military score.</p>
+
+<p> If you look at other examples from the stonehearth mod, you'll see that we can add any other AI pack here, or don't specify any attack (that's usually dependent on weapons themselves, so that the animations match with the weapon). The abilities file is like a default <a href="../../../basic/wearables/index.html">equipment piece</a> or default skills that the job comes with.</p></li>
+    <li><p><strong>"task_groups": []</strong> -- for our example, this array will look like this:</p>
+
+<pre><code>"task_groups": [
+  "stonehearth:task_group:common_tasks",
+  "stonehearth:task_group:restock",
+  "stonehearth:task_groups:rescue"
+]
+</code></pre>
+
+<p> Here we have very few task groups since we want our unit to focus on combat. Notice how combat units don't have the town_alert AI pack / task group. In the case of the cleric, they have the healing task group here too.</p></li>
+    <li><p><strong>"xp_rewards": {}</strong> -- for combat units, we set them up like this:</p>
+
+<pre><code>"xp_rewards": {
+   "town_protection": 1
+}
+</code></pre>
+<p>This is the amount of experience that they will gain every now and then when protecting the town (either patrolling or standing in a defense zone). It is controlled by listening to an event in <code>combat_job.lua</code>. The amount of experience that they gain by killing enemies depends on the monster_tuning files (it will be scaled with difficulty, and each monster will reward a different amount of experience points).</p>
+
+<p>All party members receive the same experience while in combat, no matter who killed the enemies.</p>
+
+<p>The cleric also has a couple more settings in their "xp_rewards". In general, you can grant exp points via the <code>add_exp</code> function of the job component.</p></li>
+    <li><p><strong>"level_data": {}</strong> -- combat units usually unlock permanent buffs and new combat skills.</p>
+
+<p> For example, the Crusader will have these two perks:</p>
+
+<pre><code>"level_data": {
+   "1": {
+      "perks": [
+         {
+            "type": "add_combat_action",
+            "name": "i18n(crusader:jobs.crusader.crusader_description.level_1_data.perk_000_name)",
+            "id": "crusader_holy_punch",
+            "icon": "file(images/holy_punch.png)",
+            "equipment": "crusader:crusader:holy_punch",
+            "action_type": "stonehearth:combat:melee_attacks",
+            "description": "i18n(crusader:jobs.crusader.crusader_description.level_1_data.perk_000_description)",
+            "level": 1,
+            "demote_fn": "remove_combat_action"
+         }
+      ]
+   },
+   "2": {
+      "perks": [
+         {
+            "type": "apply_buff",
+            "name": "i18n(crusader:jobs.crusader.crusader_description.level_2_data.perk_000_name)",
+            "id": "crusader_heal_aura",
+            "icon": "file(images/cleric_perk_healing_aura.png)",
+            "buff_name": "crusader:buffs:crusader:heal_aura",
+            "description": "i18n(crusader:jobs.crusader.crusader_description.level_2_data.perk_000_description)",
+            "level": 2,
+            "demote_fn": "remove_buff"
+         }
+      ]
+   }
+}
+</code></pre>
+
+<ul>
+    <li><p>The first one has <strong>"type" : "add_combat_action"</strong>. This is the name of a function defined in <code>combat_job.lua</code>. Notice how we have the <strong>"demote_fn"</strong> field with the opposite function, <strong>"remove_combat_action"</strong>.</p>
+
+<p>We declare an <strong>"action_type"</strong> so that the game knows where to inject the new combat skill (in this case, <strong>"stonehearth:combat:melee_attacks"</strong>) and an <strong>"equipment"</strong> (in this case, <code>"crusader:crusader:holy_punch"</code>) which is the URI of a JSON file describing an <a href="../../../basic/wearables/index.html">equipment piece</a>, normally an invisible one that just adds a new combat skill (animation), or inflictable debuffs, etc.</p>
+
+<p>Remember that the damage is defined in the weapon, not in the attacks themselves, and that it will be modified by factors like attributes, buffs, or some <a href="#CombatSkills">properties</a> of the attacks (that are added together with the animation info). For healing we have <strong>"stonehearth:combat:healing_spells"</strong>, instead of melee attacks. It's used for the cleric, and doesn't have any special property besides the animation ones, because the heal amount depends on the entity_data of the weapon:</p>
+
+<pre><code>"stonehearth:combat:healing_data": {
+   "base_healing": 5
+}
+</code></pre>
+
+<p>Normally we'll set the "priority" of the unlocked skills from the perks a bit higher, so that they have more chances to run than the basic attacks.</p></li>
+    <li><p>The second one has <strong>"type": "apply_buff"</strong> (with <strong>"demote_fn": "remove_buff"</strong>). These functions are defined in <code>base_job.lua</code>. We declare a <strong>"buff_name"</strong> property linking to the URI of the buff that we want to apply (normally a permanent buff).</p></li>
+</ul>
+
+<p> There are some more functions in base_job.lua and combat_job.lua that we can use for the perks.</p></li>
+</ul></li>
+    <li><p>We would now proceed to edit the rest of files:</p>
+
+<ul>
+    <li><p>We edit the files for the default job outfit, which are the same than for any other type of <a href="../../../basic/wearables/armor/index.html">armor</a>, and normally include <a href="../../../basic/wearables/armor/index.html#ArmorData">armor data</a>:</p>
+
+<pre><code>"stonehearth:combat:armor_data": {
+   "base_damage_reduction": 7
+}
+</code></pre></li>
+    <li><p>We edit the controller file. This is very important. Our renamed controller file will still have the same code inside so we have to rename some stuff in it.</p>
+
+<p> <img src="../../../../images/common/row_alert2.png" alt="icon"/> All jobs in the game inherit from <code>base_job.lua</code>. Combat jobs inherit from <code>combat_job.lua</code> instead, because that file already inherits from base_job.lua. The <code>CombatJob</code> class defined in combat_job.lua takes care of adding the combat unit to a default party when they get promoted, removing them when they are demoted to a non-combat job, and managing the experience gain for combat units when they patrol.</p>
+
+<p> Our <code>crusader.lua</code> file would look like this after we rename Footman to Crusader:</p>
+
+<pre><code>local CrusaderClass = class()
+
+local CombatJob = radiant.mods.require 'stonehearth.jobs.combat_job'
+radiant.mixin(CrusaderClass, CombatJob)
+
+return CrusaderClass
+</code></pre>
+
+<p> Notice how we mixin the CombatJob class to our CrusaderClass, to retrieve all the common code for combat units. The example above is the minimal code that a combat class should have. In this Lua file we can add more custom functions if we need to. For example, take a look at <code>cleric.lua</code>.</p>
+
+<p> In order to override inherited functions, we'd do this (after inheriting from the CombatJob class and before returning our CrusaderClass class):</p>
+
+<pre><code>-- Overriding standard combat class functions looks like this
+function CrusaderClass:promote(json_path, options)
+   -- First call the combat class's version
+   CombatJob.promote(self, json_path, options)
+   -- Your custom code goes here
+end
+</code></pre>
+<p> This allows us to extend the functionality if we need to add extra variables or whatever new behavior to the class.</p></li>
+</ul></li>
+    <li><p>Now we add a crafting recipe for the talisman to be obtainable in the game, or make it obtainable in some other way.</p></li>
+    <li><p>Finally we can test our new combat job in the game and make sure that everything works as expected.</p>
+
+<p>  You can either stamp the required talisman with the Item Stamper debugtool and promote the hearthlings via the promotion UI, or make a crafter craft the talisman if you made a recipe for it, etc.</p>
+
+<p>  You can also promote them with the default console if you have the debugtools mod enabled, e.g.:</p>
+<pre><code>  promote_to crusader:jobs:crusader
+</code></pre>
+<p>  And then check if they get added to the parties menu, patrol, can fight, etc.</p></li>
+</ol>
+
+
+
+<h3><a name="CombatSkills"></a>About attacks and defenses</h3>
+
+
+<p>We can easily add new combat skills with equipment pieces. <a href="../../../basic/wearables/weapons/index.html#MeleeAttacks">Earlier</a> we already explained the basic properties that they can have. But there are even more than just the info for the combat animation effect.</p>
+
+
+
+<p>You can check the existing combat jobs, armor and weapons for examples.</p>
+
+
+
+<p>For melee attacks:</p>
+
+
+
+<ul>
+    <li><p><strong>"damage_multiplier"</strong> -- with this property, when the attack is executed the total damage is increased or decreased based on this multiplier.</p></li>
+    <li><p><strong>"aggro_addition"</strong> -- we can make this attack increase the aggro towards our combat unit.</p></li>
+    <li><p><strong>"aggro_multiplier"</strong> -- like the above property, but using a multiplier instead of adding some amount. If both are present, the multiplier will be applied before the addition.</p></li>
+    <li><p><strong>"minimum_damage"</strong> -- we can limit the minimum damage that this attack should make. If the damage is negative, then it will be changed to either 0 or 1.</p></li>
+    <li><p><strong>"inflictable_debuffs" : {}</strong> -- same syntax than for other inflictable debuffs. We can make this attack inflict a debuff on the target with a chance.</p>
+
+<pre><code>"inflictable_debuffs": {
+   "infection": {
+      "uri": "stonehearth:buffs:knight:taunted_effect",
+      "chance": 1.0
+   }
+}
+</code></pre></li>
+    <li><p><strong>"aoe_effect" : {}</strong> -- this attack will cause aoe damage. It includes at least an <strong>"aoe_range"</strong> property (the range in world units where the aoe damage will have effect, by default it will be the melee attack's range) and an <strong>"aoe_target_limit"</strong> property (the maximum number of targets that can be affected by the aoe, 10 by default). It can also include any of the fields described above, so that the aoe attack can increase aggro, inflict debuffs on multiple targets, etc.</p></li>
+</ul>
+
+
+
+<p>For ranged attacks:</p>
+
+
+
+<ul>
+    <li>Besides the normal <strong>"active_frame"</strong> property, we can have an <strong>"active_frames" : []</strong> array, to specify more than one frame. It's used for the archer double shot skill. We could also use this property for melee attacks.</li>
+    <li><strong>"target_armor_multiplier"</strong> -- normally a value between 0 and 1, this will reduce the armor for the target, so the damage will be higher. Also possible to use in melee attacks.</li>
+</ul>
+
+
+
+<p>For melee defenses:</p>
+
+
+
+<ul>
+    <li><strong>"chance_of_success"</strong> -- normally a value between 0 and 1 (1 by default). It is the chance to block attacks.</li>
+    <li><strong>"defense_attribute"</strong> -- the name of an attribute that we can use to increase the chance of success, 0 by default. We can use any attribute in this field, but for it to have effect the hearthlings must already have it in their attributes component.</li>
+</ul>
+
+
+
+<h2><a name="SHED"></a>Using SHED</h2>
+
+
+<p><strong>Disclaimer</strong>: These steps refer to creating a combat job using SHED at the time that this page was written.</p>
+
+
+
+<ul>
+    <li><p>First we'll need to clone a job node from the stonehearth mod (for example, 'jobs:footman').</p></li>
+    <li><p>Right-click on it and click on 'Clone!'. Select your mod as the Target mod for the clone, and type the name of your combat job in the replacement text box.</p></li>
+    <li><p>Click on clone and review the dependencies. Uncheck any unwanted files from buffs and the like if you won't use them, and go back if you want to add more replacement texts for the names of the rest of the files, so that they're cloned already with the name that you want.</p>
+
+    <p>  Make sure to uncheck the alias for the controller (your_mod:class:your_job) since it would be created inside the aliases node, which is something that we don't want. Click on 'Accept'.</p></li>
+    <li><p>Once SHED refreshes the view, look for the <strong>controllers</strong> node of the stonehearth mod and find (for example) the 'class:footman' node. Clone it replacing footman with the name of your custom job, but uncheck the Lua file, since we already cloned it in the previous step.</p>
+
+    <p>  This will make it so that the alias of the controller is cloned into the <strong>"controllers"</strong> section of your manifest, which is what we want.</p></li>
+    <li><p>Now search for the 'weapons:wooden_sword' node on the stonehearth mod and clone it to your mod, so that your talisman JSON file detects the missing models and images.</p></li>
+    <li><p>Select the node of your cloned job and start editing the files:</p>
+
+    <ul>
+        <li><p>Edit the <strong>"alias"</strong>, <strong>"controller"</strong>, <strong>"talisman_uri"</strong> and any other fields with aliases so that they point to your mod's manifest. If SHED detects the file that they point to, it will highlight them in light green.</p></li>
+        <li><p>If your job perks include buffs, edit their aliases so that they point to the stonehearth mod (if you plan on reusing them) or to your mod (if you've cloned them). Same for the combat skills.</p>
+
+        <p> Remember that the name of the effects is based on the stonehearth mod. If you plan to add custom animations, make sure to set the overrides properly so that the hearthlings detect them.</p></li>
+        <li><p>Save the changes.</p></li>
+    </ul></li>
+    <li><p>Finally, keep editing the models, data of the perks, controller, etc. like mentioned in the <a href="#CombatJob">guide above</a> until your cloned job is ready for testing. You can use the 'Localize This File' button to try auto-localizing your JSON files (mind that for some files it might not work).</p>
+
+    <p>  Remember to add your job to the job index via a mixinto outside of SHED, otherwise you won't be able to test it. Also make a recipe for the talisman or make it obtainable in some other way.</p></li>
+</ul>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

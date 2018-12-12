@@ -11,6 +11,7 @@
       <header>
 <div class='logo'>
 </div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
@@ -322,6 +323,18 @@
 
    <li>
       <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
 
@@ -664,6 +677,290 @@
 </li>
 
    
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
    </ul>
 
 
@@ -808,7 +1105,7 @@ Any food item that can be eaten (not just a cooking ingredient) must have a serv
 
 
 <ol>
-    <li><p>We already copied the serving files when we copied the stonehearth/entities/food/turnip folder. Now we'll do the usual renaming and editing.</p>
+    <li><p>We already copied the serving files when we copied the <code>stonehearth/entities/food/turnip</code> folder. Now we'll do the usual renaming and editing.</p>
 
     <p>  <a name="DestroyOnUncarry"></a>The tomato_serving.json file doesn't have many properties, these are the new ones that haven't been explained before, under <strong>"entity_data"</strong>:</p>
     <ul>
@@ -816,6 +1113,11 @@ Any food item that can be eaten (not just a cooking ingredient) must have a serv
         <ul>
             <li>The <strong>"category"</strong> field is not really used, since "category" is nowadays part of the catalog data.</li>
             <li>The <strong>"destroy_on_uncarry"</strong> flag, which determines that this item will be destroyed if it gets dropped to the ground.</li>
+        </ul></li>
+        <li><strong>"stonehearth:food"</strong> -- here we have read-only data for the serving:
+        <ul>
+            <li><strong>"stonehearth:sitting_on_chair"</strong> and <strong>"default"</strong> -- inside them we have a number for the <strong>"satisfaction"</strong>, which is how much the serving will fill the hearthling's stomach (calories) when they're sitting on a chair and when they're sitting on the ground.</li>
+            <li><strong>"eating_effect"</strong> -- optional field. We can declare a custom effect here (if we don't, hearthlings will use the "eat" effect by default). Useful if we want to define a different animation, for example for drinks.</li>
         </ul></li>
     </ul></li>
     <li><p>We add an alias for our serving in our manifest, so that we can use it in the basket's JSON file. Now the aliases section looks like this:</p>

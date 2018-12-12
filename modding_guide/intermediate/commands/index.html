@@ -1,0 +1,1251 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Adding commands</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Adding commands</div>
+   <p><p><!-- TODO: link back to explanations about call handlers and radiant.call / radiant.call_obj (for Lua and js) when they're finished--></p></p>
+
+
+<ul>
+    <li><a href="#Commands">What is a command?</a></li>
+    <li><a href="#AddingCommands">Adding commands to an entity</a></li>
+    <li><a href="#AddingByCode">Adding a command in Lua</a></li>
+    <li><a href="#EnableDisable">Enabling / disabling a command in Lua</a></li>
+    <li><a href="#Anatomy">Anatomy of a command</a>
+    <ul>
+        <li><a href="#FireEvent">Fire Event</a></li>
+        <li><a href="#Call">Call</a></li>
+        <li><a href="#CallObject">Call object</a></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="Commands"></a>What is a command?</h2>
+
+
+<p>A command is an order that the players can issue on an entity they have clicked on. For example, "Release Pet" for pets, "Move Item" for decorations, and "Workshop" for workbenches and crafters. They are managed through the commands component.</p>
+
+
+
+<p>Below are some command buttons on a hearthling's unit frame (the UI bar that displays information about a hearthling):
+<img src="../../../images/intermediate/commands/unit_frame.png" alt="unit_frame"/></p>
+
+
+
+<p>The citizens panel lists all commands available for the selected hearthling too, so that we can use them from there.
+<img src="../../../images/intermediate/commands/citizens_panel.png" alt="citizens_panel"/></p>
+
+
+
+<p>It also adds the "Change Jobs" button, which isn't treated as a command, it will directly bring up the promotion UI. You can also open the promotion tree by clicking on the job icon inside the character sheet.</p>
+
+
+
+<h2><a name="AddingCommands"></a>Adding commands to an entity</h2>
+
+
+<p>To make a command available on an entity, go to the entity's .json file, and add <strong>"stonehearth:commands"</strong> in the "components" section. Then, refer to the file or alias relevant for each command you want to add inside the <strong>"commands"</strong> array:</p>
+
+
+
+<pre><code>  "stonehearth:commands" : {
+     "commands" : [
+        "stonehearth:commands:use_consumable"
+     ]
+  }
+</code></pre>
+
+<p>If you want to create an URI for your command, add it under the "aliases" section of your manifest.</p>
+
+
+
+<h2><a name="AddingByCode"></a>Adding a command in Lua</h2>
+
+
+<p>You can also add a command via Lua code. Some components or other Lua scripts add the commands manually like this, instead of on each JSON file:</p>
+
+
+
+<pre><code>  local command_component = self._entity:add_component('stonehearth:commands')
+  -- add the command you wish
+  command_component:add_command('stonehearth:commands:place_item')
+
+  local event_data = { crafter_type = json.job_alias }
+  -- can also modify the command's event data
+  command_component:set_command_event_data(command_uri, event_data)
+</code></pre>
+
+<h2><a name="EnableDisable"></a>Enabling / disabling a command in Lua</h2>
+<p>Get the commands component and then call <code>set_command_enabled(uri, is_enabled)</code> on it:</p>
+
+
+
+<pre><code>  local commands_component = self._entity:add_component('stonehearth:commands')
+  commands_component:set_command_enabled('stonehearth:commands:place_item', true)
+</code></pre>
+
+<p>Other functions you can call on the commands component are defined in <code>stonehearth/components/commands/commands_component.lua</code>.</p>
+
+
+
+<h2><a name="Anatomy"></a>Anatomy of a command</h2>
+
+
+<p>A command is a JSON file with <strong>"type" : "command"</strong>. It has a name, an enabled/disabled status, a tooltip, an image and some other pieces of information required to display it correctly in the UI. It can have different actions to execute, as well as different arguments based on the action type.</p>
+
+
+
+<p>We can find the existing commands in <code>stonehearth/data/commands</code>. The combat commands that appear on top of the unit frame are a bit different, they're not treated like the rest of commands (they are shown/hidden depending on whether the hearthling has a combat job). The rescue command is also called directly from the Javascript code and shown/hidden depending on the status of the hearthling.</p>
+
+
+
+<p>These are the different fields we can find in commands:</p>
+
+
+
+<ul>
+    <li><strong>"type": "command"</strong> -- this file represents a command.</li>
+    <li><strong>"name"</strong> -- a custom identifier used internally. Try to keep it unique. By convention, we use lowercase and underscores (instead of spaces).</li>
+    <li><strong>"display_name"</strong> -- a localized name that will be shown in the tooltip when we hover over the command in the unit frame.</li>
+    <li><strong>"description"</strong> -- a localized description that will be shown in the tooltip for the command.</li>
+    <li><strong>"disabled_description"</strong> -- optional field. If we add it, the description on the tooltip will change to the one here whenever the command is disabled.</li>
+    <li><strong>"icon"</strong> -- the icon for the UI.</li>
+    <li><strong>"ordinal"</strong> -- optional field. An ordinal to show the different commands in a certain order in the UI.</li>
+    <li><strong>"hotkey_action"</strong> -- optional field. It's the name of the hotkey identifier for this command. If we add it to <code>stonehearth/data/hotkeys.json</code> via a mixinto, players will be able to bind key combos to this command in the Controls tab of the game settings.</li>
+    <li><strong>"default_enabled"</strong> -- optional field (<strong>true</strong> by default). Whether this command should be enabled by default (some commands are enabled/disabled manually in Lua).</li>
+    <li><strong>"visible_to_all_players"</strong> -- optional field (<strong>false</strong> by default). With this, the command will be visible for other players in multiplayer games when they select the entity that has this command, even if the entity belongs to another player.</li>
+    <li><strong>"action"</strong> -- the type of action that the command has. There are two types, explained in more detail below:
+    <ul>
+        <li><strong>"fire_event"</strong> -- this command will fire an event that will be listened to by the UI (client side). We need to declare which event in a <strong>"event_name"</strong> field, as well as defining data in a <strong>"event_data"</strong> field (it's a table. If the event doesn't need anything passed, we should declare it empty <strong>{}</strong>).</li>
+        <li><strong>"call"</strong> -- this command will call a function (defined in a <strong>"function"</strong> field) with some arguments (defined in an <strong>"args"</strong> array, which can be empty if we don't need to pass any or if the only argument we need to pass is the entity that has this command). </li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="FireEvent"></a>Fire Event</h3>
+
+
+<p>One common action for a command is <strong>"fire_event"</strong>. This means that the event name associated is fired when we click on the command, and the UI will pick it up in the .js files and do something with it.</p>
+
+
+
+<p>For example, this is the command that we add to workbenches to show the workshop UI (we add it in Lua):</p>
+
+
+
+<pre><code>  {
+     "type": "command",
+     "name": "show_workshop",
+     "display_name": "i18n(stonehearth:data.commands.show_workshop.display_name)",
+     "description": "i18n(stonehearth:data.commands.show_workshop.description)",
+     "disabled_description": "i18n(stonehearth:data.commands.show_workshop.disabled_description)",
+     "default_enabled": true,
+     "ordinal": 10,
+     "icon": "file(show_workshop.png)",
+     "action": "fire_event",
+     "event_name": "radiant_show_workshop",
+     "event_data": {}
+  }
+</code></pre>
+
+<p>The "radiant_show_workshop" event above is hooked up to javascript with the following code from <code>stonehearth/ui/game/show_workshop/show_team_workshop.js</code>:</p>
+
+
+
+<pre><code>  $(document).ready(function () {
+     App.workshopManager.init();
+
+     // Show the crafting UI from the workshops, and from the crafter.
+     $(top).on("radiant_show_workshop", function (_, e) {
+        App.workshopManager.toggleWorkshop(e.event_data.crafter_type);
+     });
+     $(top).on("radiant_show_workshop_from_crafter", function (_, e) {
+        App.workshopManager.toggleWorkshop(e.event_data.crafter_type);
+     });
+  });
+</code></pre>
+
+<p>In this example the event data was added via Lua in the workshop component when the game initialized it for the corresponding workbench, so we don't pass any parameter in the "event_data" field from the command's JSON file. This way, the event data can be different for each workbench.</p>
+
+
+
+<p>If we had wanted this command to always pass the same data for the crafter_type parameter (for example, the mason from the stonehearth mod), we wouldn't have defined it via Lua and would have instead added it like this to the command's JSON file:</p>
+
+
+<pre><code>  "event_data": {
+     "crafter_type" : "stonehearth:jobs:mason"
+  }
+</code></pre>
+
+<h3><a name="Call"></a>Call</h3>
+<p>Another common action for a command is to call a function. For example, to use certain consumables, we have the use_consumable command:</p>
+
+
+
+<pre><code>  {
+     "type": "command",
+     "name": "use_consumable",
+     "display_name": "i18n(stonehearth:data.commands.use_consumable.display_name)",
+     "description": "i18n(stonehearth:data.commands.use_consumable.description)",
+     "icon": "file(use_consumable.png)",
+     "action": "call",
+     "function": "stonehearth:use_consumable_on_town",
+     "args": [
+     ]
+  }
+</code></pre>
+
+<p><a name="Functions"></a>The value for <strong>"function"</strong> is the name (preceded by the namespace of the mod plus a colon!) of a function described in the <strong>"functions"</strong> section of the manifest:</p>
+
+
+
+<pre><code>  "functions" :{
+     "use_consumable_on_town": {
+        "controller": "file(call_handlers/town_call_handler.lua)",
+        "endpoint": "server"
+     }
+  }
+</code></pre>
+
+<p>In the <strong>"controller"</strong> field we define the file where the code of the <code>use_consumable_on_town</code> function is actually located. Normally it's in a call handler (they'll be explained in advanced sections of the guide). We also have to define if the <strong>"endpoint"</strong> is <strong>"client"</strong> or <strong>"server"</strong>, depending on whether the function should be executed on the client side or on the server side.</p>
+
+
+
+<p>In our command's JSON file we have the <strong>"args"</strong> array to pass arguments to the function (check the <code>default_arrows.json</code> and <code>summon_titan_from_gong.json</code> commands for examples).</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/>Note that, even when we leave the "args" array empty, the first argument that will be passed is always the entity from which we executed this command.</p>
+
+
+
+<h3><a name="CallObject"></a>Call object</h3>
+
+
+<p>We can call a function on an object (like a service), if we add the <strong>"object"</strong> field. For example:</p>
+
+
+
+<pre><code>  {
+     "type": "command",
+     "name": "restore_terrain",
+     "display_name": "i18n(stonehearth:data.commands.restore_terrain.display_name)",
+     "description": "i18n(stonehearth:data.commands.restore_terrain.description)",
+     "default_enabled": true,
+     "icon": "file(restore_terrain.png)",
+     "action": "call",
+     "function": "restore_terrain_command",
+     "object": "stonehearth.building",
+     "args": []
+  }
+</code></pre>
+
+<p>Here the code of the <code>restore_terrain_command</code> function (notice that is not preceded by the namespace of the mod!) is defined in the building service (stonehearth.building), which is an object instantiated by the game. Remember that the first object of the "args" array will be the entity from which we executed this command.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> For calling functions on an object in this way, we must add them to the manifest in the <strong>"object_commands"</strong> section (shortened example from the stonehearth manifest):</p>
+
+
+
+<pre><code>  "object_commands": {
+     "building": [
+        "restore_terrain_command"
+     ]
+  }
+</code></pre>
+
+
+
+
+<!-- Call and call object are also functions that are used in Lua and JavaScript code. Some tips on when to use one or the other can be found [here](https://discourse.stonehearth.net/t/radiant-call-versus-radiant-call-obj/35459/5) -->
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

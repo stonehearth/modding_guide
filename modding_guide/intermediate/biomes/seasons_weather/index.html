@@ -1,0 +1,1196 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Seasons and weather</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Seasons and weather</div>
+   <ul>
+    <li><a href="#Seasons">Seasons</a></li>
+    <li><a href="#Weather">Weather</a>
+    <ul>
+        <li><a href="#SkySettings">Sky settings</a></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="Seasons"></a>Seasons</h2>
+
+
+<p>Seasons are defined in the main JSON file of the biomes. A small example of how to setup seasons:</p>
+
+
+
+<pre><code>  "seasons": {
+     "spring": {
+        "display_name": "i18n(stonehearth:data.biome.temperate.seasons.spring.display_name)",
+        "description": "i18n(stonehearth:data.biome.temperate.seasons.spring.description)",
+        "start_day": 0,
+        "weather": [
+           {
+              "uri": "stonehearth:weather:sunny",
+              "weight": 10
+           }
+        ]
+     },
+     "summer": {
+        "display_name": "i18n(stonehearth:data.biome.temperate.seasons.summer.display_name)",
+        "description": "i18n(stonehearth:data.biome.temperate.seasons.summer.description)",
+        "start_day": 21,
+        "weather": [
+           {
+              "uri": "stonehearth:weather:thunderstorm",
+              "weight": 4
+           }
+        ]
+     },
+     "autumn": {
+        "display_name": "i18n(stonehearth:data.biome.temperate.seasons.autumn.display_name)",
+        "description": "i18n(stonehearth:data.biome.temperate.seasons.autumn.description)",
+        "start_day": 42,
+        "weather": [
+           {
+              "uri": "stonehearth:weather:windy",
+              "weight": 6
+           }
+        ]
+     },
+     "winter": {
+        "display_name": "i18n(stonehearth:data.biome.temperate.seasons.winter.display_name)",
+        "description": "i18n(stonehearth:data.biome.temperate.seasons.winter.description)",
+        "start_day": 63,
+        "weather": [
+           {
+              "uri": "stonehearth:weather:snow",
+              "weight": 6
+           }
+        ]
+     }
+  }
+</code></pre>
+
+<p>We'll use custom keys as identifiers for the seasons (for example, "spring" / "summer" / "autumn" / "winter"). We can have an arbitrary number of seasons, but we'll need to make sure that they fit within the year.</p>
+
+
+
+<p>You can check the length of the different time intervals in <code>stonehearth/data/calendar/calendar_constants.json</code>. By default they're setup like the real-world time, except for days (we have only 7 days per month). It is not advisable to change the calendar constants, since they might affect other mods and there can be code that depends on them. The names of the months can be found in the calendar constants too, if you want to change them.</p>
+
+
+
+<p>Inside each season identifier, we have some properties:</p>
+
+
+
+<ul>
+    <li><p><strong>"display_name"</strong> -- the localized name for the season that will be displayed in the UI (in the map embarkation screen, in the crops list -since crops have preferred seasons- and when we hover over the month name below the sun widget).</p></li>
+    <li><p><strong>"description"</strong> -- the localized description for the season. It will appear when we hover over the season name in the map embark screen and in the month name under the sun widget.</p></li>
+    <li><p><strong>"start_day"</strong> -- this determines the duration of the season. Internally, we start on day 0, so for the example above, spring's start day is 0 and summer's start day is 21, so the duration of spring is 3 in-game months (remember, 7 days per month).</p>
+
+    <p>  We manually express this duration in the description of the season, but the tooltip for the month name under the sun widget also has a counter telling when the season ends, since we don't start the game exactly at day 1 of the first month, but rather at the start of the chosen season, which happens in the middle of the first week of the corresponding month (for spring would be the first month, for summer the fourth, etc).</p>
+
+    <p>  We can make seasons last a different amount of months. For example, in the arctic biome winter lasts for 7 months, while spring and autumn last for 1 month and summer lasts for 3 months.</p></li>
+    <li><p><strong>"weather" : []</strong> -- an array of objects containing a weather URI and its <a href="../../../basic/misc_json/index.html#WeightedSets">weight</a>. This way we can define different weather for each season and make some weather types more frequent than other ones. For how to create your own weather, see below.</p></li>
+</ul>
+
+
+
+<h2><a name="Weather"></a>Weather</h2>
+
+
+<p>For creating a custom weather type we'll need to create several files. Existing weather can be found in <code>stonehearth/data/weather</code>, so we can copy one from there, rename it and edit the files.</p>
+
+
+
+<p>First let's add the alias to our manifest so that we don't forget about it and we can use it in our custom biomes or add it to existing biomes from the stonehearth mod:</p>
+
+
+<pre><code>  "aliases" : {
+     "weather:sprinkles_rain" : "file(data/weather/sprinkles_rain/sprinkles_rain.json)"
+  }
+</code></pre>
+
+<p>The <code>sprinkles_rain.json</code> file would have the following properties:</p>
+
+
+
+<ul>
+    <li><p><strong>"display_name"</strong> -- the localized name for the weather, which will be shown in the tooltip when we hover over the weather forecast under the sun widget.</p></li>
+    <li><p><strong>"description"</strong> -- the localized description that will be shown in the weather's tooltip. Here we can include the bonuses or disadvantages that the weather has. We can inline HTML tags in the text of the tooltip for better formatting.</p></li>
+    <li><p><strong>"icon"</strong> -- path to the icon for our weather that will be shown in the forecast.</p></li>
+    <li><p><strong>"sky_settings"</strong> -- URI of the sky settings file. See <a href="#SkySettings">below</a>.</p></li>
+    <li><p><strong>"thoughts": []</strong> -- array of thoughts for this weather. A random thought from this list will be added to every hearthling whenever the weather is active. If we include a thought more than once in the array we'll be changing its probability (there'll be more chances for it to be chosen).</p>
+
+    <p>  These URIs are not aliases, but rather a string composed of keys from the thoughts index. See <a href="../../thoughts/index.html">here</a> for more information.</p></li>
+    <li><p><strong>"ambient_sound_key"</strong> -- this points to an identifier (for example, "rain") that will be used in the sound service to play ambient sound when this weather is active. You can reuse an existing identifier from <code>stonehearth/data/sounds/sound_constants.json</code> or inject a custom one there via a mixinto.</p></li>
+    <li><p><strong>"camera_attached_effect"</strong> -- URI of the effect to attach to the camera. It is an optional field. We normally use them for rain, snow, etc. These effects use cubemitters whose emitter has a CUBOID surface, so that it can cover all the camera view.</p></li>
+    <li><p><strong>"subject_matter"</strong> -- URI of the subject matter for this weather (for example, "candyland:subjects:weather:sprinkles_rain"). For weather subjects we normally use 2D icons similar to those for the forecast, and save them inside the same folder than the other weather files. The subject matter file (<code>sprinkles_rain_subject.json</code>) would contain something like this:</p>
+
+<pre><code>{
+   "type": "entity",
+   "components": {
+   },
+   "entity_data": {
+      "stonehearth:thought_bubble_icon":  {
+         "image":  "file(sprinkles_rain_subject.png)"
+      }
+   }
+}
+</code></pre>
+<p>  The subject will be added to the list of conversation subjects of hearthlings when the weather is active.</p></li>
+    <li><p><strong>"plant_growth_time_multiplier"</strong> -- optional field. It's a multiplier for the growth rate of plants. If we include it, plant growth will be affected when this weather is active, so we can make plants and crops grow faster or slower.</p></li>
+    <li><p><strong>"vision_multiplier"</strong> -- optional field. A multiplier for the vision radius, usually a decimal number (from 0 to 1). Depending on your graphic settings this might vary or not have effect, but this field is used to make your settlement be less visible when you zoom out from it. A good example would be the foggy weather with the fallback renderer disabled. When zooming out from your settlement, you'll see it get a bit obscured under a fog, and when you zoom in, you'll be able to see it sharp.</p></li>
+    <li><p><strong>"hide_cloud_shadows"</strong> -- optional boolean to hide the clouds shadows that appear on the ground, for cloudy days, clear skies, etc.</p></li>
+    <li><p><strong>"snow_accumulation_per_minute"</strong> -- optional field. A really small value between 0 and 1 (it's per in-game minutes). It will make the top of the horizontal surfaces be covered by a flat layer of snow, which gets more opaque over time. Surfaces below other surfaces won't get snow on them. If this value is negative, it will remove the snow layer slowly, if there's snow from a previous day. The color of the snow is controlled in a shader, check the SNOW_COVER entry in <code>stonehearth/data/horde/materials/fullscreen_quad_material.json</code>. Check also <code>stonehearth/services/client/weather_render/weather_render_service.lua</code> for how we render the weather effects.</p></li>
+    <li><p><strong>"is_dark_during_daytime"</strong> -- optional field, <strong>false</strong> by default. When <strong>true</strong>, hearthlings will keep the fire pit lit during the day (normally we use it for bad weather like rain, snow, etc).</p></li>
+    <li><p><strong>"unsheltered_debuff"</strong>, <strong>"unsheltered_animal_debuff"</strong> and <strong>"unsheltered_resistance_buff"</strong> -- optional fields that point to URIS of buffs. When we define them, our hearthlings will get the "unsheltered_debuff" applied and our pasture animals will get the "unsheltered_animal_debuff" applied when this weather is active. If our hearthlings or animals have the buff defined for "unsheltered_resistance_buff" (for example, by equipping some winter clothes), then they won't get the unsheltered debuffs.</p></li>
+    <li><p><strong>"controller"</strong> -- optional field. It's the URI of a Lua script (remember to add it to the "controllers" section in your manifest!) that will be run when this weather is active. Some examples would be <code>"stonehearth:weather_scripts:foggy"</code>, which spawns undead when the foggy weather is active, and <code>"stonehearth:weather_scripts:thunderstorm"</code>, which makes thunderbolts appear randomly and hurt hearthlings and trees.</p></li>
+    <li><p><strong>"renderer"</strong> -- optional field. It's the URI of a Lua script (it must be declared in the "client_controllers" section of your manifest!). Examples would be <code>"stonehearth:weather_renderers:titanstorm"</code> and <code>"stonehearth:weather_renderers:windy"</code>. We can access client services from them and render things on the client side (like the gusts of wind effects, which aren't attached to the camera).</p></li>
+</ul>
+
+
+
+<h3><a name="SkySettings"></a>Sky settings</h3>
+
+
+<p>The sky is rendered via <code>stonehearth/services/client/sky_renderer/sky_renderer_service.lua</code>. The <code>sky_settings.json</code> file referenced in the weather's JSON file contains data regarding the sky for the weather.</p>
+
+
+
+<p>It has these fields:</p>
+
+
+
+<ul>
+    <li><p><strong>"sky_gradient"</strong> -- path to an image file (usually a 256x256 pixels PNG). From left to right, it represents in-game time (starting at midnight), and from top to bottom it represents top to bottom of the sky.</p>
+
+<p>  You can reuse existing gradients (they are inside subfolders of <code>stonehearth/data/texture_gradient/skybox</code>) or create your own ones. The length of each gradient depends on what do you want the sky to look like at each time of day, perhaps you want more slower transitions or shorter ones.</p>
+
+<p>  These are the percentages across the sky gradient where these time events occur:</p>
+<pre><code>midnight           0
+sunrise_start      10
+sunrise_peak_start 20
+sunrise_peak_mid   25
+sunrise_peak_end   30
+sunrise_end        40
+midday             50
+sunset_start       60
+sunset_peak_start  70
+sunset_peak_mid    75
+sunset_peak_end    80
+sunset_end         90
+day_length        100
+</code></pre></li>
+    <li><p><strong>celestials": []</strong> -- an array containing parameters for the celestials. Normally it contains 2 entries, one for the sun and another one for the moon, with the following properties:</p>
+    <ul>
+        <li><p><strong>"name"</strong> -- an identifier for the celestial (e.g. "sun").</p></li>
+        <li><p><strong>"shadows_enabled"</strong> -- a boolean to enable/disable shadows for this celestial object (normally set to <strong>true</strong>).</p></li>
+        <li><p><strong>"light_colors" : []</strong> -- an array containing maps of <strong>"time"</strong> (which points to an identifier for the time of day), and <strong>"value"</strong> (an array containing an RGB color in <a href="http://www.corecoding.com/utilities/rgb-or-hex-to-float.php">decimal format</a>).</p>
+
+        <p> If the light color is [0,0,0] the light will get disabled (e.g. we disable the sun during nighttime and the moon during daylight). The times of day used here are defined in the sky_renderer service, but you can just copy an existing sky_settings file to get them.</p></li>
+        <li><p><strong>"ambient_colors"</strong> -- similar to the light colors, also useful for the low quality renderer.</p></li>
+        <li><p><strong>"angles"</strong> -- angles on x, y, z for the directional lights. Only the most important light can cast shadows.</p></li>
+        <li><p><strong>"depth_offset_values"</strong> -- depth offsets for the light.</p></li>
+    </ul></li>
+    <li><p><strong>"params"</strong> -- parameters for the fog.</p>
+    <ul>
+        <li><strong>"height_fog"</strong> -- at each time of day, which fog height (in world space), fog thickness factor, fog noise factor and fog distance factor there should be.</li>
+        <li><strong>"height_fog2"</strong> -- at each time of day, which fog noise scale on X, fog noise scale on Z and fog noise speed there should be.</li>
+        <li><strong>"height_fog_color_mult"</strong> -- the color for the fog at each time of day.</li>
+        <li><strong>"scattering"</strong> -- at each time of day, the hue shift, saturation factor, value factor, and sun brightness for the scattering of the light that there should be.</li>
+    </ul></li>
+    <li><p><strong>"colors"</strong> -- more parameters.</p>
+    <ul>
+        <li><strong>"starfield_brightness"</strong> -- the colors for the stars. Usually we set them to [0,0,0] during the day time so that they are disabled.</li>
+    </ul></li>
+</ul>
+
+
+
+<p>We can test the sky gradient using the <a href="../../../essentials/debugtools/debugtools_mod/index.html#DebuggingWeather">Time Slider</a> debug tool.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

@@ -1,0 +1,1165 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Critters and monsters</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Critters and monsters</div>
+   <p><p>Monsters are created like any other living entity (critters, hearthlings...) but there are some extra files we'll want to create if we want to use them for encounters (raids, etc). We can find the existing populations under <code>stonehearth/services/server/population/data</code>.</p></p>
+
+
+<ul>
+    <li><a href="#CreatingMobs">How to create a mob</a>
+    <ul>
+        <li><a href="#AI">AI and animations</a></li>
+    </ul></li>
+    <li><a href="#Population">Setting up the population file</a></li>
+    <li><a href="#MonsterTuning">About monster tuning files</a></li>
+</ul>
+
+
+
+<h2><a name="CreatingMobs"></a>How to create a mob</h2>
+
+
+<p>All the living entities in stonehearth have the <code>stonehearth/mixins/mob.json</code> mixin, either directly or via other mixins. This mixin adds some basic properties like mob/render flags, the AI component, a basic attribute/expendable resource (health), and some essential entity_data that they're going to need.</p>
+
+
+
+<p>Their JSON file is of <strong>"type" : "entity"</strong>. Monsters have the <code>monster.json</code> mixin, which has way less components and data than the <code>base_human.json</code> mixin used by hearthlings. Animals use the <code>critter.json</code> mixin instead. You can reuse these mixins for your custom entities. The monster mixin has some basic components like postures, a sight sensor, the job component, and some extra attributes and AI packs so that they can fight.</p>
+
+
+
+<p>You can add whatever else you need your entities to have, just like when creating placeable objects and the like, such as the model_variants component, etc. Mind that copying an existing enemy might involve many files and take a while to fix the things that don't work, so take it easy.</p>
+
+
+
+<p>Finally, make sure to add an alias for your entities in your manifest. For instance:</p>
+
+
+
+<pre><code>  "aliases" : {
+     "monsters:vampires:vampire": "file(entities/monsters/vampires/vampire)",
+     "monsters:vampires:vampire_female": "file(entities/monsters/vampires/vampire_female)"
+  }
+</code></pre>
+
+<h3><a name="AI"></a>AI and animations</h3>
+<p>You can see how to set up the rig of your entities in the art guide. Depending on the AI actions that your critter / monster can do, you'll need different animations. If the game tries to run an AI action but can't find its related effect or animation files, an error will pop up, so that you know where is the problem.</p>
+
+
+
+<p>For starters, your entities will need to have at least an <code>idle_breath.json</code> effect, and a <code>run.json</code> effect, so that they can look alive when standing and running. In the entity data you might see this section for some mobs, listing effects:</p>
+
+
+
+<pre><code>  "stonehearth:idle_effects": {
+     "effects": [
+        {
+           "name": "idle_breathe",
+           "weight": 5
+        },
+        {
+           "name": "idle_look_around",
+           "weight": 2
+        },
+        {
+           "name": "idle_sway",
+           "weight": 2
+        },
+        {
+           "name": "emote_count",
+           "weight": 0.25
+        }
+     ]
+  }
+</code></pre>
+
+<p>These are effects that will be played based on a weight when the entity is idle.</p>
+
+
+
+<p>If you reuse an existing rig, you will have all of its existing animations available right away. For custom rigs, it may take a while to figure out which animations do you need based on the AI actions that they can do. You can check the Lua files of the AI actions (under <code>stonehearth/ai</code>) from the AI packs that your entity uses and search for <code>execute('stonehearth:run_effect'</code>. Alternatively, copy the effects and animations of an existing monster/critter, and update them little by little.</p>
+
+
+
+<h2><a name="Population"></a>Setting up the population file</h2>
+
+
+<p>We have to create a population file like we did to implement a new kingdom. However, we won't need as many fields since we won't be showing information about the population in the UI.</p>
+
+
+
+<p>These are the fields that we'll usually have for monster populations:</p>
+
+
+
+<ul>
+    <li><p><strong>"type" : "kingdom"</strong> -- this file represents a kingdom.</p></li>
+    <li><p><strong>"kingdom_name"</strong> -- a descriptive name for our kingdom, for example "Animals", "The undead", etc.</p></li>
+    <li><p><strong>"kingdom_id"</strong> -- an identifier for the kingdom. Try to keep it unique, and only use lowercase and underscores by convention.</p></li>
+    <li><p><strong>"amenity_to_strangers"</strong> -- the amenity towards other kingdoms. Normally will be either <strong>"hostile"</strong> or <strong>"neutral"</strong>. We'll only be able to attack mobs if their amenity to us is hostile. The amenity can be changed by code, for example in the goblin campaign the goblins become neutral to us under certain conditions.</p>
+
+    <p>  When we hover over hostile mobs they will appear with a red outline (or red color in all the model, depending on your graphic settings). Neutral mobs (e.g. the wild animals) will appear in orange/brown, and friendly mobs in white.</p>
+
+    <p>  The same can be applied for entities (neutral color for wild trees and plants, white color for entities that belong to us, and red color for entities that belong to hostile factions and that we can loot).</p>
+
+    <p>  When playing multiplayer each player will get a color assigned so the color for friendly entities will vary.</p></li>
+    <li><p><strong>"amenity_to" : {}</strong> -- if we need to define a different amenity towards certain other factions, we can include this field. Example from <code>goblin_population.json</code>:</p>
+
+<pre><code>"amenity_to": {
+   "orcs": "neutral",
+   "human_npcs": "neutral",
+   "orc_npcs": "neutral",
+   "rabbit_biped_npcs": "neutral"
+}
+</code></pre>
+
+<p>  Here we're determining that goblins should be neutral to orcs, and that they shouldn't attack human/orc/rabbit NPCs (for example, NPCs that visit your town during town tier celebrations, travellers, etc., since the campaigns may require them to exist).</p>
+
+<p>  The northern_alliance population has this field too, in order to make wild animals hostile so that they can hunt them:</p>
+
+<pre><code>"amenity_to": {
+   "animals": "hostile"
+}
+</code></pre></li>
+    <li><p><strong>"roles" : {}</strong> -- here's where we define how do the citizens of this population look like. Usually we'll have several roles.</p>
+
+<p>  For example, in <code>animal_population.json</code> we have an entry for each animal type:</p>
+
+<pre><code>"rabbit" : {
+   "male" : {
+      "uri": [
+         "stonehearth:rabbit"
+      ]
+   }
+}, 
+"deer" : {
+   "male" : {
+      "uri": [
+         "stonehearth:deer"
+      ]
+   }
+},
+...
+</code></pre>
+
+<p>  We only include a <strong>"male"</strong> gender (which is considered the default in the constants) since all animals of each role will look the same, and add the URI of the animal in question inside the <strong>"uri"</strong> array.</p>
+
+<p>  If they're going to have a female variant we can add a <strong>"female"</strong> entry, and if they're going to have custom names we can also add a <strong>"given_names"</strong> array inside the entry too, etc., like with the population files for playable kingdoms.</p></li>
+    <li><p><strong>"task_groups"</strong> -- for monsters that are humanoid-like, (goblins, orcs...) here we can use <strong>"stonehearth:data:humanoid_task_groups"</strong>. The animal population doesn't have this field, since they only have a few basic AI actions in their entity files in order to make them look alive without eating many resources from your computer.</p>
+
+<p>  You can create your own reusable JSON file with the task groups that you want all of the members of this population to have (remember to add an alias for it in your manifest so that you can use it in your population file):</p>
+
+<pre><code>{
+   "task_groups": [
+      "stonehearth:task_groups:placement",
+      "stonehearth:task_groups:restock"
+   ]
+}
+</code></pre></li>
+</ul>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> Don't forget to add an alias for your population in your manifest! For instance:</p>
+
+
+
+<pre><code>  "aliases" : {
+     "kingdoms:vampires": "file(services/server/population/data/vampire_population.json)"
+  }
+</code></pre>
+
+<h2><a name="MonsterTuning"></a>About monster tuning files</h2>
+<p>We can tune the attributes and other properties of a monster depending on the game difficulty and the net worth of the player's town.</p>
+
+
+
+<p>This is done via monster_tuning files. You can find them under <code>stonehearth/data/monster_tuning</code>. These files are then used in campaigns to scale raid encounters depending on different factors.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

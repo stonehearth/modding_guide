@@ -1,0 +1,1163 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Adding jobs</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Adding jobs</div>
+   <p><p>We can create our own jobs / classes and alter the existing promotion tree to suit our preferences.</p></p>
+
+
+<ul>
+    <li><a href="#CreatingAJob">Creating a new job</a>
+    <ul>
+        <li><a href="#TheTalisman">The talisman</a></li>
+        <li><a href="#JobDescription">Job description</a></li>
+        <li><a href="#JobPerks">About job perks</a></li>
+        <li><a href="#JobProgression">About job progression</a></li>
+    </ul></li>
+    <li><a href="crafting_jobs/index.html">Creating a crafting job</a></li>
+    <li><a href="combat_jobs/index.html">Creating a combat job</a></li>
+    <li><a href="#">Creating other types of jobs</a></li>
+</ul>
+
+
+
+<h2><a name="CreatingAJob"></a> Creating a new job</h2>
+
+
+<p>These are generic steps for creating a new job:</p>
+
+
+
+<ol>
+    <li><p>Copy an existing job from the stonehearth mod. Preferably one that is most close in functionality to what you're creating. The existing jobs are inside the <code>stonehearth/jobs</code> directory.</p></li>
+    <li><p>Rename the files as usual.</p></li>
+    <li><p>Add an alias for your custom job in your manifest, pointing to the JSON file that contains the description of the job.</p></li>
+    <li><p>Add an alias in the <strong>"controllers"</strong> section of your manifest, pointing to the Lua file of your job.  E.g.:</p>
+
+<pre><code>"controllers": {
+   "class:lamplighter": "file(jobs/lamplighter/lamplighter.lua)"
+}
+</code></pre></li>
+    <li><p>Add a mixinto to <code>"stonehearth:jobs:index"</code> to add your custom job to the list of available jobs.</p></li>
+    <li><p>Start by editing the <a href="#TheTalisman">talisman</a>. Change the model as appropiate and edit the corresponding JSON files to point to those of your custom job.</p></li>
+    <li><p>Edit the <a href="#JobDescription">job description</a> JSON file. The data inside this file will vary depending on the job type (crafting / combat / etc). You'll need to add more aliases to your manifest, at least for the talisman, outfit, and tool / weapon.</p></li>
+    <li><p>Edit the rest of the models, UI and JSON files (the outfit, tool, workshop skin, etc.). These files may vary depending on the job type. There may also be Lua files involved, make sure to rename text as needed.</p></li>
+</ol>
+
+
+
+<h3><a name="TheTalisman"></a>The talisman</h3>
+
+
+<p>Each job in stonehearth (except for Worker, which is the base job) makes use of an item we call talisman in order to unlock the job and promote the hearthling. Once promoted, the talisman is consumed and it's replaced by an equippable version of it (an actual tool / weapon), which the hearthling makes use of when they're doing their job or when they're fighting.</p>
+
+
+
+<p>Normally we name the related files with the job name plus the name of the tool itself, for example <code>farmer_hoe.json</code>, <code>farmer_hoe_talisman.json</code>, <code>farmer_hoe_iconic.json</code>.</p>
+
+
+
+<ul>
+    <li><p>The <code>job_tool_talisman.json</code> file is similar to the file for other entities. In it, we have the item properties mixin.</p>
+
+    <p>  For the entity_data we have the net worth and the catalog (make sure that the category is <strong>"tools"</strong> and that the material_tags include <strong>"stockpile_tool"</strong>, so that it's properly restocked to storages).</p>
+
+    <p>  For the components, we have the model variants, which point to the model for the iconic version, and an "effect_list" with a default effect (in the stonehearth mod, iconics for talismans and workbenches have this particle effect to distinguish them quickly in stockpiles or the ground).</p>
+
+    <p>  <img src="../../../images/common/gold.png" alt="icon"/> You might also see in some talisman files a component called <strong>"stonehearth:promotion_talisman"</strong>. This is an old component that was deprecated and no longer exists, so you can omit it for your job.</p></li>
+    <li><p>Now we edit the <code>job_tool.json</code> file. The model in the <strong>"model_variants"</strong> component is that of the equipped tool, so remember to positionate it <a href="../../basic/wearables/weapons/index.html#EquippedModel">in your voxel editor</a> so that the hearthling can grab it properly.</p>
+
+    <p>  The entity forms component only points to the iconic form, since this item is not meant to be placeable so we don't need a ghost JSON file.</p>
+
+    <p>  The equipment_piece component usually has a <strong>"postures"</strong> field, since this is the weapon that they will use when in combat (even if this is not a combat job, they will still fight while in town alert mode).</p>
+
+    <p>  In the entity_data, besides the usual <strong>"stonehearth:net_worth"</strong> and <strong>"stonehearth:catalog"</strong> entries, we have <a href="../../basic/wearables/weapons/index.html#WeaponData"><strong>"stonehearth:combat:weapon_data"</strong></a>, to define the range of the tool when it's used as a weapon in town alert and how much damage should it do; and <a href="../../basic/wearables/weapons/index.html#MeleeAttacks"><strong>"stonehearth:combat:melee_attacks"</strong></a>, to define a basic attack.</p>
+
+    <p>  For combat units, advanced attacks are usually specified in other files, so that we can unlock them via a specific weapon or at a specific level.</p></li>
+    <li><p>Then we edit the <code>job_tool_iconic.json</code>, and we add aliases for both the talisman and the tool (weapon).</p></li>
+    <li><p>Finally, don't forget to make the talisman obtainable in the game! Via a recipe, loot, quest reward, whatever you want.</p></li>
+</ul>
+
+
+
+<h3><a name="JobDescription"></a>Job description</h3>
+
+
+<p>These are the common fields that we can have for all jobs in their description JSON file:</p>
+
+
+
+<ul>
+    <li><p><strong>"type": "job"</strong> -- this file represents a job.</p></li>
+    <li><p><strong>"enabled"</strong> -- usually we want to set this to <strong>true</strong>. There's no function in game to enable jobs on the fly, so only set it to <strong>false</strong> if your job is a work in progress and you don't want it to appear in the promotion tree yet. There's also the possibility of using <strong>"in-progress"</strong> instead of true/false, which will make it appear in the promotion tree with a '?' sign as an icon and hide the name and data with more interrogation signs, as well as preventing the player from promoting to that job.</p></li>
+    <li><p><strong>"job_id"</strong> -- a unique identifier.</p></li>
+    <li><p><strong>"display_order"</strong> -- an ordinal to make our job icon appear before/after other jobs in the jobs index. Since mods can add more jobs without knowing about other jobs, it's normal that there are repeated ordinals, in that case the order might not be as expected.</p></li>
+    <li><p><strong>"alias"</strong> -- the alias of our job preceded by the namespace plus a colon.</p></li>
+    <li><p><strong>"display_name"</strong> -- a localized display name for the job, to use in different parts of the UI.</p></li>
+    <li><p><strong>"controller"</strong> -- the URI of this job's controller preceded by the namespace plus a colon. Remember that it has to be defined inside the <strong>"controllers"</strong> section of your manifest, not under "aliases".</p></li>
+    <li><p><strong>"description"</strong> -- a localized description for our job, will be shown in the bottom left of the promotion tree when we select our job.</p></li>
+    <li><p><strong>"requirements"</strong> -- a localized text that describes the requirements for this job, to show at the bottom of the promotion tree when we select it.</p>
+
+    <p>  The icon and name of the required talisman, and the required parent job/level will be shown automatically. But we can add a custom description here, for example saying which job can craft this talisman, how to get it, or some flavor text (take a look at the requirements for the worker job).</p></li>
+    <li><p><strong>"abilities"</strong> -- a path to the job abilities JSON file (it defines an <a href="../../basic/wearables/index.html#EquipmentPieces">equipment piece</a> where we can inject AI / etc to it, so that the hearthling knows how to perform their new job).</p></li>
+    <li><p><strong>"equipment"</strong> -- contains keys referencing equipment slots pointing to equipment pieces. Normally we apply the job outfit in the <strong>"torso"</strong> slot, and the tool/weapon in the <strong>"mainhand"</strong> slot. We can also tell the game here to choose a random equipment piece for the hearthling. For example, take a look at <code>worker_description.json</code>.</p></li>
+    <li><p><strong>"roles"</strong> -- a string of roles separated by spaces or an array of roles (which is better for mod compatibility). Normally one role will be for the job name plus a <code>_job</code> suffix, and depending on the job type, we'll add more roles like <code>"crafter"</code>, <code>"combat"</code>, <code>"mail_wearer"</code>, etc. That way they'll be able to equip gear that has those roles in their equipment_piece component.</p></li>
+    <li><p><strong>"talisman_uri"</strong> -- the alias of our talisman entity prefixed by the namespace of our mod plus a colon.</p></li>
+    <li><p><strong>"default_stance"</strong> -- can be <strong>"passive"</strong> (used for most of the jobs), <strong>"aggressive"</strong> (used for combat jobs) or <strong>"defensive"</strong> (used for some NPC jobs, which will only attack if they're attacked).</p></li>
+    <li><p><strong>"icon"</strong> -- path to the image for the icon that will appear in the different parts of the UI for our job. The icons in the promotion tree don't need the square background, that's added automatically.</p></li>
+    <li><p><strong>"promotion_activity_name"</strong> -- an identifier not in use nowadays. It was intended for the town journal.</p></li>
+    <li><p><strong>"task_groups": []</strong> -- an array of aliases of task groups that will get applied to the hearthling when they're promoted to this job, and removed when we promote them to another job or demote them.</p>
+
+    <p>  Depending on the job type, we might want to include / not include certain task groups. For example if we don't include <code>"stonehearth:task_groups:build"</code>, the hearthling won't be able to build after promoting them, and their checkbox under the Build column in the citizens panel will get disabled. Some jobs will not include the task group that allows for harvesting resources, or moving items, so that the hearthling is more focused on their job.</p>
+
+    <p>  There's no list of task groups but their aliases are grouped in the stonehearth manifest. You'll usually want the same ones that the job you copied had. More on AI in advanced sections of the guide.</p></li>
+    <li><p><strong>"parent_job"</strong> -- URI of the parent job.</p></li>
+    <li><p><strong>"max_level"</strong> -- if this job can level up (all jobs can except Worker), establish the maximum level that a hearthling can reach in it.</p></li>
+    <li><p><strong>"xp_rewards": {}</strong> -- the contents of this field may vary depending on the type of job, they serve to define how much exp will the hearthling get by doing different tasks on their job.</p></li>
+    <li><p><strong>"level_data": {}</strong> -- the list of job perks for this job. See below.</p></li>
+</ul>
+
+
+
+<h3><a name="JobPerks"></a> About job perks</h3>
+
+
+<p>The way job perks from the <code>job_description.json</code> file work is:</p>
+
+
+
+<ul>
+    <li><p>They all consist of an array of JSON objects.</p></li>
+    <li><p>The minimum fields are <strong>"name"</strong>, <strong>"id"</strong>, <strong>"icon"</strong>, <strong>"description"</strong> and <strong>"level"</strong>. The "level" is used to unlock them. The "id" is an identifier used to perform checks in Lua when we need to know whether a hearthling has unlocked a perk or not.</p></li>
+    <li><p>If the perk consists in something that is automatically controlled by other files (such as unlocking recipes - each recipe defines at which level it will get unlocked) no extra fields are needed.</p></li>
+    <li><p>If the perk involves something more elaborate, it will have a <strong>"type"</strong> field plus any additional custom fields for data.</p>
+
+    <p>  This "type" is the name of a function defined in the job's controller file. Sometimes it will be defined in <code>stonehearth/jobs/base_job.lua</code> instead, since all jobs inherit from it. The extra fields can be used for data to pass to that custom function.</p>
+
+    <p>  This way we can have perks that add permanent buffs to the hearthling, or equip invisible equipment that adds custom AI actions so that they can do more fancy things (like a new combat skill), or increase the maximum number of turrets / golems that the town can have, for example.</p></li>
+    <li><p>Together with perks that use a custom function, you'll also see a <strong>"demote_fn"</strong> field. This designates what should be run if the hearthling has that perk and is demoted. It's a way of ensuring that permanent buffs and custom abilities are removed when the hearthling is promoted/demoted to some other job. If you don't add it, the hearthling will keep those abilities.</p></li>
+</ul>
+
+
+
+<p><img src="../../../images/common/gold.png" alt="icon"/> You'll also see that many jobs at level 6 will get a title instead of / in addition to perks, which allows us to know that they're at the maximum level in the UI. This title is outside of the "perks" array. Nowadays it's not needed, all hearthlings will get a title that will be shown in the character sheet and will change as they level up (Apprentice, Journeyman, Master).</p>
+
+
+
+<p>On top of the perks, hearthlings will gain +10 health points every time they level up. These will carry on after promoting / demoting.
+Job experience is reset when you promote / demote a hearthling, to encourage specialization.</p>
+
+
+
+<h3><a name="JobProgression"></a>About job progression</h3>
+
+
+<p>In the job component inside the <code>base_human.json</code> mixin we can find info that is common for all jobs:</p>
+
+
+
+<pre><code>  "stonehearth:job": {
+     "starting_level_title": "i18n(stonehearth:stonehearth_mixins.base_human.job.starting_level_title)",
+     "mid_level_title": "i18n(stonehearth:stonehearth_mixins.base_human.job.mid_level_title)",
+     "max_level_title": "i18n(stonehearth:stonehearth_mixins.base_human.job.max_level_title)",
+     "default_level_title": "i18n(stonehearth:stonehearth_mixins.base_human.job.default_level_title)",
+     "default_level_announcement": "i18n(stonehearth:stonehearth_mixins.base_human.job.default_level_announcement)",
+     "default_promote_announcement": "i18n(stonehearth:stonehearth_mixins.base_human.job.default_promote_announcement)",
+     "xp_equation_for_next_level": "curr_level * 115 + 135",
+     "levels_between_attribute_increase": 10,
+     "level_up_data": {
+        "level_up_perk_description": "i18n(stonehearth:stonehearth_mixins.base_human.job.level_up_perk_description)",
+        "level_up_perk_icon": "/stonehearth/data/images/race/human_HP_on_level.png"
+     }
+  }
+</code></pre>
+
+<p>We can customize these fields via mixintos. For example, we have the titles based on level (Apprentice, Journeyman, Master), and the equation that is used to calculate the amount of experience required to get to the next level. Mind that not all of these fields are in use nowadays.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

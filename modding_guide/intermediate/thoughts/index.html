@@ -1,0 +1,1114 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Thoughts</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Thoughts</div>
+   <p><p>Hearthlings get the happiness component and the thoughts component from the <code>base_human.json</code> mixin. These components allow them to be able to get happy or sad, based on their current thoughts, which we can see in the Morale tab of the character sheet.</p></p>
+
+
+<p>The thoughts will be added from different Lua scripts, such as AI actions, components, or trait controllers, and will be removed automatically if they have a finite duration.</p>
+
+
+
+<h2><a name="AddingThoughts"></a>Adding thoughts</h2>
+
+
+<p>To add a new thought to the list of available thoughts, we need to mixinto <code>stonehearth/data/happiness/thoughts.json</code> in our manifest:</p>
+
+
+
+<pre><code>  "mixintos" : {
+     "stonehearth:data:thoughts" : "file(data/happiness/thoughts.json)"
+  }
+</code></pre>
+
+<p>Our mixinto will look like this:</p>
+
+
+
+<pre><code>  {
+     "thoughts": {
+        "traits": {
+           "mutually_exclusive": true,
+           "values": {
+              "impatient": {
+                 "display_name": "i18n(my_mod:data.happiness.thoughts.traits.values.impatient.display_name)",
+                 "tooltip": "i18n(my_mod:data.happiness.thoughts.traits.values.impatient.tooltip)",
+                 "happiness_delta": -5,
+                 "duration": "12h",
+                 "stackable": false
+              }
+           }
+        }
+     }
+  }
+</code></pre>
+
+<p>First there's a <strong>"thoughts"</strong> key. Inside it there are identifiers to group the thoughts. Inside those identifiers there can be some properties, and then there's a <strong>"values"</strong> field, which contains more custom identifiers that correspond to the thoughts, or to other groups.</p>
+
+
+
+<p>One common property that we can find inside the group identifiers is <strong>"mutually_exclusive" : true</strong>. This means that only one thought inside this group can be active at a time. Check the sleepiness thoughts, for example: the "fatigued" thought will replace the "tired" thought when it is added, because they are mutually exclusive. If this property is <strong>false</strong>, then more than one thought from this group can be active at the same time.</p>
+
+
+
+<p>Some thoughts are based on "thresholds" rather than "values". But those are still consulted from some Lua script. For instance, the thoughts about space (crampedness) have (besides the "mutually_exclusive" property): <strong>"time_average": true</strong>, <strong>"averaging_period": "1m"</strong>, and then instead of "values" they have a <strong>"thresholds"</strong> map of thoughts. Then the <code>open_space_observer.lua</code> consults these properties and automatically adjusts the thoughts based on the fields inside the thresholds map.</p>
+
+
+
+<p>For the traits, there's a <strong>"values"</strong> entry with some non-exclusive thoughts, but there's also other identifiers at the same level than "values", defining groups of exclusive thoughts. That way, we can nest groups and define different exclusions for them.</p>
+
+
+
+<p>There are different properties that we can include in a thought:</p>
+
+
+
+<ul>
+    <li><strong>"display_name"</strong> -- the localized text that will be shown in the Morale tab of the character sheet.</li>
+    <li><strong>"tooltip"</strong> -- the localized text that will be displayed for the tooltip when we hover over the thought.</li>
+    <li><strong>"happiness_delta"</strong> -- this is the value that will be added to the current happiness value over time (use a negative value if you want the thought to be negative / decrease happiness). Don't use decimal values for this field. Happiness ranges from 0 to 100 (starts at 50).</li>
+    <li><strong>"duration"</strong> -- a <a href="../../basic/misc_json/index.html#TimeExpressions">time expression</a>. If we include this field, the thought will be automatically removed after the duration expires. The duration will be shown in the UI too, decreasing over time. Other thoughts might override this one, depending on the "mutually_exclusive" property, so it might last less time.</li>
+    <li><strong>"stackable"</strong> -- whether this thought can be stacked or not.</li>
+    <li><strong>"max_stacks"</strong> -- if "stackable" is <strong>true</strong>, this field defines the maximum number of times that we can stack the thought (an indicator of the stacks appears in the UI). This means that if the thought is added again while it's already active, it will stack the happiness delta for this thought, instead of overwriting it.</li>
+    <li><strong>"max_threshold"</strong> -- a value for thoughts that are managed by thresholds.</li>
+    <li><strong>"hide"</strong> -- a boolean. We use this field for some neutral thoughts (happiness_delta 0) that we don't want to be displayed in the UI (since thoughts are divided in positive or negative in the character sheet).</li>
+</ul>
+
+
+
+<p>To add a thought from a trait controller (or from any other Lua script) we'd call the <code>add_thought</code> function from <code>radiant/modules/entities.lua</code> and pass the entity to which we want to add the thought, the URI of the thought, and some parameters for the tooltip of the thought if we need to:</p>
+
+
+
+<pre><code>  radiant.entities.add_thought(self._sv._entity, 'stonehearth:thoughts:traits:impatient', {
+              tooltip_args = {
+                 target_name = radiant.entities.get_custom_name(target)
+              }
+           })
+</code></pre>
+
+<p>To reference the thoughts, we have to build the URI like this: 'mod_namespace:thoughts:thought_category:thought'. For example: </p>
+
+
+<pre><code>  "stonehearth:thoughts:traits:charismatic:inspired",
+  "stonehearth:thoughts:traits:plant_lover",
+  "stonehearth:thoughts:job:gained_a_level"
+</code></pre>
+<p>Notice that we separate the keys with colons, like URIs.</p>
+
+
+
+<p><img src="../../../images/common/gold.png" alt="icon"/> The happiness component reads the thoughts from <code>stonehearth/data/happiness/thoughts.json</code>, so we must make a mixinto to it in order to add our custom thoughts to the list (we can reuse existing categories/groups or add new ones). But we can also use the namespace of our mod to reference our custom thoughts. For instance, the example above would also have worked if we had referenced the thought like this: <code>'my_mod:thoughts:traits:impatient'</code>.</p>
+
+
+
+
+
+<p>To test in game, we can manually add and remove thoughts with the default console (if the command doesn't appear, enable the debugtools mod):</p>
+
+
+
+<pre><code>  add_thought stonehearth:thoughts:traits:charismatic:inspired
+  remove_thought stonehearth:thoughts:traits:charismatic:inspired
+</code></pre>
+
+<p>Select the hearthling, open the default console and type the <code>add_thought</code> command. Notice that we pass the thought URI as argument without quotes.</p>
+
+
+
+<p>We can see the internal values of happiness and thoughts by inspecting the happiness component of a selected hearthling with debugtools. Select a hearthling, open the <a href="../../essentials/debugtools/debugtools_mod/index.html#ObjectBrowser">Object Browser</a>, and click on the value for "stonehearth:happiness":
+<img src="../../../images/intermediate/thoughts/happiness_component.png" alt="happiness_component"/></p>
+
+
+
+
+<!-- Maybe explain the appeal component somewhere -->
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

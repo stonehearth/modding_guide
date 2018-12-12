@@ -1,0 +1,1180 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Biomes</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">         
+   <div class='page_title'>Biomes</div>
+   <p><p><!--12- how to add your own biome. 
+TODO: Add missing links, compile list of lua files involved in terrain generation-->
+As always, we can copy an existing biome to create our custom biome faster. Biome files are located in <code>stonehearth/data/biome</code>.</p></p>
+
+
+<ul>
+    <li><a href="#Adding">Adding a biome to the list</a></li>
+    <li><a href="#BiomeInfo">Biome info</a></li>
+    <li><a href="#GenerationData">Biome generation data</a></li>
+</ul>
+
+
+
+<h2><a name="Adding"></a>Adding the biome to the list</h2>
+
+
+<p>First, let's make an alias for our biome in our manifest:</p>
+
+
+
+<pre><code>  "aliases" : {
+     "biome:silent_woods" : "file(data/biome/silent_woods.json)"
+  }
+</code></pre>
+
+<p>Then, let's add the mixinto so that our biome appears in the list of available biomes:</p>
+
+
+
+<pre><code>  "mixintos" : {
+     "stonehearth:biome:index" : "file(data/biome/index.json)"
+  }
+</code></pre>
+
+<p>Our <code>index.json</code> mixinto file would look like this:</p>
+
+
+
+<pre><code>  {
+     "biomes": {
+        "silent_woods": "silent_woods:biome:silent_woods"
+     }
+  }
+</code></pre>
+
+<p>The key is a custom identifier for our biome, and the alias points to our biome alias preceded by the namespace of our mod plus a colon.</p>
+
+
+
+<h2><a name="BiomeInfo"></a>Biome info</h2>
+
+
+<p>The definition of biomes is divided into two files. The first one contains the basic information, and it's the one that we reference in our alias (in our example, <code>silent_woods.json</code>). The second one contains only the data related to the actual terrain generation (in our example, it would be <code>silent_woods_generation_data.json</code>).</p>
+
+
+
+<p>The info files contain these fields:</p>
+
+
+
+<ul>
+    <li><strong>"type": "biome"</strong> -- this file represents a biome.</li>
+    <li><strong>"alias"</strong> -- the alias of our biome, preceded by the namespace of our mod plus a colon.</li>
+    <li><strong>"display_name"</strong> -- the localized name for our biome, this is the title that will appear for our biome in the "Select a Biome" list in the UI.</li>
+    <li><strong>"description"</strong> -- the localized description that will appear for our biome in the biomes list.</li>
+    <li><strong>"random_location_names"</strong> -- an array containing localized location names for our biome. One will be chosen when the player selects to play in our biome, and will appear in the description of the story in the embarkation screen (where we can click to change the biome).</li>
+    <li><strong>"image"</strong> -- the path to the image that will be used in the list of biomes in the UI. Usually it's 400x300 pixels.</li>
+    <li><strong>"story_board_image"</strong> -- this is the image that will appear at the right side of the first embarkation screen when the player selects our biome.</li>
+    <li><strong>"game_mode_images"</strong> -- a map containing aliases of game modes (usually <code>"stonehearth:game_mode:normal"</code> and <code>"stonehearth:game_mode:hard"</code>) pointing to images that will layer on top of the story board image. That allows us to use a semitransparent image to add enemies on top of the image when the player selects a non-peaceful game mode.</li>
+    <li><strong>"generation_file"</strong> -- a path pointing to the generation data JSON file for our biome.</li>
+    <li><strong>"mining_loot_table"</strong> -- optional field. We can link to a file containing a custom mining loot table for our biome (if we don't add this field, the mining service will load the <code>"stonehearth:mining:base_loot_table"</code> by default). An example can be seen in the desert biome (<code>stonehearth/data/biome/desert.json</code>). It mixins the base loot table, to reuse the default loot for the different terrain types, and then adjusts the <a href="../../basic/misc_json/index.html#WeightedSets">weight</a> of clay so that in the desert we get more clay by mining.</li>
+    <li><a name="AppliedManifests"></a><strong>"applied_manifests"</strong> -- optional field. We can use it to apply custom manifests only when the player chooses to play in our biome. An example can be seen in the desert biome too. (Hotloading manifests doesn't work for everything. It'll be discussed in another section of the guide).</li>
+    <li><strong>"default_starting_season"</strong> -- this field will point to the key of a season defined below. It's used to automatically select a default season in the UI (in the map screen during embarkation).</li>
+    <li><strong>"seasons"</strong> -- here we'll define the seasons and weather for our biome. See <a href="seasons_weather/index.html">this page</a> for how to set them up.</li>
+</ul>
+
+
+
+<p>The warning about the biome not being the preferred biome for the chosen kingdom will not appear for custom mods, only for the stonehearth one.</p>
+
+
+
+<h2><a name="GenerationData"></a>Biome generation data</h2>
+
+
+<p>The terrain generation is managed from <code>stonehearth/services/server/world_generation/world_generation_service.lua</code>, with help of all the other files inside the <code>stonehearth/services/server/world_generation</code> directory, although the actual work is done from the C++ side. The terrain itself is generated from <code>stonehearth/data/service/game_creation_service.lua</code>, once the game knows which biome / seed / etc. it has to use.</p>
+
+
+
+<p>The terrain service takes care of things like territory and visibility (fog of war). The hydrology service manages the behavior or the water (when it should create waterfalls, the rate at which it should deplete, etc). There are also some related components.</p>
+
+
+
+<p>The data used in the generation data files is extracted from the <strong>"generation_file"</strong> linked in the main biome file. Within it we can determine things like height of the terrain, depth of water, which plants and trees will appear in our custom biome, etc. Some mods override the Lua files that generate the terrain, to allow for a different terrain generation (by default it's based on a noise function). For example, the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1370165251">Archipelago mod</a>, <a href="https://discourse.stonehearth.net/t/sky-lands-mod/37520">Sky Lands mod</a>, and <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1388805776">Rivers mod</a> (which adds rivers to the terrain generation).</p>
+
+
+
+<p>The <code>temperate_generation_data.json</code> file has more comments than the corresponding files of the desert and arctic biomes, so it's a good start. Many comments have "Def N", which is the default value for that parameter, if we made some mistake and need to revert back to a reasonable value, or min/max values, so that we don't try to add invalid values. If we add a mixinto to <code>stonehearth/data/terrain/terrain_blocks.json</code> adding more terrain types, we'll be able to use them in our biome as well.</p>
+
+
+
+<p>Ideally we'll start defining the shape of the terrain, then adding the trees/plants that we want, and finally double checking any static scenario that we want / don't want our biome to have (such as bunny statues, critter nests, landmarks, etc).</p>
+
+
+
+<p>If we used a wrong value in the generation files, an error will pop up in game when generating the map. Sometimes it won't fail there, but only with certain seeds so we can try rerolling the map a few times and see if anything's wrong. Some values might also be affected by other ones, so while they aren't wrong, they might cause issues depending on the other values.</p>
+
+
+
+<p>In short, it is recommended to change the values one by one and test a lot, so that we know exactly which value is causing the problem, and how much effect did our last change have in the terrain generation.</p>
+
+
+
+<p>Let's explain a bit the different fields that we can find in the generation file:</p>
+
+
+
+<ul>
+    <li><p><strong>"type": "biome_generation_data"</strong> -- this is a biome generation data file.</p></li>
+    <li><p><strong>"ring_tesselation" : {}</strong> -- these parameters are used for generating the rings we can see on the borders of the grass, which have different colors. The keys inside this field are keys from the block_types section inside <code>terrain_blocks.json</code>. We can only include keys of terrain types that are 1 block thick (like grass and dirt). We can change the width and terrain type of the ring, add more rings, or remove them if we don't want them. The terrain type that they link to ("name") is any key from the block_types section inside <code>terrain_blocks.json</code>.</p></li>
+    <li><p><strong>"season"</strong> -- this points to the key of a season we defined in the main biome file. It will be used to choose the default palette to generate our biome (so that the UI can load starting colors in the map screen of embarkation, before the player chooses any season).</p></li>
+    <li><p><strong>"palettes"</strong> -- the keys inside correspond to the seasons we defined for our biome. Each key will then map the terrain types from <code>terrain_blocks.json</code> to colors in hexadecimal format (starting by # and in uppercase by convention). This way the terrain can look different depending on the season. We can also define seasonal variants for plants (see <a href="../../basic/plants/index.html#SeasonalVariants">this page</a>).</p>
+
+<ul>
+    <li><p>The colors of the terrain in the embarkation map will be picked up from the palette corresponding to the default season, as explained above. But if we want to change them, for example, to edit the color of water or trees, which are not taken from the palette, we can do so in a <strong>"minimap"</strong> section inside the <strong>"palettes"</strong> section, before defining any of the palettes. For instance:</p>
+
+<pre><code>"minimap":{
+   "water":"#FF0000",
+   "trees":"#AA3800",
+   "plains_2":"#00BB00",
+   "mountains_1":"#334433"
+}
+</code></pre>
+<p>This will change the color of water, trees, and two of the terrain layers in the embarkation map. We can edit any of the colors that are displayed there by using the terrain type (plains, foothills or mountains) plus an underscore and a number representing the step/layer.</p></li>
+</ul></li>
+    <li><p><strong>"terrain": {}</strong> -- the parameters in this section control the shape of the terrain.</p>
+<ul>
+    <li><p><strong>"minimap" : {}</strong> -- optional field. We can map terrain types (water, plains/foothills/mountains plus underscore and step number) to custom names. These names appear on the right side of the map screen when we hover over the terrain. For instance, when hovering over water we can make it say "Ocean" or "Swamp", when hovering over plains we can make it say "Beach", etc.</p>
+
+<pre><code>"minimap":{
+   "water" : "i18n(my_mod:ui.shell.select_settlement.terrain_codes.water)",
+   "plains_2" : "i18n(my_mod:ui.shell.select_settlement.terrain_codes.plains_2)"
+}
+</code></pre></li>
+    <li><p><strong>"noise_map_settings" : {}</strong> -- the terrain is generated using a simplex noise generator. These are the parameters for that generator. Check the comments in the <code>temperate_generation_data.json</code> for an idea on what they can do.</p></li>
+    <li><p><strong>"plains_percentage"</strong> -- the percentage of plains. Depending on the other values below, it might not feel correct (for example, if we add too many steps for the foothills, they will cover the plains).</p></li>
+    <li><p><strong>"height_base": 36</strong> -- this is an offset in regards to where the layers line up. Def 36, must be 1 (for the bedrock, which is the bottom layer that we can't mine) plus a multiple of five (which is related to mining: 1 block for the floor so that hearthlings can stand on it, and 4 blocks so that they have enough head space).</p></li>
+    <li><p><strong>"plains": {}</strong>, <strong>"foothills" : {}</strong> and <strong>"mountains" : {}</strong> -- the parameters to define the quantity of layers of terrain and their height in blocks/world units. Normally we don't edit the values for plains, they can easily cause errors.</p></li>
+</ul></li>
+    <li><p><strong>"terrain_detailer": {}</strong> -- these are parameters to define the outcroppings (the bits of terrain that stick off the side of the terrain layers/steps).</p>
+    <ul>
+        <li><strong>"mountains" : {}</strong>, <strong>"foothills" : {}</strong> and <strong>"plains" : {}</strong> -- again, take a look at the comments in <code>temperate_generation_data.json</code> file to know what each parameter does. For example, if we set "layer_count" to 0, the sides of those terrain steps will be completely flat, so the terrain will look like giant rectangular shapes.</li>
+    </ul></li>
+    <li><p><strong>"landscape": {}</strong> -- these are parameters for defining the rest of the landscape:</p>
+    <ul>
+        <li><p><strong>"placement_table": {}</strong> -- here we define all of the entities that we want to spawn in our terrain (trees, plants, bushes and boulders). The keys are the URIs of our entities (we can reuse trees etc. from the stonehearth mod, or use our custom entities, or both). For each key we define these properties:</p>
+        <ul>
+            <li><p><strong>"placement_type"</strong> -- it can be either <strong>"single"</strong>, <strong>"dense"</strong> or <strong>"pattern"</strong>.</p></li>
+            <li><p><strong>"parameters" : {}</strong> -- depending on the placement_type, we'll have different parameters. They refer to "tiles" which are 16x16x16 chunks of terrain (you can visualize them by pressing F1 with debug keys/debugtools enabled). With these fields we can specify how many entities can spawn in a tile, how much space we should leave around the entities so that nothing else spawn there (large trees need a big space for themselves), a radius to prevent trees from spawning semi-floating on cliffs, and values for grid-like patterns based on random chances, so that we can spawn groups of entities.</p>
+
+            <p>Take into account that these values can affect the placement of the entities, as in if they're too clustered it's possible that none of the entities will spawn, or entities will spawn on top of each other (due to their collision boxes). Always make sure to leave some space, otherwise plants won't find a place to spawn in the tiles, since trees occupy quite a big space.</p></li>
+        </ul></li>
+        <li><p><strong>"trees": {}</strong> -- parameters for tree placement:</p>
+        <ul>
+            <li><strong>"sizes" : {}</strong> -- here we define the size of trees if we set up their aliases with the size as a suffix (check <a href="../../basic/plants/index.html#Trees">this other page</a>). If our trees don't have different sizes, we can (and should, since the "trees" section is required) define them with just their alias, and a couple fake sizes like "small": 0, "large": 10, for example. If we used the suffixes method for the aliases (recommended if your trees have different sizes), the ancient percentage will be used over large trees (so a percentage of the large trees will spawn as ancient instead).</li>
+            <li><strong>"weights" : {}</strong> -- <a href="../../basic/misc_json/index.html#WeightedSets">weights</a> of each tree per terrain elevation. Here the number of entries may vary depending on how many terrain steps we defined before.</li>
+            <li><strong>"noise_map_parameters": {}</strong> -- these are parameters for the noise function that generates the forests.</li>
+        </ul></li>
+        <li><p><strong>"berries" : {}</strong> -- parameters for placing bushes. This field is required (otherwise we'll get errors), but doesn't actually have an impact in the game, so we can use any of the trees/plants we defined for our biome in it.</p></li>
+        <li><p><strong>"scattered": {}</strong> -- parameters for the rest of entities (like plants. If you don't see any trees being placed regardless of the parameters above, try adding them in this section too, like the desert biome does).</p>
+        <ul>
+            <li><strong>"plants": {}</strong> -- the weights of the plants for the different terrain elevations, and their noise map parameters, so that they can spawn more scattered or more clustered in the different terrain elevations (mind tree placement for this, since if there are too many trees there might not be enough space for plants to appear).</li>
+            <li><strong>"boulders": {}</strong> -- parameters for boulder placement. This field is also required. It's based on the same setup than trees, with the suffixes, so for the "namespace" field we should specify the alias without the suffix. Unfortunately for boulders we do have to make them with this suffixes for sizes otherwise they won't appear. We can, however, specify the full alias of any entity there and just add our boulders to the "scattered" weight set of plants.</li>
+        </ul></li>
+        <li><p><strong>"water" : {}</strong> -- parameters for the water. Wrong values will throw an error in the loading screen when the terrain is being generated, not necessarily at the choose map screen. The <strong>"deep"</strong> value is the number of blocks from the surface to the deep sections of the water (you can see them in big lakes). The <strong>"shallow"</strong> value is the number of blocks from the surface to the shallow part of the lakes.</p>
+
+        <p> At world generation, water will always be 1.5 blocks lower than the level of the surface where it spawns, unless we specify the <strong>"water_height_delta"</strong> property inside the <strong>"water"</strong> section. It can't be negative, and must always be lower than the level of the "shallow" value.</p></li>
+    </ul></li>
+</ul>
+
+
+
+<p><a href="https://www.stonehearth.net/desktop-tuesday-biomes/">Here</a>'s the old Desktop Tuesday about biomes, and <a href="https://www.stonehearth.net/dt-northern-alliance-glacier/">this</a> is the one about the Northern Alliance and the arctic biome (after seasons and weather were introduced).</p>
+
+
+
+<p>You can find more biome mods at the Steam Workshop <a href="https://steamcommunity.com/workshop/browse/?appid=253250&amp;requiredtags%5B0%5D=Biome&amp;p=1">here</a>.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>
