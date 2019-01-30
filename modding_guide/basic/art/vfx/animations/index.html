@@ -1375,7 +1375,7 @@
 
     <p>  For hearthlings we also have a <strong>"bodyPosition"</strong> bone, to move all the body without moving the <strong>"root"</strong>. The <strong>"ATTOVERCOG"</strong> bone is used to attach images to it, such as the health indicator or speech bubbles. There's also the <strong>"mainHand"</strong> and <strong>"offHand"</strong> bones, which are used to attach weapons or other items to the hearthlings hands.</p>
 
-    <p>  In general, you can have as many helper bones as you need, and they don't need to be present in all the animations (for example, the <strong>"carry"</strong> bone isn't used in all the animations). The helper bones aren't visible in the game unless we attach something to them.</p></li>
+    <p>  In general, you can have as many helper bones as you need (but the total number of bones + helper bones can't be higher than 50), and they don't need to be present in all the animations (for example, the <strong>"carry"</strong> bone isn't used in all the animations). The helper bones aren't visible in the game unless we attach something to them.</p></li>
     <li><p><strong>"animation_root"</strong> -- points to the folder where we keep all the animations for this skeleton.</p></li>
     <li><p><strong>"effects_root"</strong> -- points to the folder where we keep all the effects (with animation tracks) for this skeleton.</p></li>
     <li><p><strong>"postures"</strong> -- optional field. Points to a <code>postures.json</code> file to define <a href="#Postures">postures</a> for the entity.</p></li>
