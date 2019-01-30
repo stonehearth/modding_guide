@@ -1420,6 +1420,38 @@ Note: times of day (midnight, sunrise, noon, sunset are defined in calendar cons
       - Key: the ownable object component
       - Name: stonehearth:owner\_changed
       - Args: new_owner, containing the new owner (entity), can be nil
+
+^^^ That list is incomplete, but you can find the events in the game files.
+Events thrown from C++:
+radiant:client:server_ready
+radiant:client:game_joined
+radiant:client:disconnect_reason
+radiant:client:data_restored
+radiant:client:ui_reloaded
+radiant:client:ui_screen_changed
+radiant:client:render_entities_created
+"stonehearth:ai:activity:" + suffix, data
+radiant:shut_down
+radiant:new_game
+radiant:required_loaded
+radiant:init
+radiant:report_cpu_profile
+"radiant:item:stacks_changed", evt
+radiant:mob:parent_changed
+radiant:mob:physics_changed
+"radiant:unit_info:player_id_changed", evt
+"radiant:entity:post_create", evt
+"radiant:entity:stop", evt
+"radiant:entity:pre_destroy", evt
+"radiant:entity:destroy", evt
+"radiant:entity:post_destroy", evt
+"radiant:client_joined", evt
+"radiant:gameloop:start"
+"radiant:gameloop:end"
+"radiant:client_removed", _
+"radiant:headless:init"
+"radiant:save"
+"radiant:game_loaded"
 -->
 
    
