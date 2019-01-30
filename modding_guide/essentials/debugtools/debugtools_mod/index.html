@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,7 +1189,7 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>The debugtools mod</div>
    <p><p><code>debugtools</code> is a mod used by the developers to help debugging the game.
 It comes pre-installed with Stonehearth in the current releases, so any player / modder can use it.
@@ -1098,7 +1308,7 @@ By default it is disabled. To enable it:</p></p>
 
 
 
-<p>More information about AI in the <a href="#">advanced sections</a> of the modding guide.</p>
+<p>More information about AI in the <a href="../../../advanced/ai/index.html">advanced sections</a> of the modding guide.</p>
 
 
 
@@ -1167,12 +1377,12 @@ It has a search bar and will also show entities that are bugged / out of bounds 
 
 
 
-<p>You can also do some profiling with it. The bar next to the speed buttons shows the resource usage of several background tasks, too. You can toggle a breakdown of the different colors if you click on it.
+<p>You can also do some profiling with it, with help of the <a href="../../../intermediate/testing/index.html#LuaProfiler">Lua profiler scripts</a>. The bar next to the speed buttons shows the resource usage of several background tasks, too. You can toggle a breakdown of the different colors if you click on it.
 <img src="../../../../images/essentials/debugtools/perf_bar.png" alt="perf_bar"/></p>
 
 
 
-<p>Nowadays the development team uses a different telemetry tool for measuring performance in more detail, but these tools can still show any obvious bottlenecks or issues.</p>
+<p>The development team also used a different telemetry tool for measuring performance in more detail, but these tools can still show any obvious bottlenecks or issues.</p>
 
 
 
@@ -1186,7 +1396,7 @@ It has a search bar and will also show entities that are bugged / out of bounds 
 
 <p>You can then adjust the model / region origins and collision / destination regions visually inside the game. It'll help if you open the zones menu or some other menu that activates the grid in the terrain, that way you can see the alignment better:
 <img src="../../../../images/essentials/debugtools/destination_regions.png" alt="destination_regions"/>
-The labels have useful tooltips to help explain the different values. We'll be covering these regions in <a href="#">another section</a> of the guide, if you need more info.</p>
+The labels have useful tooltips to help explain the different values. We'll be covering these regions in <a href="../../../intermediate/regions/collision_destination/index.html">another section</a> of the guide, if you need more info.</p>
 
 
 

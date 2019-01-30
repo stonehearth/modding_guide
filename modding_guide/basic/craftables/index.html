@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,12 +1189,21 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>Adding recipes</div>
    <p><p>We've covered how to create our own items in <a href="../adding_items/index.html">this previous section</a>. Of course, you can add whichever components you want for those items and, if you create the models from scratch, make sure to check the <a href="../art/modeling/index.html">modeling guide</a> and the guide on <a href="../../intermediate/regions/index.html">collision regions</a> so that your models are correctly exported and aligned in the world. Here's <a href="../adding_items/item_scale/index.html">how to change the scale</a> of an item too, if you need it.</p></p>
 
 
-<p>In this other <a href="#">guide</a> we cover how to add your own crafting job to the game.</p>
+<p>In this other <a href="../../intermediate/jobs/crafting_jobs/index.html">guide</a> we cover how to add your own crafting job to the game.</p>
+
+
+
+<ul>
+    <li><a href="#ForExistingCrafters">Steps to add a recipe to an existing crafter from the stonehearth mod</a></li>
+    <li><a href="#AnatomyOfRecipes">Anatomy of a recipe</a></li>
+    <li><a href="#RecipeList">Adding the recipe to the recipes list</a></li>
+    <li><a href="#SHED">Using SHED to add recipes</a></li>
+</ul>
 
 
 
@@ -1167,7 +1386,7 @@ We'll make the mason craft it.</p>
   ...
 </code></pre>
 
-<p><img src="../../../images/common/gold.png" alt="icon"/> If you add a <a href="#">custom crafting job</a>, the recipes for it won't need to be added via a mixinto, but rather via a property of a component.</p>
+<p><img src="../../../images/common/gold.png" alt="icon"/> If you add a <a href="../../intermediate/jobs/crafting_jobs/index.html">custom crafting job</a>, the recipes for it won't need to be added via a mixinto, but rather via a property of a component.</p>
 
 
 

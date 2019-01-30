@@ -1,0 +1,1397 @@
+<head>
+   <link href='./../../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../../images/favicon_logo_sh.png'>
+   <title>Particle effects</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <a name="top"></a>
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">
+   <div class='page_title'>Particle effects</div>
+   <p><p>Cubemitters are the particle effects. For convention, stonehearth's particle effect files (which are just JSON!) have names that end with ".cubemitter.json". This way we can tell them apart from effect files that might have the same name. All the existing cubemitters are located inside the <code>stonehearth\data\horde\particles</code> directory.</p></p>
+
+
+<p>You can have several cubemitter tracks for the same effect, if you need to (for example, to have both big and small particles playing at the same time, like the effects for the lamps).</p>
+
+
+
+<ul>
+    <li><a href="#CubemitterTrack">The effect file</a></li>
+    <li><a href="#CreatingCubemitters">Creating cubemitter files</a></li>
+    <li><a href="#Testing">Testing particle effects</a></li>
+    <li><a href="#SHED">How to create particle effects in SHED</a></li>
+</ul>
+
+
+
+<h2><a name="CubemitterTrack"></a>The effect file</h2>
+
+
+<p>Example of a cubemitter track from an effect JSON file:</p>
+
+
+
+<pre><code>  "cubemitter": {
+     "type" : "cubemitter",
+     "start_time" : 0,
+     "end_time" : 30,
+     "cubemitter": "particles/sparks/hit_spark.json",
+     "transforms": {
+        "x" : 0,
+        "y" : 1.25,
+        "z" : 0,
+        "rx" : 0,
+        "ry" : 0,
+        "rz" : 0
+     }
+  }
+</code></pre>
+
+<p>These are the fields that we can find in a cubemitter track:</p>
+
+
+
+<ul>
+    <li><p><strong>"type" : "cubemitter"</strong> -- the type of the track. A particle effect ("cube emitter").</p></li>
+    <li><p><strong>"cubemitter"</strong> -- the path to the JSON file that defines the settings for the particles. By default, they will be read from <code>stonehearth/data/horde</code>. I.e, <code>"particles/dust_poof/purple_dust_poof.cubemitter.json"</code> will be actually read as <code>stonehearth/data/horde/particles/dust_poof/purple_dust_poof.cubemitter.json</code>.</p>
+
+    <p>  <img src="../../../../../images/common/row_alert2.png" alt="icon"/>In order for the game to read our custom effects from our mod folder, we need to use an absolute path starting from our mod's namespace (for example <code>/candyland/data/horde/particles/sprinkles_rain/sprinkles_rain.cubemitter.json</code>). Otherwise the game will try to read the path starting at the <code>stonehearth/data/horde</code> directory. This also applies for paths to render materials.</p></li>
+    <li><p><strong>"transforms" : {}</strong> -- contains <strong>"x"</strong>, <strong>"y"</strong>, <strong>"z"</strong>, <strong>"rx"</strong>, <strong>"ry"</strong> and <strong>"rz"</strong> fields. These are offsets (in world units) and rotations (in degrees) for the emitter of the particles. That way, the particles can spawn at different locations/rotations from the corresponding entity. If the entity moves (such as a hearthling) the emitter will move with them, it's attached.</p></li>
+    <li><p><strong>"start_time"</strong> -- optional field (defaults to 0). The time in milliseconds at which this track should start (in regards to the whole effect).</p></li>
+    <li><p><strong>"end_time"</strong> -- optional field (defaults to 0). The time in milliseconds at which this track should stop. It determines the total duration of the track (if you haven't set <strong>"end_time"</strong>, the cubemitter track will loop).</p></li>
+    <li><p><strong>"bone"</strong> -- optional field. It's the name of the entity's bone to which we want to attach the emitter. If we omit this field, the emitter starting position will be the root of the entity (normally at the center of the entity and at the ground level). Then it will be moved and rotated depending on what we defined for the parameters in the <strong>"transforms"</strong> field.</p></li>
+</ul>
+
+
+
+<h2><a name="CreatingCubemitters"></a>Creating cubemitter files</h2>
+
+
+<p>Now for the contents of our cubemitter JSON file. Remember that you can copy an existing one from <code>stonehearth\data\horde\particles</code> to get started (try changing the values one at a time and see how they affect the particles).</p>
+
+
+
+<p>Each cubemitter file has these fields:</p>
+
+
+
+<ul>
+    <li><p><strong>"name"</strong> -- an identifier for the cubemitter effect.</p></li>
+    <li><p><strong>"duration"</strong> -- duration of the cubemitter (in real time milliseconds).</p></li>
+    <li><p><strong>"material"</strong> -- path of a material map for the cubemitter (defaults to <code>"materials/cubemitter.material.json"</code>).</p></li>
+    <li><p><strong>"loops"</strong> -- a boolean to define whether the cubemitter loops or not.</p></li>
+    <li><p><strong>"mesh" : {}</strong> -- optional field. Contains <strong>"file"</strong> (referencing a QB file), <strong>"matrix"</strong> (the name of a matrix inside the QB model, can be empty if there's only one) and <strong>"offset" : {}</strong> (containing <strong>"x"</strong> / <strong>"y"</strong> / <strong>"z"</strong> points to offset the pivot for the QB model - leave at (0,0,0) if your QB is already centered). This will make it so that the cubemitter particles have the shape of the QB model.</p>
+
+    <p>  The QB model will only have one color when rendered, since particles can only have one color at a time. You can see examples of this on some of the hearthlings emotes, hearth effects, and weather effects.</p></li>
+    <li><p><strong>"max_distance"</strong> -- optional field. Particles will only spawn if we're closer to the emitter than this distance (in number of blocks). Once spawned, they'll be rendered until their lifetime expires, even if we move the camera away (but new particles won't spawn if we're farther than this).</p></li>
+    <li><p><strong>"max_particles"</strong> -- optional field. Used to limit the maximum number of particles that can be alive at the same time for this cubemitter.</p></li>
+    <li><p><strong>"unculled"</strong> -- optional field (a boolean). When <strong>true</strong>, will prevent the spawn rate from changing with camera distance.</p>
+
+    <p>  If the camera distance is higher than 200 blocks from the emitter the rate is halved by default, and if we set <strong>"max_distance"</strong> it will stop depending on it, so with this field we can make it so that the rate will be the same no matter the distance.</p>
+
+    <p>  Useful when our effect must be visible from far away (in the vanilla game, it is used in certain weather effects and for the titan slayer). Bear in mind that it can impact performance (since it will render even when the effect is not in view).</p></li>
+    <li><p><strong>"realtime"</strong> -- optional field (a boolean). When <strong>true</strong>, particles will not be animated with game time, but with real time. Which means they'll keep spawning and moving even when the game is paused, and their speed will be constant even if the player is playing at a higher speed. Currently only used for the ping effect in multiplayer (try pressing and holding Alt and click on the terrain in a multiplayer game to see it).</p></li>
+    <li><p><strong>"emitter_space_tiling"</strong> -- optional field. It makes the cubemitter to 'wrap' in 3D space. It's important that the volume of the particles being created is lined up with the space tiling (so an emitter with a diameter of 80 units needs a wrapping of 80 units - otherwise there is a gap where things aren't emitted). This is used for weather effects that are attached to the camera.</p></li>
+</ul>
+
+
+
+<p><a name="FourKinds"></a><img src="../../../../../images/common/row_alert2.png" alt="icon"/>For all the following fields of the cubemitter file, assume that the possible values for the <strong>"kind"</strong> property are <strong>"CONSTANT"</strong> / <strong>"CURVE"</strong> / <strong>"RANDOM_BETWEEN"</strong> / <strong>"RANDOM_BETWEEN_CURVES"</strong> unless specified otherwise. You can check how to define the <strong>"values"</strong> field for each of them in <a href="../index.html#TypesOfValues">this table</a>, although for some fields they might be a little different (such as for colors):</p>
+
+
+
+<ul>
+    <li><p><strong>"emission" : {}</strong> -- properties related to the emission of the particles:</p>
+
+    <ul>
+        <li><p><strong>"rate" : {}</strong> -- the spawning rate of the particles. Contains a <strong>"kind"</strong> field (which in addition to the types above can also be <strong>"BURST"</strong>) and a <strong>"values"</strong> field.</p></li>
+        <li><p><strong>"angle" : {}</strong> -- the angle at which the particles are emitted. Contains a <strong>"kind"</strong> field and a <strong>"values"</strong> field. Angles must be represented in degrees.</p></li>
+        <li><p><strong>"origin" : {}</strong> -- the shape of the surface of the emitter, particles will spawn randomly along it. Contains a <strong>"surface"</strong> field (which must be one of <strong>"POINT"</strong> / <strong>"RECTANGLE"</strong> / <strong>"CUBOID"</strong> / <strong>"SPHERE"</strong> / <strong>"CYLINDER"</strong> / <strong>"CONE"</strong>) and a <strong>"values"</strong> field (refer to <a href="../index.html#TypesOfValues">this table</a> for sample values depending on the <strong>"surface"</strong> type). Instead of <strong>"surface"</strong>, you can write <strong>"shape"</strong>, if that feels more intuitive to you.</p>
+
+        <p> In general the dimensions for the origin surface are represented in blocks / world units.</p></li>
+        <li><p><strong>"translation_x"</strong> / <strong>"translation_y"</strong> / <strong>"translation_z"</strong> -- optional fields. Particles will spawn translated to a different location from the emitter's origin depending on these fields. Each one contains <strong>"kind"</strong> and <strong>"values"</strong> fields. The actual values (not the ones for time if we use curves) can be negative if we want to translate the particles in the opposite direction (remember than Y is up/down in Stonehearth).</p></li>
+        <li><p><strong>"rotation_x"</strong> / <strong>"rotation_y"</strong> / <strong>"rotation_z"</strong> -- optional fields. Same than for translation, but for rotation in the different axes. The actual values are in degrees.</p></li>
+        <li><p><strong>"scale_x"</strong> / <strong>"scale_y"</strong> / <strong>"scale_z"</strong> -- optional fields. Same than the previous ones, but for scale of the particles when they spawn. A scale of 1 for a particle is as big as one block / world unit.</p></li>
+    </ul></li>
+    <li><p><strong>"particle" : {}</strong> -- properties related to each of the particles, you can omit any of them if you're not going to use it. Note that, for the fields called <strong>"start"</strong>, the only possible values for <strong>"kind"</strong> are <strong>"CONSTANT"</strong> and <strong>"RANDOM_BETWEEN"</strong>. For the rest we can use any of the four values mentioned <a href="#FourKinds">above</a>.</p>
+
+    <ul>
+        <li><p><strong>"lifetime" : {}</strong> -- how long in milliseconds should each particle live. It has a <strong>"start": {}</strong> field, inside which we have <strong>"kind"</strong> and <strong>"values"</strong>.</p></li>
+        <li><p><strong>"speed" : {}</strong> -- optional field. The speed of each particle (how many blocks per second the particle travels, regardless of direction). By default the particles will move towards the outside of the emitter even if we don't set any speed. It has a <strong>"start" : {}</strong> field and / or an <strong>"over_lifetime" : {}</strong> field. Inside of each we have <strong>"kind"</strong> and <strong>"values"</strong>, with the possible values as explained above.</p>
+
+        <p> The <strong>"start"</strong> represents the speed when the particle spawns, and <strong>"over_lifetime"</strong> is used to change the speed at different moments of its life time.</p></li>
+        <li><p><strong>"velocity"</strong> -- optional field. It's similar to speed, but in a specific direction (e.g. if your starting speed is 0, with a velocity of 1 the particles will move 1 block per second in that direction). It has any of <strong>"over_lifetime_x"</strong> / <strong>"over_lifetime_y"</strong> / <strong>"over_lifetime_z"</strong>, each containing <strong>"kind"</strong> and <strong>"values"</strong> fields as explained above. Negative values will make them move towards the opposite direction.</p></li>
+        <li><p><strong>"acceleration"</strong> -- optional field. How much does velocity change over time for each particle. It has any of <strong>"over_lifetime_x"</strong> / <strong>"over_lifetime_y"</strong> / <strong>"over_lifetime_z"</strong>, each containing <strong>"kind"</strong> and <strong>"values"</strong> fields as explained above. Negative values will make them move towards the opposite direction.</p></li>
+        <li><p><strong>"rotation"</strong> -- optional field. It has any of <strong>"over_lifetime_x"</strong> / <strong>"over_lifetime_y"</strong> / <strong>"over_lifetime_z"</strong>, each containing <strong>"kind"</strong> and <strong>"values"</strong> fields as explained above. The values for rotation are in degrees.</p></li>
+        <li><p><strong>"scale"</strong> -- optional field. The scale of each particle. It has <strong>"start"</strong> (but can also have <strong>"start_x"</strong> / <strong>"start_y"</strong> / <strong>"start_z"</strong>) and / or <strong>"over_lifetime"</strong> (but can also have <strong>"over_lifetime_x"</strong> / <strong>"over_lifetime_y"</strong> / <strong>"over_lifetime_z"</strong>) fields. Inside of each we have <strong>"kind"</strong> and <strong>"values"</strong>, with the possible values as mentioned above.</p></li>
+        <li><p><strong>"color"</strong> -- the color for the particles. It has <strong>"start"</strong>, <strong>"over_lifetime"</strong> and / or <strong>"over_lifetime_a"</strong> fields, each having <strong>"kind"</strong> and <strong>"values"</strong> as explained above.</p>
+
+        <p> There's a particularity for colors. The arrays will have 3 values, representing RGB colors. They must be written in decimal format (so from 0 to 1, check <a href="http://www.corecoding.com/utilities/rgb-or-hex-to-float.php">this conversor</a> for help to convert them, or use SHED).</p>
+
+        <p> The values for <strong>"start"</strong> include a fourth value for the alpha or transparency of the particle. But for <strong>"over_lifetime"</strong> they don't (first value in curves is time like for the rest of properties). The <strong>"over_lifetime_a"</strong> is for setting the alpha over time.</p></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="Testing"></a>Testing particle effects</h2>
+
+
+<p>There's a quick way to iterate over particle effects without having to restart the game every time.</p>
+
+
+
+<p>Add <strong>"enable_renderer_file_watcher" : true,</strong> to your <code>user_settings.json</code> file, at the same level than the "user_id".
+This will allow you to view the changes in game every time you save the JSON file of the cubemitter (it might take a while to update depending on the life time of the particles).</p>
+
+
+
+<p>So we can start a new game, start our effect using debug tools, edit the JSON file, save it and it will update the effect inside the game, no need to reopen it.</p>
+
+
+
+<h2><a name="SHED"></a>How to create particle effects in SHED</h2>
+
+
+<p>At the time this guide was written, SHED won't be able to detect the effects if they're not inside the directories mentioned above.
+So make sure you're using the same directory structure than in the stonehearth mod (<code>your_mod_namespace/data/horde/particles</code>).</p>
+
+
+
+<p>Go to the Effects Editor, and select the 'Cubemitters' tab. You can right-click on an existing cubemitter, click on 'Clone', select your mod as the target mod and provide a replacement text. Once the tree refreshes you should see your cubemitter listed there, if not, you might need to reload SHED.</p>
+
+
+
+<p>When you select your cubemitter file, you should see the JSON in the middle and a web editor at the right:</p>
+
+
+
+<p><img src="../../../../../images/art/vfx/cloning_cubemitter_file.png" alt="cloning_cubemitter_file"/></p>
+
+
+
+<p><a name="UsingCEFEditor"></a>It's easier to edit in the web editor, since it has curve editors and color pickers, then save it with the blue 'SAVE' button at the top so that the JSON file gets modified, and then save the JSON file too to confirm the changes. Or if you prefer, you can edit the JSON file directly.</p>
+
+
+
+<p><a href="../../../../essentials/shed/index.html#Troubleshooting">Here</a> are some workarounds if the web editor isn't working correctly.</p>
+
+
+
+<p>You'll see that many of the fields have a <strong>+</strong> button at the right to add them or expand them, and an <strong>x</strong> button to remove them.</p>
+
+
+
+<p>When you choose <code>"CURVE"</code> or <code>"RANDOM_BETWEEN_CURVES"</code> in a dropdown, you'll first need to add a curve, then you'll be able to edit it in the curve editor. The way it works is:</p>
+
+
+
+<ul>
+    <li>Double click in the chart to add a point.</li>
+    <li>You can drag points around by clicking on them to select them first, then holding and dragging the middle mouse button (wheel).</li>
+    <li>To remove a point, right-click on it.</li>
+    <li>There are undo/redo buttons at the bottom right of the chart. There's also a button to reframe, which is used so that if you dragged points outside of the view, the chart moves the scale so that you can see all points at the same time.</li>
+    <li>The horizontal line represents time, so it will go from 0 to 1. If you want to set specific values to the points, you can do so in the textboxes below the chart (<strong>"T:"</strong> is for time, and <strong>"V:"</strong> is for value).</li>
+    <li>When the chart represents more than once curve, the area between the curves will be colored blue.</li>
+</ul>
+
+
+
+<p><img src="../../../../../images/art/vfx/curve_editor_color_picker.png" alt="curve_editor_color_picker"/></p>
+
+
+
+<p>For the colors, there will be color pickers. Click on them and you'll be able to easily choose a different color, as well as transparency (but remember the rules mentioned above about how to set the fields for transparency).</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

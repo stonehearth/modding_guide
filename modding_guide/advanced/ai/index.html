@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,10 +1189,609 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>AI actions</div>
-   <p><p>You can find information about the AI system in this <a href="../../../files/AI.pdf">PDF</a>.
-This page might get updated in the online version in the future, but the information will mostly be the same.</p></p>
+   <p><p>You can find all the information from this page in this <a href="../../../files/AI.pdf">PDF</a>.</p></p>
+
+
+<p>There's also the old notes about AI in this other <a href="../../../files/Stonehearth_AI_old_notes.pdf">PDF</a>. They're still mostly valid, and might help you understand how the AI works with a practical/visual example.</p>
+
+
+
+<ul>
+    <li><a href="#Overview">Overview of the AI system</a></li>
+    <li><a href="#WritingActions">Writing actions</a>
+    <ul>
+        <li><a href="#LeafAction">Leaf action example</a></li>
+        <li><a href="#CompoundAction">Compound action example</a></li>
+        <li><a href="#TaskGroup">Task group example</a></li>
+    </ul></li>
+    <li><a href="#AIContexts">AI contexts</a></li>
+    <li><a href="#Utility">Utility</a></li>
+    <li><a href="#InjectingActions">Injecting actions</a></li>
+    <li><a href="#Tasks">Tasks</a>
+    <ul>
+        <li><a href="#PersonalTaskGroups">Personal task groups</a></li>
+        <li><a href="#TownTaskGroups">Town task groups</a></li>
+        <li><a href="#AdHocTaskGroups">Ad hoc task groups</a></li>
+        <li><a href="#IssuingTasks">Issuing tasks</a></li>
+    </ul></li>
+    <li><a href="#Persistence">Persistence</a></li>
+</ul>
+
+
+
+<h2><a name="Overview"></a>Overview of the AI system</h2>
+
+
+<p>Intelligent entities in Stonehearth run a <a href="https://en.wikipedia.org/wiki/Hierarchical_task_network">hierarchical task network</a> to perform activities by making, comparing, and executing plans made up of actions. Many potential plans are typically being considered at a time, most of which are not ready to execute, or are suboptimal, and the AI constantly selects the one best plan to execute at any given time.</p>
+
+
+
+<p>Let's unpack that formal definition and map it to the terms used in the implementation:</p>
+
+
+
+<ul>
+    <li><p><strong>Intelligent entity</strong> -- An entity that has a <strong>stonehearth:ai</strong> component. This component runs a Lua thread (a coroutine managed by the thread class), which continuously evaluates a tree of plans and executes a branch of it. Intelligent entities include hearthlings, enemy mobs, pets, critters, and even turrets, although the rest of this page uses "character" to refer to any of these entities.</p></li>
+    <li><p><strong>Activity</strong> -- A behavior that can have multiple implementations. For example, if "get food" is an activity, "get food from stockpile", "get food from backpack", and "hunt wild animal" may all be implementations of the "get food" activity. Activities are represented as strings, conventionally in the form <code>mod_name:verb</code>, e.g. <code>stonehearth:get_food</code>. A not-necessarily-up-to-date list of activities can be found in <code>stonehearth/ai/activities.lua</code>. An activity can take arguments. E.g. the <code>stonehearth:find_path_to_entity</code> activity takes the entity to path to as an argument. At its core, all the AI component does is to continuously try to perform the <code>stonehearth:top</code> activity.</p></li>
+    <li><p><strong>Action</strong> -- A specific implementation of an activity. In the code we express this by saying that the action "does" the given activity string. An action is responsible for telling the AI system (1) its "utility", i.e. how good it is, (2) how to "think" it, i.e. decide whether it is
+    ready to be executed and what relevant state it expects to change if executed, (3) and how to "run" it, i.e. actually execute it in real time. There are several types of actions:</p>
+
+    <ul>
+        <li><strong>Leaf action</strong> -- The simplest type of action. A Lua file that has a <code>run()</code> method that executes the action's logic. E.g. <code>heal_entity_adjacent_action</code>.</li>
+        <li><strong>Compound action</strong> -- An action that is composed of a list of steps, each of which is an activity with optional argument bindings. Executing a compound action involves finding a valid action that performs each step's activity and executing all these actions in order. E.g. <code>heal_self_action</code> consists of (1) getting a healing item (a <code>stonehearth:goto_item_made_of</code> activity with a material argument set to <code>"healing_item"</code>), (2) reserving that item so other characters don't grab it (a <code>stonehearth:reserve_entity</code> activity with the item selected in the previous step passed as an argument), and finally (3) self-healing with that item (a <code>stonehearth:heal_entity_adjacent</code> activity with the entity itself as the target and the item reserved in the previous step as the item to apply).</li>
+        <li><strong>Task group action</strong> -- An action that runs one of a list of declared tasks (activities). Systems outside the AI control which of these tasks are active at a given time, and task groups allow these systems to ask multiple characters to perform some action. This is the only place where different activities compete with each other, so the task group declaration allows you to remap their utility values or ranges. E.g. <code>farming_task_group</code> involves tilling (<code>stonehearth:till_entire_field</code>), planting (<code>stonehearth:plant_crop</code>), or harvesting (<code>stonehearth:harvest_field</code>), and specifies how these three activities compete against each other in terms of utility (see "comparing plans" below).</li>
+        <li><strong>Task action</strong> -- An action which runs each task instance in a task group. This is an implementation detail, and there's only one <code>TaskAction</code> class, so it can mostly be ignored.</li>
+    </ul>
+
+    <p>  Character behavior is generally configured by the set of actions that they "know", specified through "AI packs", described in more detail <a href="#InjectingActions">later in this guide</a>.</p></li>
+    <li><p><strong>Making plans</strong> -- Deciding whether an action is ready to run. This is called "thinking" in the code. When the AI component wants to perform an activity, it asks all the actions that implement that activity to start thinking. Each action can then (often asynchronously) decide when it is ready to run, and provide "think output" that can be used as input to later steps if this action is performing a part of a sequence (i.e. it's performing a step in a compound action). E.g. <code>find_path_to_entity</code> starts an asynchronous pathfinder and when a valid path is found, declares that it's ready with the path as its think output; this path is often passed as an argument to a subsequent <code>follow_path</code> activity). For compound actions, which consist of multiple steps, each of the steps is "think"ed in order, and all of them have to declare themselves ready before the compound action itself is
+    considered ready. It is important to note that actions are not rethinked unless the branch they are in has finished executing (or got aborted), so action writers should not rely on thinking being restarted at any guaranteed time and if the action's validity should change in response to world state, the action should listen to events while thinking and adjust its validity in response.</p></li>
+    <li><p><strong>Comparing plans</strong> -- Selecting an action to perform an activity from all the available actions. Actions tell the AI system how good they are by announcing their <a href="#Utility">"utility"</a>. This can either be a static value that is always the same for all instances of the action, or it can be a range, and the action instance specifies where it is within that range while thinking or running. Note that the selection happens locally for each activity that has more than one implementation, and it happens instantly. All implementations of an activity start thinking at the same time, and do so concurrently (well, asynchronously), and whenever an action becomes ready, if its utility is higher than the currently selected "best" action for the activity, it replaces that action. If an action has been running, its utility gets a "sunk cost" boost to reduce interruptions, but if it's still lower than the newly-ready action, it gets interrupted and the new action starts.</p>
+
+    <p>  For example, <code>healing_task_group</code> performs the <code>stonehearth:work</code> activity and has a constant utility of 0.87; <code>crafting_task_group</code> also performs
+    the <code>stonehearth:work</code> activity but has a constant utility of 0.81, because we want healing to be prioritized over crafting. So when a herbalist decides to work, they will start thinking about both healing (by looking for hurt citizens) and crafting (by looking at any available herbalist crafting tasks). If they start crafting but later find a hurt citizen, they will interrupt the crafting task group action, and instead start performing the healing task group.</p></li>
+    <li><p><strong>Executing plans</strong> -- Calling <code>run()</code> on the best ready action that performs <code>stonehearth:top</code>. This is almost always a compound action, so executing it involves calling <code>run()</code> on each action within its sequence, many of which will themselves be compound or task group actions, so eventually it consists of running a sequence of leaf actions in order.</p></li>
+</ul>
+
+
+
+<p>Below is a screenshot of how a typical AI tree looks in the AI inspector. Activities (=frames) are presented in angle brackets. The rest of the nodes are actions. Leaf nodes are Leaf Actions. Inner nodes are compound, task group, or task actions. The root is always the <code>stonehearth:top</code> activity.</p>
+
+
+
+<p><img src="../../../images/essentials/debugtools/ai_inspector.png" alt="ai_inspector"/></p>
+
+
+
+<h2><a name="WritingActions"></a>Writing actions</h2>
+
+
+
+<p>Actions are Lua scripts registered in the mod's manifest and "injected" into a character's AI. This section explores how to declare actions. The <a href="#InjectingActions">next section</a> explores how to inject actions into into a character's AI.</p>
+
+
+
+<h3><a name="LeafAction"></a>Leaf action example</h3>
+
+
+
+<p>(hypothetical) <code>draw_animal_action.lua</code></p>
+
+
+<pre><code>  local DrawAnimalAction = class()
+
+  DrawAnimalAction.name = 'draw an animal' -- required
+  DrawAnimalAction.does = 'stonehearth:paint' -- required
+  DrawAnimalAction.args = { -- required
+     subject = Entity,
+     effect_name = {
+        type = 'string',
+        default = 'draw_in_notebook',
+     }
+  }
+  DrawAnimalAction.think_output = {}
+  DrawAnimalAction.priority = {0.2, 0.4} -- required
+  DrawAnimalAction.sunk_cost_boost = 0.2
+  DrawAnimalAction.weight = 1
+  DrawAnimalAction.scheduler_priority = 4
+  DrawAnimalAction.status_text_key = 'stonehearth:ai.actions.status_text.drawing'
+
+  function DrawAnimalAction:start_thinking(ai, entity, args)
+     if is_animal(args.subject) then
+        ai:set_utility(get_photogenicity(args.subject))
+        self._listener = radiant.events.listen(args.subject, 'stonehearth:ready_to_pose',
+                                                function()
+                                                   ai:set_think_output({})
+                                                end)
+     else
+        ai:reject('not an animal!')
+     end
+  end
+
+  function DrawAnimalAction:stop_thinking(ai, entity, args)
+     if self._listener then
+        self._listener:destroy()
+        self._listener = nil
+     end
+  end
+
+  function DrawAnimalAction:start(ai, entity, args)
+     if not is_ready_to_pose(args.subject)
+        ai:abort('animal stopped being ready to pose by the time the action started')
+     end
+  end
+
+  function DrawAnimalAction:run(ai, entity, args)
+     if not is_ready_to_pose(args.subject)
+        ai:abort('animal stopped being ready to pose by the time the action ran')
+     end
+
+     freeze_animal(args.subject)
+     ai:execute('stonehearth:run_effect', {effect = args.effect_name})
+     radiant.entities.add_thought(entity, 'stonehearth:thoughts:drew_an_animal')
+  end
+
+  function DrawAnimalAction:stop(ai, entity, args)
+     if is_frozen(args.subject) then
+        unfreeze_animal(args.subject)
+     end
+  end
+
+  return DrawAnimalAction
+</code></pre>
+
+<p>Let's take a look at each part of that action:</p>
+
+
+
+<ul>
+    <li><p><a name="Metadata"></a><strong>Metadata</strong></p>
+
+    <ul>
+        <li><p><strong>name</strong> -- The name under which the action appears in debugging tools.</p></li>
+        <li><p><strong>does</strong> -- The activity that this action performs.</p>
+
+        <p> In this case, our action is one way to perform <code>stonehearth:paint</code>.</p></li>
+        <li><p><strong>args</strong> -- The argument types to this activity; all actions that perform the same activity must take the same args. If an argument is optional, it should declare a default value. This is often empty.</p>
+
+        <p> In this case, we're taking the subject to paint as an argument, which might come from a previous step in a compound action, or from a task, as well as an optional effect name argument, in case we want to play a different animation while drawing.</p></li>
+        <li><p><strong>think_output</strong> -- optional. The format of the object passed to <code>set_think_output()</code>. If no object or an empty object is passed, this doesn't need to be declared.</p>
+
+        <p> In this case, we have no think output.</p></li>
+        <li><p><strong>priority</strong> -- The action's utility, i.e. how good this action is at performing the activity, from 0.0 to 1.0. This can be a number if the action always has the same utility, or a range like {0.2, 0.6} if the action will at some point change its utility depending on state or input by calling <code>ai:set_utility()</code>. The utility of an action is used to select the best action to perform the activity among the ones that
+        are ready.</p>
+
+        <p> In this case, we are specifying that we will set the utility dynamically, and that the value which we'll pass to <code>set_utility()</code> should be remapped linearly to the {0.2, 0.4} range, so 0 will be remapped to 0.2, 0.5 to 0.3, 1.0 to 0.4, etc.</p></li>
+        <li><p><strong>sunk_cost_boost</strong> -- optional, rare. An override on the amount added to the utility of an action once it has been running for a while. This controls how easy it is to interrupt the action. The default is 0.05. A value of 1.0 means that no action that fulfills the same activity can interrupt it (but a compound action which is running this action as a step can still be interrupted).</p>
+
+        <p> In this case, we've specified 0.2, which means that for another painting task to interrupt this, it would have to have a utility more than 0.2 greater than our utility.</p></li>
+        <li><p><strong>weight</strong> -- optional, rare. For actions that have the same utility, weights are used to randomize which will run.</p>
+
+        <p> In this case, we've specified 1, which is the default, so this does nothing and is just for illustration purposes.</p></li>
+        <li><p><strong>scheduler_priority</strong> -- optional, rare. A multiplier on the amount of pathfinding, etc. resources that this entity is allocated while running this action. As of September 2017, this is only used to help idling characters find other actions.</p>
+
+        <p> In this case we specified 4, which we had no good reason to do, except to demonstrate the existence of this option.</p></li>
+        <li><p><strong>status_text_key</strong> -- optional. An i18n key that is used to look up a user-facing description of this action. This is displayed in the citizens menu to describe what a given character is doing. This can also be set by calling <code>ai:set_status_text_key()</code> in the action's <code>run()</code> method.</p>
+
+        <p> In this case, we specified a key that might translate to "Painting an animal".</p></li>
+    </ul></li>
+    <li><p><a name="Methods"></a><strong>Methods</strong></p>
+
+    <ul>
+        <li><p><strong>NOTE</strong>: All the methods in the Action interface take the same arguments:</p>
+
+        <ul>
+            <li><strong>ai</strong> -- An <a href="#AIContexts">AIContext</a> object used to communicate back to the AI system about the current action.</li>
+            <li><strong>entity</strong> -- The entity on which the action is thinking or running. Note that every entity that "knows" an action has their own instance of it.</li>
+            <li><strong>args</strong> -- The arguments that were passed into the activity.</li>
+        </ul></li>
+        <li><p><a name="StartThinking"></a><strong>start_thinking()</strong> -- When the AI system starts planning an activity (e.g. prompted by a compound or task group action), all actions that perform that activity will receive a call to this method. An action is only considered ready once it calls <code>ai:set_think_output()</code> (or if it has not <code>start_thinking()</code> method). This can either happen synchronously while <code>start_thinking()</code> is running, or it can happen at a later time as a result of an event - in which case <code>start_thinking()</code> is the place to start listening for that event.</p>
+
+        <p> In this case, we look at the subject argument. If it isn't an animal, we immediately reject with an explanation. Otherwise we update our utility based on how photogenic the animal is (so e.g. if there's a draw_landscape_behind_subject action that "does" <code>stonehearth:paint</code> at constant priority 0.3, only the more photogenic animals will be preferred over the landscape). Next, we set up a listener to wait until the animal is ready to pose, and when it is, we call <code>set_think_output()</code> to mark this action as ready to run.</p></li>
+        <li><p><a name="StopThinking"></a><strong>stop_thinking()</strong> -- Whenever the AI system decides to stop planning this action, this method is called to clean up any setup done in <code>start_thinking()</code>, such as destroying event listeners and traces. This happens if the action has successfully finished planning (i.e. it called <code>set_think_output()</code>, in which case this is called after <code>start()</code>, so the action state can be used to avoid cleaning up things needed for running the action), or if the AI decided not to do the action (e.g. if a strictly higher-priority action became ready, or if the AI finished what it was doing and is now restarting all planning). It is guaranteed that if an action received a call to <code>start_thinking()</code>, it will receive a call to <code>stop_thinking()</code> before any of the other Action interface methods.</p>
+
+        <p> In this case, we destroy the listener that we created in <code>start_thinking()</code>.</p></li>
+        <li><p><a name="ShouldStartThinking"></a><strong>should_start_thinking()</strong> -- Called before <code>start_thinking()</code> on each action that performs an activity, and allows the action to decide whether this activity is allowed to run at all. If any action that performs an activity returns false from <code>should_start_thinking()</code>, all the actions for this activity are prevented from thinking or running. This is very rarely used, and when it is, usually for specific "filter" actions, that don't do anything themselves, but just block the activity from running in certain situations. For example, to prevent carpenters from building non-wooden structures, we give all characters the generic fabricate_structure action, which does <code>stonehearth:fabricate_structure</code>, but give only carpenters the <code>fabricate_wooden_structure</code> filter action, which also does <code>stonehearth:fabricate_structure</code>. So if the structure is not wooden, the carpenter won't be allowed to start to their regular fabricate action because the filter will return false.</p>
+
+        <p> In this case, we do not need this method.</p></li>
+        <li><p><a name="Start"></a><strong>start()</strong> -- When an action is selected for running, this method is called. Usually, you can do anything you might do here at the beginning of <code>run()</code>, but it's useful in 2 cases: (1) for compound actions, which themselves do not have a <code>run()</code> method, they can do initialization in <code>start()</code>, and (2) when an action is itself a step in a compound action, <code>start()</code> is called on each action in the sequence before any of the <code>run()</code> methods, so they can do sanity checks there before starting execution (although they would probably need to repeat them in <code>run()</code>, since time will have passed).</p>
+
+        <p> In this case we check that the animal hasn't stopped being ready to pose between the time we finished thinking and the time the action actually started.</p></li>
+        <li><p><a name="Run"></a><strong>run()</strong> -- This is the method that actually implements what it means to execute this action. <strong>Unlike all the other Action methods it can yield/suspend the thread and should not return until the action is finished</strong>. The classic example of this in use is the <code>run_effect</code> action, which plays an effect (typically an animation) and yields the thread for the duration of the effect, only resuming and returning once the effect has finished. If at some point the action determines that it cannot finish successfully, it can call <code>ai:abort()</code>, which will cancel the current plan (stopping all in progress actions) and restart planning from scratch.</p>
+
+        <p> In this case we repeat the check we had in <code>start()</code> (which may have been long ago, if this action is a late step within a compound action). Then we freeze the animal, and call <code>ai:execute()</code>, which immediately thinks and runs an action that performs a given activity (the thinking must be synchronous, or we hang the character's AI thread while it's thinking). In this case we execute run_effect, which plays the requested animation effect (<code>draw_in_notebook</code>), and once finished resumes the thread and returns control to us. Finally we add a thought about animal drawing, and return, which tells the AI system that we have successfully finished running this action and may proceed to the next step (or finish the current plan, if there are no more steps).</p></li>
+        <li><p><a name="Stop"></a><strong>stop()</strong> -- Whenever the action is stopped, this method is called. This can be by having finished its <code>run()</code>, being aborted, or being interrupted by a higher utility action. It is guaranteed that if an action received a call to <code>start()</code>, it will receive a call to <code>stop()</code>. The method should be used to clean up any state or resources set up in <code>start()</code> or <code>run()</code>. Like <code>start()</code>, if this action is a step in a compound action, its <code>stop()</code> method will be called after all the steps have finished running (along with the <code>stop()</code> methods of the other steps, in order).</p>
+
+        <p> In this case, we unfreeze the animal that we may have frozen during <code>run()</code>.</p></li>
+    </ul></li>
+</ul>
+
+
+
+<p><a name="AIStateMachine"></a>Here's a simplified diagram of the state machine of an AI action:
+<img src="../../../images/advanced/ai/ai_state_machine.png" alt="ai_state_machine"/></p>
+
+
+
+<h3><a name="CompoundAction"></a>Compound action example</h3>
+
+
+<p>(hypothetical) <code>find_and_paint_subject_action.lua</code></p>
+
+
+<pre><code>  local FindAndPaintSubjectAction = class()
+
+  FindAndPaintSubjectAction.name = 'find and paint subject'
+  FindAndPaintSubjectAction.does = 'stonehearth:free_time'
+  FindAndPaintSubjectAction.args = {}
+  FindAndPaintSubjectAction.priority = {0.3, 0.7}
+
+  function FindAndPaintSubjectAction:start_thinking(ai, entity, args)
+     local traits = entity:get_component('stonehearth:traits')
+     if traits and traits:has_trait('stonehearth:traits:artist') then
+        ai:set_utility(0.5)
+     else
+        ai:set_utility(0.0)
+     end
+     ai:set_think_output()
+  end
+
+  function FindAndPaintSubjectAction:compose_utility(entity, self_utility, child_utilities, current_activity)
+     return self_utility + child_utilities:get('stonehearth:follow_path') * 0.1 + child_utilities:get('stonehearth:paint') * 0.4
+  end
+
+  local ai = stonehearth.ai
+  return ai:create_compound_action(FindAndPaintSubjectAction)
+              :execute('stonehearth:find_willing_painting_subject')
+              :execute('stonehearth:find_path_to_entity', { destination = ai.PREV.subject })
+              :execute('stonehearth:follow_path', { path = ai.PREV.path })
+              :execute('stonehearth:paint', { subject = ai.BACK(3).subject })
+
+  return FindAndPaintSubjectAction
+</code></pre>
+
+<p>Let's take a look at each part of that action:</p>
+
+
+
+<ul>
+    <li><p><a name="CompoundMetadata"></a><strong>Metadata</strong></p>
+
+    <ul>
+        <li>All the metadata for compound actions is <a href="#Metadata">the same as for leaf actions</a>.</li>
+    </ul></li>
+    <li><p><a name="CompoundMethods"></a><strong>Methods</strong></p>
+
+    <ul>
+        <li><p>Compound actions have all the methods <a href="#Methods">that leaf actions have</a>, with 2 exceptions:</p>
+
+        <ul>
+            <li><p>Compound actions do not have a <code>run()</code> method. Their <code>run()</code> implicitly consists of calling <code>run()</code> of each of the steps.</p></li>
+            <li><p>Compound actions can declare a <code>compose_utility()</code> method to derive their utility from the utility of its steps. This method is called whenever the utility of any of the steps changes, or when we transition from one step to another while running. Unlike the other methods, it has a different set of arguments (the entity, the utility of the compound action as set by <code>set_utility()</code>, an access for the utility of the action's steps, and the name of the current activity being run, if any).</p>
+
+            <p>In this example, this action's utility which we set in <code>start_thinking()</code> is augmented with the utility of the paint step (which in the Leaf Action example we saw represented the subject's photogenicity), as well as the utility of the path following step (which represents the distance). Perhaps a better way to implement it would have been to have the <code>stonehearth:find_willing_painting_subject</code> activity always select the best possible subject and have its utility represent how good of a subject it is.</p></li>
+        </ul>
+
+        <p> Note that the compound action's thinking is done before any of the steps', and the steps are asked to think (in order) only after the compound action has successfully finished its thinking. Its <code>start()</code> happens before any of the steps' <code>start()</code>, and its <code>stop()</code> happens after all of the steps' <code>stop()</code>.</p>
+
+        <p> In this example, we only use <code>start_thinking()</code> to make this action much more likely to run if the entity has the hypothetical artist trait.</p></li>
+    </ul></li>
+    <li><p><a name="CompoundPlaceholders"></a><strong>Step declarations</strong></p>
+
+    <ul>
+        <li><p>Compound actions declare the steps of which they consist by calling <code>execute()</code> on the object returned by <code>create_compound_action()</code>. Note that this is unrelated to the <code>ai:execute()</code> methods mentioned earlier. The steps are activities that will be performed, in order, to run the action. Each step can specify arguments to pass to the activity. The arguments can be regular values, or "placeholders" which are ways to dynamically refer to the context of the running action or to the results of previous steps. As of September 2017, the supported placeholders are:</p>
+
+        <ul>
+            <li><p><strong>ai.ENTITY</strong> -- The entity running the action.</p></li>
+            <li><p><strong>ai.ARGS.foo</strong> -- One of the arguments of the compound action, in this case <code>foo</code>.</p></li>
+            <li><p><strong>ai.CALL(fn, ai.XXX, ai, ai.YYY)</strong> -- This evaluates all the arguments as placeholders, then calls the function specified in the first argument passing the other arguments, and its return value is the result of this placeholder's evaluation. In this case it will call <code>fn()</code> with two arguments, the results of evaluating <code>ai.XXX</code> and <code>ai.YYY</code> and use its return value as the result.</p></li>
+            <li><p><strong>ai.PREV.foo</strong> -- One of the fields of the "think output" of the previous step. E.g. in this case, the <code>foo</code> field of whatever object the previous step passed to its <code>set_think_output()</code> call.</p></li>
+            <li><p><strong>ai.BACK(n).foo</strong> -- One of the fields of the "think output" of the n<sup>th</sup> previous step. E.g. in this case, the <code>foo</code> field of whatever object the previous step N steps ago. <code>ai.BACK(1)</code> is equivalent to <code>ai.PREV</code>.</p></li>
+            <li><p><strong>ai.NOT(...)</strong> -- Evaluates its argument and negates it. E.g. <code>ai.NOT(ai.ARGS.foo)</code> is the opposite of whatever the value of the <code>foo</code> argument was when this action started thinking.</p></li>
+            <li><p><strong>ai.CURRENT</strong> -- The "expected state" of the entity running this action. This one is a bit tricky, and is the fallback for when none of the other placeholders are sufficient for your needs. Any action can write <code>ai.CURRENT</code> entries (by setting <code>ai.CURRENT.foo = value</code>) while they are thinking to represent what they think the state of the entity will be after the action runs, and actions that appear as steps afterwards will get that modified object. This is useful e.g. if a pickup action modifies the expected state of the character's backpack, and later actions want to examine what the character has in their backpack to decide if or how they should run. Here are the supported entries in <code>ai.CURRENT</code>:</p>
+
+            <ul>
+                <li><strong>location</strong> -- The X,Y,Z location of the character. Various path following and chasing actions modify this.</li>
+                <li><strong>carrying</strong> -- The item that the character is carrying.</li>
+                <li><strong>storage</strong> -- The contents of the character's backpack. Has an <code>items</code> property which is a table from entity ID to entity, a <code>full</code> property to indicate whether the backpack is full, and <code>add_item</code> and <code>remove_item</code> methods.</li>
+                <li><strong>self_reserved</strong> -- The objects reserved by preceding <code>reserve_entity</code> actions, a table from entity ID to entity.</li>
+                <li><strong>self_region_reserved</strong> -- The objects reserved by preceding <code>reserve_entity_destination</code> actions, a table from entity ID to a table from offset key to XYZ offset.</li>
+                <li><strong>location_changed</strong> -- A read-only flag indicating if <code>ai.CURRENT.location</code> has changed at any point in the AI branch so far.</li>
+                <li><strong>carrying_changed</strong> -- A read-only flag indicating if <code>ai.CURRENT.carrying</code> has changed at any point in the AI branch so far.</li>
+            </ul></li>
+        </ul>
+
+        <p> Note that the <code>start()</code> method of each step is run in order before the <code>run()</code> method of the first step is executed, and the <code>stop()</code> method of each step is run in order after the <code>run()</code> method of the last step returns. This means that if, e.g., you're writing a compound action that wants to create a critter, walk the character to the critter, and then destroy the critter, you can call destroy in the stop function of the create action and it will execute only after the walking happens.</p>
+
+        <p> In this example, our steps are as follows:</p>
+
+        <ul>
+            <li>First, find a willing subject to paint.</li>
+            <li>Next, find a path to reach that subject. Here we use the placeholders to pass the subject found in the previous step as the destination to find a path to.</li>
+            <li>Then, actually follow the path (again, we use placeholders to pass the path found in the previous step to this activity).</li>
+            <li>Finally, actually paint the subject (we use the <code>ai.BACK</code> placeholder to refer all the way back to the subject found by the first step). This may run the <code>draw_animal</code> action described above, or another one that performs <code>stonehearth:paint</code>, e.g. <code>draw_human</code>, or <code>draw_building</code>, depending on what entity was chosen in the first step, and depending on what the utility of each of those actions are (the highest utility action is always selected).</li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="TaskGroup"></a>Task group example</h3>
+
+
+
+<p><code>solo_basic_needs_task_group.lua</code></p>
+
+
+
+<pre><code>  local SoloBasicNeedsTaskGroup = class()
+
+  SoloBasicNeedsTaskGroup.name = 'solo basic needs'
+  SoloBasicNeedsTaskGroup.does = 'stonehearth:top'
+  SoloBasicNeedsTaskGroup.priority = {0, 0.3}
+
+  return stonehearth.ai:create_task_group(SoloBasicNeedsTaskGroup)
+                          :declare_task('stonehearth:sleep', 0.6)
+                          :declare_multiple_tasks('stonehearth:eat', {0.4, 1.0})
+                          :declare_permanent_task('stonehearth:rest_when_injured', {}, 0.2)
+</code></pre>
+
+<p>Let's take a look at each part of that action:</p>
+
+
+
+<ul>
+    <li><p><a name="TaskGroupMetadata"></a><strong>Metadata</strong></p>
+
+    <ul>
+        <li>All the metadata for task group actions is <a href="#Metadata">the same as for leaf actions</a>, except that they cannot have arguments (only due to lack of use case).</li>
+    </ul></li>
+    <li><p><a name="TaskGroupMethods"></a><strong>Methods</strong></p>
+
+    <ul>
+        <li><p>Task group actions only support one optional method, <code>compose_utility()</code>, which allows you to have custom logic to derive the utility of the group from the utility of the task that it's considering or running, instead of the default which just remaps the declared task utility (see below) to the range declared for the task group action (if it's a range rather than a static number). Unlike the other methods, it has a different set of arguments (the entity, and the utility of the task).</p>
+
+        <p> In this case we don't need any custom utility calculation logic, so we do not declare <code>compose_utility()</code>.</p></li>
+    </ul></li>
+    <li><p><a name="TaskGroupTaskDeclarations"></a><strong>Task declarations</strong></p>
+
+    <ul>
+        <li><p>The purpose of a task groups is two-fold: (1) allow code outside the AI system to control which activities are active at a given time, what arguments they should use, and which characters should perform them; and (2) select the best of a set of possible activities to run. The first purpose is explored <a href="#Tasks">later in this page</a>, but the second is what concerns us in the context of AI.</p></li>
+        <li><p>Task groups declare which activities they can run, and whether there can be multiple instances of that activity trying to run (e.g. I might want two "attack target" tasks with different targets that compete). Tasks can be declared by calling methods on the object returned from <code>create_task_group()</code>. There are 3 variations:</p>
+
+        <ul>
+            <li><p><strong>declare_task()</strong> -- This declares that whoever is managing the task group can create at most one task (at a time) that tries to do the specified activity (with arguments specified at runtime). The first argument is the activity that this task will try to do. The second is the utility of the task. This second argument can be a number, which means that the task ignores the utility of whatever action is doing the activity, and always considers the task to have the specified utility value in the context of the task group. Alternatively, it can be a range like {0.2, 0.7}, which means that the utility of the action performing the requested activity is linearly remapped from its 0 to 1 range to the specified range.</p>
+
+            <p>   Keep in mind that these task utility declarations are in the context of the task group action, which means that they are used to select which of the tasks within the task group to do. The utility of the task group itself in the context of its activity (the "does" it declares in its metadata) is computed from this task utility by remapping it again to the range specified in the task group's metadata (passing it through <code>compose_utility()</code> if that is declared).</p></li>
+            <li><p><strong>declare_multiple_tasks()</strong> -- This is similar to <code>declare_task()</code>, except it allows many instances of the same task to be created (potentially with different arguments).</p></li>
+            <li><p><strong>declare_permanent_task()</strong> -- This is similar to <code>declare_task()</code>, except it takes a set of arguments, and creates that task as soon as the task group is created, rather than waiting for some external code to create that task.</p></li>
+        </ul></li>
+        <li><p>In this example, we are declaring a "basic needs" task group that handles a hearthling's eating, sleeping, and recovery tasks. (Note that this is the earliest, simplest version of this task group, and will probably not be what we the game is using by the time you read this).</p>
+
+        <ul>
+            <li>We declare a <code>stonehearth:sleep</code> task, with a constant utility of 0.6. This means that some external system (in this case, the <code>sleepiness_observer</code>) will at some point ask the AI to start considering sleeping. We are also saying that we do not care about the utility of the action that performs the sleep activity, and will always consider that task to have the utility of 0.6, relative to sleeping and recovery. Remember that the utility of the <strong>task group</strong> itself is the utility of the task, remapped to the task group's declared utility range. So since this task has a constant utility of 0.6, and the task group declares its utility range to be {0, 0.3}, if the sleep task is selected, the utility of the task group is 0 + (0.6 * (0.3 - 0)) = 0.18.</li>
+            <li>We declare a <code>stonehearth:eat</code> task, with a utility range of {0.4, 1.0}, and allow multiple eat tasks to be created by some external system (in this case, the consumption component). Since we specified a utility range, we will use the utility of the action that performs <code>stonehearth:eat</code>, and remap it to this range. So if our eat action says that its utility is 0.7 (e.g. based on hunger or food quality), the utility of the task is 0.4 + (0.7 * (1.0 - 0.4)) = 0.82, when compared to sleeping, recovering, and other eat tasks within the group. If that task is selected, the utility of the task group would be 0 + (0.82 * (0.3 - 0)) = 0.246.</li>
+            <li>We declare a permanent <code>stonehearth:rest_when_injured</code> task, with an empty argument list, and a utility of 0.2. This means that a character that has this task group will always have this task, and its utility will always be 0.2 relative to eating, sleeping, and recovery, making it the least important. If that task is selected, the utility of the task group would be 0 + (0.2 * (0.3 - 0)) = 0.06.</li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="AIContexts"></a>AI contexts</h2>
+
+
+
+<p>All Action methods get passed an "AI Context" as described above, which is used to communicate with the AI system about that action. Here are the methods available on AI Contexts:</p>
+
+
+
+<ul>
+    <li><p><a name="ContextCommonMethods"></a><strong>Common methods</strong></p>
+
+    <ul>
+        <li><strong>set_think_output()</strong> -- Must be called while the action is thinking to mark the action as ready, and set the "think output" of the action, which is a table that any following steps in a compound action sequence can access. An example would be the <code>find_path_to_entity</code> action setting the calculated path as "think output", so that it can be used together with the <code>follow_path</code> action within a compound action step sequence. If no argument is passed to <code>set_think_output()</code>, the think output defaults to the action's original arguments. Note that it is not valid to call <code>set_think_output()</code> in any state other than thinking (e.g. when already ready).</li>
+        <li><strong>clear_think_output()</strong> -- Reverts the effect of <code>set_think_output()</code>. Use this to mark an action as no longer ready, returning it to the thinking state.</li>
+        <li><strong>set_utility()</strong> -- Updates the action's utility. Takes a number between 0 and 1, linearly remaps it to the action's declared utility range, and sets the action's utility to that. This can be called both when thinking and when running, but the action must have declared a utility range rather than a static utility value.</li>
+        <li><strong>abort()</strong> -- Used to announce that the action has gotten into an unrecoverable state, typically while running. E.g. it was running to an item and that item has since been destroyed. This forces the AI to cancel the current action, and recalculate a new plan from scratch. This should only be used in extreme situations, since it can force the character to stutter or rapidly switch plans as it reconsiders everything from scratch. If the AI keeps selecting an action and it keeps aborting, it will eventually (currently after 10 consecutive aborts) give up and kill the character's AI thread. This method takes a string explaining the reason for the cancellation, which is surfaced in the AI inspector and in error messages.</li>
+        <li><strong>execute()</strong> -- Immediately thinks and runs an action that performs a given activity (the thinking must be synchronous, or we hang the character's AI thread while it's thinking). In general, if you find yourself using this, consider whether your action should be a compound action with this as a step. That allows thinking to be asynchronous and also makes the activity to be executed show up in the AI inspector even when the action isn't running.</li>
+    </ul></li>
+    <li><p><a name="ContextUncommonMethods"></a><strong>Uncommon methods</strong></p>
+
+    <ul>
+        <li><strong>set_status_text_key()</strong> -- Sets an i18n key and arguments that is used to look up and render a user-facing description of this action, which is displayed in the citizens menu to describe what a given character is doing. This should only be used if you need to change the text dynamically or pass arguments. Otherwise just declare it as the <code>status_text_key</code> metadata field.</li>
+        <li><strong>reject()</strong> -- Signals that the action received arguments which are no longer valid. This one is tricky! If all actions that perform a given activity reject, and the activity is part of a compound action, that compound action will (after a 20ms delay) rethink itself. This means that <code>reject()</code> should only be called if the caller expects to be a step in a compound action rethinking which will now choose different arguments. The classic example of this is the <code>reserve_entity</code> action - if its target has already been reserved by the time it starts thinking, it rejects to ask the parent action to re-evaluate the choice of entities (it assumes that they will check reservations). On the other hand, if you call <code>reject()</code> when rethinking its parent action does not change its arguments, this will cause an infinite loop of rejecting, rethinking, rejecting, and so on, so this is dangerous and highly context-sensitive.</li>
+        <li><strong>suspend()</strong> -- Pauses the entity's AI thread until resumed, and can only be called while running. Used almost exclusively to wait on an effect in actions like <code>run_effect</code>. If you suspend the AI thread, you must later call <code>resume()</code> from the same action (on another thread; typically within a callback); otherwise the thread may hang forever.</li>
+        <li><strong>resume()</strong> -- Resumes the AI thread. Should only be called while running, if this same action previously called <code>suspend()</code>.</li>
+        <li><strong>protect_argument()</strong> -- Marks an entity as protected. If that entity is destroyed while this action is thinking, its thinking is canceled. By default, all arguments passed to the action are protected, so this is only useful if you need to protect some other entities relevant to your action.</li>
+        <li><strong>unprotect_argument()</strong> -- Undoes the protection set by <code>protect_argument()</code>, meaning that destroying the given entity no longer stops the action thinking. This is used e.g. if you need to destroy an entity passed as an argument to the action (or previously protected) as part of your action.</li>
+    </ul></li>
+    <li><p><a name="ContextDebuggingMethods"></a><strong>Debugging methods</strong></p>
+
+    <ul>
+        <li><strong>set_debug_progress()</strong> -- Sets a string to show in the AI inspector describing what the current state of the action is. E.g. a "find item" action can show what item it selected.</li>
+        <li><strong>get_log()</strong> -- Returns a (created on demand) logger configured to print extra context info about this action (entity and debug route). This is just a shortcut.</li>
+        <li><strong>get_debug_info_datastore()</strong> -- Returns a datastore that contains debugging metadata about this action. Can be used to add your own debugging metadata, but should generally be avoided.</li>
+    </ul></li>
+    <li><p><a name="ContextExoticMethods"></a><strong>Exotic methods</strong></p>
+
+    <ul>
+        <li><strong>spawn()</strong>: Creates a new execution frame that manages thinking and running a given activity. The caller is responsible to managing the returned frame, calling its methods at the right time, etc. This is only used to implement low-level AI system features and is not generally useful.</li>
+        <li><strong>get_parent_node()</strong>: Returns the parent node of this action in the AI graph, which may be an action, an execution frame, or an AI context. This is only used to implement low-level AI system features and is not generally useful.</li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="Utility"></a>Utility</h2>
+
+
+<p>When deciding which action to select to perform a given activity or task group, the actions are judged by comparing their utility, a value between 0 and 1, which represents how good that action is at performing its activity in the current situation.</p>
+
+
+
+<p>Actions can specify their utility as a number if the action always has the same utility, or as a range like {0.2, 0.6} if the action will at some point change its utility depending on state or input. In the latter case, the minimum is assumed by default, and the action can adjust it while thinking or running by calling <code>ai:set_utility()</code> with a number from 0 to 1 (which will be rescaled to the declared range), or for compound and task group actions by returning the new utility value from their <code>compose_utility()</code> method as explained above.</p>
+
+
+
+<p>Note that an action's utility value is only meaningful in the context of its activity. The utility values of actions that perform different activities cannot be compared directly.</p>
+
+
+
+<p>In addition to the utility that the action reports, we also have a "sunk cost boost" feature, which increases the utility of an action after it has run for some time. By default, it takes the game time equivalent of 500ms of real time before it kicks in, and by default it adds 0.05 utility, though the latter number can be overridden by the action's metadata.</p>
+
+
+
+<h2><a name="InjectingActions"></a>Injecting actions</h2>
+
+
+<p>Even after an action is written and registered in the manifest in the <strong>"aliases"</strong> section, it is of no use if no character in the game "knows" that action. For a character to "know" an action, it has to be injected into their AI using an <strong>AI pack</strong>. AI packs are JSON files, usually under <code>stonehearth/ai/packs</code>, which have <strong>"type" : "ai_pack"</strong> and contain lists of:</p>
+
+
+
+<ul>
+    <li><p>Actions, which have been explained above, and <a href="../components_controllers/components_renderers/index.html">components</a>.</p></li>
+    <li><p><a href="../components_controllers/index.html#Observers">Observers</a>, which are component-like objects that are typically used to create tasks when some conditions are satisfied, and are mostly being phased out in favor of the actions themselves waiting for conditions during their thinking.</p>
+
+    <p>  You can see an example of actions, observers and components in <code>pet_collar.json</code>, see link below.</p></li>
+    <li><p>Personal task groups, which are task group actions for groups that only contain this character. The above basic needs task group is an example of this. See below for more on task groups. The syntax would be like this (example from <code>celebration_ai_pack.json</code>):</p>
+
+<pre><code>"task_groups": [
+   "stonehearth:task_groups:solo:celebration",
+   "stonehearth:task_groups:solo:building_celebration",
+   "stonehearth:task_groups:solo:unit_control"
+]
+</code></pre></li>
+    <li><p>References to other AI packs which they require as dependencies. These are traversed recursively.</p></li>
+</ul>
+
+
+
+<p>Sometimes the AI Packs are inlined in other JSON files instead of being referenced.</p>
+
+
+
+<p>Entities inject AI packs in several different ways:</p>
+
+
+
+<ul>
+    <li><p>An entity can specify a list of AI packs under <code>stonehearth:ai_packs</code> in their entity_data. E.g. in <code>base_human.json</code>, the base mixin for hearthlings.</p></li>
+    <li><p>Items with an equipment_piece component can include an inlined AI pack under <code>injected_ai</code>. E.g. in <code>pet_collar.json</code>, an item given to all pets, we have <a href="../../basic/wearables/index.html#AI">this injected AI</a>.</p>
+
+    <p>  Jobs also use this path by having an "abilities" item given to characters that gain the job. E.g. in <code>trapper_abilities.json</code>.</p></li>
+    <li><p>Buffs can contain an inlined AI pack under <code>injected_ai</code>. E.g. in <code>snared_buff.json</code>, the debuff applied by snare abilities.</p></li>
+</ul>
+
+
+
+<p>So after you create an action, you should add it to an AI pack and make sure the characters who should know this action have that AI pack injected somewhere.</p>
+
+
+
+<h2><a name="Tasks"></a>Tasks</h2>
+
+
+
+<p>While the simplest way to get a character to perform some behavior is to create an action, add it to an AI pack, and have it fulfill the top level activity, <code>stonehearth:top</code>, that does have a few limitations:</p>
+
+
+
+<ul>
+    <li>The action will always be considered as an option.</li>
+    <li>Actions always run independently on every character that knows that action.</li>
+    <li>It's impossible to assign behaviors to people who aren't in the game yet (for them to do as soon as they enter the game).</li>
+</ul>
+
+
+
+<p>Tasks are how you surpass these limitations. A task is a structure that schedules an activity; think of it as a personal assistant whose sole job is to nag someone (or a group of someones) to do something.</p>
+
+
+
+<p>In order to match tasks up with people, we house tasks inside <a href="#TaskGroup">Task Groups</a>. A task group instance contains a set of pending tasks, and a set of people to give those tasks to. Each task belongs to exactly one task group, while each character can belong to any number of task groups. When a character is added to a task group, its Task Group Action is injected into their AI. When a new task is created, the Task Action is injected into the AI of every character belonging to the group, and runs under the group's Task Group Action.</p>
+
+
+
+<h3><a name="PersonalTaskGroups"></a>Personal task groups</h3>
+
+
+
+<p>Each character can (and usually does) have "personal" task groups that only include the character themself. For example, this is used to issue basic need tasks (eating / sleeping / recovery) as shown above, or to issue move orders to military units. By convention, task groups that are intended to be personal are prefixed with "solo".</p>
+
+
+
+<p>Personal task groups are declared in AI packs, as described above, and are accessed from the <code>stonehearth:ai</code> component via its <code>get_task_group()</code> method.</p>
+
+
+
+<h3><a name="TownTaskGroups"></a>Town task groups</h3>
+
+
+
+<p>In addition to personal task groups, there are task groups managed by the town, which potentially include multiple characters. Building and farming task groups are examples of this. Other systems can get these task groups from the town and issue tasks in them. These task groups are declared in a task groups JSON file (e.g. <code>player_task_groups.json</code>) and referenced in the population faction JSON (e.g. <code>ascendancy_population.json</code>). Characters are added to these task groups if their job description specifies the group under <code>task_groups</code> (e.g. <code>farmer_description.json</code>).</p>
+
+
+
+<h3><a name="AdHocTaskGroups"></a>Ad hoc task groups</h3>
+
+
+
+<p>Certain systems create temporary task groups to dispatch tasks to temporary groupings of hearthlings. An example for this is combat parties, which creates a task group to dispatch commands to everyone in the party.</p>
+
+
+
+<h2><a name="IssuingTasks"></a>Issuing tasks</h2>
+
+
+
+<p>Systems that want to issue tasks need to get the task group (a personal one from the AI component, a town one from <code>Town</code>, or an ad hoc one created elsewhere), then call <code>create_task()</code>, passing the activity and arguments. Only activities declared by that task group action (as described earlier in this page) are allowed, and if the task group does not declare the task as a "multiple", only one instance of the task can be issued at a time. When a task is created, it starts off in a paused state, and the caller can configure it before calling <code>start()</code>, which dispatches it to the characters belonging to its group. Configuration methods include:</p>
+
+
+
+<ul>
+    <li><strong>times(n)</strong> -- Specifies that the task should be finished this many times before being considered done. By default, tasks will continue being performed indefinitely.</li>
+    <li><strong>once()</strong> -- A shorthand for times(1).</li>
+    <li><strong>set_annotation(text)</strong> -- Specifies text associated with the task for debugging.</li>
+    <li><strong>set_source(object)</strong> -- Specifies an object considered the source of the task for debugging.</li>
+    <li><strong>notify_completed(cb)</strong>, <strong>notify_interrupted(cb)</strong>, <strong>notify_destroyed(cb)</strong> -- Adds a callback for when the task is completed, interrupted, or destroyed, respectively.</li>
+</ul>
+
+
+
+<p>Tasks can be added to task groups at any time, even when the task group doesn't have people in it yet.</p>
+
+
+
+<p>For example, the shepherd pasture component will create a task for all shepherds in the town to feed animals when the animals become hungry. From <code>shepherd_pasture_component.lua</code>:</p>
+
+
+
+<pre><code>  local feed_task = town:get_task_group('stonehearth:task_groups:herding')
+                          :create_task('stonehearth:feed_pasture_animals', {pasture = self._entity})
+                          :set_source(self._entity)
+                          :start()
+</code></pre>
+
+<p>Remember to declare your task groups in the <strong>"aliases"</strong> sections of your manifest.</p>
+
+
+
+<h2><a name="Persistence"></a>Persistence</h2>
+
+
+
+<p>None of the AI state is persisted into savegames, which means several things, including:</p>
+
+
+
+<ul>
+    <li>Characters will not resume what they were doing when you reload a savegame.</li>
+    <li>If an AI thread got into a bad state, it will be reset on reload (good for playing, bad for debugging).</li>
+    <li>When reloading, you are responsible for recreating any <a href="#Tasks">tasks</a> that were active when the game was saved.</li>
+</ul>
 
    
 </div>

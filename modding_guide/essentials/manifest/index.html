@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,9 +1189,33 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>The manifest</div>
-   <p><h2><a name="YourFirstMod"></a>Your first mod</h2></p>
+   <ul>
+    <li><a href="#YourFirstMod">Your first mod</a></li>
+    <li><a href="#TheManifest">What is the manifest?</a>
+    <ul>
+        <li><a href="#OptionalFields">Optional fields</a></li>
+    </ul></li>
+    <li><a href="#Structure">Structure of the manifest</a>
+    <ul>
+        <li><a href="#Aliases">The aliases</a></li>
+        <li><a href="#MixintosOverrides">Mixintos and Overrides</a></li>
+        <li><a href="#Functions">Functions</a></li>
+        <li><a href="#Controllers">Controllers</a></li>
+        <li><a href="#Components">Components</a></li>
+        <li><a href="#UI">UI</a></li>
+        <li><a href="#Locales">Locales</a></li>
+        <li><a href="#Dependencies">Dependencies</a></li>
+        <li><a href="#DeprecatedAliases">Deprecated aliases</a></li>
+        <li><a href="#Other">Other sections</a></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="YourFirstMod"></a>Your first mod</h2>
+
 
 <p>To start making your mod, create a folder inside the Stonehearth/mods directory. You can name the folder however you want, but it can ONLY contain alphanumeric characters, hyphens and underscores. We also tend to use lowercase only for the folder name.</p>
 
@@ -1166,7 +1400,7 @@ It can only contain alphanumeric characters, hyphens and underscores. Usually th
 <h3><a name="UI"></a>UI</h3>
 
 
-<p>This section of the manifest declares the files that define the different UI views. It contains keys for lists of all the HTML files, Javascript (js) files, and Less files (a variant of CSS).</p>
+<p>This section of the manifest declares the files that define the different UI views. It contains keys for lists of all the HTML files, Javascript (.js) files, and Less files (a variant of CSS).</p>
 
 
 
@@ -1212,6 +1446,17 @@ At the same level than "info", "default_locale", etc. we can add this array list
 
 
 
+<h3><a name="DeprecatedAliases"></a>Deprecated aliases</h3>
+
+
+<p>Deprecated aliases are for assets that devs wanted to replace while players already had versions of the assets. If they were to just delete the asset, then they would ruin save/load compatibility - or maybe it would load, but things would be broken. So by moving the original URI to this deprecated list, the original asset lives on but is no longer populated in new games. For example: the 'red_fox' originally used the rabbit's rig, but a fox doesn't really move like a rabbit. They decided to switch the fox over to the wolf rig, but when they first did this all pre-existing saves displayed horribly broken looking fox creatures. So instead they deprecated the asset and made a new fox, problem solved. Another example is when they updated many of the carpenter's assets, but that meant a lot of shape and color changes that people may not want instantly replaced in their homes.</p>
+
+
+
+<p>Modders should use this feature anytime they have a mod that is already out to the public but they want to make a change to an art asset that is drastic enough that a save file's old data will cause issues, or the visuals are distinctly different enough to warrant not wanting to force someone to have the new visuals instantly.</p>
+
+
+
 <h3><a name="Other"></a>Other sections</h3>
 
 
@@ -1219,7 +1464,7 @@ At the same level than "info", "default_locale", etc. we can add this array list
 
 
 
-<p>There will be documentation on how to create components, call handlers, UI views, etc. in the advanced sections of the guide.</p>
+<p>There will be documentation on how to create components, call handlers, UI views, etc. in the <a href="../../advanced/index.html">advanced sections</a> of the guide.</p>
 
    
 </div>

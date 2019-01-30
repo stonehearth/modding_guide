@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,14 +1189,28 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>How to debug your errors</div>
-   <p><p>While modding it is pretty common to break things accidentally, so here are a few tips for when you don't know why something's not working as intended:</p></p>
+   <ul>
+    <li><a href="#DebuggingTips">Debugging tips</a></li>
+    <li><a href="#DebuggingUI">Debugging the UI</a></li>
+    <li><a href="#QuickTesting">Testing your mods faster</a></li>
+    <li><a href="#Microworld">Microworld</a></li>
+    <li><a href="#LoadingSaves">Loading savefiles</a></li>
+</ul>
+
+
+
+<h2><a name="DebuggingTips"></a>Debugging tips</h2>
+
+
+<p>While modding it is pretty common to break things accidentally, so here are a few tips for when you don't know why something's not working as intended:</p>
+
 
 
 <ol>
     <li><p><strong>Take a look at the stonehearth.log file.</strong> It is inside the folder where Stonehearth is installed, and it gets overwritten every time you run the game.
-    If there's some file that couldn't be loaded properly, it will be mentioned in the log (sometimes errors will only appear inside the log, instead of popping up in the game). You can also output text to the stonehearth.log from within your mod's Lua files. <a href="https://discourse.stonehearth.net/t/how-to-log-from-your-mod/5222">Instructions</a>.</p></li>
+    If there's some file that couldn't be loaded properly, it will be mentioned in the log (sometimes errors will only appear inside the log, instead of popping up in the game). You can also output text to the stonehearth.log from within your mod's Lua files. <a href="../../advanced/logging/index.html#Logging">Instructions</a>.</p></li>
     <li><p><strong>Make sure that your mod is enabled</strong> before starting a game. If you had something wrong in your manifest, it might get marked as invalid or outdated in the Mods menu, and the game won't load your mod.</p></li>
     <li><p><strong>Verify your JSON files</strong> with <a href="https://jsonlint.com">JsonLint</a>. This will tell you if you had any missing or trailing commas, which is a common typo that will make the game not read your files correctly. You can also compare your JSON files with other files from the game with <a href="http://www.jsondiff.com/">JSON Diff</a>. This tool will tell you the differences even if the key-value pairs are in different order, it's good for checking if you've missed some key or value.</p></li>
     <li><p><strong>Search for typos in your aliases, or in your localization strings</strong>. They might have some wrong letter and therefore they reference something that doesn't exist, or you forgot to prefix your aliases with the correct namespace in your files. You can also open your mod with SHED and it will tell you if something's pointing to unexisting files. It's also common to forget to prefix the mixintos and overrides with the mod's namespace. <br/>
@@ -1045,14 +1269,13 @@ On extreme cases, it might be due to your user_settings.json (located inside the
     <img src="../../../images/essentials/debugging/inspected_element.png" alt="inspected_element"/></li>
     <li>You can also check for Javascript warnings and errors in the web console.
     <img src="../../../images/essentials/debugging/web_console.png" alt="web_console"/></li>
-    <li>And you can debug your Javascript code with the CEF debugger.
+    <li>And you can debug your Javascript code with the CEF debugger. Mind that sometimes it might become unresponsive and you might need to reload it.
     <img src="../../../images/essentials/debugging/cef_debugger.png" alt="cef_debugger"/></li>
 </ol>
 
 
 
 <h2><a name="QuickTesting"></a>Testing your mods faster</h2>
-
 
 
 <p>In order to test your mods more easily you can use the <strong>debugtools</strong> that come bundled with the game. Instructions on how to use them <a href="../debugtools/debugtools_mod/index.html">here</a>. Some of the commands from the default console can be used by shift+clicking an entity in the game. This is faster than having to type the command in the console.</p>
@@ -1082,12 +1305,11 @@ You can <strong>shorten the world generation</strong> step by adding this to you
 <h2><a name="Microworld"></a>Microworld</h2>
 
 
-<p>You can also create your own test worlds with the help of this mod. Can be found <a href="https://github.com/stonehearth/microworld">here</a>.
-This mod, once configured in your user_settings.json, will skip the main menu and load directly your test world, which is much faster.</p>
+<p>You can also create your own <a href="../../intermediate/testing/index.html">test worlds</a> with the help of this mod. Microworld, once configured in your user_settings.json, will skip the main menu and load directly your test world, which is much faster.</p>
 
 
 
-<h2>Loading savefiles</h2>
+<h2><a name="LoadingSaves"></a>Loading savefiles</h2>
 
 
 <p>If you want to fix save compatibility for your own mods, there's a faster way to load a specific savefile for testing. You can add these keys to your user_settings.json at the same level than your user_id:</p>
@@ -1099,7 +1321,7 @@ This mod, once configured in your user_settings.json, will skip the main menu an
   }
 </code></pre>
 
-<p>Remember to add commas where needed so that the JSON is still valid. The value for "load_game" should be the name of the folder of the savefile you want to load.</p>
+<p>Remember to add commas where needed so that the JSON is still valid. The value for <strong>"load_game"</strong> should be the name of the folder of the savefile you want to load.</p>
 
 
 

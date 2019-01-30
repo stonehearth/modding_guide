@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,7 +1189,7 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>Intermediate Modding</div>
    <p><p>Intermediate guide.</p></p>
 
@@ -1012,21 +1222,16 @@ From here on, we'll start delving into the Lua files, although a big part of thi
     <ol>
         <li><a href="jobs/crafting_jobs/index.html">Crafting jobs</a> : how to create a new crafting job.</li>
         <li><a href="combat_job/index.html">Combat jobs</a> : how to create a new combat job.</li>
-        <li><a href="#">Other jobs</a></li>
     </ol></li>
     <li><a href="kingdoms/index.html">Kingdoms</a> : how to add your own playable kingdoms to the game.</li>
     <li><a href="monsters/index.html">Critters and monsters</a> : how to create your own creatures.</li>
-    <li><a href="#">Campaigns</a> : how to add your own game master campaigns and encounters to the game.</li>
+    <li><a href="campaigns/index.html">Campaigns</a> : how to add your own game master campaigns and encounters to the game.
+    <ol>
+        <li><a href="campaigns/encounters/index.html">Generic encounters</a> : list of the existing encounter types and their fields.</li>
+    </ol></li>
     <li><a href="hotloading/index.html">Hotloading manifests</a> : how to apply manifests only under certain conditions.</li>
-    <li><a href="testing/index.html">Testing your mod</a> : how to use the Microworld, Stonehearth Tests and Stonehearth Autotests mods.</li>
+    <li><a href="testing/index.html">Testing your mod</a> : how to use the Microworld, Stonehearth Tests and Stonehearth Autotests mods. Lua profiler scripts.</li>
 </ol>
-
-
-
-
-<!--
-Optional 14. [SHED features](shed_other/index.html) : other features from SHED that can be useful for modding.
--->
 
    
 </div>

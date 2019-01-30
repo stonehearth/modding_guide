@@ -1,0 +1,1681 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Call handlers</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <a name="top"></a>
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">
+   <div class='page_title'>Call handlers</div>
+   <p><p>In this section we'll talk about what are call handlers and provide examples of usage. Existing call handlers can be found under <code>stonehearth/call_handlers</code>.</p></p>
+
+
+<ul>
+    <li><a href="#CallHandlers">What are call handlers?</a></li>
+    <li><a href="#LuaClientServer">Overview of the Lua client and server</a></li>
+    <li><a href="#Example1">Example 1: Client renderer through user interaction</a></li>
+    <li><a href="#Example2">Example 2: Zones</a>
+    <ul>
+        <li><a href="#AddingAZone">Adding a zone to the UI</a></li>
+        <li><a href="#DesignatingZone">Designating the zone in the client</a></li>
+        <li><a href="#CreatingZone">Creating the zone</a></li>
+        <li><a href="#AddingBehaviorToZone">Adding behavior to the zone</a></li>
+        <li><a href="#RenderingZone">Rendering the zone</a></li>
+        <li><a href="#SelectingZone">Selecting the zone</a></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="CallHandlers"></a>What are call handlers?</h2>
+
+
+<p>Most operations in the game are done through the hearthling AI or by manipulating values on an object, which results in a cascade of actions that result in changes to the game state. Sometimes, though, operations in the game belong to no single hearthling or object, and these are managed by services like farming or town.</p>
+
+
+
+<p>A <strong>call handler</strong> helps the UI call a function on one of these high-level services, triggering a sequence of actions. For examples, see the farming or the unit control services.</p>
+
+
+
+<h2><a name="LuaClientServer"></a>Overview of the Lua client and server</h2>
+
+
+<p>Lua is run in 2 places -- on the Lua server, where the bulk of the game is processed and run, and in a smaller Lua client, which handles rendering entities to the screen in user-interactable ways.</p>
+
+
+
+<p>For example, when the user selects an object to put in the world, the temporary item that is attached to the user's mouse is rendered in the Lua client, and the click to put it down in the world is caught by that client before the data itself (where the object will be put down, at what rotation, etc.) is sent to the server for processing. The ghost item that exists between when the user puts down the object and when a worker actually instantiates the object also exists only on the Lua client; as a result, the people in the world cannot see it and cannot interact with it.</p>
+
+
+
+<p>In some ways, you can think of the Lua client renderer as the realm of all the things that the player can see and interact with to play the game, but that do not actually exist within the simulation of the world.</p>
+
+
+
+<p>As a general rule, you can assume that the Lua client has all the same data as the server, but is read-only: new components cannot be created and data cannot be saved to existing data structures. Some things, like effects, cannot be created on the client at all.</p>
+
+
+
+<p>Here are some examples of communication between client and server using call handlers:</p>
+
+
+
+<h2><a name="Example1"></a>Example 1: Client renderer through user interaction</h2>
+
+
+<p>Let's say you want to draw something in the lua client due to some user interaction with the UI (for example, the user has clicked that they want to place a new item into the world).</p>
+
+
+
+<p>Start by adding a call handler with a "client" endpoint to the <strong>"functions"</strong> section of your mod's manifest (same level than "aliases" or "mixintos"):</p>
+
+
+
+<pre><code>  "functions": {
+     "choose_place_item_location": {
+        "controller": "file(call_handlers/place_item_call_handler.lua)",
+        "endpoint": "client"
+     }
+  }
+</code></pre>
+
+<p>This means that if the user calls to the <code>'stonehearth:choose_place_item_location'</code> address from the <a href="../ui/index.html">UI</a>, the <code>choose_place_item_location</code> function from <code>call_handlers/place_item_call_handler.lua</code> will be called. And this function will exist in the context of the Lua client, instead of the Lua server.</p>
+
+
+
+<p>The UI call might look like this:</p>
+
+
+
+<pre><code>  radiant.call('stonehearth:choose_place_item_location', data_function_is_expecting)
+     .done(function(o){
+      // Do something
+  });
+</code></pre>
+
+<p>And the function declaration itself inside <code>place_item_call_handler.lua</code> might look like this:</p>
+
+
+
+<pre><code>  function PlaceItemCallHandler:choose_place_item_location(session, response, item_uri)
+     self._cursor_entity = radiant.entities.create_entity(item_uri)
+     local re = _radiant.client.create_render_entity(RenderRootNode, self._cursor_entity)
+     -- ...calculate where the thing should appear...
+     self._cursor_entity:add_component('mob'):set_location_grid_aligned(pt)
+  end
+</code></pre>
+
+<p>This bit of code will create an entity in the renderer and put it in the world at the associated point. Later, the entity can be destroyed with:</p>
+
+
+
+<pre><code>  _radiant.client.destroy_authoring_entity(self._cursor_entity:get_id())
+</code></pre>
+
+<p>For more information about capturing the mouse and mouse clicks, see <code>move_unit_call_handler.lua</code>.</p>
+
+
+
+<p>For client rendering on entities see <a href="../components_controllers/components_renderers/index.html#ComponentRenderers">component renderers</a>.</p>
+
+
+
+<h2><a name="Example2"></a>Example 2: Zones</h2>
+
+
+<p>A zone is an area of the game that the player (or DM) has earmarked for a particular purpose. Zones may appear only in zone view, or they may also have an in-game appearance. For example: farms, stockpiles, trapping zones, etc.</p>
+
+
+
+<p>Zones are created by the player from the UI. Usually, once they are created, their associated components fire off tasks that instruct any available people in a task group to tend to the zone (or whatever is in it).</p>
+
+
+
+<h3><a name="AddingAZone"></a>Adding a zone to the UI</h3>
+
+
+<p>These are instructions on how would it have been to add the pasture zone via a mod.</p>
+
+
+
+<p>The start menu is defined in <code>stonehearth/data/ui/start_menu.json</code>. First we'll need to create a mixinto to add a new entry to the zones section (it's the most suitable place for consistency):</p>
+
+
+
+<pre><code>  "mixintos" : {
+     "/stonehearth/data/ui/start_menu.json" : "file(data/ui/start_menu.json)"
+  }
+</code></pre>
+
+<p>Our mixinto would look like this:</p>
+
+
+<pre><code>  {
+     "zone_menu": {
+        "items": {
+           "create_pasture": {
+              "name": "i18n(stonehearth:ui.game.menu.zone_menu.items.create_pasture.display_name)",
+              "description": "i18n(stonehearth:ui.game.menu.zone_menu.items.create_pasture.description)",
+              "required_job": "stonehearth:jobs:shepherd",
+              "required_job_text": "i18n(stonehearth:ui.game.menu.zone_menu.items.create_pasture.required_job_text)",
+              "class": "button",
+              "icon": "/stonehearth/ui/game/start_menu/images/zone_pasture.png",
+              "sticky": true,
+              "hotkey_action": "zone:pasture"
+           }
+        }
+     }
+  }
+</code></pre>
+
+<p><img src="../../../images/common/gold.png" alt="icon"/><a name="StartMenu"></a>Notice that we can mixinto the <code>start\_menu.json</code> file to add any new option to the start menu. There are some optional fields, like <strong>"required_job"</strong> and <strong>"required_job_text"</strong> which are only used in zones to disable them until the player has promoted someone to that job. For the crafting menu, they'll work right away, but for the rest of options it's tricky since it involves UI files.</p>
+
+
+
+<p>The name of the entry (<code>create_pasture</code> in the example above) will become the action that is called when that item is chosen (alternatively, some menus have a <strong>"menu_action"</strong> field with the action to be called). The handlers for these actions are in <code>stonehearth/ui/game/start_menu/start_menu.js</code>:</p>
+
+
+
+<pre><code>  menuActions: {
+     // ...
+     create_pasture : function () {
+        App.stonehearthClient.createPasture();
+     },
+     // ...
+</code></pre>
+
+<p>In this case, the <code>create_pasture</code> function calls another function defined in <code>stonehearth/ui/root/js/stonehearth/stonehearth_client.js</code>:</p>
+
+
+
+<pre><code>  createPasture: function() {
+     var self = this;
+
+     App.setGameMode('zones');
+     var tip = self.showTip('stonehearth:ui.game.menu.zone_menu.items.create_pasture.tip_title',
+           'stonehearth:ui.game.menu.zone_menu.items.create_pasture.tip_description', { i18n: true });
+
+     // We call a client-side operation that allows the player to draw out the zone
+     return this._callTool('createPasture', function() {
+        // We call a client function to create the zone and return it
+        return radiant.call('stonehearth:choose_pasture_location')
+           .done(function(response) {
+              radiant.call('radiant:play_sound', {'track' : 'stonehearth:sounds:place_structure'} );
+              // The UI will then select it
+              radiant.call('stonehearth:select_entity', response.pasture);
+              // Call the tool again in case the player wants to keep drawing pastures
+              self.createPasture();
+           })
+           .fail(function(response) {
+              self.hideTip(tip);
+           });
+     });
+  },
+</code></pre>
+
+<p><img src="../../../images/common/edit_big.png" alt="icon"/>Now you'll be wondering, if the functions are read from <code>start_menu.js</code>, how can we add a custom function for our new menu to it, from our mod? See <a href="../ui/index.html#AddingToExistingViews">this page</a> to solve your doubts.</p>
+
+
+
+<h3><a name="DesignatingZone"></a>Designating the zone in the client</h3>
+
+
+<p>The UI called a client side Lua function to draw the zone. This function is declared in the <strong>"functions"</strong> section of the manifest:</p>
+
+
+
+<pre><code>  "functions": {
+     "choose_pasture_location": {
+        "controller" : "file(call_handlers/shepherd_call_handler.lua)",
+        "endpoint" : "client"
+     }
+  }
+</code></pre>
+
+<p>The call handler function looks like this:</p>
+
+
+
+<pre><code>  function ShepherdCallHandler:choose_pasture_location(session, response)
+     stonehearth.selection:select_designation_region(stonehearth.constants.xz_region_reasons.PASTURE)
+        :set_min_size(10)
+        :set_max_size(50)
+        :require_unblocked(false)
+        :use_designation_marquee(Color4(56, 80, 0, 255))
+        :set_find_support_filter(stonehearth.selection.valid_terrain_blocks_only_xz_region_support_filter({
+              grass = true,
+              dirt = true
+           }))
+        :set_can_contain_entity_filter(function(entity)
+              -- avoid other designations.
+              if radiant.entities.get_entity_data(entity, 'stonehearth:designation') then
+                 return false
+              end
+              if entity:get_component('terrain') then
+                 return false
+              end
+              return true
+           end)
+        :set_cursor('stonehearth:cursors:zone_pasture')
+        :done(
+           function(selector, box)
+              local size = {
+                 x = box.max.x - box.min.x,
+                 z = box.max.z - box.min.z,
+              }
+              _radiant.call('stonehearth:create_pasture', box.min, size)
+                 :done(
+                    function(r)
+                       response:resolve({ pasture = r.pasture })
+                    end
+                 )
+                 :always(
+                    function()
+                       selector:destroy()
+                    end
+                 )
+           end
+        )
+        :fail(
+           function(selector)
+              selector:destroy()
+              response:reject('no region')
+           end
+        )
+        :go()
+  end
+</code></pre>
+
+<p>Note that it runs on the client (client endpoint), and will only have access to client-available Lua items.</p>
+
+
+
+<p>The function allows the player to click in the world and designate a zone. It will draw the zone according to the Color4(r, g, b, a) you pass in.</p>
+
+
+
+<p>Once the player releases the mouse, this function calls a server function to actually create the zone. Since we're communicating between client and server, it'll need to be defined in a call handler too.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/>Note that for these examples we're using the stonehearth namespace, you'd be using your mod namespace when writing this in your code. Make sure to change any references that should point to your mod, if you're making a custom type of zone.</p>
+
+
+
+<h3><a name="CreatingZone"></a>Creating the zone</h3>
+
+
+<p>The function to create the zone lives on the server:</p>
+
+
+
+<p><code>_radiant.call('stonehearth:create_pasture', box.min, size)</code>.</p>
+
+
+
+<p>It is also declared under <strong>"functions"</strong> in the manifest, but has a server endpoint:</p>
+
+
+
+<pre><code>  "create_pasture": {
+     "controller" : "file(call_handlers/shepherd_call_handler.lua)",
+     "endpoint" : "server"
+  },
+</code></pre>
+
+<p>And it looks like this:</p>
+
+
+
+<pre><code>  function ShepherdCallHandler:create_pasture(session, response, location, size)
+     validator.expect_argument_types({'Point3', 'table'}, location, size)
+     validator.expect.num.range(size.x, 10, 50)
+     validator.expect.num.range(size.z, 10, 50)
+
+     local entity = stonehearth.shepherd:create_new_pasture(session, location, size)
+     return { pasture = entity }
+  end
+</code></pre>
+
+<p>Usually, the actual zone is created by an appropriate service (initialized in <code>stonehearth/stonehearth_server.lua</code>). Since it's a zone, it will need region components for collision and size. In this case the function is in the shepherd service, and looks like this:</p>
+
+
+
+<pre><code>  function ShepherdService:create_new_pasture(session, location, size)
+     -- A little sanitization: what we get from the client isn't exactly a Point3
+     location = Point3(location.x, location.y, location.z)
+     local entity = radiant.entities.create_entity('stonehearth:shepherd:shepherd_pasture', { owner = session.player_id })
+     self:_add_region_components(entity, size)
+
+     local pasture_component = entity:get_component('stonehearth:shepherd_pasture')
+     pasture_component:set_size(size.x, size.z)
+     radiant.terrain.place_entity_at_exact_location(entity, location)
+
+     return entity
+  end
+</code></pre>
+
+<p>(You can check how to create services <a href="../services/index.html">here</a>).</p>
+
+
+
+<p>The entity itself (<code>stonehearth:shepherd:shepherd_pasture</code>) is defined as an alias in the manifest.</p>
+
+
+
+<p>Its JSON looks like this:</p>
+
+
+
+<pre><code>  {
+     "type": "entity",
+     "components": {
+        "destination": {
+           "adjacency_flags": [
+              "center"
+           ]
+        },
+        "stonehearth:shepherd_pasture": {
+           "check_for_strays_interval": "6h",
+           "default_type": "stonehearth:sheep",
+           "pasture_data": {
+              "stonehearth:sheep": {
+                 "name": "i18n(stonehearth:ui.game.zones_mode.pasture.sheep_pasture_name)",
+                 "description": "i18n(stonehearth:ui.game.zones_mode.pasture.sheep_pasture_description)",
+                 "icon": "/stonehearth/entities/critters/sheep/sheep.png",
+                 "min_population": 2,
+                 "reproduction_uri": "stonehearth:sheep:young",
+                 "max_num_per_10_square_unit": 0.48,
+                 "base_reproduction_period": "36h",
+                 "min_reproduction_period": "12h",
+                 "feed_uri": "stonehearth:food:sheep_feed"
+              },
+              "stonehearth:rabbit": {
+                 "name": "i18n(stonehearth:ui.game.zones_mode.pasture.rabbit_pasture_name)",
+                 "description": "i18n(stonehearth:ui.game.zones_mode.pasture.rabbit_pasture_description)",
+                 "icon": "/stonehearth/entities/critters/rabbit/rabbit.png",
+                 "min_population": 2,
+                 "max_num_per_10_square_unit": 1,
+                 "base_reproduction_period": "18h",
+                 "min_reproduction_period": "8h",
+                 "feed_uri": "stonehearth:food:rabbit_feed"
+              },
+              "stonehearth:poyo": {
+                 "name": "i18n(stonehearth:ui.game.zones_mode.pasture.poyo_pasture_name)",
+                 "description": "i18n(stonehearth:ui.game.zones_mode.pasture.poyo_pasture_description)",
+                 "icon": "/stonehearth/entities/critters/poyo/poyo.png",
+                 "reproduction_uri": "stonehearth:poyo:egg",
+                 "min_population": 2,
+                 "max_num_per_10_square_unit": 1,
+                 "base_reproduction_period": "24h",
+                 "min_reproduction_period": "10h",
+                 "feed_uri": "stonehearth:food:poyo_feed"
+              }
+           }
+        }
+     },
+     "entity_data": {
+        "stonehearth:designation": {
+           "allow_placed_items": true
+        },
+        "stonehearth:territory": {
+           "marks_territory": true
+        },
+        "stonehearth:catalog": {
+           "display_name": "i18n(stonehearth:jobs.shepherd.shepherd_pasture.display_name)",
+           "description": "i18n(stonehearth:jobs.shepherd.shepherd_pasture.description)"
+        }
+     }
+  }
+</code></pre>
+
+<p>You'll notice that the pasture has a component. This component is necessary to give the zone functionality. The zone will also need a renderer in order to appear properly in the world.</p>
+
+
+
+<h3><a name="AddingBehaviorToZone"></a>Adding behavior to the zone</h3>
+
+
+<p>First, let's look at the zone's component. This is a pretty standard component. It saves important data into it's _sv variable. Usually, it also spits out tasks that are given to the <a href="../ai/index.html#TaskGroup">task group</a> that is responsible for the zone.</p>
+
+
+
+<p>The zone's component is declared in the manifest.json under <strong>"components"</strong>:</p>
+
+
+
+<pre><code>  "shepherd_pasture" : "file(components/shepherd_pasture/shepherd_pasture_component.lua)"
+</code></pre>
+
+<h3><a name="RenderingZone"></a>Rendering the zone</h3>
+<p>If there is a renderer that is named identically to a component, the renderer will be associated with that component. In this case, since the zone has no Qubicle model, it relies on a renderer to draw itself.</p>
+
+
+
+<p>In the example above, the component is named <code>shepherd_pasture</code>, so we can declare a renderer in the manifest's <a href="../components_controllers/components_renderers/index.html#ComponentRenderers">component_renderer</a>'s section that looks like this:</p>
+
+
+
+<pre><code>  "component_renderers" : {
+     "shepherd_pasture" : "file(renderers/shepherd_pasture/shepherd_pasture_renderer.lua)"
+  }
+</code></pre>
+
+<p>The renderer has access to any data saved in the component's _sv variable. See <code>stonehearth/renderers/shepherd_pasture/shepherd_pasture_renderer.lua</code> for examples.</p>
+
+
+
+<h3><a name="SelectingZone"></a>Selecting the zone</h3>
+
+
+<p>When the UI gets the zone back from the creation process, it should then select the zone so that any zone related config can happen. To do this, make sure the UI calls:</p>
+
+
+
+<pre><code>  radiant.call('stonehearth:select_entity', response.zone_name);
+</code></pre>
+
+<p>In <code>stonehearth/ui/game/modes/zones_mode/zones_mode.js</code> there's the <code>_examineEntity</code> function. You'll need to add another <code>if</code> to it so that it shows your custom UI view when selecting your new zone. Make sure that your UI view extends <code>StonehearthBaseZonesModeView</code> so that it has the common functionality for zones.</p>
+
+
+
+<p>Also, make sure the zone type is registered as a zone in <code>stonehearth/ui/game/modes/mode_manager.js</code>'s <code>_getModeForEntity</code> function.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/>At the moment this guide was written, the <a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1577375188">ACE</a> mod overrides <code>mode_manager.js</code> to make it easier to change the UI mode based on selected entities. If you base your code in that, players will need to have the ACE mod installed and enabled in order to play your mod.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,9 +1189,19 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>Managing mods</div>
-   <p><h2>Where to get mods</h2></p>
+   <ul>
+    <li><a href="#WhereToGetMods">Where to get mods</a></li>
+    <li><a href="#SetupMods">How to install, uninstall, upload and update mods</a></li>
+    <li><a href="#EnableDisable">How to enable / disable mods</a></li>
+    <li><a href="#RequiredMods">Required mods</a></li>
+</ul>
+
+
+
+<h2><a name="WhereToGetMods"></a>Where to get mods</h2>
+
 
 <p>Mods can be downloaded from the official Stonehearth Discourse, a list of the current mods can be found here: <a href="https://discourse.stonehearth.net/c/modding/current-mods">https://discourse.stonehearth.net/c/modding/current-mods</a>. This list may not always be completely up to date, however.</p>
 
@@ -995,7 +1215,7 @@
 
 
 
-<h2>How to install, uninstall, upload and update mods</h2>
+<h2><a name="SetupMods"></a>How to install, uninstall, upload and update mods</h2>
 
 
 <p>Instructions for <strong><a href="workshop/index.html">Steam Workshop mods</a></strong>.</p>
@@ -1013,7 +1233,7 @@
 
 
 
-<p>Click on the "Mods" button while in the Main Menu, and there will be a list with all the mods you have installed. If you use Steam, there will be separate lists for Local mods, Subscribed Workshop mods, and mods that you uploaded to the Steam Workshop.</p>
+<p>Click on the "Mods" button while in the Main Menu, and there will be a list with all the mods you have installed. If you're logged to Steam, there will be separate lists for Local mods, Subscribed Workshop mods, and mods that you uploaded to the Steam Workshop.</p>
 
 
 
@@ -1037,18 +1257,22 @@
 
 
 
-<h2>Required mods</h2>
+<h2><a name="RequiredMods"></a>Required mods</h2>
 
 
-<p>The default mods that come with the game are <code>stonehearth</code>, <code>rayyas_children</code>, <code>northern_alliance</code>, <code>radiant</code> and <code>debugtools</code>. They are highlighted in gray in the Mods menu. </p>
+<p>The default mods that come with the game are <code>stonehearth</code>, <code>rayyas_children</code>, <code>northern_alliance</code> and <code>radiant</code>. They are highlighted in gray in the Mods menu.</p>
 
 
 
-<p>The <code>radiant</code> and <code>stonehearth</code> mods are required, so you won't be able to disable them in the Mods menu. The <code>debugtools</code> mod is a debug mod, it comes disabled by default, but modders can enable it to help debugging their mods. </p>
+<p>The <code>radiant</code> and <code>stonehearth</code> mods are required, so you won't be able to disable them in the Mods menu.</p>
 
 
 
 <p>If you accidentally delete any of the required mods, you'll have to redownload them for the game to work correctly.</p>
+
+
+
+<p>There are other mods that come bundled with the game but are disabled by default: <code>debugtools</code>, <code>autotest_framework</code>, <code>stonehearth_autotest</code>, <code>microworld</code> and <code>stonehearth_tests</code>. They are tagged as Debug mods in the menu. Modders can enable them to help debugging their mods.</p>
 
    
 </div>

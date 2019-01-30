@@ -226,3 +226,28 @@ header p {
    float: right;
    margin-right: 20px;
 }
+
+#divTop {
+    width: 65px;
+    height: 65px;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    z-index: 99;
+    /*background-color: #f9bf3a;*/
+    background: #f9bf3a url(../images/common/morale_bar_arrow.png) 10px 5px no-repeat;
+    /*<img src="#{= path_to('images/common/morale_bar_arrow.png') }#"</img>*/
+    min-width: 50px;
+    min-height: 50px;
+    border-radius: 15px;
+}
+
+#linkTop {
+    display: inline-block;
+    width: 100%;
+    line-height: 95px;
+    font-family: "adelle",Georgia,"Times New Roman",serif;
+    color: black;
+    font-size: 20px;
+}

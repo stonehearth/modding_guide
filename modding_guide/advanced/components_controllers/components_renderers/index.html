@@ -1,0 +1,1370 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Components</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <a name="top"></a>
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">
+   <div class='page_title'>Components</div>
+   <p><p>As explained in the <a href="../../../essentials/entities_components/index.html#Components">essentials guide</a>, components are reusable functionality that defines behaviors for entities. You can find the Lua components under <code>stonehearth/components</code>.</p></p>
+
+
+<ul>
+    <li><a href="#Design">Designing a component</a></li>
+    <li><a href="#AddingComponents">Adding new components</a></li>
+    <li><a href="#UsingComponents">Using components</a>
+    <ul>
+        <li><a href="#AddOrGet">When to use "get_component" vs "add_component"</a></li>
+    </ul></li>
+    <li><a href="#ComponentRenderers">Component renderers</a></li>
+</ul>
+
+
+
+<h2><a name="Design"></a>Designing a component</h2>
+
+
+<p>Components should ideally be collections of re-usable functionality. When deciding how to structure functionality associated with an entity, keep some things in mind:</p>
+
+
+
+<ul>
+    <li><p>Can this component be made more generic? For example, both beds and firepit seats require a reservation mechanism, so only one person can use each piece of furniture at a time. Instead of creating a bed reservation component and a firepit seat reservation component, we create one lease component shared amongst all lease-able things.</p></li>
+    <li><p>Is this component containing only read-only data? If so, consider putting some of that into "entity_data", instead of "components". You can access that data from inside the component later, for example:</p>
+
+<pre><code>local foo = radiant.entities.get_entity_data(chair, "stonehearth:appeal").appeal
+</code></pre></li>
+</ul>
+
+
+
+<h2><a name="AddingComponents"></a>Adding new components</h2>
+
+
+<p>All Lua components are classes, and look something like this:</p>
+
+
+
+<pre><code>  local MyComponent = class()
+
+  -- The initialize function is always called
+  function MyComponent:initialize()
+    -- The json variable will contain the associated component data 
+    -- from the entity's .json file
+    local json = radiant.entities.get_json(self)
+    -- The saved variables on the component must be declared
+    -- in the initialize function. Even nil variables!
+    self._sv.first_saved_variable = nil
+    self._sv.second_saved_variable = 'test string'
+    self._sv._unremoted_save_variable = json.my_json_data_variable
+  end
+
+  function MyComponent:getter_or_setter()
+  end
+
+  function MyComponent:other_functions()
+  end
+
+  return MyComponent
+</code></pre>
+
+<p><img src="../../../../images/common/edit_big.png" alt="icon"/>All components have a <code>self._entity</code> field that is the entity that the component is created on. We can use <a href="../index.html#SV">saved variables</a> and <a href="../index.html#ControllerLifecycle">lifecycle functions</a> in them.</p>
+
+
+
+<p>You can add Lua implemented components to JSON files by giving the name of the component (prefixed by the mod's namespace plus a colon) to the <strong>"components"</strong> section of the entity's JSON file. For example, this is the workshop component (implemented in <code>workshop_component.lua</code>) from <code>carpenter_workbench.json</code>:</p>
+
+
+
+<pre><code>  "components" : {
+     "stonehearth:workshop": {
+        "job_alias": "stonehearth:jobs:carpenter"
+     }
+  }
+</code></pre>
+
+<p>Any data that is given to the component in the JSON file can be retrieved using the call <code>radiant.entities.get_json(self)</code>.</p>
+
+
+
+<p>Finally, to access the component, it must be referenced in your mod's manifest, inside the <strong>"components"</strong> section (which is at the same level than "aliases", "mixintos", etc). For example:</p>
+
+
+
+<pre><code>  "components" :  {
+     "workshop" : "file(components/workshop_component.lua)",
+     "crafter"  : "file(components/crafter_component.lua)"
+  }
+</code></pre>
+
+<p>We can also create client components, which are treated like <a href="../controllers/index.html#ClientControllers">client controllers</a>. We'll declare them under <strong>"client_components"</strong> in the manifest, instead.</p>
+
+
+
+<h2><a name="UsingComponents"></a>Using components</h2>
+
+
+<p>Once you have a reference to an entity, usually generated by the creation of the entity, you can then access its components through:</p>
+
+
+
+<pre><code>  local comp = entity:get_component('stonehearth:workshop')
+</code></pre>
+
+<p>For the Lua components, the name that we pass will be the namespace of the mod, a colon, and the component's name as defined in the manifest (same structure than in the entities JSON files). Note that the C++ components are used without a namespace (for example the <code>mob</code> and <code>render_info</code> components).</p>
+
+
+
+<p>You can then perform any actions on the <code>comp</code> variable that are implemented on that object. For example:</p>
+
+
+
+<pre><code>  local workbench = comp:get_entity()
+  comp:start_crafting_progress(order)
+</code></pre>
+
+<h3><a name="AddOrGet"></a>When to use "get_component" vs "add_component"</h3>
+<p>Use <code>get_component()</code> when you need to test for the presence of a component. This is typically used to see if an entity plays a certain role. For example, the entity is used as a mining zone if this returns a non-nil value:</p>
+
+
+
+<pre><code>  entity:get_component('stonehearth:mining_zone')
+</code></pre>
+
+<p>Use <code>add_component()</code> when the component must exist and it will be created if necessary:</p>
+
+
+
+<pre><code>  entity:add_component('stonehearth:mining_zone'):get_region()
+</code></pre>
+
+
+<h2><a name="ComponentRenderers"></a>Component renderers</h2>
+<p>A component renderer is what you would use to create some kind of visual representation related to a component.</p>
+
+
+
+<p>Stonehearth doesn't really render entities per se, because entities aren't really anything per se - they're bags of components (data and functionality). So, if you want something visual to show up, you need a renderer (or two!) attached to that object, and that means a component renderer.</p>
+
+
+
+<p>(Caveat: hearthlings and goblins and deer and etc. don't appear to have renderers associated with them, but really they do - they're in C++, though, not Lua. They're added by virtue of those entities having <strong>render_info</strong> components added to them).</p>
+
+
+
+<p>A component renderer will get initialized on the client with the owning entity and component; it's then up to the component to figure out what it wants to render and how. A good example of a simple component renderer can be found in <code>stonehearth/renderers/stockpile/stockpile_renderer.lua</code>. There, we take information about the stockpile from the stockpile component (the size of it, as well as the items inside it), and use that to construct the 2D stockpile area that's visible in stockpile placement mode.</p>
+
+
+
+<p>A more complicated example would be <code>structure_renderer.lua</code>, which deals with the various rpg/cutaway vision modes for building, constructing multiple renderable things for both the visual of the structure, as well as its shadow volume (so that even buildings with walls cut away cast appropriate shadows).</p>
+
+
+
+<p>Component renderers are declared under <strong>"component_renderers"</strong> in your manifest (same level than "aliases", "components", etc). They have the same name than the component they render. For instance:</p>
+
+
+
+<pre><code>  "components" : {
+     "stockpile" : "stockpile": "file(components/stockpile/stockpile_component.lua)"
+  },
+  "component_renderers" : {
+     "stockpile": "file(renderers/stockpile/stockpile_renderer.lua)"
+  }
+</code></pre>
+
+<p><a name="InvariantRenderers"></a>You might also see a section in the stonehearth manifest called <strong>"invariant_renderers"</strong>, but modders don't need to worry about it.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

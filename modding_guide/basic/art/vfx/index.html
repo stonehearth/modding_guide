@@ -1,0 +1,1384 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Creating effects</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <a name="top"></a>
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">
+   <div class='page_title'>Creating effects</div>
+   <p><p>Effects in Stonehearth refer to any visual effect, like animations, particle effects, lights, etc. and also to sound effects. For color maps and material maps (which use shaders) see <a href="../../color_maps/index.html">this page</a>.</p></p>
+
+
+<p>For programmers, the effects code is in <code>radiant/modules/effects.lua</code>, and the different types of effects we can have are inlined in <code>radiant/modules/effects/effect_tracks.lua</code>, but the actual implementation of the effects is mostly in C++.</p>
+
+
+
+<p>In the stonehearth mod, we can find most of the effects that the game uses inside <code>stonehearth/data/effects</code>. For animation effects, they're stored in some of the subdirectories of <code>stonehearth/data/rigs</code>.</p>
+
+
+
+<p><img src="../../../../images/common/gold.png" alt="icon"/> Here's a handy conversor for colors, since for effects they're specified as a range from 0 to 1, so you'll have to convert their hex/RGB value to decimal (the rest of the game uses hexadecimal values most of the times): <a href="http://www.corecoding.com/utilities/rgb-or-hex-to-float.php">http://www.corecoding.com/utilities/rgb-or-hex-to-float.php</a></p>
+
+
+
+<ul>
+    <li><a href="#Effects">The effect file</a>
+    <ul>
+        <li><a href="animations/index.html">Animations</a>
+        <ul>
+            <li><a href="animations/anim_existing/index.html">For existing rigs</a></li>
+            <li><a href="animations/anim_custom/index.html">For custom rigs</a></li>
+        </ul></li>
+        <li><a href="cubemitters/index.html">Particle effects</a></li>
+        <li><a href="animated_lights/index.html">Light effects</a></li>
+        <li><a href="other_effects/index.html">Other effects</a></li>
+    </ul></li>
+    <li><a href="#TypesOfValues">Types of values for particle and light effects</a></li>
+    <li><a href="#EffectsList">How to attach a default effect to an entity</a></li>
+    <li><a href="#Testing">Testing effects</a></li>
+    <li><a href="#SHED">Using SHED</a></li>
+</ul>
+
+
+
+<h2><a name="Effects"></a>The effect file</h2>
+
+
+<p>This file will determine the position and effect tracks.
+Let's take a look at <code>stonehearth/data/poof_effect/poof_effect.json</code>:</p>
+
+
+
+<pre><code>  {
+     "type" : "effect",
+     "tracks": {
+        "dust": {
+           "type": "cubemitter",
+           "cubemitter": "particles/dust_poof/purple_dust_poof.cubemitter.json",
+           "loop": false,
+           "start_time" : 0,
+           "end_time" : 2000,
+           "transforms": {
+              "x":0,
+              "y":0,
+              "z":0,
+              "rx":90,
+              "ry":0,
+              "rz":0
+           }
+        },
+        "sound": {
+           "type": "sound_effect",
+           "start_time": 150,
+           "min_distance": 27,
+           "falloff" : 5,
+           "volume": 60,
+           "track" : "stonehearth:sounds:death_poof"
+        }
+     }
+  }
+</code></pre>
+
+<p>The effect files are JSON files composed by two keys:</p>
+
+
+
+<ul>
+    <li><strong>"type" : "effect"</strong> : we tell the game that this is a VFX.</li>
+    <li><strong>"mixins"</strong> -- optional field pointing to a mixin or an array of mixins, if you want to reuse some info between effect files.</li>
+    <li><strong>"tracks" : {...}</strong> : here we declare all the tracks that the VFX will have. They can be of different type.
+    You can name each track however you want (keep the names unique for clarity). Inside each track, we declare the type of the track and the parameters for the track. In this example we have a particle effect and a sound effect. Both will be played at the same time (depending on their start_time) whenever the game runs this effect.</li>
+</ul>
+
+
+
+<p><img src="../../../../images/common/row_alert2.png" alt="icon"/> Be careful when setting loop for effect tracks. If you play an animation in an AI action and it has loop set to true, the AI action might not be able to finish and will be stuck repeating the effect indefinitely.</p>
+
+
+
+<p>There are different types of effect tracks, discussed in this guide. The most common ones are <strong><a href="cubemitters/index.html">"cubemitter"</a></strong>, <strong><a href="animations/index.html">"animation_effect"</a></strong>, <strong><a href="other_effects/index.html#SFX">"sound_effect"</a></strong> and <strong><a href="animated_lights/index.html">"light"</a></strong>.</p>
+
+
+
+<h2><a name="TypesOfValues"></a>Types of values for particle and light effects</h2>
+
+
+<p>For each field in the cubemitter or animatedlight files we can choose between different types of values. So we'll put an example here for each value type and their constraints, to use as reference in the other sections of the guide.</p>
+
+
+
+
+<table>
+   <tr><th>Type</th><th>Example value</th><th>Notes</th></tr>
+   <tr><td>"kind" : "CONSTANT"</td><td>"values" : [3]</td><td>A single value inside the array.</td></tr>
+   <tr><td>"kind" : "RANDOM_BETWEEN"</td><td>"values" : [0, 0.1]</td><td>Here we can only specify 2 values in the array. The first one must be lower than the second one.</td></tr>
+   <tr><td>"kind" : "CURVE"</td><td>"values": [ [0, 0.8],<br />[0.5, 0.6],<br /> [1, 0.6] ]</td><td>For this type we must specify at least 2 points. The first value of the point represents the moment (time) during the effect at which the values will be applied, from 0 to 1 (so usually the first point is [0, N] and the last point is [1, M]).</td></tr>
+   <tr><td>"kind" : "RANDOM_BETWEEN_CURVES"</td><td>"values": [<br />[<br />[0, 0.4],<br />[0.5, 0.2],<br />[1, 0.6]<br />],<br />[<br />[0, 0.8],<br />[0.3, 0.6],<br />[1, 0.7]<br />]<br />]</td><td>Inside of the array we must have 2 arrays, each containing a curve (defined like the values for the "CURVE" type). They don't need to have the same amount of points.</td></tr>
+   <tr><td colspan="3"></td></tr>
+   <tr><td>"kind" : "BURST"</td><td>"values": [ [ 250, 1, 1 ] ]</td><td>An array of curves. It will spawn the specified amount of particles all at once. First value is time in real time seconds. Second value is minimum number of particles, and third value is maximum number of particles (a random number of particles between the minimum and maximum will spawn). We can specify more than one curve for the values here, to burst particles at the specified times, creating like a delay between them.</td></tr>
+   <tr><td colspan="3"></td></tr>
+   <tr><td>"surface" : "POINT"</td><td></td><td>(No "values" field needed for POINT surface, will use the position defined in the effect file).</td></tr>
+   <tr><td>"surface" : "RECTANGLE"</td><td>"values" : [1, 1, 0, 0]</td><td>The values in the array represent width, length, inner width, inner length, in that order. Inner width/length higher than 0 will make it so that instead of emitting particles anywhere from a solid rectangle, they're only emitted along the edges of the rectangle, i.e. between the width/length and inner width/length shape.</td></tr>
+   <tr><td>"surface" : "CUBOID"</td><td>"values" : [1, 1, 1, 0, 0, 0]</td><td>The values in the array represent width, length, depth, inner width, inner length, inner depth. In the same way than for RECTANGLE, inner values higher than 0 will make it so that particles spawn in the area between the outer edges and the inner edges of the cube. You can write it as "CUBE" instead of "CUBOID" if that's easier to remember.</td></tr>
+   <tr><td>"surface" : "SPHERE"</td><td>"values" : [1, 0, 360]</td><td>The values in the array represent the radius, the inner radius, and the angle, in that order. Inner radius has the same meaning than for the rest of surfaces. The angle (in degrees) will make it so that instead of a full sphere, the particles only spawn in a shape of half a sphere (180), in a quarter of a sphere (90), etc. Useful to create arcs like rainbows and the like.</td></tr>
+   <tr><td>"surface" : "CYLINDER"</td><td>"values" : [1, 2, 0, 360]</td><td>The values in the array represent height, radius, inner radius and angle. Similar meaning than for the SPHERE surface.</td></tr>
+   <tr><td>"surface" : "CONE"</td><td>"values" : [1, 0, 45, 0]</td><td>The values in the array represent radius, inner radius, angle, inner angle, in that order. This surface will emit the particles from a cone shape (pointing downwards by default). The inner angle will make it so that the flat area does not emit particles (the same happens when you use inner radius for the CYLINDER surface). The higher the angle value, the more flat/short/rounded the cone will be (less defined shape), so try using a big radius with a sharp angle to see the shape.</td></tr>
+</table>
+
+
+
+
+<h2><a name="EffectsList"></a>How to attach a default effect to an entity</h2>
+
+
+<p>If you want a particular entity to run an effect permanently, add this to the <strong>"components"</strong> section in the entity's JSON file (example from <code>stonehearth/jobs/geomancer/geomancer_golem_workbench/geomancer_golem_workbench_ghost.json</code>):</p>
+
+
+
+<pre><code>  "effect_list": {
+     "default": "file(/data/rigs/jobs/geomancer/golem_workbench/effects/idle.json)"
+  }
+</code></pre>
+
+<p>If that doesn't work, use this syntax instead:</p>
+
+
+
+<pre><code>  "effect_list": {
+     "effects": [
+        "stonehearth:effects:corruption:beetle"
+     ]
+  }
+</code></pre>
+
+<p>Some entities, like the lanterns, use the lamp component to specify an effect that will be run either permanently or only at night.</p>
+
+
+
+<p>To run effects from Lua we'll do:</p>
+
+
+
+<pre><code>  radiant.effects.run_effect(self._entity, 'stonehearth:effects:undeploy_overlay_effect', optional_parameters)
+</code></pre>
+
+<h2><a name="Testing"></a>Testing effects</h2>
+<p>To test an effect quickly, we can select an entity in the game, open the default console, type <code>spawn_effect uri_of_the_effect</code> and press Enter.</p>
+
+
+
+<p>If the effect has an alias we can use it (preceded by the namespace of the mod). For animated entities, we can simply use the name of the effect that has the animation (e.g.: <code>sleep</code>). Mind that some effects might not run as expected when testing this way.</p>
+
+
+
+<p>You can also set up a test world to test your effects. There are some examples in the stonehearth_tests mod that you can reuse.</p>
+
+
+
+<h2><a name="SHED"></a>Using SHED</h2>
+
+
+<p>To create an effect with SHED, clone an existing effect file from the Manifest view, and edit its fields to point to your mod:</p>
+
+
+
+<p><img src="../../../../images/art/vfx/cloning_effect_file.png" alt="cloning_effect_file"/></p>
+
+
+
+<p>For creating the referenced files, you'll use the Effect Editor tab. See the other pages of this guide for reference.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

@@ -1,0 +1,1498 @@
+<head>
+   <link href='./../../../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../../../images/favicon_logo_sh.png'>
+   <title>For existing entities</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <a name="top"></a>
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">
+   <div class='page_title'>For existing entities</div>
+   <ul>
+    <li><a href="#Reusing">Reusing existing animations</a></li>
+    <li><a href="#CustomAnims">Creating custom animations for existing rigs</a></li>
+    <li><a href="#AnimatingExisting">Animating with existing rigs</a>
+    <ul>
+        <li><a href="#Importing">Importing the model into Blender</a></li>
+        <li><a href="#Rigging">Loading the rig files</a>
+        <ul>
+            <li><a href="#Meta">About meta files</a></li>
+        </ul></li>
+        <li><a href="#Animating">Animating</a></li>
+        <li><a href="#Exporting">Exporting the animation</a>
+        <ul>
+            <li><a href="#SkeletonOffsets">Exporting animations with skeleton offsets</a></li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="Reusing"></a>Reusing existing animations</h2>
+
+
+<p>We can reuse existing animations if we create a mob with the same rig than an entity that already exists in Stonehearth (e.g. a reskin).</p>
+
+
+
+<p>For example, many of the small critters (rabbit, raccoon, squirrel...) reuse the same skeleton and animations. Here's the render_info component in the <code>squirrel.json</code> file:</p>
+
+
+
+<pre><code>  "render_info": {
+     "animation_table": "file(/data/rigs/entities/critters/rabbit)",
+     "scale": 0.07
+  }
+</code></pre>
+
+<p>As you can see, the <strong>"animation_table"</strong> points to the <code>rabbit.json</code> skeleton. The squirrel model has the same name for its layers than the rabbit model (the parts are located in the same places - they can be moved and rotated using the same pivots), so we can reuse all the rabbit animations without additional work.</p>
+
+
+
+<p>We can also scale the model and the animations will work just fine.</p>
+
+
+
+<h2><a name="CustomAnims"></a>Creating custom animations for existing rigs</h2>
+
+
+<p>In order to add new animations for existing rigs (for example, adding a new idle animation to the hearthlings) we need to use overrides in our manifest, since there's no index we can mixinto to add the animation.</p>
+
+
+
+<p>An example is provided <a href="../../../../../essentials/mixintos_overrides/index.html#OverrideNonExisting">here</a>. We override non existing files in the stonehearth mod, which will behave as if we were injecting our files in the appropiate folders.</p>
+
+
+
+<h2><a name="AnimatingExisting"></a>Animating with existing rigs</h2>
+
+
+<p>Here's the process for creating animations for existing skeletons in Blender. Assumes that you've already set up the <a href="../index.html#BlenderSetup">Blender add-on</a> and prepared <a href="../index.html#PreparingScene">the scene</a>.</p>
+
+
+
+<h3><a name="Importing"></a>Importing the model into Blender</h3>
+
+
+<p>These instructions assume that you've <a href="../index.html#PreparingTheModel">exported your model</a> to <strong>.obj</strong> format.</p>
+
+
+
+<ol>
+    <li><p>With the scene prepared in Blender, go to 'File->Import...' click on "Wavefront (.obj)"</p></li>
+    <li><p>Select the <strong>.obj</strong> file. Make sure the <strong>.mtl</strong> and <strong>.png</strong> files are also on the same folder than the <strong>.obj</strong> (they're additional files created when you export to .obj).</p></li>
+    <li><p>Click on 'Import File'.</p></li>
+    <li><p>If you can't see the imported model, zoom out with the mouse wheel (if you already prepared the scene it shouldn't be the case).</p></li>
+    <li><p>If the model appears all white, click on the small circular icon here and change it to "Texture":</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_toggling_texture.png" alt="blender_toggling_texture"/></p></li>
+    <li><p>Check that the object has each part separated, in case something went wrong when exporting to <strong>.obj</strong>. When right-clicking on different parts of the model, only that part should show an orange outline, and its name should appear at the bottom left of the scene:</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_object_names.png" alt="blender_object_names"/></p></li>
+</ol>
+
+
+
+<h3><a name="Rigging"></a>Loading the rig files</h3>
+
+
+<p>After importing the <strong>.obj</strong>, let's import and prepare the <a href="../index.html#Skeleton">skeleton</a> and <a href="#Meta">meta</a> files. If you're going to make new animations for an existing stonehearth entity, then get the skeletons from the <code>stonehearth/data/rigs</code> folder. You can copy the rig files elsewhere if it's more comfortable, so that you can have them together with your meta files:</p>
+
+
+
+<ol>
+    <li><p>Go to 'File > Import > Stonehearth (.json)'</p></li>
+    <li><p>Find the skeleton JSON file. In our case we're going to use the male hearthling model, so we search for the male skeleton. Select it, and click on 'Import File':</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_importing_skeleton.png" alt="blender_importing_skeleton"/></p></li>
+    <li><p>Now you should see the name of the skeleton file in the "Stonehearth UI" section of the scene menu, which confirms that we loaded a skeleton file.</p></li>
+    <li><p>Now we click on 'File > Import > Stonehearth (.json)' again and select the appropiate meta file. It should also appear as loaded in the Scene menu.</p></li>
+    <li><p>Click on the "Prepare Skeleton" button. If there are no errors, the helper bones should be created automatically and the bones / meshes on the model should be automatically parented to each other.</p>
+
+    <p>  If something went wrong, the circle at the side of "Skeleton" will become red. In that case, you can click on the Skeleton or Meta buttons in the "Reset:" section to unload those files, check them manually and try loading them again.</p>
+
+    <p>  The circle should become green if the skeleton was loaded correctly, but if it doesn't (and it's not red either), check the "Debugging info (on/off)" checkbox to expand the debugging info. There it will mention if there's some object missing or that shouldn't be there, and it'll say if the skeleton and meta files were loaded correctly.</p>
+
+    <p>  For example, here the add-on detected that some names do not match. Taking a look at the hierarchy, turns out the shoulders have <code>_0</code> in their names:</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_error_preparing_skeleton.png" alt="blender_error_preparing_skeleton"/></p>
+
+    <p>  So we can click on them, go to the object menu (an orange cube icon), and rename them there (press Enter so that the name is saved). Then we have to rename them in the object data menu too (an inverted triangle icon).</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_renaming_objects.png" alt="blender_renaming_objects"/></p>
+
+    <p>  When in doubt, you can reset the skeleton and meta files and import them again, but often it is preferred to restart from a clean scene, as some bad information might have been carried by the errors.</p>
+
+    <p>  Normally when there's a problem it's due to some issue with the meta file or the name / number of bones don't match the expected values. Make sure that the circle is green before proceeding. In case you run into an issue, the "Debugging Info" section might provide some hints about the issue.</p></li>
+    <li><p>Now click on "Prepare Animation". If there are no errors, the model should move to the center of the grid in the scene, with the feet aligned to the floor.</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_animation_prepared.png" alt="blender_animation_prepared"/>
+      Same than before, if the circle for "Animation" becomes red, check the debugging info to see what happened. If it fails to move the entire model to the center of the scene, there might be something wrong with the relationships between bones / meshes. Check to see if a meta-file was loaded, or if the relationships have been created properly.</p>
+
+    <p>  Be sure that you have centered your model before starting with the animation work. Otherwise, the animation might not perform as expected while it is running in Stonehearth. So make sure that the circle is green before proceeding.</p></li>
+</ol>
+
+
+
+<h3><a name="Meta"></a>About meta files</h3>
+
+
+<p>The purpose of a meta file is to add to the information provided by the skeleton file. They allow Blender to know about the relationship between the parts of an entity (not just their pivots) and the size of the helper bones. They are used by the add-on to make animating easier.</p>
+
+
+
+<p>Example meta file for a rabbit:</p>
+
+
+
+<pre><code>  {
+     "meta": {
+        "helperBone": ["ATTOVERCOG", 3.500000, 5.000000, 3.000000, -3.000000],
+        "helperBone": ["root", 3.500000, 5.000000, 3.000000, -3.000000],
+        "hierarchy": ["tailEnd", "tail"],
+        "hierarchy": ["leftBackPaw", "leftLeg"],
+        "hierarchy": ["rightBackPaw", "rightLeg"],
+        "hierarchy": ["rightEar", "leftEar", "ATTOVERCOG", "head"],
+        "hierarchy": ["rightLeg", "leftLeg", "tail", "head", "rightPaw", "leftPaw", "torso"],
+        "hierarchy": ["torso", "root"],
+     },
+  }
+</code></pre>
+
+<p>The meta file is a JSON file (has repeated keys, but we don't care since this is just for the add-on to retrieve more information). It contains these fields:</p>
+
+
+
+<ul>
+    <li><p><strong>"meta"</strong> -- the container key for the information. Also represents that this is a meta file. Contains many entries of these types:</p>
+
+    <ul>
+        <li><p><strong>"helperBone"</strong> -- represents a helper bone. The first value of the array is the name of the helper bone (as defined in the skeleton file), then the next four values provide information about the size of the helper bone (x, z, head, tail).</p>
+
+        <p> X and Z will represent its width and height in Blender, the head and tail are for its depth from the origin/pivot (so we can have long sticks for the "mainHand" helper bone, for example). It helps animating them in Blender regardless of what we'll attach to them in the game.</p>
+
+        <p> Be careful when defining them as wrong values can cause problems when preparing the skeleton in Blender.</p></li>
+        <li><p><strong>"hierarchy"</strong> -- represents the hierarchy between bones / meshes. The last bone in each array will be the parent of the rest of bones mentioned in the array, so when we move or rotate it, the children bones will follow the parent. Make sure that all the bones are descendants from <strong>"root"</strong> (see the example above).</p></li>
+    </ul></li>
+</ul>
+
+
+
+<p>We can create meta files from Blender, or reuse existing ones (at the moment this guide was written, most meta files had been lost or are outdated). They can be set up manually too if you just need to define some hierarchy or add some helper bone that's already defined in the skeleton file.</p>
+
+
+
+<p>It is possible to create an animation without a meta file, but it will be much easier and more convenient if you load / import one. Just ensure that it is the proper file which fits to the model you want to edit. While meta files can be exchanged between gender (if they share the same bone hierarchy), they cannot be exchanged between entities.</p>
+
+
+
+<h3><a name="Animating"></a>Animating</h3>
+
+
+<p>Once you've prepared the animation, it's time to start animating. In our example here we'll provide simple steps to quickly make an animation for Stonehearth, but if you're proficient with Blender you can use its animation tools however you like. Just remember that for Stonehearth we can only define the position and rotation (scale not yet supported by the add-on) of the whole part of the model (mesh), not the individual vertices / planes.</p>
+
+
+
+<ol>
+    <li><p>First, you might want to switch the view to orthographic. To do that, press <code>NumPad 5</code> or go to the View menu that is above the Timeline (the bar below the main scene) and click on 'View Persp/Ortho'. You should see 'User Ortho' at the top left of the scene view.</p>
+
+    <ul>
+        <li>To rotate the camera, hold the middle button (mouse wheel) down and move your mouse.</li>
+        <li>To pan around the scene do the same, but first press and hold <code>Shift</code>.</li>
+    </ul></li>
+    <li><p>Then, decide how many frames you want your animation to have, and type them in the 'End' textbox of the Timeline (the gray wide section at the bottom of the window), and press <code>Enter</code> to confirm. You can change them later if you need to. You should see the gray bar increasing or decreasing depending on your values:</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_timeline.png" alt="blender_timeline"/></p>
+
+    <p>  Animations in Stonehearth play at 30 frames per second. In general, we want short animations but sometimes they need to be long if the motion is meant to be slow (e.g. breathing, walking...). You can zoom in/out the timeline by scrolling with the mousewheel when hovering over it, and then there's a scrollbar at the bottom to move it left or right. That will make it easier to select the frames.</p></li>
+    <li><p>Now, select the first frame in the Timeline by clicking at the beginning of it. To pose the model, here are some shortcuts:</p>
+
+    <ul>
+        <li><p>Right-click on a body part to select it.</p></li>
+        <li><p>Move it by dragging the arrows for each axis or by pressing <code>G</code> once, then moving your mouse. To move along a specific axis, press <code>G</code> and then X/Y/Z and then a number (can be negative and contain decimals).</p>
+
+        <p> Please notice that in Blender Z is up, and Y is depth. Don't worry when animating, the add-on will take care of adjusting it if necessary.</p></li>
+        <li><p>Rotate it by pressing <code>R</code> once, then moving your mouse. To rotate in a specific axis, press <code>R</code> then X/Y/Z and optionally type a number representing degrees (can be negative and have decimals).</p></li>
+        <li><p>To scale it, it's the same than moving or rotating, but using <code>S</code> instead. At the time this guide was written, scale is not supported in the add-on though.</p></li>
+        <li><p>You can select more than one object by selecting one, then holding <code>Shift</code>, and right-clicking to select another one.</p></li>
+        <li><p>If you need more precision, open the hidden menu by pressing <code>N</code> and you'll see the transform / rotation / scale in numbers, which can be manually typed there:</p>
+
+        <p> <img src="../../../../../../images/art/vfx/blender_numerical_transforms.png" alt="blender_numerical_transforms"/></p></li>
+        <li><p>To cancel the transformation that you're doing, right-click once anywhere on the scene. You can use <code>Ctrl+Z</code> too if you wish to undo changes.</p></li>
+        <li><p>To confirm your changes, left-click anywhere.</p></li>
+        <li><p>You can use the Numpad keys to view the scene from the different sides (front, back, above, etc). There are also ways to open <a href="../anim_custom/index.html#MoreViews">several scenes</a> to have different views open at the same time.</p></li>
+    </ul></li>
+    <li><p>After you have set an initial pose for your animation, select the 'Animation' tab from the menu on the left:</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_animation_menu.png" alt="blender_animation_menu"/></p>
+
+    <ul>
+        <li>Press <code>A</code> twice to select all the bones (everything should be selected with an orange outline).</li>
+        <li>On the Animation menu, press 'Insert' and click on 'LocRotScale'. This will save the current pose as a Keyframe in the Timeline:
+        <img src="../../../../../../images/art/vfx/blender_insert_keyframe.png" alt="blender_insert_keyframe"/></li>
+        <li>Now select the last frame in the timeline and do the same. You should see yellow marks where you inserted keyframes.</li>
+        <li>Try playing your animation with the play button below the timeline. It's a static pose, but that way your animation begins and ends with the same pose.</li>
+    </ul></li>
+    <li><p>Select a different frame (normally somewhere in the middle of the timeline) and pose your model again. Save the Keyframe as explained above and hit play. Blender will have interpolated the poses, creating an animation.</p>
+
+    <p>  You can select an existing keyframe and delete it with the 'Remove' button (make sure to select all the body parts first!), or edit some parts of the model and save it again (will be overwritten).</p></li>
+    <li><p>Keep inserting (or removing) keyframes until you're satisfied with the results. You might need to extend or shorten your timeline.</p></li>
+</ol>
+
+
+
+<h3><a name="Exporting"></a>Exporting the animation</h3>
+
+
+<p>Once our animation is ready, it's time to export it to the JSON format that the game uses.</p>
+
+
+
+<ol>
+    <li><p>Go to 'File > Export > Stonehearth (.json)'.</p></li>
+    <li><p>Near the bottom of the menu at the left, make sure that what is selected is "Animation":</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_export_anim.png" alt="blender_export_anim"/></p></li>
+    <li><p>Give a name for the animation file (e.g. <code>custom_anim.json</code>). In general we only use lowercase, underscores and numbers for the file names.</p></li>
+    <li><p>Click on 'Export File'.</p></li>
+</ol>
+
+
+
+<h3><a name="SkeletonOffsets"></a>Exporting animations with skeleton offsets</h3>
+
+
+<p>Imagine you've finished an animation for the male hearthling model, and want to create the same animation for the female (assuming both have the same bones and bone names, but the pivots of the bones are different - e.g. the female hearthling is a bit shorter so her bones are positioned lower).</p>
+
+
+
+<p>With the Blender add-on we can easily apply offsets to the animation so that we don't have to create the animation for the female from scratch.</p>
+
+
+
+<p><img src="../../../../../../images/common/row_alert2.png" alt="icon"/>At the time this guide was written, the female hearthling skeleton is different from the male one, but you can simply add the eyebrow bones to it in order to export the animation with offset - the game will later ignore those bones in the animation (make sure to work on a copy of her skeleton though).</p>
+
+
+
+<p>Steps assuming you've just exported the animation for the male and still have the male model, rig and the animation loaded in Blender:</p>
+
+
+
+<ol>
+    <li><p>Import the female skeleton, making sure to check the "Import skeleton for offset" option at the bottom left:</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_import_skeleton_for_offset.png" alt="blender_import_skeleton_for_offset"/>
+      Make sure that the "Offset calculated" field above the "Prepare Skeleton" button from the Scene menu changed. If not, it wasn't imported correctly (the bones and bone names should match).</p></li>
+    <li><p>Export the animation again, checking the "Export taking offset into account":</p>
+
+    <p>  <img src="../../../../../../images/art/vfx/blender_export_with_offset.png" alt="blender_export_with_offset"/></p></li>
+    <li><p>To check that the animation was exported correctly, you can restart Blender, import the .obj file of the female, the female skeleton / meta files and the animation you just exported, and play it (or simply try it in the game, if you already have all the effects prepared).</p></li>
+</ol>
+
+
+
+<h3><a name="ImportingAnimations"></a>Importing animations</h3>
+
+
+<p>You can import animation files from the game in the same way than skeletons or meta files. There's also a button in the add-on to delete imported animations.</p>
+
+
+
+<p>It's hard to work with them since they describe all the frames, but you may be able to delete those you don't want and keep a couple poses for using in your animation.</p>
+
+
+
+<p><img src="../../../../../../images/common/row_alert2.png" alt="icon"/>Before importing an animation, make sure to click on "Prepare Skeleton" and "Prepare Animation", and that both have the green circle. Otherwise things will look broken after importing the animation.</p>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

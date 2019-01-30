@@ -1,0 +1,1532 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Lua scripts</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <a name="top"></a>
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">
+   <div class='page_title'>Lua scripts</div>
+   <p><p>In this section we'll talk about components, component renderers, controllers and observers. Also about saved variables and the lifetime cycle of these scripts.</p></p>
+
+
+<p>Remember that in <code>radiant/modules/entities.lua</code> there are many utility functions that you can use in your scripts.</p>
+
+
+
+<ul>
+    <li><a href="components_renderers/index.html">Components</a></li>
+    <li><a href="controllers/index.html">Controllers</a></li>
+    <li><a href="#ControllerLifecycle">Lifecycle functions</a>
+    <ul>
+        <li><a href="#LifecycleExample">Examples</a></li>
+    </ul></li>
+    <li><a href="#SV">About saved variables</a>
+    <ul>
+        <li><a href="#SaveCompatibility">Maintaining save compatibility</a></li>
+    </ul></li>
+    <li><a href="#Observers">About observers</a></li>
+    <li><a href="#Validators">About validators</a></li>
+    <li><a href="#StateMachines">About state machines</a></li>
+    <li><a href="#RequiringLua">Requiring files in Lua</a></li>
+</ul>
+
+
+
+<h2><a name="ControllerLifecycle"></a>Lifecycle functions</h2>
+
+
+<p>Both components and controllers are classes and share the same similar properties and functions.</p>
+
+
+
+<p>The special functions that can be implemented on each are:</p>
+
+
+
+<ul>
+    <li><p><strong>__init()</strong> -- This is the default Lua constructor for a class. This will be called first ALWAYS. There will be no special variables or anything available during this constructor. It's advised to just not include it and instead put initialization information in the special <code>initialize()</code> function.</p></li>
+    <li><p><strong>initialize()</strong> -- This function is always called after <code>__init</code>. In Lua components, the special <code>self._entity</code> field will be set and you can get the component's JSON data by calling <code>radiant.entities.get_json(self)</code>. You CANNOT access services or public fields (like <code>stonehearth.constants</code>) in <code>initialize()</code> because during restore, those might not exist yet.</p>
+
+    <p>  <img src="../../../images/common/row_alert2.png" alt="icon"/> Important: you must declare all <a href="#SV">saved variable</a> fields in the <code>initialize()</code> function, including nil variables. You can ask the entity if it has other components in the initialize, but note that those other components might not have had <code>initialize()</code> called on them yet.</p></li>
+    <li><p><strong>create()</strong> -- This is called ONCE when the component is first created, either on entity creation or on dynamically added. For controllers, the create function can take arguments passed in from the controller creator.</p>
+
+    <p>  For controllers, <code>create()</code> is called immediately after <code>initialize()</code>. For components specified via JSON, the <code>create()</code> is called after all other components on the entity have been <code>initialize</code>d.</p></li>
+    <li><p><strong>restore()</strong> -- This is called when the component/controller is loaded from a save game. It is called after <code>initialize()</code> and <code>fixup_post_load()</code>.</p></li>
+    <li><p><strong>activate()</strong> -- This is called every time. It is called after <code>create()</code> / <code>restore()</code>. For controllers on creation, this is called immediately after <code>create()</code>. For components on creation, this is called after all components have had <code>create()</code> called on them. For everything on load, this is called after all components/controllers have had <code>restore()</code> called on them.</p></li>
+    <li><p><strong>post_activate()</strong> -- This is called after all components/controllers have had <code>activate()</code> called on them. On an entity that has just been created, it will have all components specified in the entity's JSON get <code>activate</code>d before <code>post_activate()</code> is called on it. On a restore, EVERY component/controller in the world will get <code>activate()</code> called on them first before every component/controller in the world gets <code>post_activate()</code> called on them.</p></li>
+    <li><p><strong>destroy()</strong> -- This is called when the entity gets destroyed. Here we usually add code to destroy listeners and any other variable that needs to be cleaned up safely.</p></li>
+</ul>
+
+
+
+<p>To sum up, the call order for these functions goes:</p>
+
+
+<pre><code>  __init() -&gt; initialize() -&gt; {create(optional_controller_variables) OR restore()} -&gt; activate() -&gt; post_activate()
+</code></pre>
+
+<h3><a name="LifecycleExample"></a>Examples</h3>
+<p>Example of the lifecycle functions in a component:</p>
+
+
+
+<pre><code>  local MyComponent = class()
+
+  function MyComponent:initialize()
+     local json = radiant.entities.get_json(self)
+     self._sv.first_saved_variable = nil
+     self._sv.second_saved_variable = 'test string'
+     self._sv._unremoted_save_variable = json.my_json_data_variable
+     self._sv._created_linked_entity = nil
+
+     -- We don't know if this is a load or a new creation yet,
+     -- so self._sv will have the values set in initialize.
+     -- If this is a load, the self._sv variables will have
+     -- their loaded values by the restore function
+  end
+
+  function MyComponent:create()
+     self._sv._created_linked_entity = radiant.entities.create_entity('my_mod:sub_entity')
+  end
+
+  function MyComponent:restore()
+     -- If this is loaded from a save game, variables in self._sv
+     -- will now have their saved values
+  end
+
+  function MyComponent:activate()
+     self._log = radiant.log.create_logger(self._sv.second_saved_variable)
+  end
+
+  function MyComponent:post_activate()
+     -- Can access other components here and tell them to do stuff
+     local component2 = self._entity:get_component('stonehearth:my_component_2)
+     component2:some_setter_function(self._sv._unremoted_save_variable)
+  end
+
+  return MyComponent
+</code></pre>
+
+<p>Controllers and services can also make use of these functions.</p>
+
+
+
+<h2><a name="SV"></a>About saved variables</h2>
+
+
+<p><strong>saved_variables</strong> (actually the field <code>__saved_variables</code>) is an object that is present on every controller, component and service in Stonehearth's Lua code.</p>
+
+
+
+<p>It is actually a C++ datastore, and serves two purposes: to be the place where persistent data can be stored/loaded, and as the means by which data is transferred from the server to the client.</p>
+
+
+
+<p>Generally speaking, the only time you should ever need to access it directly is when you've changed some piece of data on the server, and now you need the client (or UI) to know you've made a change. In this case, you call <code>self.__saved_variables.mark_changed()</code>, and the changed data will be serialized over the wire to the client, and potentially trigger any event handlers you have installed there.</p>
+
+
+
+<p>Fields of a datastore are 'diffed' before transferring to the client, so if you only change one field, you only need to pay for the transfer of that field.</p>
+
+
+
+<p>In order to add a field that you want to save to a controller, component or service simply add it to the <code>._sv</code> field in your initialize Lua routine. As an illustrative example, consider the AI component:</p>
+
+
+
+<pre><code>  function AIComponent:initialize()
+     self._log = radiant.log.create_logger('ai.component')
+                                :set_entity(self._entity)
+
+     self._sv.spin_count = 0
+     self._sv.status_text_key = nil
+     self._sv.status_text_data = nil
+     self._num_unyielded_spins = 0
+  end
+</code></pre>
+
+
+<p>Here, we see a couple of fields added, some are to <code>self</code>, and the others are to <code>._sv</code>. Those directly on <code>self</code> will NOT be saved, and will NOT be transferred to the client. They are effectively private to the server's component. The fields added to <code>._sv</code> will be saved, as well as transferred to the client.</p>
+
+
+
+<p>One more important feature is that if you name an <code>._sv</code> field starting with an underscore (<code>self._sv._foo</code>), while that field will be saved, it will NOT be transferred to the client. This is extremely useful when you have important persistable data that might also be very prohibitive over a network.</p>
+
+
+
+<h3><a name="SaveCompatibility"></a>Maintaining save compatibility</h3>
+
+
+<p>By default, <code>_sv</code>'s have a version on them that specifies the version of the data store that was saved. The version value is 0 by default. If you need to update the controller to a different version because you renamed a variable, added a variable that needs to be set in the <code>create()</code>, or anything else where older versions of the controller need to be fixed up, you can implement the version function on the controller/component to tell the persistence system that the version of the code has changed.</p>
+
+
+
+<p>First add a <code>versions</code> variable to the controller/component so you can document what was added each version. Example from the job component:</p>
+
+
+
+<pre><code>  local VERSIONS = {
+     ZERO = 0,
+     CLEAN_UP_SAVED_FIELDS = 1,
+     JOB_CONTROLLER_JSON_PATHS = 2,
+     LEVEL_0_REMOVED = 3
+  }
+</code></pre>
+
+<p>Then implement the <code>get_version</code> function and have it point to the latest version:</p>
+
+
+
+<pre><code>  function JobComponent:get_version()
+     return VERSIONS.LEVEL_0_REMOVED
+  end
+</code></pre>
+
+<p>And finally implement the <code>fixup_post_load</code> function. This function will only be called on load if the saved version does not match the current version, after <code>initialize</code> and before <code>restore</code>, (the variables in <code>_sv</code> will already have been populated). Then you can modify anything in the saved data.</p>
+
+
+
+<p>For example, in the <code>CLEAN_UP_SAVED_FIELDS</code> version we renamed the the <code>_sv.equipment</code> variable to <code>_sv._job_equipment</code>. Notice that we can retrieve the saved data from the <code>old_save_data</code> parameter if we need to:</p>
+
+
+
+<pre><code>  function JobComponent:fixup_post_load(old_save_data)
+     if old_save_data.version &lt; VERSIONS.CLEAN_UP_SAVED_FIELDS then
+        self._sv._job_equipment = old_save_data.equipment
+     end
+
+     if old_save_data.version &lt; VERSIONS.JOB_CONTROLLER_JSON_PATHS then
+        self._fix_up_job_controller_json_paths = true
+     end
+
+     if old_save_data.version &lt; VERSIONS.LEVEL_0_REMOVED then
+        self._needs_level_0_update = true
+     end
+  end
+</code></pre>
+
+<p>In the later versions, we set up some flags so that we can use them in <code>restore</code>/<code>activate</code>/<code>post_activate</code> to patch the controller appropiately, so that players can keep playing their old savefiles with the new version of the mod.</p>
+
+
+
+<h2><a name="Observers"></a>About observers</h2>
+
+
+<p>An observer watches a variable on an entity and does stuff if that variable changes. It is sort of like a component, but it is passive instead of active. For example, see the sleep observer in <code>stonehearth\ai\observers</code>, which watches for sleepiness scores to decrease, and then triggers a bunch of actions.</p>
+
+
+
+<p>If you want a controller to hold publicly accessible state, you usually will want a component. Observers are more useful when you have an item that needs to inject behavior onto an entity that can't be encapsulated by an action.</p>
+
+
+
+<p>Generally, what you can do with an observer, you can do with a component. Components are preferred over observers because this is what we use across the codebase and their behavior is more predictable.</p>
+
+
+
+<h2><a name="Validators"></a>About validators</h2>
+
+
+<p>In <code>radiant/modules/validator.lua</code> we can find functions to validate parameters in our Lua code.</p>
+
+
+
+<p>You'll see many places in the code where we get the validator at the top of the file:</p>
+
+
+
+<pre><code>  local validator = radiant.validator
+</code></pre>
+
+<p>And then right at the beginning of a function, call one of its functions to validate the parameters that were passed:</p>
+
+
+
+<pre><code>  function CatalogCallHandler:get_catalog_data(session, response, uri)
+     validator.expect_argument_types({'string'}, uri)
+     -- ...
+  end
+</code></pre>
+
+<p>This is useful to prevent bad data on multiplayer.</p>
+
+
+
+<p>There's also some validation functions for the UI, in <code>stonehearth/ui/common/validator/validator.js</code>:</p>
+
+
+
+<pre><code>  var townName = App.stonehearth.validator.enforceStringLength(self.$('#name'), 28);
+</code></pre>
+
+<h2><a name="StateMachines"></a>About state machines</h2>
+<p>We can create <a href="https://en.wikipedia.org/wiki/Finite-state_machine">state machines</a> in our code too, using the <code>radiant/controllers/state_machine.lua</code> controller. The only example in the game that uses this is the incapacitation component, so check it to see how it's done.</p>
+
+
+
+<h2><a name="RequiringLua"></a>Requiring files in Lua</h2>
+
+
+<p>If we need to require a file in a Lua script to use functions or constants from it, we'd do it at the top of the script, before beginning our code:</p>
+
+
+
+<pre><code>  local constants = require 'constants'
+</code></pre>
+
+<p>However, make sure to prefix this by <code>mods.stonehearth</code> when requiring stonehearth files from your mod:</p>
+
+
+
+<pre><code>  local constants = require 'mods.stonehearth.constants'
+</code></pre>
+
+<p>Otherwise the game won't know where to find that file. Normally the path is the directory names separated by dots.</p>
+
+
+
+<p>For requiring C++ stuff we omit the <strong>require</strong> and the quotes:</p>
+
+
+
+<pre><code>  local Point2 = _radiant.csg.Point2
+</code></pre>
+
+<p>We can also create shortcuts for services or other:</p>
+
+
+
+<pre><code>  local calendar = stonehearth.calendar
+</code></pre>
+
+
+
+
+<!--
+### Iterating Through _sv (Is this still valid?)
+If you need to iterate through all the fields in an Sv Table for some reason, you cannot use the pairs() operator anymore. There are 2 special function called svpairs or expairs in sv_table.lua for iterating through all the keys in an Sv table. If you need only fields that are non-nil (this is the default behavior of pairs in lua), then use svpairs. If you want to know all declared fields in the Sv table, use expairs (ex stands for exist).
+
+Ex:
+   local SvTable = require 'radiant.lib.sv_table'
+   for k in SvTable.svpairs(self._sv) do
+      if self._sv[k] == 'some_compare' then 
+         log:info('HELLO')
+      end
+   end
+
+IMPORTANT: do not modify the Sv Table while iterating through it. You will not get all the values. If you must modify sv while iterating, use the get_all_keys() function in sv_table.lua
+
+### Dynamically Modified self._sv Tables (Is this still valid?)
+By default, all fields in self._sv must be declared in the initialize() function of a component/controller. After initialize(), self._sv will become locked. This means that any additional attempts to assign to a variable in self._sv that wasn't declared will display a warning. The warning allows you to save your game, add the variable to self._sv in initialize(), and then load the game again. The saved game will load properly since the field now exists.
+
+If you want to be able to add whatever fields you want to self._sv, even after initialize(), it's probably easiest to add it as a variable within self._sv like self._sv._my_variables = {} and then add to that variable instead. However, if you MUST be able to dynamically add fields to self._sv, (this is only done very rarely, sometimes on client components and then on node contexts in game master, or on the time tracker controller for performance reasons), you can mark your component or controller as having a dynamic sv.
+
+This must be done as a function on your controller
+
+Ex:
+
+      local TimeTracker = {}
+
+      function TimeTracker:has_dynamic_sv()
+         - Tells the persistence system to set our save data directly instead of using an sv table
+         - This is done for performance reasons.
+         return true
+      end
+
+Dynamic sv variables will have their loaded save data completely override the existing self._sv and the sv variable will be a normal lua table instead of an Sv Table. So even if you declare variables in initialize on a dynamic table, those variables might be blown away after load. This makes it hard to maintain save compatibility, so if you need to add a new variable later on to the dynamic Sv table, be sure to add the field back in the restore as well. Fix up post load is never called for controllers that have dynamic sv, so be aware!
+-->
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

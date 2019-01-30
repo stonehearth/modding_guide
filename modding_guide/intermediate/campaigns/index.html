@@ -1,0 +1,1758 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>Adding campaigns</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <a name="top"></a>
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">
+   <div class='page_title'>Adding campaigns</div>
+   <p><p>The game_master service is responsible for managing the different campaigns for the players. We can trigger different campaigns depending on the kingdom that the player chose, and also depending on factors such as the biome, game mode, etc.</p></p>
+
+
+<ul>
+    <li><a href="#Campaigns">What are campaigns, arcs and encounters?</a></li>
+    <li><a href="#GMTree">Game master tree</a></li>
+    <li><a href="#Edges">In-edges and out-edges</a></li>
+    <li><a href="#CanStart">Starting encounters conditionally</a></li>
+    <li><a href="#Planning">Planning your campaigns</a></li>
+    <li><a href="#AddingCampaigns">How to create campaigns</a></li>
+    <li><a href="#AddingArcs">How to create arcs</a></li>
+    <li><a href="#CreatingEncounters">How to create encounters</a></li>
+    <li><a href="encounters/index.html">The generic encounters</a></li>
+    <li><a href="#CustomEncounterType">How to create your own encounter type</a></li>
+    <li><a href="#Testing">How to test your campaigns with debugtools</a></li>
+    <li><a href="#SHED">Editing campaigns with SHED</a></li>
+</ul>
+
+
+
+<h2><a name="Campaigns"></a>What are campaigns, arcs and encounters?</h2>
+
+
+<p>Campaigns are narrative-guided gameplay events (for example the goblin campaign, the trader campaign, etc).</p>
+
+
+
+<p>They are divided into arcs, each of which fulfills a dramatic/gameplay purpose, and which are made up of encounters.</p>
+
+
+
+<p>Encounters are campaign-specific instances of generic, modular, gameplay pieces. A generic encounter (such as spawn camp, or show dialog) can be re-skinned or instantiated with a specific campaign in mind, and put together with other encounters to create many possible narratively-coherent gameplay challenges.</p>
+
+
+
+<p>For example, the goblin campaign, which throws increasing numbers of enemies at the player, is made of three arcs (beginning, hit-and-run, and finale) and multiple goblin-specific instances of a few basic, generic encounters (spawn camp, wait, city raid, etc).</p>
+
+
+
+<h2><a name"GMTree"></a>Game master tree</h2>
+
+
+<p>All encounters, arcs, and campaigns are nodes (they inherit from <code>stonehearth/services/server/game_master/controllers/node.lua</code>) and exist in a tree, with the game master controller as root node. You can visualize them in the <a href="../../essentials/debugtools/debugtools_mod/index.html#CampaignBrowser">Campaign browser</a> from debugtools:</p>
+
+
+
+<p><img src="../../../images/intermediate/campaigns/campaign_browser_tree.png" alt="campaign_browser_tree"/></p>
+
+
+
+<p>The game master has campaigns (as children), campaigns have arcs (Trigger, Challenge, Climax), and arcs have encounters. Encounters themselves actually run the content using a reusable script (e.g.: <code>create_camp_encounter.lua</code>) and the JSON data of the specific node listed in the arc index file (e.g.: <code>ambient_threats_arc.json</code>) to customize the encounter parameters.</p>
+
+
+
+<p>All the existing campaigns, arcs and encounters can be found inside subdirectories of <code>stonehearth/data/gm</code>.</p>
+
+
+
+<h2><a name="Edges"></a>In-edges and out-edges</h2>
+
+
+<p>Each encounter node needs to have what we call an <strong>"in_edge"</strong> and can have zero, one, or more <strong>"out_edge"</strong>s.</p>
+
+
+
+<p>These are used to shape a graph or tree that defines the flow of the campaign. The in_edge is a custom identifier, usually the same name than the encounter file, so that different nodes can trigger the same encounters. Example from <code>daily_report_encounter.json</code>:</p>
+
+
+
+<pre><code>  "in_edge": "daily_report_encounter",
+</code></pre>
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> For the first encounter of each arc, the <strong>"in_edge"</strong> must be <strong>"start"</strong>. You can only have one encounter with this in_edge per arc.</p>
+
+
+
+<p><a name="OutEdge"></a>For out_edges, the syntax will vary. Examples:</p>
+
+
+
+<ul>
+    <li><p>Trigger one -- after this encounter finishes executing, it will trigger only one encounter (in this case, an encounter whose in_edge is "create_camps"):</p>
+
+<pre><code>"out_edge" : "create_camps",
+</code></pre>
+
+<p>  This other encounter will trigger one encounter chosen randomly from the ones in the array:</p>
+
+<pre><code>"out_edge": {
+   "type": "trigger_one",
+   "out_edges": [
+      "00_sighting_intro",
+      "00_sighting_intro_rc_na",
+      "01_strange_trading_intro",
+      "02a_hello_friend_intro",
+      "11_shook_down_intro",
+      "12_heirbloom_entry",
+      "14_chase_scene_intro",
+      "15_crystal_charging_intro",
+      "21_residents_intro",
+      "23_borrow_crafter_entry"
+   ],
+   "fallback": "quest_finish"
+}
+</code></pre>
+
+<p>  The <strong>"fallback"</strong> key points to an encounter that will be triggered if none of the encounters in the array can be triggered (all of their "can_start" checks fail). It is optional.</p>
+
+<p>  This will do the same, but the edges will have a weight so that we can control the chances of trigger each one of them:</p>
+
+<pre><code>"out_edge": {
+   "type": "trigger_one",
+      "out_edges": [
+         {
+            "type": "weighted_edge",
+            "out_edge": "do_nothing",
+            "weight": 5
+         },
+         {
+            "type": "weighted_edge",
+            "out_edge": "spawn_friendly_entities",
+            "weight": 1
+         }
+      ],
+      "fallback": "quest_finish"
+}
+</code></pre></li>
+    <li><p>Trigger many -- this encounter will trigger all of the encounters in the array at the same time once it finishes executing:</p>
+
+<pre><code>"out_edge": {
+   "type": "trigger_many",
+   "out_edges": [
+      "check_honor_token",
+      "wait_for_mountain_event", 
+      "wait_for_ogo_death"
+   ]
+}
+</code></pre></li>
+    <li><p>Trigger sequence -- this will trigger a sequence of edges, one each time this out edge specification is triggered (so usually you'd use this in a generator encounter, or in an encounter that can get triggered many times):</p>
+
+<pre><code>"out_edge": {
+   "type": "trigger_sequence",
+   "out_edges": [
+      {
+         "out_edge": "encounter_1",
+         "repeats": 6
+      },
+      "encounter_2"
+   ],
+   "repeat_last": false
+}
+</code></pre>
+
+<p>  The entries inside the array can be either names of out edges, like for the "trigger_many" type, or an object with an <strong>"out_edge"</strong> and a <strong>"repeats"</strong> field. This will make the encounter repeat N times before the next encounter of the sequence gets triggered. Optionally we can also define a <strong>"repeat_last"</strong> field outside of the array (defaults to <strong>false</strong>). If we set it to <strong>true</strong>, the last encounter will repeat forever each time this encounter triggers an out edge after finishing the sequence, otherwise the sequence will just stop after finishing with the last encounter.</p></li>
+    <li><p>Destroy tree -- this will destroy a branch from the campaign tree (useful so that already finished quests don't clutter up the tree):</p>
+
+<pre><code>"out_edge": {
+   "type": "destroy_tree",
+   "root": "generator_for_chance",
+   "destroy_root": true
+}
+</code></pre>
+
+<p>  We'll destroy the path from the edge specified in <strong>"root"</strong>, including it depending on the <strong>"destroy_root"</strong> field. You might see encounters in the game with type <code>"none"</code> that simply have an out edge of this type, to clean up after finishing a series of encounters. Be careful when using this, you might delete some node that you still want to keep.</p></li>
+</ul>
+
+
+
+<p>We can also mix types, like this:</p>
+
+
+
+<pre><code>  "out_edge" : {
+     "type" : "trigger_many",
+     "out_edges" : [
+        "trigger this edge always",
+        {
+           "type" : "trigger_one",
+           "out_edges" : [
+              "this edge has weight 1 (20% chance)",
+              {
+                 "type" : "weighted_edge",
+                 "out_edge" : "this edge has weight 4 (80% chance)",
+                 "weight" : 4
+              }
+           ]
+        }
+     ]
+  }
+</code></pre>
+
+<p><a name="ArcFinish"></a>To signal the end of the current arc, allowing the campaign to start another arc, we use <strong>"arc:finish"</strong>:</p>
+
+
+
+<pre><code>  "out_edge" : "arc:finish"
+</code></pre>
+<p>Other encounters from this arc might still be around, but they should resolve themselves on their own.</p>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/> Some of the encounters will define their out edges inside their info section so that they can control which one will spawn depending on how the encounter ends, so they won't have the <strong>"out_edge"</strong> property at the root level of the JSON.</p>
+
+
+
+<h2><a name="CanStart"></a>Starting encounters conditionally</h2>
+
+
+<p>There are <a href="encounters/index.html#WaitForRequirementsMet">some encounters</a> that are used to check for conditions themselves, in order to trigger their out edges when the condition is met.</p>
+
+
+
+<p>But we can also add checks in any encounter JSON file to allow the encounter to start only under certain conditions.</p>
+
+
+
+<p>These are added in a <strong>"can_start" : {}</strong> section, normally below the in/out edges. For example:</p>
+
+
+
+<pre><code>  "can_start": {
+     "test_1": {
+        "game_mode_check": {
+           "type": "deny_if",
+           "item": "game_mode",
+           "value": "stonehearth:game_mode:peaceful"
+        }
+     }
+  }
+</code></pre>
+<p>Here, <code>"test_1"</code> is a custom identifier for the test set. If we have more than one set, the encounter will start when <strong>ANY</strong> of them passes. We can have more than one check inside a test, in that case the encounter will start only when <strong>ALL</strong> of its checks pass.</p>
+
+
+
+<p>We can use whatever name for the checks (<code>"game_mode_check"</code> in the example above), because what matters is the properties inside:</p>
+
+
+
+<ul>
+    <li><p><strong>"type"</strong> -- one of the following:</p>
+
+<pre><code>"deny_if" / "deny_if_not" / "deny_if_less_than" / "deny_if_greater_than" / "deny_if_between" / "deny_if_not_between"
+</code></pre></li>
+    <li><p><strong>"item"</strong> -- the thing that we're comparing to. It can be one of these:</p>
+
+    <ul>
+        <li><strong>"kingdom"</strong> -- we'll compare the URI of the player's kingdom ("value" will be the URI of a kingdom).</li>
+        <li><strong>"net_worth"</strong> -- we'll compare the value of the player's net worth. This is deprecated, use "score" instead.</li>
+        <li><strong>"score"</strong> -- we'll compare one of the player's score fields. In this case, we'll add a <strong>"score_type"</strong> field, to specify the score name (e.g. "military_strength" / "net_worth").</li>
+        <li><strong>"num_citizens"</strong> -- we'll compare the player's current number of citizens.</li>
+        <li><strong>"days_elapsed"</strong> -- we'll compare the number of days that passed since game start.</li>
+        <li><strong>"reached_citizen_cap"</strong> -- we'll check if the player has already reached their citizen cap ("value" will be either <strong>true</strong> or <strong>false</strong>).</li>
+        <li><strong>"biome"</strong> -- we'll compare the URI of the current biome ("value" will be the URI of a biome).</li>
+        <li><strong>"game_mode"</strong> -- we'll compare the URI of the current game mode ("value" will be <code>"stonehearth:game_mode:peaceful"</code>, <code>"stonehearth:game_mode:normal"</code> or <code>"stonehearth:game_mode:hard"</code>, assuming a vanilla game).</li>
+        <li><strong>"hostility"</strong> -- whether the player is hostile to the <strong>"npc_player_id"</strong> from this node's context. The "npc_player_id" is a field used in certain types of encounters (e.g. create_camp), and will become part of the context that is shared among nodes on the same branch.</li>
+        <li><strong>"time_of_day"</strong> -- we'll compare the current time of day ("value" will be a number greater or equal to 0 and lower than 24).</li>
+        <li><strong>"exists_in_world"</strong> -- we'll check if an item is placed in the world and owned by the player. For this type, we'll need to add a <strong>"uri"</strong> field to specify the URI of the item, and "value" will be <strong>true</strong> or <strong>false</strong>.</li>
+        <li><strong>"campaign_completed"</strong> -- we'll check whether the player has finished a given campaign. We'll need to add a <strong>"campaign_name"</strong> field with the name of the campaign as defined in the <code>gm_index.json</code> file ("value" will be <strong>true</strong> or <strong>false</strong>).</li>
+        <li><strong>"script"</strong> -- runs the <code>start()</code> function of the specified Lua script (we'll add an extra <strong>"script"</strong> field pointing to it) and compares its return value to the specified "value" field.</li>
+        <li><strong>"number_active"</strong> -- we'll check how many instances of the given node are currently active, (i.e. how many times <strong>"start_node"</strong> has been triggered minus how many times <strong>"end_node"</strong> has triggered, if we don't specify a "start_node" it will default to the value of "in_edge").</li>
+        <li><strong>"number_spawned"</strong> -- check how many times a given node has been triggered (we'll add a <strong>"node_name"</strong> field with the ID of the node as defined in the arc's JSON file).</li>
+        <li><strong>"city_tier"</strong> -- we'll compare the city tier of the player's town (for a vanilla game, "value" would normally be 1, 2 or 3).</li>
+        <li><strong>"highest_job_level"</strong> -- check the hearthlings that have a specific job (we'll add a <strong>"job_alias"</strong> field to point to the job URI) and return the highest level that they have, to compare with "value".</li>
+        <li><strong>"config"</strong> -- we'll compare the value of an arbitrary config variable. These can be specified in <code>stonehearth.json</code>, <code>user_settings.json</code> or on the command line. We'll add a <strong>"key"</strong> field with the name of the config variable.</li>
+        <li><strong>"counter"</strong> -- compare the value of an arbitrary counter variable. Counter variables are campaign-wide and set using the <code>set_counters</code> encounter. We'll add a <strong>"key"</strong> here for the name of the counter variable.</li>
+        <li><strong>"weather"</strong> -- we'll compare the URI of the current weather ("value" will be the URI of a weather).</li>
+        <li><strong>"and"</strong> -- returns true if ALL subtests pass. We'll add a <strong>"tests" : {}</strong> field containing checks.</li>
+        <li><strong>"or"</strong> -- same than "and", but returns true if ANY subtest passes.</li>
+        <li><strong>"none"</strong> -- this is used for testing purposes, the check will always pass.</li>
+    </ul></li>
+    <li><p><strong>"value"</strong> -- we'll compare the value returned by "item" with the value here using the condition from "type". If the value is meant to be a number, we can also specify a range (e.g. for the "deny_if_between" checks), like this:</p>
+
+<pre><code>"value" : { "min" : 0, "max" : 10 }
+</code></pre></li>
+</ul>
+
+
+
+<p>The custom name that we use for the check can be used in game mode tuning overrides. If you create a custom encounter type, you can have a custom <code>can_start</code> function in it too.</p>
+
+
+
+<h2><a name="Planning"></a>Planning your campaigns</h2>
+
+
+<p>You can make many types of encounters, from a storyline that evolves with player choices, to just random ambient encounters, like the ambient threats from the stonehearth mod.</p>
+
+
+
+<p>It is important that you plan carefully what you want to add to your campaigns and work on it little by little, since depending on the encounter type, creating chains of encounters can involve many files.</p>
+
+
+
+<p>Once you know how will your campaign develop, think which of the different <a href="encounters/index.html">encounter types</a> available is most suited for your encounters, and if none is useful, create your own reusable encounter type, or use a <a href="encounters/index.html#Script">script encounter</a> instead.</p>
+
+
+
+<p>Reusing the existing encounter types allows us to create campaigns by using only JSON files, which is easy. For script encounters or custom controllers, you will need to use Lua.</p>
+
+
+
+<h2><a name="AddingCampaigns"></a>How to create campaigns</h2>
+
+
+<p>To create campaigns you can copy the <code>stonehearth/data/gm/gm_index.json</code> file and edit it.</p>
+
+
+
+<p>Make sure to add this alias to your manifest:</p>
+
+
+
+<pre><code>  "aliases" : {
+     "data:gm_index" : "file(data/gm/gm_index.json)"
+  }
+</code></pre>
+
+<p>Then add a mixinto to the gm index of the stonehearth mod:</p>
+
+
+
+<pre><code>  "mixintos" : {
+     "stonehearth:data:gm_index" : "my_mod:data:gm_index"
+  }
+</code></pre>
+
+<p>If you want to remove campaigns from the stonehearth mod so that they don't run when your mod is enabled, you can use <a href="../../essentials/removing/index.html#MixintypeRemove">mixintypes</a>, but remember that it may affect other mods that assume that those campaigns will run.</p>
+
+
+
+<p>Your <code>gm_index.json</code> file will look something like this (example from the northern_alliance mod):</p>
+
+
+
+<pre><code>  {
+     "type": "index",
+     "campaigns": {
+        "hunting": {
+           "animal_camps": "file(campaigns/hunting/animal_campaign.json)"
+        },
+        "town_progression": {
+           "na_town_progression": "file(campaigns/town_progression/town_progression_campaign.json)"
+        }
+     }
+  }
+</code></pre>
+
+<p>Each key under <strong>"campaigns"</strong> is a custom identifier (the campaign subtype), and contains a campaign node name pointing to a campaign index file path.</p>
+
+
+
+<h2><a name="AddingArcs"></a>How to create arcs</h2>
+
+
+<p>Once you've created your campaign file, it's time to edit it. Continuing from the example above, this is from <code>animal_campaign.json</code>:</p>
+
+
+
+<pre><code>  {
+     "type": "campaign",
+     "rarity": "common",
+     "can_start": {
+        "test_1": {
+           "kingdom_check": {
+              "type": "deny_if_not",
+              "item": "kingdom",
+              "value": "northern_alliance:kingdoms:northern_alliance"
+           }
+        }
+     },
+     "arcs": {
+        "trigger": {
+           "migratory_animals": "file(arcs/migratory_animals_arc.json)"
+        },
+        "challenge": {},
+        "climax": {}
+     }
+  }
+</code></pre>
+
+<p>We can have <a href="#CanStart">can_start</a> checks for preventing the campaign to start here. The <code>"rarity"</code> is not really implemented.</p>
+
+
+
+<p>Then we have an <strong>"arcs"</strong> section. Arcs progress from "trigger" to "challenge" to "climax". Only the <strong>"trigger"</strong> arc is mandatory. Many campaigns such as the ambient threats and trader campaigns only use the trigger arc.</p>
+
+
+
+<p>We define only one arc file per each, with an identifier name for debugging, pointing to the arc index JSON file. An example of what it should contain (from the kitties campaign):</p>
+
+
+
+<pre><code>  {
+     "type": "arc",
+     "rarity": "common",
+     "encounters": {
+        "kitty_generator": "file(encounters/kitty_generator.json)",
+        "spawn_koda": "file(encounters/spawn_koda.json)",
+        "spawn_jacko": "file(encounters/spawn_jacko.json)",
+        "do_nothing": "file(encounters/do_nothing.json)"
+     }
+  }
+</code></pre>
+
+<p>The <strong>"type"</strong> is <strong>"arc"</strong>. Inside <strong>"encounters"</strong> we list all of the encounter JSON files that we'll use in our campaign (add them as you create them). The identifiers for the encounters only have lowercase, numbers and underscores by convention. Try to use short, descriptive names.</p>
+
+
+
+<h2><a name="CreatingEncounters"></a>How to create encounters</h2>
+
+
+<p>Encounters are just JSON files, like the campaign and arc indexes. We can organize our GM files in subfolders, so that every folder contains the encounters of a different arc, etc.</p>
+
+
+
+<p>In general, encounter files will have the following:</p>
+
+
+
+<pre><code>  {
+     "type": "encounter",
+     "encounter_type": "create_camp",
+     "rarity": "common",
+     "in_edge": "spawn_friendly_entities",
+     "out_edge": {
+        "type": "trigger_many",
+        "out_edges": [
+           "spawn_enemy_entities",
+           "wait_for_duration"
+        ]
+     },
+     "create_camp_info": {
+     }
+  }
+</code></pre>
+
+<p>As mentioned before, the "rarity" is not really used.</p>
+
+
+
+<ul>
+    <li><p><strong>"type" : "encounter"</strong></p></li>
+    <li><p><strong>"encounter_type"</strong> -- this is one of the existing <a href="encounters/index.html">types</a> or a custom one if you created it.</p></li>
+    <li><p><strong>"in_edge"</strong> -- required field, this is the identifier for this encounter and usually matches the identifier for this file from the arc index.</p>
+
+    <p>  <img src="../../../images/common/row_alert2.png" alt="icon"/> For each arc, you should have one encounter whose in edge is named <strong>"start"</strong>. This will be the encounter that triggers when the arc starts to run.</p></li>
+    <li><p><strong>"out_edge"</strong> -- optional field, an out edge as explained <a href="#OutEdge">before</a>.</p></li>
+    <li><p><strong>"unique"</strong> -- optional field (a boolean). When <strong>true</strong>, only one encounter of this type can be running at the same time.</p></li>
+    <li><p><strong>"can_start" : {}</strong> -- optional field. As explained <a href="#CanStart">before</a>, these are flags to prevent running this encounter.</p></li>
+    <li><p><strong>"mixins"</strong> -- optional field. A URI or array of URIs of mixins, so that you can reuse information in your encounters. Be careful if you nest mixins for encounter files, sometimes it's better to have all the information in sight.</p></li>
+    <li><p><strong>"encounter_info"</strong> -- this field's name will vary, it's normally the encounter type with <code>_info</code> attached at the end. Will contain all the data required for this encounter type.</p></li>
+</ul>
+
+
+
+<h2><a name="CustomEncounterType"></a>How to create your own encounter type</h2>
+
+
+<p>You can create a new type of reusable encounter in your mod (pretty similar to the <a href="encounters/index.html#Script">script</a> encounter but more organized). To do this:</p>
+
+
+
+<ul>
+    <li>Create a controller and add it under the "controllers" section of your manifest</li>
+    <li>The key for the controller must be named <strong>"game_master:encounters:your_custom_type"</strong></li>
+    <li>When using it in an encounter's JSON file, you must add an extra key called <strong>"mod_root"</strong>, at the same level than <strong>"encounter_type"</strong>, and its value should be the namespace of your mod.</li>
+</ul>
+
+
+
+<p>All encounters (and all scripts started from encounters) are controllers. More on controllers in <a href="../../advanced/controllers/index.html">this section</a> of the guide. So you can use lifecycle functions if you need to. These controllers need to have the <code>start(ctx,info)</code> function, and may also have other functions, such as <code>stop()</code>, <code>suspend()</code>/<code>continue()</code> or <code>can_start(ctx)</code>, besides any custom function that you create.</p>
+
+
+
+<p>You can find the controllers for the existing encounter types in <code>stonehearth/services/server/game_master/controllers/encounters</code>. There's also other scripts used for encounters in other subfolders of <code>stonehearth/services/server/game_master/controllers</code>.</p>
+
+
+
+<h2><a name="Testing"></a>How to test your campaigns with debugtools</h2>
+
+
+<p>Refer to the section about the <a href="../../essentials/debugtools/debugtools_mod/index.html#CampaignBrowser">Campaign Browser</a> for how to use it.</p>
+
+
+
+<h2><a name="SHED"></a>Editing campaigns with SHED</h2>
+
+
+<p>SHED has a great tool for creating encounters. At the time that this guide was written, you must prepare the <code>gm_index.json</code>, the <a href="#AddingCampaigns">campaign</a> and <a href="#AddingArcs">arc</a> JSON files before using it.</p>
+
+
+
+<ol>
+    <li><p>Add an alias in your mod pointing to your gm_index.</p>
+
+<pre><code>"aliases": {
+   "data:gm_index" : "file(data/gm/gm_index.json)"
+}
+</code></pre>
+
+<p>  <img src="../../../images/common/row_alert2.png" alt="icon"/> The alias has to be exactly <strong>"data:gm_index"</strong>, otherwise SHED won't be able to find it. Also, remember to add a mixinto to the stonehearth's gm_index so that you can test your campaigns in the game.</p></li>
+    <li><p>Open SHED and click on the "Encounter Designer" tab.</p>
+
+    <p>  You should see a tree listing the campaigns of all the mods you have ready in your folder. Click on one of the campaigns and you should see a graph at the right displaying what the campaign looks like:</p>
+
+    <p>  <img src="../../../images/intermediate/campaigns/goblin_campaign.png" alt="goblin_campaign"/></p>
+
+    <p>  You can zoom in/out of the graph with the mouse wheel, and you can pan around the graph with the third mouse button (press the mouse wheel, hold it down, and move the mouse). You can see subtrees in the graph being highlighted when you hover over them.</p>
+
+    <p>  Whenever you change a node, remember to save the changes and click on the "Refresh Encounters" button at the top right, so that the graph gets updated (for example, imagine you create a new encounter/node, it will be unattached to the graph. But if you edit another node so that it points to your new node as an out_edge, that won't be reflected in the graph until you reload/refresh). Sometimes it will refresh automatically, for example when deleting nodes.</p></li>
+    <li><p>To create an encounter: right-click in an empty part of the tree/graph, go to 'Add New Node->' and choose the type of the encounter you want to add (only default <a href="encounters/index.html">encounter types</a> are supported, custom ones won't appear).</p>
+
+    <p>  Then, a dialog will appear. Go to the encounters folder of your choice (it might be pointing to the wrong arc perhaps) and write a name for your new JSON file. It is recommended that the name for the file is in lowercase and with no spaces or symbols. It can contain underscores and numbers, though.</p>
+
+    <p>  Once you click on 'Save', the JSON file will be created and the encounter will get added to the list of encounters (if you have more than one arc it won't, but right-clicking on the node in the graph will show you an option to parent it to the arc of your choice). If you don't see it added you might need to refresh the encounters.</p>
+
+    <p>  After it is created, select its node and change some of the default values to get rid of the errors in the file, such as the in/out edges, etc. If it's your first encounter, make sure to give it an in edge of <strong>"start"</strong>, so that it gets parented to the arc node after refreshing and starts shaping the tree.</p>
+
+    <p>  You can also clone an encounter or delete it via context menu action (right-clicking on the encounter node). It will add/remove the encounter to the arc JSON file automatically. When deleting, it will really delete the JSON file (unlike when removing aliases in the Manifest tab) so make sure that you truly want to delete it.</p></li>
+</ol>
+
+
+
+<p>You should see several options in the bar above the JSON editor. The first one is to open the current file in your default text editor (for JSON files), the second one is for opening the containing folder of this file, the third one is to save, and the last one is to localize the file (remember that sometimes localizing might not work). If you added mixins, the preview with mixins button should also appear at the end.</p>
+
+
+
+<p>When you save, the JSON will be formatted nicely if you had some bad indentations.</p>
+
+
+
+<p>The JSON editor in SHED supports autocomplete and hints for encounters, which is extremely useful. If you don't get the dropdown for a property, try deleting everything until the property name, then type the ':' and see if it appears. Navigate through the options with the arrow keys and press Enter or double click to confirm an option:</p>
+
+
+
+<p><img src="../../../images/intermediate/campaigns/auto_complete.png" alt="auto_complete"/></p>
+
+
+
+<p>If the color at the left of the file is green, everything's fine. When it's red, SHED won't let you save the file (syntax errors). Hovering over the arrows at the left will show a tooltip describing the problem. If it's orange, there might be some missing field or some data that SHED doesn't recognize, but will let you proceed. When it's gray it means that SHED isn't checking for errors in this file because it doesn't know what should it contain, so you're responsible for what you're writing.</p>
+
+
+
+<p>These are different node types you can see in the graph and their meaning:</p>
+
+
+
+<ul>
+    <li>Blue nodes: represent the campaign itself. Click on one and you should see the corresponding campaign.json file, and you will be able to edit it. You can edit the gm_index file in the Manifest tab, if you need to.</li>
+    <li>Turquoise nodes: represent arcs. Click on one and you should see the corresponding arc.json file, which lists all the encounters from that arc.</li>
+    <li>Gray nodes: represent arc starting or ending nodes, and out_edges from some encounters. They don't have associated files, they are just indicating choices or naming out edges.</li>
+    <li>Green nodes: encounter nodes. These can be of any type. They have a little icon at the left indicating the type of encounter.</li>
+    <li>Orange nodes: these are <a href="encounters/index.html#Generator">generator</a> encounters. They are used to spawn the same out edges in a loop, according to specific conditions.</li>
+    <li>Nodes with red borders: these either have errors in their JSON, or are not specified in the list of encounters.</li>
+    <li>Nodes with a streaked background: they have unsaved changes.</li>
+</ul>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

@@ -1,0 +1,2402 @@
+<head>
+   <link href='./../../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../../images/favicon_logo_sh.png'>
+   <title>Generic encounters</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <a name="top"></a>
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">
+   <div class='page_title'>Generic encounters</div>
+   <p><p>Let's take a look at the available encounter types and their associated properties. Their controllers can be found in <code>stonehearth/services/server/game_master/controllers/encounters</code>.</p></p>
+
+
+<ul>
+    <li><a href="#WaitEncounters">Wait encounters</a>
+    <ul>
+        <li><a href="#Wait">Wait</a></li>
+        <li><a href="#WaitForTimeOfDay">Wait for time of day</a></li>
+        <li><a href="#WaitForEvent">Wait for event</a></li>
+        <li><a href="#WaitForNetWorth">Wait for net worth</a></li>
+        <li><a href="#WaitForRequirementsMet">Wait for requirements met</a></li>
+    </ul></li>
+    <li><a href="#GateEncounters">Gate encounters</a>
+    <ul>
+        <li><a href="#Generator">Generator</a></li>
+        <li><a href="#ItemThreshold">Item threshold</a></li>
+    </ul></li>
+    <li><a href="#FlagEncounters">Flag encounters</a>
+    <ul>
+        <li><a href="#Counter">Counter</a></li>
+        <li><a href="#SetCounters">Set counters</a></li>
+    </ul></li>
+    <li><a href="#UtilityEncounters">Utility encounters</a>
+    <ul>
+        <li><a href="#DestroyEntity">Destroy entity</a></li>
+        <li><a href="#Script">Script</a></li>
+    </ul></li>
+    <li><a href="#DialogEncounters">Dialog encounters</a>
+    <ul>
+        <li><a href="#Bulletin">Bulletin</a></li>
+        <li><a href="#DialogTree">Dialog tree</a></li>
+        <li><a href="#Shop">Shop</a></li>
+        <li><a href="#DeliveryQuest">Delivery quest</a></li>
+        <li><a href="#CollectionQuest">Collection quest</a></li>
+    </ul></li>
+    <li><a href="#RewardEncounters">Reward encounters</a>
+    <ul>
+        <li><a href="#DonationDialog">Donation dialog</a></li>
+        <li><a href="#Donation">Donation</a></li>
+        <li><a href="#UnlockRecipe">Unlock recipe</a></li>
+    </ul></li>
+    <li><a href="#TownProgressionEncounters">Town progression encounters</a>
+    <ul>
+        <li><a href="#TownUpgradeChoice">Town upgrade choice</a></li>
+        <li><a href="#TownUpgrade">Town upgrade</a></li>
+        <li><a href="#CityTierAchieved">City tier achieved</a></li>
+        <li><a href="#CityTierQuest">City tier quest</a></li>
+    </ul></li>
+    <li><a href="#CitizenEncounters">Citizen encounters</a>
+    <ul>
+        <li><a href="#AddCitizen">Add citizen</a></li>
+        <li><a href="#Reembarkation">Reembarkation</a></li>
+        <li><a href="#DispatchQuest">Dispatch quest</a></li>
+    </ul></li>
+    <li><a href="#RaidEncounters">Raid encounters</a>
+    <ul>
+        <li><a href="#CreateCamp">Create camp</a></li>
+        <li><a href="#CreateMission">Create mission</a></li>
+        <li><a href="#CityRaid">City raid</a></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="WaitEncounters"></a>Wait encounters</h2>
+
+
+<h3><a name="Wait"></a>Wait</h3>
+
+
+<p>An encounter that waits for the specified length of game time before triggering its out edges.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "wait"</strong></p></li>
+    <li><p><strong>"wait_info" : {}</strong></p>
+
+    <ul>
+        <li><strong>"duration"</strong> -- a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a> representing how much in-game time we want to wait.</li>
+        <li><strong>"game_mode_tuning"</strong> -- optional field. A boolean for enabling tuning overrides for the <strong>"duration"</strong> parameter of this encounter. You can check an example in the <code>"encounter_tuning_overrides"</code> section from <code>stonehearth/data/game_mode/hard/hard.json</code> (the field is called `"delay" there). In this case, the modifier would be applied when the player chooses hard mode.</li>
+        <li><strong>"destroy_on_trigger"</strong> -- optional field. A boolean to destroy this node after the out edge is triggered.</li>
+        <li><strong>"continue_on_disconnect"</strong> -- optional field. A boolean for continuing to run this node when a player (client) disconnects from a multiplayer game. It's <strong>false</strong> by default (pauses this encounter / timer and resumes it once the player reconnects).</li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="WaitForTimeOfDay"></a>Wait for time of day</h3>
+
+
+<p>An encounter that waits until a given game time of day before triggering its out edges.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "wait_for_time_of_day"</strong></p></li>
+    <li><p><strong>"wait_for_time_of_day_info" : {}</strong></p>
+
+    <ul>
+        <li><strong>"time"</strong> -- the in-game time of day with an optional random element. E.g.: <code>"15:30"</code> means '3:30 PM'. <code>"5:00+1h30m"</code> means 'between 5:00 AM and 6:30 AM'.</li>
+        <li><strong>"continue_on_disconnect"</strong> -- optional field. A boolean for continuing to run this node when a player (client) disconnects from a multiplayer game. It's <strong>false</strong> by default (pauses this encounter / timer and resumes it once the player reconnects).</li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="WaitForEvent"></a>Wait for event</h3>
+
+
+<p>An encounter that waits for an event on an entity (or entitites) before triggering its out edges.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "wait_for_event"</strong></p></li>
+    <li><p><strong>"wait_for_event_info" : {}</strong></p>
+
+<ul>
+    <li><p><strong>"source"</strong> -- object where the event will be listened to. Usually an entity from a previous encounter that has been registered in the shared context. Example: <code>"wolf_pack_raid.wolves"</code>.</p>
+
+<p> This property can also be an array, e.g.:</p>
+
+<pre><code>   [
+      "spawn_enemy_entities.wolf_skeleton",
+      "spawn_enemy_entities.skeletons",
+      "spawn_enemy_entities.skeleton_giant"
+   ]
+</code></pre>
+
+<p> The out edge will trigger once the event has been triggered for all of the sources. Notice that these entries can also refer to more than one entity too (e.g. in a previous encounter we create a random number of skeletons and store a reference to each of them in <code>"spawn_enemy_entities.skeletons"</code>).</p></li>
+    <li><p><strong>"event"</strong> -- name of the event to wait for. Example: <code>"stonehearth:kill_event"</code>.</p></li>
+    <li><p><strong>"repeatable"</strong> -- optional field. A boolean, <strong>false</strong> by default. If <strong>true</strong>, continues to listen and trigger out edges until this node is destroyed.</p></li>
+    <li><p><strong>"trigger_on_each"</strong> -- optional field. A boolean, <strong>false</strong> by default. If <strong>true</strong>, and "source" refers to multiple entities, triggers the out edge when any entry has the event triggered, instead of when all sources have had the event triggered. Normally used with <code>"repeatable" : true</code>.</p></li>
+</ul></li>
+</ul>
+
+
+
+<h3><a name="WaitForNetWorth"></a>Wait for net worth</h3>
+
+
+<p>An encounter that waits for the player to reach a specified net worth before triggering its out edges.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "wait_for_net_worth"</strong></p></li>
+    <li><p><strong>"wait_for_net_worth_info" : {}</strong></p>
+
+<ul>
+    <li><p><strong>"threshold"</strong> -- when net worth is higher than the threshold, the out edge will be triggered. It can be a number (no decimals) or a range, in which case we'll write it like this:</p>
+
+<pre><code>"threshold": {
+   "min": 3700,
+   "max": 4000
+}
+</code></pre>
+
+<p> A random number will be picked in that range, and we'll compare the net worth with it.</p></li>
+    <li><p><strong>"interval"</strong> -- optional field (<code>"1h"</code> by default). A <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a> for how often to check the net worth value to attempt to trigger the out edge. Checking less frequently is better for performance.</p></li>
+    <li><p><strong>"continue_on_disconnect"</strong> -- optional field. A boolean for continuing to run this node when a player (client) disconnects from a multiplayer game. It's <strong>false</strong> by default (pauses this encounter / timer and resumes it once the player reconnects).</p></li>
+</ul></li>
+</ul>
+
+
+
+<h3><a name="WaitForRequirementsMet"></a>Wait for requirements met</h3>
+
+
+<p>An encounter that waits until a set of requirements is satisfied before triggering its out edges.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "wait_for_requirements_met"</strong></p></li>
+    <li><p><strong>"wait_for_requirements_met_info" : {}</strong></p>
+
+<ul>
+    <li><p><strong>"requirements" : {}</strong> -- the list of requirements. For defining them, use the same structure and fields than inside the <code>"can_start"</code> <a href="../index.html#CanStart">tests</a>. E.g.:</p>
+
+<pre><code>"requirements" : {
+   "city_tier": {
+      "type": "deny_if_less_than",
+      "item": "city_tier",
+      "value": 2
+   },
+   "kingdom_check": {
+      "type": "deny_if_not",
+      "item": "kingdom",
+      "value": "stonehearth:kingdoms:ascendancy"
+   }
+}
+</code></pre></li>
+    <li><p><strong>"recheck_delay"</strong> -- optional field, a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a>. In-game time to wait between attempts to trigger the out egde, <code>"1h"</code> by default.</p></li>
+    <li><p><strong>"max_checks"</strong> -- optional field. Maximum amount of times to check. I.e. if we set this field to <code>5</code>, the sixth time that we try to check the requirements the node will get destroyed.</p></li>
+    <li><p><strong>"cancellation_event"</strong> -- optional field. Name of an event that will be listened on the population faction of the player. If the event gets triggered while this node is still active, the node will get destroyed.</p></li>
+    <li><p><strong>"continue_on_disconnect"</strong> -- optional field. A boolean for continuing to run this node when a player (client) disconnects from a multiplayer game. It's <strong>false</strong> by default (pauses this encounter / timer and resumes it once the player reconnects).</p></li>
+</ul></li>
+</ul>
+
+
+
+<h2><a name="GateEncounters"></a>Gate encounters</h2>
+
+
+<h3><a name="Generator"></a>Generator</h3>
+
+
+<p>A generator that triggers edges after a delay, optionally repeating in a loop.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "generator"</strong></p></li>
+    <li><p><strong>"generator_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"delay"</strong> -- a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a>. In-game time to wait before triggering the <code>"spawn_edge"</code>. The delay timer will be restarted each time that the edge is triggered.</p></li>
+        <li><p><strong>"spawn_edge"</strong> -- name of the edge to spawn after the delay (for example, <code>"city_raid"</code>). Can also refer to more than one edge (using the same syntax than for the value of <a href="../index.html#Edges">out edges</a>).</p></li>
+        <li><p><strong>"source_entity"</strong> -- optional field. Name of an object registered in the context (e.g. <code>"goblin_raiding_camp_1.boss"</code>). If the source entity is destroyed or doesn't exist, this encounter will stop spawning edges.</p></li>
+        <li><p><strong>"min_spawns"</strong> -- optional field. Minimum number of times that we want the generator to trigger the edges (minimum <code>1</code>).</p></li>
+        <li><p><strong>"max_spawns"</strong> -- optional field. Maximum number of times that we want the generator to trigger the edges (minimum <code>1</code>).</p>
+
+        <p> If we specify both <strong>"min_spawns"</strong> and <strong>"max_spawns"</strong>, a random number of times will be chosen between them and used as the spawn limit.</p>
+
+        <p> If we don't include any of them, the generator will keep spawning edges indefinitely (or until the source entity is destroyed, if we defined that field).</p>
+
+        <p> <img src="../../../../images/common/edit_big.png" alt="icon"/>If this generator encounter also has an out edge, it will be triggered when the maximum number of spawns is met (the minimum if we only defined min, or the random number if we included both).</p></li>
+        <li><p><strong>"game_mode_tuning"</strong> -- optional field. A boolean for enabling tuning overrides for the <strong>"delay"</strong> parameter of this encounter. You can check an example in the <code>"encounter_tuning_overrides"</code> section from <code>stonehearth/data/game_mode/hard/hard.json</code>. In this case, the modifier would be applied when the player chooses hard mode.</p></li>
+        <li><p><strong>"continue_on_disconnect"</strong> -- optional field. A boolean for continuing to run this node when a player (client) disconnects from a multiplayer game. It's <strong>false</strong> by default (pauses this encounter / timer and resumes it once the player reconnects).</p></li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="ItemThreshold"></a>Item threshold</h3>
+
+
+<p>An encounter that waits until a threshold is satisfied before triggering its out edges. The threshold will be compared with the item count from the player's storages, as long as those items match certain materials or URIs.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "item_threshold"</strong></p></li>
+    <li><p><strong>"item_threshold_info" : {}</strong></p>
+
+<ul>
+    <li><p><strong>"threshold"</strong> -- the amount to compare. It can also be a range, like this:</p>
+
+<pre><code>"threshold" {
+   "min": 800,
+   "max": 1200
+}
+</code></pre>
+<p> In this case a random number between <strong>"min"</strong> and <strong>"max"</strong> will be chosen to compare.</p></li>
+    <li><p><strong>"check"</strong> -- either <strong>"less_than"</strong> or <strong>"greater_than"</strong>. The condition to compare the threshold with. Internally they're treated as 'less or equal than' and 'greater or equal than'.</p></li>
+    <li><p><strong>"materials" : []</strong> -- an array of material tags. If we define this field, the encounter will trigger its out edge when the threshold is met for the items that have all the material tags from this array.</p></li>
+    <li><p><strong>"uris" : []</strong> -- an array of URIs. The items will match for the threshold if their URI is in this array.</p></li>
+</ul>
+
+
+
+<p>  We must define either the <strong>"materials"</strong> array or the <strong>"uris"</strong> array. Defining both will only take the "uris" one into account.</p></li>
+</ul>
+
+<h2><a name="FlagEncounters"></a>Flag encounters</h2>
+<h3><a name="Counter"></a>Counter</h3>
+<p>An encounter that counts the number of times it runs and saves this information in the user-specified <code>ctx.ctx_registration_variable</code>. </p>
+
+
+
+<p>If it manages to run X times, it produces its success out edge. Otherwise, it produces its failure out edge. Both are specified in the <code>out_edges</code> field in the <code>"counter_info"</code>.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "counter"</strong></p></li>
+    <li><p><strong>"counter_info": {}</strong></p>
+
+<ul>
+    <li><p><strong>"out_edges" : {}</strong> -- contains the out edges that will trigger. E.g.:</p>
+
+<pre><code>"out_edges": {
+   "fail": "wait_for_next_shakedown",
+   "success": "unlock_red_token_recipe"
+}
+</code></pre>
+
+<p> Usually the <strong>"fail"</strong> out edge eventually leads back to an ancestor of this node, so that it can run again, but there are also other ways to run the same node again.</p></li>
+    <li><p><strong>"times"</strong> -- count up to this amount before triggering the <strong>"success"</strong> edge. Before then, triggers the <strong>"fail"</strong> edge.</p></li>
+    <li><p><strong>"ctx_registration_variable"</strong> -- a name for the variable to store the current count in. E.g.: <code>"blue_tier_shakedown_success_counter"</code>.</p></li>
+    <li><p><strong>"optional_reference_entity"</strong> -- optional field, a reference to an entity registered previously in the shared context (e.g. <code>"create_blue_tier_camp.entities.loot_chest"</code>). The encounter only increases the count if the reference entity still exists and is the same one as last time. If it doesn't exist, then the encounter does nothing. If it exists, but is a different entity than the one stored in context from last time, the counter starts again.</p></li>
+</ul></li>
+</ul>
+
+
+
+<h3><a name="SetCounters"></a>Set counters</h3>
+
+
+<p>Updates the values of campaign-wide counters which are used for gating encounters via the <code>"counter"</code> <code>can_start</code> <a href="../index.html#CanStart">check</a>.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "set_counters"</strong></p></li>
+    <li><p><strong>"set_counters_info" : {}</strong></p>
+
+<ul>
+    <li><p><strong>"counters" : {}</strong> -- one or more key-value pairs where the key is the name of a counter that we want to create or reuse, and the value is either a number or a formula to evaluate. The formula is a string containing any Lua expression, where 'x' is the counter's current value (defaults to 0). For example:</p>
+
+<pre><code>"counters" : {
+   "foo": 42,
+   "bar": "x / 2 + 1",
+   "quux": "stonehearth.calendar:get_seconds_since_last_midnight()"
+}
+</code></pre></li>
+</ul></li>
+</ul>
+
+
+
+<p><img src="../../../../images/common/row_alert2.png" alt="icon"/> Don't confuse these counters with the <code>"counter"</code> <a href="#Counter">encounter</a>. They have different purposes.</p>
+
+
+
+<h2><a name="UtilityEncounters"></a>Utility encounters</h2>
+
+
+<h3><a name="DestroyEntity"></a>Destroy entity</h3>
+
+
+<p>An encounter that destroys specific entities.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "destroy_entity"</strong></p></li>
+    <li><p><strong>"destroy_entity_info" : {}</strong></p>
+
+<ul>
+    <li><p><strong>"target_entities" : []</strong> -- an array containing the registration paths (e.g. <code>"golem_raid.golems"</code>) of the entities that should be destroyed.</p></li>
+    <li><p><strong>"effect"</strong> -- optional field. URI of an effect that the entities will play when they get destroyed (e.g.: <code>"stonehearth:effects:poof_effect:grey"</code>).</p></li>
+    <li><p><strong>"random_delay" : {}</strong> -- optional field. A range (<strong>"min"</strong> and <strong>"max"</strong> values) of milliseconds. A random amount will be chosen between them and the entities will despawn after waiting for it. This is used so that the entities don't disappear all at the same time, and so that they don't start the effect (if specified) all at the same time. Normally we use a tiny value, less than a second.</p></li>
+    <li><p><strong>"continue_always"</strong> -- optional field (a boolean). When <strong>true</strong>, triggers next encounter even if didn't destroy anything. When <strong>false</strong>, will not continue if didn't destroy anything.</p>
+
+    <p> Usually you'll want to set this to <strong>true</strong> if the entities might have been destroyed by other means before this encounter gets to run (for example, mobs from ambient threats that the hearthlings might have already killed).</p></li>
+    <li><p><strong>"destroy_all_registered_entities"</strong> -- optional field. A boolean, when <strong>true</strong>, the encounter destroys all entities in <code>ctx.entity_registration_paths</code> instead of the ones specified in <strong>"target_entities"</strong> (so you can use this field instead of that one if you want everything destroyed). Useful for cleaning up mobs after a while, to save computer resources as new entities spawn in the map.</p></li>
+    <li><p><a name="SampleScript"></a><strong>"script"</strong> -- optional field. URI for a script to run right before destroying the entities. The script must have a <code>"start"</code> function at least. For example:</p>
+
+<pre><code>local GoblinCampDepartsScript = class()
+
+-- When the camp departs, no matter how the player interacted with
+-- these goblins, set amenity for all goblins back to hostile.
+
+function GoblinCampDepartsScript:start(ctx)
+   stonehearth.player:set_neutral_to_everyone('goblins', false)
+end
+
+return GoblinCampDepartsScript
+</code></pre>
+
+<p> We can access the encounter's context using the <code>ctx</code> argument. Remember that if you want to use an alias for your script instead of a path, you must add it under <code>"controllers"</code> in the manifest.</p></li>
+</ul></li>
+</ul>
+
+
+
+<h3><a name="Script"></a>Script</h3>
+
+
+<p>An encounter that does nothing but run the associated script (which is created as a controller).</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "script"</strong></p></li>
+    <li><p><strong>"script_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"script"</strong> -- the URI of the script to run. Similar to the example script <a href="#SampleScript">above</a>, it must have a <code>start(ctx, data)</code> function. The <code>ctx</code> argument will have the context of the node, and the <code>data</code> argument will contain the data from the <strong>"data"</strong> field in the encounter's JSON file. Remember that if you want to use an alias for your script instead of a path, you must add it under <code>"controllers"</code> in the manifest.</p></li>
+        <li><p><strong>"data" : {}</strong> -- optional field. The data that will be passed to our custom script.</p></li>
+        <li><p><strong>"continue_on_disconnect"</strong> -- optional field. A boolean for continuing to run this node when a player (client) disconnects from a multiplayer game. It's <strong>false</strong> by default (pauses this encounter and resumes it once the player reconnects).</p>
+
+        <p> <img src="../../../../images/common/row_alert2.png" alt="icon"/> If you don't set <strong>"continue_on_disconnect"</strong> to <strong>true</strong>, you might need to implement <code>suspend()</code> and <code>continue()</code> functions in your custom script, so that the game knows if it has to stop some timer, resume it later, etc. They will be called when the player disconnects / reconnects.</p></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="DialogEncounters"></a>Dialog encounters</h2>
+
+
+<h3><a name="Bulletin"></a>Bulletin</h3>
+
+
+<p>An encounter that displays a notification bulletin.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "bulletin"</strong></p></li>
+    <li><p><strong>"bulletin_info" : {}</strong></p>
+
+    <ul>
+        <li><strong>"type"</strong> -- either <strong>"info"</strong>, <strong>"alert"</strong> or <strong>"quest"</strong>. This changes the appearance of the bulletin in the game. If the type is <strong>"alert"</strong>, it will be shown separately from the normal bulletins and won't be hidden automatically when another bulletin is shown. New alerts will show on top of older ones.</li>
+        <li><strong>"title"</strong> -- a localized text for the bulletin. The bulletin will disappear when the player clicks on it. If you want some other message to appear in a window after this, take a look at the <a href="#DialogTree">dialog tree</a> encounter.</li>
+        <li><strong>"sticky"</strong> -- optional field (a boolean, <strong>false</strong> by default). Sticky bulletin notifications stay up in the UI until the user addresses them. Non-sticky ones will fade out after some seconds, but will still be accesible in the bulletin list.</li>
+        <li><strong>"zoom_to_entity"</strong> -- optional field. Reference to a context registration path. When the user clicks on the bulletin, the camera will focus on this entity if it exists.</li>
+        <li><strong>"send_to_all_players"</strong> -- optional field (a boolean, <strong>false</strong> by default). Use when you want the bulletin to appear for all the players. This is normally not wanted, since the campaigns run independently for each player, but it can be useful sometimes (for example, this is used in the Titan campaign since it affects a large portion of the map, often messing with other players' towns).</li>
+        <li><strong>"active_duration"</strong> -- optional field (a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a>. If we specify this field, the bulletin will be automatically removed after this duration even when the player hasn't interacted with it. Useful to prevent cluttering the bulletin list with notifications that might not be relevant anymore after a while.</li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="DialogTree"></a>Dialog Tree</h3>
+
+
+<p>An encounter that displays a dialog tree whose choices eventually lead to potentially different out edges.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "dialog_tree"</strong></p></li>
+    <li><p><strong>"dialog_tree_info" : {}</strong></p>
+
+<ul>
+    <li><p><strong>"start_node"</strong> -- key of the dialog node with which we want to start (e.g. <code>"msg1"</code>).</p></li>
+    <li><p><strong>"source_entity"</strong> -- optional field. A reference to an object from another node (e.g. <code>"goblin_raiding_camp_1.boss"</code>). The dialog tree will only start if this source entity exists.</p></li>
+    <li><p><strong>"i18n_data" : {}</strong> -- optional field. A dictionary for setting i18n var data for the dialogs. Can be a reference to ctx paths or literal values. E.g.:</p>
+
+<pre><code>  "i18n_data" : {
+     "boss_display_name" : "Emma",
+     "town_name" : "town_name"
+  }
+</code></pre>
+
+<p> <a name="I18nData"></a>In the <code>en.json</code> file we'd use them like this, for example:</p>
+
+<pre><code>  "msg01" : "The enemy called [str(i18n_data.boss_display_name)] appears",
+  "msg02" : "They came with a goblin called [name(i18n_data.goblin)]."
+</code></pre>
+
+<p> The difference between <code>[str()]</code> and <code>[name()]</code> is that <code>[name()]</code> is used when we want to reference the name of an entity that's been registered in the context (an entity that has a custom name - such as hearthlings, monsters and NPCs). In that case we don't need to add it to <strong>"i18n_data"</strong>.</p>
+
+<p> There are some encounters that will add variables to the context, we can use those as values in our <strong>"i18n_data"</strong> too (for example, the town's name is already registered in <code>town_name</code> since many dialogs wish to call on it).</p></li>
+    <li><p><strong>"script"</strong> -- optional field. The URI of a script that will get to run before the dialog starts (remember that if you want to use an alias for your script instead of the path, you must add it under <code>"controllers"</code> in the manifest).</p>
+
+<p> Similar to the example <a href="#SampleScript">above</a>, it must have a <code>start(ctx, info)</code> function (we'll pass it the context and all the info accessible under <strong>"dialog_tree_info"</strong> from the encounter's JSON file). An example would be initializing custom i18n data before the dialog runs, e.g.:</p>
+
+<pre><code> "i18n_data" : {
+    "town_serial_number": "town_serial_number",
+    "english_town_ordinal_suffix": "english_town_ordinal_suffix"
+ }
+</code></pre>
+
+<p> We declared the above data in our encounter's JSON file, but their value isn't initialized anywhere. So we create and reference the following script which will register the values for those variables in the context:</p>
+
+<pre><code> local TownProgressionI18NDataScript = class()
+
+ function TownProgressionI18NDataScript:start(ctx)
+    ctx.town_serial_number = stonehearth.town:get_town(ctx.player_id)
+                                             :get_town_serial_number()
+    ctx.english_town_ordinal_suffix = english_number_ordinal_suffix(ctx.town_serial_number)
+ end
+
+ function english_number_ordinal_suffix(number)
+   local n = ""..number
+   local ordinal, digit = {"st", "nd", "rd"}, string.sub(n, -1)
+   if tonumber(digit) &gt; 0 and tonumber(digit) &lt;= 3 and
+        string.sub(n,-2) ~= 11 and string.sub(n,-2) ~= 12 and
+        string.sub(n,-2) ~= 13 then
+     return ordinal[tonumber(digit)]
+   else
+     return "th"
+   end
+ end
+
+  return TownProgressionI18NDataScript
+</code></pre>
+
+<p> Then we can use <code>[str(i18n_data.town_serial_number)]</code> in the texts of our dialog tree.</p></li>
+    <li><p><strong>"choose_ctx_portrait" : []</strong> -- optional field. An array with URIs of portraits for the dialog. One of these provided options will be chosen and can be referenced by this and later dialogs that set <strong>"use_ctx_portrait"</strong> and have nodes with a portrait field.</p></li>
+    <li><p><strong>"use_ctx_portrait"</strong> -- optional field (a boolean). Whether to use a (currently or previously) <strong>"chosen_ctx_portrait"</strong>. This way we can choose a random portrait on each gameplay for variety, but keeping it for the duration of the quest.</p></li>
+    <li><p><strong>"nodes" : {}</strong> -- the nodes of the dialog. Each node is an object with a custom identifying key (try to use meaningful names to keep your data organized). Inside each node, we have the <strong>"bulletin" : {}</strong> field with the following properties:</p>
+
+<ul>
+    <li><strong>"title"</strong> -- a localized title for the notification. We need it for all the nodes, since each dialog will also be an entry in the bulletin list, even if the notification only pops up for the first one. The bulletin type will always be <code>"quest"</code> for this encounter type.</li>
+    <li><strong>"dialog_title"</strong> -- a localized title for the dialog. Will appear at the top of the dialog window. It is mandatory, but if you don't want to have it you can define it as an empty string.</li>
+    <li><strong>"portrait"</strong> -- optional field. URI of a portrait for the dialog. If you registered a portrait in the same encounter or in a previous encounter, and have set <strong>"use_ctx_portrait"</strong> to <strong>true</strong>, then you can set the portrait to an empty string (in some of the existing encounters you'll see <code>"$ctx"</code> for this too).</li>
+</ul>
+
+
+
+<p> This will ensure that the portrait is shown and that it reuses the one that was saved in the context. Note that using a registered portrait will make it so all dialog nodes from the encounter have the same portrait, as long as the field exists in them. You won't be able to change specific ones to other portraits if you reuse the portrait.</p>
+
+
+<ul>
+    <li><p><strong>"portrait_offset"</strong> -- optional field. Number of pixels to offset the portrait from the top.</p></li>
+    <li><p><strong>"message"</strong> -- a localized text for the message of the current node. It can also be an array of localized texts, that way one will be chosen at random. You can include i18n_data in the localized text, as well as some HTML tags to give it a bit of format.</p></li>
+    <li><p><strong>"choices" : {}</strong> -- one or more choices for the player to advance the dialog to the next node. Their keys are localized texts for the buttons, but WITHOUT the <code>"i18n()"</code> wrapping them. their values are objects and will vary. For example:</p>
+
+<pre><code> "choices" : {
+    "my_mod_namespace:campaigns.abc.encounters.dialog_1.msg1.choice_00": {
+       "next_node": "msg2"
+    },
+    "my_mod_namespace:campaigns.abc.encounters.dialog_1.msg1.choice_01": {
+       "next_node": "msg4"
+    },
+    "my_mod_namespace:campaigns.abc.encounters.dialog_1.msg1.choice_02": {
+       "out_edge": "dialog_ends"
+    }
+ }
+</code></pre>
+
+<p>We can have either <strong>"next_node"</strong>, pointing to the key of another node of the dialog, or <strong>"out_edge"</strong>, which will finish the dialog and trigger the specified <a href="../index.html#Edges">out egde</a>.</p>
+
+<p><img src="../../../../images/common/row_alert2.png" alt="icon"/> Notice that for this encounter type we often don't have an out edge defined, because the out edge is specified in the dialog choices, and more than one choice can point to the same out edge.</p></li>
+</ul></li>
+</ul></li>
+</ul>
+
+
+
+<h3><a name="Shop"></a>Shop</h3>
+
+
+<p>An encounter that displays a shop menu with a given set of items for sale.</p>
+
+
+
+<ul>
+    <li><p><strong>encounter_type" : "shop"</strong></p></li>
+    <li><p><strong>"shop_info" : {}</strong></p>
+
+    <ul>
+        <li><strong>"name"</strong> -- a localized name for the shop. Will appear on top of the shop window.</li>
+        <li><strong>"title"</strong> -- a localized text for the shop notification.</li>
+        <li><strong>"inventory" : {}</strong> -- the contents of the shop. They will match the specified set of filters (rarities, materials, URIs...). You can see a longer explanation about how to set them up <a href="../../../basic/misc_json/shops/index.html#Inventory">here</a>.</li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="DeliveryQuest"></a>Delivery quest</h3>
+
+
+<p>An encounter that represents a persistent quest notification that can be completed or abandoned.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "delivery_quest"</strong></p></li>
+    <li><p><strong>"delivery_quest_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"title"</strong> -- a localized text for the bulletin notification.</p></li>
+        <li><p><strong>"dialog_title"</strong> -- a localized text for the quest dialog, will appear at the top of the window.</p></li>
+        <li><p><strong>"text"</strong> -- optional field. A localized text to show above the list of requirements.</p></li>
+        <li><p><strong>"abandon_out_edge"</strong> -- optional field. Out edge that will be triggered if the player abandons this quest (in the town progression quests, this points to a previous encounter, so that the player can choose this quest again if they want to).</p></li>
+        <li><p><strong>"requirements" : []</strong> -- an array of objects with requirements to fulfill the quest (player can complete the quest whenever they want, as long as these requirements are met. They can also abandon the quest at any given moment if they need to).</p>
+
+        <p> Each requirement will have a <strong>"type"</strong> field and one or more additional fields that depend on it (they're indented below for readability). Here are the possible values:</p>
+
+        <ul>
+            <li><p><strong>"type" : "give_item"</strong> -- deliver N items of the specific URI.</p>
+
+            <ul>
+                <li><strong>"uri"</strong> -- URI of the item.</li>
+                <li><strong>"count"</strong> -- amount of items to deliver.</li>
+                <li><strong>"keep_items"</strong> -- optional field (a boolean). When <strong>true</strong>, the items won't be removed from the player's inventory on quest completion.</li>
+            </ul></li>
+            <li><p><strong>"type" : "give_material"</strong> -- deliver N items that are tagged with the given material.</p>
+
+            <ul>
+                <li><strong>"material"</strong> -- material tag that the items must have to fulfill this requirement.</li>
+                <li><strong>"count"</strong> -- amount of items to deliver.</li>
+                <li><strong>"keep_items"</strong> -- optional field (a boolean). When <strong>true</strong>, the items won't be removed from the player's inventory on quest completion.</li>
+            </ul></li>
+            <li><p><strong>"type" : "job_level"</strong> -- have a hearthling of the given job at a given minimum level.</p>
+
+            <ul>
+                <li><strong>"uri"</strong> -- alias of the job.</li>
+                <li><strong>"level"</strong> -- a citizen must be at least this level in the given job in order to fulfill the requirement.</li>
+            </ul></li>
+            <li><p><strong>"type" : "happiness"</strong> -- have N citizens at a given minimum happiness level.</p>
+
+            <ul>
+                <li><strong>"min_value"</strong> -- a number representing the minimum happiness to fulfill the requirement. Remember that happiness goes from 1 to 100.</li>
+                <li><strong>"min_citizens"</strong> -- a number representing how many citizens must be at least that happy to fulfill the requirement. Instead of a number, you can also use <strong>"all"</strong>, to represent all citizens regardless of how many of them there are.</li>
+            </ul></li>
+            <li><p><strong>"type" : "gold"</strong> -- have N gold coins (current, spent, or earned).</p>
+
+            <ul>
+                <li><strong>"subtype"</strong> -- either <strong>"give"</strong>, <strong>"have"</strong>, <strong>"spent"</strong> or <strong>"earned"</strong>. If the subtype is <strong>"give"</strong>, the gold will be subtracted from the player's inventory on quest completion. The <strong>"spent"</strong> and <strong>"earned"</strong> types refer to gold obtained by buying and selling in shops.</li>
+                <li><strong>"count"</strong> -- the required amount of gold.</li>
+            </ul></li>
+            <li><p><strong>"type" : "have_item_quality"</strong> -- have N deployed or stored items of a given minimum quality.</p>
+
+            <ul>
+                <li><strong>"quality"</strong> -- a number representing the item quality: <strong>1</strong> for standard quality, <strong>2</strong> for fine quality, <strong>3</strong> for excellent quality and <strong>4</strong> for masterwork quality (mind that this last quality is only unlocked in one branch of the town progression quests).</li>
+                <li><strong>"count"</strong> -- the amount of items that must have at least the given quality.</li>
+            </ul></li>
+            <li><p><strong>"type" : "net_worth"</strong> -- have a given minimum net worth.</p>
+
+            <ul>
+                <li><strong>"value"</strong> -- the minimum net worth to have.</li>
+            </ul></li>
+            <li><p><strong>"type" : "placed_item"</strong> -- have a given item placed in the world.</p>
+
+            <ul>
+                <li><strong>"uri"</strong> -- URI of the item.</li>
+            </ul></li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="CollectionQuest"></a>Collection quest</h3>
+
+
+<p>An encounter that shows a dialog asking for items.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "collection_quest"</strong></p></li>
+    <li><p><strong>"collection_quest_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"out_edges" : {}</strong> -- contains 3 fields (<strong>"refuse"</strong>, <strong>"fail"</strong> and <strong>"success"</strong>), each pointing to the out edge to trigger depending on the results of the quest.</p>
+
+        <p> <img src="../../../../images/common/row_alert2.png" alt="icon"/>Note that usually we don't add an out edge to this encounter's JSON file, since it will trigger one of these depending on the player's choice.</p></li>
+        <li><p><strong>"script"</strong> -- URI of the controller of a script that will determine which items to ask for (e.g.: <code>"stonehearth:game_master:script:collection_quest_shakedown"</code>). If you create your own, make sure to add it under <code>"controllers"</code> in your manifest. We'll pass the data under <strong>"collection_quest_info"</strong> to the script on creation. The script must have a <code>get_tribute_demand</code> function that returns an object (Lua table) containing URIs of items pointing to four fields: uri, count, icon and display_name. Take a look at how it's implemented in <code>collection_quest_shakedown.lua</code>.</p></li>
+        <li><p><strong>"filler_material" : {}</strong> -- optional field. Contains a map of URIs of biomes pointing to URIs of resources. Depending on the biome, a different resource will be chosen as a filler material for the request. This is used in the <code>"stonehearth:game_master:script:collection_quest_shakedown"</code> script, so you may want to add your own custom data if you don't reuse it.</p></li>
+        <li><p><strong>"skip_return_trip"</strong> -- optional field (a boolean). When <strong>true</strong>, the encounter is a simple item request so the "collection_due" dialog will be shown directly.</p>
+
+        <p> <img src="../../../../images/common/row_alert2.png" alt="icon"/> There's a known issue that when using this option the player can confirm the dialog even when not having all of the items (in which case only the available items will be removed from inventory). This means that the "fail" out edge can't be triggered, only the "success" and "refuse" ones can. If you want to use this option, you may want to use the <a href="#DeliveryQuest">delivery quest</a> encounter instead.</p></li>
+        <li><p><strong>"source_entity"</strong> -- optional field. A reference to a context registration path. The encounter won't start if this entity doesn't exist, and will be halted if the entity dies while the quest is active.</p></li>
+        <li><p><strong>"duration"</strong> -- a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a> for how long to wait before collecting the requested items.</p></li>
+        <li><p><strong>"dialog_view"</strong> -- optional field, if it's <strong>"portrait"</strong> the same view than for showing the demands will be used. Otherwise, you can use the name of a custom UI view. This dialog view will be used only for the introduction dialog.</p></li>
+        <li><p><strong>"i18n_data"</strong> -- optional field. Same than for the <a href="#DialogTree">dialog tree</a> encounter.</p></li>
+        <li><p><strong>"nodes" : {}</strong> -- a list of nodes for the dialog. Each node is a key containing several properties. The keys must have the following names: <strong>"introduction"</strong>, <strong>"shakedown"</strong>, <strong>"shakedown_refused"</strong>, <strong>"collection_progress"</strong>, <strong>"collection_due"</strong>, <strong>"collection_failed"</strong>, <strong>"collection_success"</strong>, <strong>"revenge"</strong>.</p>
+
+        <p> Only the <strong>"collection_due"</strong>, <strong>"collection_failed"</strong> and <strong>"collection_success"</strong> nodes are mandatory, the rest are optional.</p>
+
+        <p> Assuming all are defined, the order in which they'll appear is: "introduction", "shakedown", then "collection_progress" if the player accepts, or "shakedown_refused" if the player declines, in which case the "refuse" out edge will trigger and the "revenge" dialog will appear.</p>
+
+        <p> If the player accepted, after waiting for the <strong>"duration"</strong> the "collection_due" dialog will appear, then if they have the requested items and accept to give them, the items will be removed from inventory, the "collection_success" dialog will appear and the "success" out edge will be triggered. If the player didn't have the requested items or refused, the "collection_failed" dialog will appear instead, the "fail" out edge will trigger and the "revenge" dialog will appear. It will also run the <code>revenge(requested_items, info)</code> function from the associated script. The second parameter will contain the revenge bulletin data, inventory tracking data and revenge node data.</p>
+
+        <p> Each of these dialog nodes contains a <strong>"bulletin"</strong> field with the following properties:</p>
+
+        <ul>
+            <li><strong>"title"</strong> -- a localized title for the bulletin notification.</li>
+            <li><strong>"dialog_title"</strong> -- a localized title for the dialog window (mandatory for this encounter, but leave it as an empty string if you don't want it).</li>
+            <li><strong>"portrait"</strong> -- path to a portrait image for the dialog (mandatory for this encounter).</li>
+            <li><strong>"message"</strong> -- a localized text or an array of localized texts (in which case, a random one will be chosen). The message to show in the dialog. They can use variables from the <strong>"i18n_data"</strong> field.</li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="RewardEncounters"></a>Reward encounters</h2>
+
+
+<h3><a name="DonationDialog"></a>Donation dialog</h3>
+
+
+<p>An encounter that generates items and give them to the player via a dialog.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "donation_dialog"</strong></p></li>
+    <li><p><strong>"donation_dialog_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"loot_table"</strong> -- a <a href="../../../basic/misc_json/index.html#LootTables">loot table</a> with entries describing the items to donate to the player. Can be omitted if you only want to donate gold.</p></li>
+        <li><p><strong>"donation_gold"</strong> -- optional field. Amount of gold to donate (no decimals). If we registered <code>donation_gold</code> in the context in a previous encounter, we can omit this field and the registered variable will be used instead.</p></li>
+        <li><p><strong>"expiration_timeout"</strong> -- optional field (a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a>). If we specify this field, the dialog will be automatically removed after this duration even when the player hasn't interacted with it. Useful to prevent cluttering the bulletin list with notifications that might not be relevant anymore after a while.</p></li>
+        <li><p><strong>"choose_ctx_portrait" : []</strong> -- optional field. Same than for the <a href="#DialogTree">dialog tree</a> encounter.</p></li>
+        <li><p><strong>"use_ctx_portrait"</strong> -- optional field. Same than for the <a href="#DialogTree">dialog tree</a> encounter.</p></li>
+        <li><p><strong>"i18n_data" : {}</strong> -- optional field. Same than for the <a href="#DialogTree">dialog tree</a> encounter.</p></li>
+        <li><p><strong>"nodes": {}</strong> -- contains the <strong>"simple_message"</strong> field, inside which there's the <strong>"bulletin"</strong> field with the following properties:</p>
+
+        <ul>
+            <li><p><strong>"title"</strong> -- same than for the <a href="#DialogTree">dialog tree</a> encounter.</p></li>
+            <li><p><strong>"dialog_title"</strong> -- same than for the <a href="#DialogTree">dialog tree</a> encounter.</p></li>
+            <li><p><strong>"portrait"</strong> -- optional field. Same than for the <a href="#DialogTree">dialog tree</a> encounter.</p></li>
+            <li><p><strong>"message"</strong> -- same than for the <a href="#DialogTree">dialog tree</a> encounter.</p></li>
+            <li><p><strong>"choices" : {}</strong> -- same than for the <a href="#DialogTree">dialog tree</a> encounter, EXCEPT that they can only contain a <strong>"result"</strong> key with a value of either <strong>"accept"</strong> or <strong>"reject"</strong>. If the user clicks on the option that rejects, they won't get the items.</p>
+
+            <p>The out edge is specified at the encounter level, like in most of the other encounter types.</p></li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="Donation"></a>Donation</h3>
+
+
+<p>An encounter that generates items and drops them by the player's camp standard. If you want to have also some dialog for informing the player, you might want to use the <a href="#DonationDialog">donation dialog</a> encounter instead.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "donation"</strong></p></li>
+    <li><p><strong>"donation_info" : {}</strong></p>
+
+    <ul>
+        <li><strong>"loot_table"</strong> -- a <a href="../../../basic/misc_json/index.html#LootTables">loot table</a> with entries describing the items to donate to the player.</li>
+        <li><strong>"container"</strong> -- optional field. URI of an entity to act as a loot box (will spawn and have the loot command on it, spawning the items from the loot table when the player clicks on the command).</li>
+        <li><strong>"ctx_entity_registration_path"</strong> -- an optional field. Name for a context path in which to reference the spawned items (either the container, or the items if we have no container).</li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="UnlockRecipe"></a>Unlock recipe</h3>
+
+
+<p>An encounter that unlocks recipes for the player.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "unlock_recipe"</strong></p></li>
+    <li><p><strong>"unlock_recipe_info" : {}</strong></p>
+
+    <ul>
+        <li><strong>"job"</strong> -- URI of the job that contains the recipes to unlock. Remember that they must exist in the recipe index of this crafter and they must have <code>"manual_unlock" : true</code>.</li>
+        <li><strong>"recipe_key" : []</strong> -- can be just one string or an array of strings if we want to unlock more than one recipe. Each key must correspond to a recipe, in the form of <code>"crafting_category:recipe_key"</code>, as taken from the corresponding recipes index (e.g.: <code>"furniture:amberstone_table"</code> for the mason).</li>
+        <li><strong>"bulletin_title"</strong> -- a localized text for the bulletin notification.</li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="TownProgressionEncounters"></a>Town progression encounters</h2>
+
+
+<h3><a name="TownUpgradeChoice"></a>Town upgrade choice</h3>
+
+
+<p>An encounter that shows a dialog to choose a town upgrade and optionally the town's name.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "town_upgrade_choice"</strong></p></li>
+    <li><p><strong>"town_upgrade_choice_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"includes_town_naming"</strong> -- optional field. A boolean to determine whether to show a text box to let the player change the name of their town.</p></li>
+        <li><p><strong>"choices" : {}</strong> -- list of choices to upgrade the town's banner/hearth/etc. Each choice is a custom identifier containing the following properties:</p>
+
+        <ul>
+            <li><p><strong>"name"</strong> -- a localized name for the banner/hearth/etc type.</p></li>
+            <li><p><strong>"description"</strong> -- a localized description of the associated town bonus.</p></li>
+            <li><p><strong>"icon"</strong> -- path to an image of the corresponding banner/hearth/etc.</p></li>
+            <li><p><strong>"sort_order"</strong> -- an ordinal to sort the different choices in the UI.</p></li>
+            <li><p><strong>"out_edge"</strong> -- the out edge to trigger when the player chooses this option. It should eventually lead to an encounter of type <a href="#TownUpgrade">town upgrade</a>, which will grant the bonus mentioned in the description to the player's town.</p>
+
+            <p><img src="../../../../images/common/row_alert2.png" alt="icon"/>Notice that usually we don't add an out edge to this encounter's JSON file, since it will trigger different ones depending on the player's choice.</p></li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+
+
+<h3><a name="TownUpgrade"></a>Town upgrade</h3>
+
+
+<p>An encounter that grants a town bonus and/or replaces the banner or hearth. The hearthlings (and optionally some NPCs) will gather around the item to upgrade, it will be changed (granting the town bonus), the town tier will increase, and then the hearthlings and NPCs will celebrate for a while (using the <code>"celebration"</code> track from their sound constants). NPCs will depart and despawn once the celebration ends.</p>
+
+
+
+<p>Most of the fields are optional, so this can also be used to issue a celebration around an item.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "town_upgrade"</strong></p></li>
+    <li><p><strong>"town_upgrade_info" : {}</strong></p>
+
+<ul>
+    <li><p><strong>"tier_achieved"</strong> -- optional field. A number representing the tier to which we're upgrading the player's town.</p></li>
+    <li><p><strong>"celebration_duration"</strong> -- a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a> to represent the duration of the celebration. Make sure to define this field.</p></li>
+    <li><p><strong>"old_facility_uri"</strong> -- URI of the item that we're upgrading (banner, hearth, etc). The upgrade and celebration will only start once this item is placed down (e.g. in case this encounter was triggered while the item was being moved). Hearthlings will congregate around it.</p>
+
+    <p> If no old facility is defined, the town's hearth will be chosen. If it doesn't exist, the town's banner will be used instead.</p>
+
+    <p> If the old facility is not a unique entity, we'll choose a random one from the player's inventory, preferring one that's already placed in the world.</p></li>
+    <li><p><strong>"new_facility_uri"</strong> -- optional field. URI of the item that will replace the old banner/hearth/etc.</p></li>
+    <li><p><strong>"facility_upgrade_effect"</strong> -- URI of a VFX to play when upgrading the old facility. Usually covers it at some point to hide the sudden change from the old one to the new one.</p></li>
+    <li><p><strong>"town_bonus"</strong> -- optional field. URI of the controller that has the concerning town bonus. Remember to add it under <code>"controllers"</code> in your manifest. An example of town bonus that does nothing:</p>
+
+<pre><code>local MyTownBonus = class()
+
+function MyTownBonus:initialize()
+   self._sv.player_id = nil
+   self._sv.display_name = 'i18n(my_mod:data.gm.campaigns.town_upgrades.hearth_choice.bonus.name)'
+   self._sv.description = 'i18n(my_mod:data.gm.campaigns.town_upgrades.hearth_choice.bonus.description)'
+end
+
+function MyTownBonus:create(player_id)
+   self._sv.player_id = player_id
+end
+
+return MyTownBonus
+</code></pre>
+
+<p> The functions above will ensure that the bonus appears in the Bonuses tab of the town overview UI. You can see more examples of controllers for bonuses in <code>stonehearth/data/town_bonuses</code>. In some parts of the game we check for specific bonuses like this:</p>
+
+<pre><code>local town = stonehearth.town:get_town(self._sv._entity:get_player_id())
+town:get_town_bonus('stonehearth:town_bonus:strength')
+</code></pre>
+
+<p> This allows to execute some code depending on the current town bonus, and we can also call functions from the town bonus controller, e.g.:</p>
+
+<pre><code>local town = stonehearth.town:get_town(session.player_id)
+local glory_bonus = town:get_town_bonus('stonehearth:town_bonus:glory')
+if glory_bonus then
+   return glory_bonus:spawn_next_wave(source_entity)
+end
+return false
+</code></pre></li>
+    <li><p><strong>"finish_event"</strong> -- optional field. Name of the event that will be triggered on the player's population once the celebration ends.</p></li>
+    <li><p><strong>"conversation_subjects" : []</strong> -- optional field. An array of URIs of subject matters to inject for the celebration. They will all have a positive sentiment. For instance, we inject the <code>"stonehearth:subjects:town_status"</code>, <code>"stonehearth:food:cake"</code> and <code>"stonehearth:banner:strength"</code> subjects for the upgrade to strength banner in the vanilla game. Hearthlings will have a chance to talk about them during the celebration.</p></li>
+    <li><p><strong>"thought"</strong> -- optional field. URI of the thought to inject to all hearthlings, relevant to the current upgrade (e.g. <code>"stonehearth:thoughts:town:progression:outpost"</code>).</p></li>
+    <li><p><strong>"has_fireworks"</strong> -- optional field. A boolean to determine whether to run the <code>"stonehearth:effects:fireworks"</code> effect or not. Mind that this effect will be played from the new facility.</p></li>
+    <li><p><strong>"dialog" : {}</strong> -- optional field. Data for a dialog that will pop up right before congregating for the celebration. It contains the following fields:</p>
+
+    <ul>
+        <li><p><strong>"title"</strong> -- a localized text for the bulletin notification.</p></li>
+        <li><p><strong>"dialog_title"</strong> -- a localized text for the title of the dialog, will appear at the top of the window.</p></li>
+        <li><p><strong>"tier_title"</strong> -- a localized text for the tier achieved (outpost, settlement, etc).</p></li>
+        <li><p><strong>"reward_message"</strong> -- a localized text for the first part of the proclamation message (e.g.: "By unanimous agreement of the citizens, we declare:").</p></li>
+        <li><p><strong>"reward_message_ctd"</strong> -- a localized text for the second part of the proclamation message (e.g.: "to be an outpost on its way to be a safe haven for all.").</p>
+
+        <p>The reward/proclamation message will appear in the middle of the window. It's divided in two parts because the town's name will appear between them.</p></li>
+        <li><p><strong>"achievements" : []</strong> -- an array of objects. It's a list describing the achievements associated with the town tier / bonus, shown at the bottom of the dialog. Each entry contains the following properties:</p>
+
+        <ul>
+            <li><strong>"id"</strong> -- a unique identifier for this entry (e.g.: <code>"strength_bonus_1"</code>).</li>
+            <li><strong>"name"</strong> -- a localized short text describing the achievement ("Random Daily Buffs", "Tier 2 BGM", etc).</li>
+            <li><strong>"icon"</strong> -- path to an icon to show in the dialog for this achievement. In the vanilla game it's a ribbon, but you can use different ones for each reward.</li>
+            <li><strong>"track"</strong> -- URI of a sound track to play when the achievement appears in the UI (achievements will appear one by one, as if unlocking).</li>
+        </ul></li>
+    </ul></li>
+    <li><p><strong>"npcs" : []</strong> -- optional field. An array of NPCs to spawn for the celebration. Each entry is an object containing these properties:</p>
+
+    <ul>
+        <li><strong>"faction"</strong> -- name of the population faction of the NPC (e.g.: <code>"human_npcs"</code>).</li>
+        <li><strong>"role"</strong> -- role of the NPC inside the population data (e.g: <code>"herald_harold"</code>).</li>
+        <li><strong>"gender"</strong> -- gender of the NPC (e.g.: <code>"male"</code>).</li>
+    </ul>
+
+    <p> For more about populations, refer to <a href="../../monsters/index.html">this page</a> and <a href="../../kingdoms/index.html">this other page</a>. Normally NPCs will have <code>"amenity_to_strangers" : "neutral"</code>, so that enemies can't attack them. Their faction can't be hostile towards the player's faction at the moment of the celebration, otherwise they won't spawn.</p></li>
+</ul></li>
+</ul>
+
+
+
+<h3><a name="CityTierAchieved"></a>City tier achieved</h3>
+
+
+<p>An encounter that shows a dialog celebrating the player's ascendance to a new tier of city.</p>
+
+
+
+<p>This encounter type was used before celebrations were implemented in the game. So in practice, it does more or less the same than the <a href="#TownUpgrade">town upgrade</a> encounter. Here, a notification will open a normal dialog message first, and when the player proceeds, the city tier success dialog will appear.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "city_tier_achieved"</strong></p></li>
+    <li><p><strong>"city_tier_achieved_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"tier_achieved"</strong> -- a number representing the town tier achieved.</p></li>
+        <li><p><strong>"event_to_broadcast"</strong> -- name of the event that will be triggered on the player's population after increasing the town tier.</p></li>
+        <li><p><strong>"title"</strong> -- a localized text for the notification bulletin.</p></li>
+        <li><p><strong>"speaker_name"</strong> -- a localized text for the first dialog.</p></li>
+        <li><p><strong>"speaker_portrait"</strong> -- path to a portrait for the first dialog.</p></li>
+        <li><p><strong>"message"</strong> -- a localized text for the first dialog.</p></li>
+        <li><p><strong>"accept"</strong> -- a localized text for the button of the first dialog.</p></li>
+        <li><p><strong>"dialog_title"</strong> -- a localized text for the title of the dialog, will appear at the top of the window.</p></li>
+        <li><p><strong>"tier_title"</strong> -- a localized text for the tier achieved (outpost, settlement, etc).</p></li>
+        <li><p><strong>"reward_message"</strong> -- a localized text for the first part of the proclamation message (e.g.: "By decree of Princess Dania of the Ascendancy, we recognize:").</p></li>
+        <li><p><strong>"reward_message_ctd"</strong> -- a localized text for the second part of the proclamation message (e.g.: "For acts of incredible valor in combat. The town is hereby eligible for:").</p>
+
+        <p> The reward/proclamation message will appear in the middle of the window. It's divided in two parts because the town's name will appear between them.</p></li>
+        <li><p><strong>"achievements" : []</strong> -- same than for the <a href="#TownUpgrade">town upgrade</a> encounter type.</p></li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="CityTierQuest"></a>City tier quest</h3>
+
+
+<p>An encounter that shows the requirements needed to get to the next level of city tier. The notification persists in the bulletin list until one of the sets is satisfied. Button to check requirements, if met, will call the herald back immediately and triggers new out edge. If the herald automatically detects that the set is satisfied, the notification goes away.</p>
+
+
+
+<p>This is the old implementation of the tier upgrade quest, where 3 possible paths/requirement sets are presented in the same window, so that the player can try to fulfill any of them at any given moment.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "city_tier_quest"</strong></p></li>
+    <li><p><strong>"city_tier_quest_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"target_tier"</strong> -- a number representing the tier to upgrade to. It's just informative, the tier is granted in a <a href="#CityTierAchieved">city tier achieved</a> or <a href="#TownUpgrade">town upgrade</a> encounter.</p></li>
+        <li><p><strong>"finish_event"</strong> -- optional field. Name of the event that we'll listen to in order to remove the bulletin (will be triggered on the player's population). The bulletin will also be removed and the encounter node destroyed once the quest is completed.</p></li>
+        <li><p><strong>"title"</strong> -- a localized text for the bulletin notification.</p></li>
+        <li><p><strong>"dialog_title"</strong> -- a localized title for the dialog. Will appear at the top of the window.</p></li>
+        <li><p><strong>"text"</strong> -- a localized text for the dialog. Will appear at the top of the dialog.</p></li>
+        <li><p><strong>"summon_text"</strong> -- a localized text for the button to complete the quest (e.g.: "Summon Herald"). It will be enabled once one or more of the requirement sets are fulfilled.</p></li>
+        <li><p><strong>"satisfaction_requirements" : {}</strong> -- a list of requirement sets to fulfill. Each one is a custom key referencing a set of requirements. Each entry contains the following properties:</p>
+
+        <ul>
+            <li><p><strong>"id"</strong> -- an identifier for this quest path (e.g.: <code>"town_military_req"</code>).</p></li>
+            <li><p><strong>"title"</strong> -- a localized text for this requirement set to display in the UI.</p></li>
+            <li><p><strong>"out_edge"</strong> -- out edge to trigger if this requirement set is fulfilled.</p></li>
+            <li><p><strong>"requirements" : {}</strong> -- a list of requirements. Each entry in the list will be a custom key containing the following properties:</p>
+
+            <ul>
+                <li><p><strong>"id"</strong> -- a custom identifier for this requirement (e.g.: <code>"military_statue"</code>).</p></li>
+                <li><p><strong>"type"</strong> -- for this encounter type, there are only 2 possible types of requirements: either <strong>"placed_item"</strong> or <strong>"net_worth"</strong>.</p></li>
+                <li><p><strong>"uri"</strong> / <strong>"value"</strong> -- if the type was <strong>"placed_item"</strong>, we'll have an <strong>"uri"</strong> field pointing to the URI of the item that must be placed; if it was <strong>"net_worth"</strong>, a <strong>"value"</strong> field for the amount of net worth to have.</p>
+
+                <p>  Mind that if you use the <strong>"placed_item"</strong> type, you should name the entry <code>"place_statue"</code>. This will ensure that the icon in the UI corresponds to the required item.</p></li>
+            </ul></li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="CitizenEncounters"></a>Citizen encounters</h2>
+
+
+<h3><a name="AddCitizen"></a>Add citizen</h3>
+
+
+<p>Adds a new citizen to the town, either of the player's population or of another race/faction. They will spawn close to the town and will walk to the banner first.</p>
+
+
+
+<p><img src="../../../../images/common/row_alert2.png" alt="icon"/> Mind that once added to the player's town, you won't be able to retrieve the original population of the citizen by code. They will be considered to have the same population/faction than the player's town, even if their appearance is different (e.g. rabbits, orcs).</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "add_citizen"</strong></p></li>
+    <li><p><strong>"add_citizen_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"population"</strong> -- optional field. URI of the kingdom of the new citizen (e.g.: <code>"stonehearth:kingdoms:amberstone"</code>). If it's omitted, the same kingdom than the player's town will be used.</p></li>
+        <li><p><strong>"role"</strong> -- optional field. Role from the <a href="../../kingdoms/index.html">population data</a> to use. If omitted, the <code>"default"</code> role will be used.</p></li>
+        <li><p><strong>"gender"</strong> -- optional field. A gender for the new citizen. If omitted, a random gender will be used. Genders are specified in <code>stonehearth/data/constants.json</code>, and match entries inside the different roles.</p></li>
+        <li><p><strong>"job"</strong> -- URI of the job that the new citizen will have by default. Although this is considered an optional field, make sure to set it up so that the new citizen has a proper outfit and can be promoted to other jobs. It's not guaranteed that a default job will be used.</p></li>
+        <li><p><strong>"level"</strong> -- optional field. Default level for the new citizen on the specified job.</p></li>
+        <li><p><strong>"allowed_jobs" : []</strong> -- optional field. An array containing URIs of jobs. This restricts the jobs that the new citizen can be promoted to. Useful when the citizen is from another faction that doesn't have outfits or animations for some of the jobs from the player's population job index.</p></li>
+        <li><p><strong>"equipment" : []</strong> -- optional field. An array of URIs of <a href="../../../basic/wearables/index.html">equipment pieces</a> that will be automatically equipped to the new citizen (mind the equipment roles regarding the job).</p></li>
+        <li><p><strong>"notification_title"</strong> -- optional field (no notification will be shown if this field is omitted). A localized text for the notification bulletin. When the player clicks on the bulletin, the camera will focus on the new citizen. You can use <code>i18n_data.citizen_custom_name</code>, <code>i18n_data.citizen_display_name</code> and <code>i18n_data.town_name</code> in the localized text if you want to.</p></li>
+        <li><p><strong>"attribute_distribution_override" : {}</strong> -- optional field. If included, it will override the default stats from the population for this citizen.</p>
+
+        <ul>
+            <li><strong>"allocated_points" : {}</strong> -- contains <strong>"min"</strong> and <strong>"max"</strong> properties. A random number of points will be chosen between them.</li>
+            <li><strong>"point_limits" : {}</strong> -- contains entries whose key is the name of a main stat (<strong>"mind"</strong>, <strong>"body"</strong>, <strong>"spirit"</strong>) and whose values are also <strong>"min"</strong> and <strong>"max"</strong>, to establish how much points can be given to a certain stat. Stats influence the rest of attributes.</li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="Reembarkation"></a>Reembarkation</h3>
+
+
+<p>An encounter to generate an embarkation crew composed of up to 3 citizens and up to 10 items to reuse in a new game (if the player chooses a town progression item, it will carry the town bonus with it).</p>
+
+
+
+<p>It will also include unlocked crops (for the <code>"stonehearth:jobs:farmer"</code> job) and unlocked crafting recipes from any crafting job, but these have conditions to be unlocked in new games (if you choose a reembarkation crew from a different kingdom, the recipes must already exist in the current kingdom's recipe indexes and the job URI of the crafter must also match, otherwise they can't be unlocked).</p>
+
+
+
+<p>The citizens will keep their job, level and equipment, but beware that embarking with high level combat units might increase the combat difficulty on early game.</p>
+
+
+
+<p>The reembarkation can be postponed (kept in the bulletin list or not), but once the player has clicked on "Depart", the crew will be saved to a file and a celebration around the banner will begin. When the celebration ends the selected citizens will depart the town forever and the selected items will also disappear from inventory. Players can always go back to a previous savefile if they don't want those citizens to depart.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "reembarkation"</strong></p></li>
+    <li><p><strong>"reembarkation_info" : {}</strong></p>
+
+    <ul>
+        <li><strong>"reject_out_edge"</strong> -- out edge that will be triggered if the player postpones the dialog ("Maybe Next Month" option). In the vanilla game this is set up so that the current encounter node is destroyed, and the reembarkation <a href="#Generator">generator</a> keeps running in the background with a delay of 30 in-game days.</li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="DispatchQuest"></a>Dispatch quest</h3>
+
+
+<p>An encounter that represents a quest to dispatch a citizen out of the town for some duration.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "dispatch_quest"</strong></p></li>
+    <li><p><strong>"dispatch_quest_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"title"</strong> -- a localized text for the bulletin notification.</p></li>
+        <li><p><strong>"dialog_title"</strong> -- a localized text for the dialog. Will appear at the top of the window.</p></li>
+        <li><p><strong>"text"</strong> -- a localized text for the dialog, describing which type of citizen to select for dispatching. Will appear above the list of citizens.</p></li>
+        <li><p><strong>"return_delay"</strong> -- a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a> to represent how much time it will pass before the citizen returns.</p></li>
+        <li><p><strong>"buff_on_return"</strong> -- optional field. URI of a buff to grant the dispatched citizen once they return.</p></li>
+        <li><p><strong>"thought_on_return"</strong> -- optional field. URI of a thought to grant the dispatched citizen once they return.</p></li>
+        <li><p><strong>"xp_gained"</strong> -- optional field. Amount of experience to grant the dispatched citizen once they return.</p></li>
+        <li><p><strong>"abandon_out_edge"</strong> -- out edge to trigger when the player explicitely abandons this quest.</p></li>
+        <li><p><strong>"ctx_registration_variable"</strong> -- optional field. Name of a context registration path to store the dispatched citizens.</p></li>
+        <li><p><strong>"requirements" : []</strong> -- an array of citizen requirements, one entry per citizen you want to dispatch. Each entry is an object with the following properties:</p>
+
+        <ul>
+            <li><p><strong>"job"</strong> -- URI of the required job. The hearthling must have this as their current job in order to be eligible.</p></li>
+            <li><p><strong>"job_level"</strong> -- optional field. The minimum job level for the hearthling to be eligible.</p>
+
+            <p>In some existing encounters of this type, you might see that instead of a requirements array there's a <code>"required_job"</code> and a <code>"required_job_level"</code> fields. These are deprecated because they only allow to choose one hearthling, so the <strong>"requirements"</strong> array is preferred.</p>
+
+            <p>If no requirements are defined, the player will be able to choose one citizen of whatever job.</p></li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="RaidEncounters"></a>Raid encounters</h2>
+
+
+<h3><a name="CreateCamp"></a>Create camp</h3>
+
+
+<p>An encounter that creates an NPC camp made up of mobs and / or items.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "create_camp"</strong></p></li>
+    <li><p><strong>"create_camp_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"npc_player_id"</strong> -- (required field) a player or NPC faction name (the "kingdom_id" of a <a href="../../kingdoms/index.html">population</a> file). Can be an empty string (will be considered unspecified).</p></li>
+        <li><p><strong>"amenity_with_player"</strong> -- optional field (either <strong>"hostile"</strong> or <strong>"neutral"</strong>). We'll set the amenity of the mobs from this camp towards the player. Don't use at the same time than the <strong>"neutral_to_everyone"</strong> field.</p></li>
+        <li><p><strong>"neutral_to_everyone"</strong> -- optional field (a boolean). When <strong>true</strong>, nobody will be able to attack the mobs from this camp, they'll be neutral to every other faction. Remember to unset this later otherwise mobs from the specified faction will still be neutral in future encounters.</p></li>
+        <li><p><strong>"ctx_entity_registration_path"</strong> -- optional field (e.g.: <code>"goblin_raiding_camp_1"</code>). A name for a context registration path. We'll store references to the entities from <strong>"citizens"</strong> in it (actually inside <code>&lt;your_custom_ctx_path&gt;.citizens</code>).</p></li>
+        <li><p><strong>"use_previous_enemy_location"</strong> -- optional field. A boolean to spawn the camp on the previously registered enemy location (<code>ctx.enemy_location</code>).</p></li>
+        <li><p><strong>"use_entity_location"</strong> -- optional field. A context registration path referencing a placed entity. The camp will spawn where the entity is.</p></li>
+        <li><p><strong>"belongs_to_player"</strong> -- optional field. A boolean for the camp pieces to belong to the player (by default they'll belong to the faction from <strong>"npc_player_id"</strong>).</p></li>
+        <li><p><strong>"radius"</strong> -- (required field) radius of the camp in number of blocks.</p></li>
+        <li><p><strong>"keep_grass"</strong> -- optional field (a boolean). By default the layer of grass will be removed if the camp spawns on top of grass, creating a depression in the terrain. Use this field to keep the grass. In any case, the camp will destroy any entities where it spawns (like trees or anything that doesn't belong to the player).</p></li>
+        <li><p><strong>"spawn_range" : {}</strong> -- (required field). Contains <strong>"min"</strong> and <strong>"max"</strong> properties to determine the range around the town's perimeter (in number of blocks) where to spawn the camp.</p></li>
+        <li><p><strong>"script"</strong> -- optional field. URI of a script to run after spawning the camp and registering all its entities, for further customization. Must have a <code>start(ctx, info)</code> function, it will receive the context and the info inside <strong>"create_camp_info"</strong>. If you make a custom one, remember to add it under <code>"controllers"</code> in your manifest.</p></li>
+        <li><p><strong>"combat_bulletin" : {}</strong> -- optional field. Contains a <strong>"title"</strong> field with a localized text, to show it as a notification bulletin when the players citizens run into an enemy from this camp.</p></li>
+        <li><p><strong>"searcher_delay"</strong> -- optional field. A <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a>. If the camp couldn't find a suitable place to spawn (enough space in the given range around the town), we'll wait for this duration and try to search for a place to spawn again (<code>"3d"</code> by default). This is a safety measure so that the encounter doesn't stall.</p></li>
+        <li><p><strong>"on_searcher_failure" : {}</strong> -- optionald field. Contains <strong>"retry"</strong> (a boolean for retrying or a number for a maximum number of retries) or a <strong>"destroy_root_node"</strong> (pointing to the in edge of the node from which we want to destroy). Used if the searcher failed to find a place to spawn the camp.</p></li>
+        <li><p><strong>"continue_on_disconnect"</strong> -- optional field. A boolean for continuing to run this node when a player (client) disconnects from a multiplayer game. It's <strong>false</strong> by default (pauses this encounter / timer and resumes it once the player reconnects).</p>
+
+        <p> For this encounter type, if the camp has already spawned it will continue to exist regardless of this option. But if the timer to find a place was running when the player disconnected, it will stop trying and resume once the player comes back (so that the camp is only allowed to spawn when the player is connected).</p></li>
+        <li><p><strong>"landmark_data" : {}</strong> -- optional field. Contains properties like <strong>"brush"</strong> and <strong>"landmark_block_types"</strong> to generate a landmark for the camp. Check <code>stonehearth/lib/landmark/landmark_lib.lua</code> for the possible fields (options for the <code>create_cube_as_terrain</code> and <code>create_qb_as_terrain</code> functions).</p></li>
+        <li><p><strong>"pieces" : {}</strong> -- the pieces for the camp (required field). Each entry is a custom identifier with the following properties:</p>
+
+        <ul>
+            <li><strong>"entity_uri"</strong> -- URI of an item. Instead of this field, we can use an <strong>"info"</strong> field pointing to a JSON file describing the camp piece (allows for using more properties). Check the <code>stonehearth/data/gm/campaigns/goblin_war/arcs/trigger/raidcamp/encounters/create_camp</code> folder for examples.</li>
+            <li><strong>"position" : {}</strong> -- contains <strong>"x"</strong> and <strong>"y"</strong> coordinates relative to the camp's center seen from above (the camp's center would be at (0,0)).</li>
+            <li><strong>"npc_player_id"</strong> -- optional field. Name of the faction that will own the camp piece.</li>
+            <li><strong>"rotation"</strong> -- optional field. Rotation for the camp piece in degrees.</li>
+            <li><strong>"movable"</strong> -- optional field (a boolean). Whether this item should have the move / undeploy commands to allow the player to move it.</li>
+        </ul></li>
+        <li><p><strong>"citizens" : {}</strong> -- optional field. List of living entities such as monsters or NPCs to spawn in the camp. Each entry is a custom identifier containing the following properties:</p>
+
+        <ul>
+            <li><p><strong>"from_population" : {}</strong> -- using this field means that we want to spawn entities defined in the <strong>"npc_player_id"</strong> population file. These are the properties inside <strong>"from_population"</strong>:</p>
+
+            <ul>
+                <li><p><strong>"role"</strong> -- the role within the population that we want this entity to be.</p></li>
+                <li><p><strong>"gender"</strong> -- optional field. The gender for the entities in this entry. If we don't have this field, a random gender will be chosen based on the ones in the <code>population.base_genders</code> array from <code>stonehearth/data/constants.json</code>.</p></li>
+                <li><p><strong>"location" : {}</strong> -- optional field. Contains <strong>"x"</strong> / <strong>"y"</strong> / <strong>"z"</strong> properties to place this entity inside the camp.</p></li>
+                <li><p><strong>"range"</strong> -- optional field. A number representing blocks / world units, to randomize the spawn location of the entity in a range around <strong>"location"</strong>.</p></li>
+                <li><p><strong>"min"</strong> -- optional field. Minimum amount of entities to spawn for this entry.</p></li>
+                <li><p><strong>"max"</strong> -- optional field. Maximum amount of entities to spawn for this entry. A random number of entities between <strong>"min"</strong> and <strong>"max"</strong> will spawn. If they're not specified, they'll default to <strong>1</strong>.</p></li>
+                <li><p><strong>"scale_with_run" : {}</strong> -- optional field. Used to increase the number of entities that we spawn based on the number of times that this encounter has been triggered. Contains these properties (when defined, <strong>"min"</strong> and <strong>"max"</strong> will be modified by them, or just by the number of runs if you leave the field empty):</p>
+
+                <ul>
+                    <li><strong>"encounter_cap"</strong> -- optional field. When scaling by the number of runs, this will serve as a cap so that the number doesn't get too high.</li>
+                    <li><strong>"scale_factor"</strong> -- optional field. When included, <strong>"min"</strong> and <strong>"max"</strong> be multiplied (and rounded) by this value to the power of the number of times the encounter has run minus one.</li>
+                </ul></li>
+            </ul>
+
+            <p>Instead of the <strong>"from_population"</strong> field, we can also use <strong>"from_ctx"</strong>, pointing to an entity previously registered in the context. The properties below are outside of <strong>"from_population"</strong>:</p></li>
+            <li><p><strong>"attributes" : {}</strong> -- optional field. Contains pairs of attribute name/value to apply to the entity.</p></li>
+            <li><p><strong>"combat_leash_range"</strong> -- optional field. A number higher than 0 for the leash range. This is how many blocks are the entities allowed to walk away from their spawn area (prevents them from being kited too far from their home location).</p></li>
+            <li><p><strong>"equipment" : {}</strong> -- optional field. Contains custom identifiers pointing to either URIs or arrays of URIs of equipment pieces. They will be equipped to all the entities of this entry. If an array is used, a random equipment piece will be chosen from it, so if you want multiple pieces to be equipped you have to add them as separate entries with URIs.</p></li>
+            <li><p><strong>"equipment_scale"</strong> -- optional field. A number representing the scale for the equipment pieces (so that big monsters don't use tiny weapons).</p></li>
+            <li><p><strong>"job"</strong> -- optional field. URI of the job to promote this entry's entities to.</p></li>
+            <li><p><strong>"loot_drops" : {}</strong> -- optional field. A <a href="../../../basic/misc_json/index.html#LootTables">loot table</a> with loot to apply to this entry's entities.</p></li>
+            <li><p><strong>"render_info" : {}</strong> -- optional field. Contains a <strong>"color_map"</strong> and / or a <strong>"material_maps"</strong> field pointing to URIs of a color / material map, to apply to this entry's entities.</p></li>
+            <li><p><strong>"scale"</strong> -- optional field. <a href="../../../basic/adding_items/item_scale/index.html">Scale</a> to apply to this entry's entities.</p></li>
+            <li><p><strong>"tuning"</strong> -- optional field. URI of a monster tuning file (e.g.: <code>"stonehearth:monster_tuning:goblins:default"</code>) to apply to the entities (can have more additional properties and it's a good way to reuse the info between encounters). You can find the existing tuning files in <code>stonehearth/data/monster_tuning</code>. They're JSON files, so if you create a new one you might want to add an alias for it in your manifest.</p></li>
+            <li><p><strong>"unit_info" : {}</strong> -- optional field. Contains properties from the unit_info component to apply to the entities (<strong>"display_name"</strong>, <strong>"custom_name"</strong> and <strong>"description"</strong>).</p></li>
+        </ul>
+
+        <p> The <strong>"citizens"</strong> will be stored as an array in the context, so we can reference them later individually by index, for example <code>"create_scout_camp.citizens.wolf_cage.tame_wolf[1]"</code> (remember that Lua indexes start at 1).</p></li>
+        <li><p><strong>"boss" : {}</strong> -- optional field. Same properties than for the <strong>"from_population"</strong> / <strong>"from_ctx"</strong> fields from the <strong>"citizens"</strong> list. Represents the boss of this camp. If you specified a <strong>"ctx_entity_registration_path"</strong>, it will get registered under it as <code>boss</code> and its custom name and display name will get registered in the context as <code>boss_custom_name</code> and <code>boss_display_name</code> (so that you can use them in dialogs). If it refers to several entities, only one of them will be registered as the boss.</p></li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="CreateMission"></a>Create mission</h3>
+
+
+<p>An encounter that starts a mission undertaken by NPCs. E.g. wandering around or pillaging.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "create_mission"</strong></p></li>
+    <li><p><strong>"create_mission_info" : {}</strong></p>
+
+    <ul>
+        <li><p><strong>"spawn_range" : {}</strong> -- optional field. Has <strong>"min"</strong> and <strong>"max"</strong> properties to determine the range around the town's perimeter (in number of blocks) where we want to spawn the mobs.</p></li>
+        <li><p><strong>"continue_on_disconnect"</strong> -- optional field. A boolean for continuing to run this node when a player (client) disconnects from a multiplayer game. It's <strong>false</strong> by default (pauses this encounter / timer and resumes it once the player reconnects).</p>
+
+        <p> For this encounter type, if the mobs have already spawned they will continue to exist regardless of this option. But if the timer to find a spawn location was running when the player disconnected, it will stop trying and resume once the player comes back.</p></li>
+        <li><p><strong>"use_previous_enemy_location"</strong> -- optional field (a boolean). When <strong>true</strong>, the mobs will spawn at the previous enemy location (a camp, etc).</p></li>
+        <li><p><strong>"on_searcher_failure" : {}</strong> -- optional field. Contains <strong>"retry"</strong> (a boolean for retrying) or <strong>"destroy_tree" : {}</strong> ( with <strong>"destroy_root" : true</strong> and <strong>"root" : "in_edge_of_encounter_node_to_destroy"</strong> properties). Used if the searcher failed to find a place to spawn the mobs.</p></li>
+        <li><p><strong>"mission" : {}</strong> -- required field. The fields inside will vary depending on the type of mission, we'll start with the common ones:</p>
+
+        <ul>
+            <li><p><strong>"ctx_entity_registration_path"</strong> -- optional field (e.g.: <code>"goblin_raiding_camp_1"</code>). A name for a context registration path. We'll store references to the entities from <strong>"members"</strong> in it.</p></li>
+            <li><p><strong>"combat_bulletin" : {}</strong> -- optional field. Contains a <strong>"title"</strong> property for a localized text to show a notification bulletin when a hearthling runs into an enemy from this mission. This field can also be called <strong>"sighted_bulletin" : {}</strong>.</p></li>
+            <li><p><strong>"npc_player_id"</strong> -- the faction name for the NPCs of this mission. If it was defined in a previous encounter, this field might be omitted.</p></li>
+            <li><p><strong>"members" : {}</strong> -- required field. Same properties than in the <a href="#CreateCamp">create camp</a> encounter.</p></li>
+            <li><p><strong>"offset" : {}</strong> -- required field. Contains <strong>"x"</strong>, <strong>"y"</strong>, <strong>"z"</strong> properties, to spawn the mobs at an offset from the spawn location.</p></li>
+            <li><p><strong>"use_wait_entity_location"</strong> -- optional field (a boolean). When <strong>true</strong>, the mobs will spawn at the previous registered enemy location.</p></li>
+            <li><p><strong>"raid_timeout_minutes"</strong> -- optional field (<strong>4300</strong> by default, which is around 3 days). The mobs will depart/despawn (if they have the raid timeout observer) after this amount of in-game minutes.</p></li>
+            <li><p><strong>"raid_timeout_variance_minutes"</strong> -- optional field (<strong>0</strong> by default). The mobs will despawn sometime between <strong>"raid_timeout_minutes"</strong> and <strong>"raid_timeout_minutes"</strong> plus <strong>"raid_timeout_variance_minutes"</strong> (creates a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a> internally using the numerical values from those fields as minutes).</p></li>
+            <li><p><strong>"role"</strong> -- the mission type, must be one of the following:</p>
+
+            <ul>
+                <li><p><strong>"raid_stockpiles"</strong> -- the mobs will steal items from player's stockpiles and/or destroy them (it depends on their AI actions, e.g.: goblin workers and thieves know how to steal but marauders will only destroy stuff).</p>
+
+                <p>  For this mission type we can have an additional field: <strong>"require_free_stockpile_space"</strong>. It's an optional boolean. When <strong>true</strong>, the mobs won't raid the stockpiles if they don't have enough space in their own stockpiles. If the player doesn't have stockpiles, mobs will just run to the town and hopefully find something to attack in their way, although they might end up just wandering aimlessly.</p></li>
+                <li><p><strong>"spawn_enemies"</strong> -- simply spawn some enemies. For this mission type, we can have an additional field: <strong>"spawn_effect"</strong>. It's optional (URI of an effect to play when the enemies spawn).</p></li>
+                <li><p><strong>"raid_crops"</strong> -- this mission won't start if the player doesn't have farms. This is used for critters to come and destroy the player's crops. For this mission type there are no additional properties.</p></li>
+                <li><p><strong>"pillage"</strong> -- enemies will spawn and go to some place to attack. If they couldn't reach the destination after 3 in game hours, we'll try finding a new one.</p>
+
+                <p>  For this mission type we have two additional properties: <strong>"pillage_radius" : {}</strong>, which is required and contains <strong>"min"</strong> and <strong>"max"</strong> fields to find an attack location in that range around the town's banner; and <strong>"target"</strong>, which is optional and points to a context registration path to use for the attack location (instead of the banner).</p></li>
+                <li><p><strong>"wander"</strong> -- the mobs will spawn and start wandering in a square pattern. For this encounter type we have two additional fields: <strong>"wander_radius" : {}</strong>, which is required and contains <strong>"min"</strong> and <strong>"max"</strong> properties for a range to randomize the size of the square (so that they don't walk always in the same place); and <strong>"walk_interval"</strong>, which is optional and it's a <a href="../../../basic/misc_json/index.html#TimeExpressions">time expression</a> for how often to walk to the next location (<code>"30m"</code> by default).</p></li>
+            </ul></li>
+        </ul></li>
+    </ul></li>
+</ul>
+
+
+
+<h3><a name="CityRaid"></a>City raid</h3>
+
+
+<p>A raid, which is just a group of missions started at the same time at the previous enemy location (set by a <a href="#CreateCamp">create camp</a> encounter or a <a href="#CreateMission">create mission</a> encounter). Unlike the create mission encounter, this encounter does not do a search for a place to spawn the encounter.</p>
+
+
+
+<ul>
+    <li><p><strong>"encounter_type" : "city_raid"</strong></p></li>
+    <li><p><strong>"city_raid_info" : {}</strong></p>
+
+    <ul>
+        <li><strong>"continue_on_disconnect"</strong> -- optional field. For this encounter it doesn't seem to run code since we don't search for a place to spawn the raids.</li>
+        <li><strong>"missions" : {}</strong> -- contains entries with custom identifiers, each of which holds the same properties than for the <strong>"mission: {}"</strong> field from the <a href="#CreateMission">create mission</a> encounter.</li>
+    </ul></li>
+</ul>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

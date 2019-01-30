@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,13 +1189,13 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>Kingdoms</div>
    <p>Kingdoms are managed through the population service, population call handler, and <code>population_faction.lua</code>. To add our new playable kingdom we can take a look at the rayyas_children and northern_alliance mods.</p>
 
 
 
-<p>The steps for adding monster populations are similar, check this other <a href="#">page</a>.</p>
+<p>The steps for adding monster populations are similar, check this other <a href="../monsters/index.html">page</a>.</p>
 
 
 
@@ -1150,7 +1360,7 @@
 <p> Inside <strong>"kingdoms"</strong> we add a key with the URI of our kingdom. Then there are different sections for day and night music, and inside them, different groups depending on the town tier. We can add several tracks of music (the vanilla ones are in <strong>.ogg</strong> format, to save space), and one of them will be chosen randomly depending on the time of day and the current town tier.</p>
 
 <p> Each group also has a <strong>"loop"</strong> property, normally set to <strong>false</strong>, a <strong>"fade_in"</strong> in milliseconds, and a <strong>"volume"</strong> (from 0 to 100) in case we need to tune the volume because the music file has it too quiet/loud compared with other music/sounds in the game.</p></li>
-    <li><p>Custom UI -- we can optionally have different colors and images in the UI, like Rayya's Children and Northern Alliance do, by applying a deferred mod manifest after our kingdom is chosen. This will be covered in the <a href="#">hotloading manifests</a> section.</p></li>
+    <li><p>Custom UI -- we can optionally have different colors and images in the UI, like Rayya's Children and Northern Alliance do, by applying a deferred mod manifest after our kingdom is chosen. This will be covered in the <a href="../hotloading/index.html">hotloading manifests</a> section.</p></li>
 </ul></li>
     <li><p>Finally, we can test our new kingdom. It's a lot of work to add a new kingdom but we can start by copying an existing one and after everything is renamed, go little by little adjusting all the jobs, campaigns, etc.</p></li>
 </ol>

@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,7 +1189,7 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>Creating models</div>
    <p><p>This guide will only explain how to import and export the models, and some other tips. For how to create and add items to the game, refer to <a href="../../adding_items/index.html">this page</a>.</p></p>
 
@@ -988,7 +1198,37 @@
 
 
 
-<h2>Tools for voxel modeling</h2>
+<ul>
+    <li><a href="#ModelingTools">Tools for voxel modeling</a></li>
+    <li><a href="#ModelingPipeline">The usual pipeline for modders</a></li>
+    <li><a href="#Matrices">About matrices / layers</a></li>
+    <li><a href="#ModelAlignment">Alignment of the models</a></li>
+    <li><a href="#NamingLayers">Naming matrices / layers</a></li>
+    <li><a href="#UsingQubicle">Modeling an item with Qubicle</a>
+    <ul>
+        <li><a href="#ImportingInQubicle">Importing models into Qubicle</a></li>
+        <li><a href="#ExportingInQubicle">Exporting with Qubicle</a></li>
+    </ul></li>
+    <li><a href="#UsingMagicavoxel">Modeling an item with Magicavoxel</a>
+    <ul>
+        <li><a href="#ImportingInMagicavoxel">Importing models into Magicavoxel</a></li>
+        <li><a href="#ExportingInMagicavoxel">Exporting with Magicavoxel</a></li>
+    </ul></li>
+    <li><a href="#UsingVoxelshop">Modeling an item with Voxelshop</a>
+    <ul>
+        <li><a href="#ImportingInVoxelshop">Importing models into Voxelshop</a></li>
+        <li><a href="#ExportingInVoxelshop">Exporting with Voxelshop</a></li>
+    </ul></li>
+    <li><a href="#UsingGoxel">Modeling an item with Goxel</a>
+    <ul>
+        <li><a href="#ImportingInGoxel">Importing models into Goxel</a></li>
+        <li><a href="#ExportingInGoxel">Exporting with Goxel</a></li>
+    </ul></li>
+</ul>
+
+
+
+<h2><a name="ModelingTools"></a>Tools for voxel modeling</h2>
 
 
 <p>The team uses Qubicle Constructor 1.0 for creating the 3D models for the game. It is a paid program. The current version of Qubicle (at the time this guide was written) is Qubicle 3.0.</p>
@@ -999,7 +1239,7 @@
 
 
 
-<h2>The usual pipeline for modders</h2>
+<h2><a name="ModelingPipeline"></a>The usual pipeline for modders</h2>
 
 
 <p>Normally modders will find the asset they want in the game files, import it into their program of choice, edit it, and then export it again for using it on their mods.
@@ -1039,7 +1279,7 @@ Too many voxels/details are bad for performance, however.</p>
 
 
 
-<h2>About matrices / layers</h2>
+<h2><a name="Matrices"></a>About matrices / layers</h2>
 
 
 <p>With matrices we refer to different layers in the 3D model. This is terminology from Qubicle, for other programs you might see it as "layers".</p>
@@ -1063,12 +1303,12 @@ Too many voxels/details are bad for performance, however.</p>
 
 
 <blockquote>
-    <p><img src="../../../../images/common/edit_big.png" alt="icon"/> If your model is going to be a static object with only 1 part (for example, a chair) you can use Magicavoxel. However, Magicavoxel is not suited for models that are meant to be animated, like armor, living creatures, doors, or certain types of workbenches. Hopefully, in future versions of Magicavoxel we might get the option to export several layers on the same qb file. You may use other of the free editors that support layers in the meantime, or use all the files as part of the model in the JSON file.</p>
+    <p><img src="../../../../images/common/edit_big.png" alt="icon"/> If your model is going to be a static object with only 1 part (for example, a chair) you can use Magicavoxel. However, Magicavoxel is not suited for models that are meant to be animated, like armor, living creatures, doors, or certain types of workbenches. Hopefully, in future versions of Magicavoxel we might get the option to export several layers on the same .qb file. You may use other of the free editors that support layers in the meantime, or use all the files as part of the model in the JSON file.</p>
 </blockquote>
 
 
 
-<h2>Alignment of the models</h2>
+<h2><a name="ModelAlignment"></a>Alignment of the models</h2>
 
 
 <p>You might see that some objects (like weapons, or wall-mounted items) are aligned weirdly when you open their model in your voxel editor. This is because the attachment point corresponds to the center in the program (at 0,0,0). In Qubicle, most of the Stonehearth models are not centered but instead expand on one of the quadrants.</p>
@@ -1083,11 +1323,11 @@ Too many voxels/details are bad for performance, however.</p>
 
 
 
-<p>Since models can have an odd number of voxels, they might look off-centered by a little, but that's no problem because we will adjust their center on the JSON file. For adjusting the model origin in JSON, see <a href="#">this page</a>.</p>
+<p>Since models can have an odd number of voxels, they might look off-centered by a little, but that's no problem because we will adjust their center on the JSON file. For adjusting the model origin in JSON, see <a href="../../../intermediate/regions/origins/index.html">this page</a>.</p>
 
 
 
-<h2>Naming matrices / layers</h2>
+<h2><a name="NamingLayers"></a>Naming matrices / layers</h2>
 
 
 <p>This is very important for items like armor, or creatures that reuse existing rigs (for example, if you wanted to create your own population/faction by reskinning an existing one).</p>
@@ -1106,59 +1346,60 @@ Too many voxels/details are bad for performance, however.</p>
 <img src="../../../../images/art/modeling/human_body_parts_names.png" alt="human_body_parts_names"/>
 <img src="../../../../images/art/modeling/human_feet_parts_names.png" alt="human_feet_parts_names"/>
 <img src="../../../../images/basic/customization/hair_model.png" alt="hair_model"/>
+<img src="../../../../images/art/modeling/human_face.png" alt="human_face"/>
 It's not needed to have all the layers for the armor. If you copy an existing one, you'll see that many of them are missing.
 Here are the layer names for the left hand. For the right side (which is mirrored), replace all the "left"s with "right"s:
 <img src="../../../../images/art/modeling/human_left_hand_parts_names.png" alt="human_left_hand_parts_names"/></p>
 
 
 
-<h2>Modeling an item with Qubicle</h2>
+<h2><a name="UsingQubicle"></a>Modeling an item with Qubicle</h2>
 
 
 <p>Disclaimer: the development team uses Qubicle 1.0 Master edition for making the models. Nowadays you would only be able to purchase the most recent version, Qubicle 3.0.</p>
 
 
 
-<p>For renaming matrices in Qubicle, you can select the matrix and press F2.</p>
+<p>For renaming matrices in Qubicle, you can select the matrix and press F2:
+<img src="../../../../images/art/vfx/renaming_matrix.png" alt="renaming_matrix"/></p>
 
 
 
-<h3>Importing models into Qubicle</h3>
+<h3><a name="ImportingInQubicle"></a>Importing models into Qubicle</h3>
 
 
-<p>A quick way of importing existing qb models into Qubicle is by dragging and dropping them into the main modeling area. You can import several models into the same scene, but depending on which version of Qubicle you're using, the names of the matrices might change to something we don't want.</p>
+<p>A quick way of importing existing <strong>.qb</strong> models into Qubicle is by dragging and dropping them into the main modeling area. You can import several models into the same scene, but depending on which version of Qubicle you're using, the names of the matrices might change to something we don't want.</p>
 
 
 
-<h3>Exporting with Qubicle</h3>
+<h3><a name="ExportingInQubicle"></a>Exporting with Qubicle</h3>
 
 
-<p>Settings needed for exporting the QB models:</p>
+<p>Settings needed for exporting the <strong>.qb</strong> models:</p>
 
 
 
 <ul>
     <li>Compression must be unchecked. The game can't read compressed QB models.</li>
     <li>Z-Axis must be Right-Handed. This will correctly align the model with the in-game axes.</li>
-    <li>Individual export must be unchecked, otherwise each matrix will be exported into separate files.
-    <img src="../../../../images/art/modeling/qb_export_settings.png" alt="qb_export_settings"/></li>
+    <li>Individual export must be unchecked, otherwise each matrix will be exported into separate files.</li>
 </ul>
 
 
 
-<p>If you happen to use an older version of Qubicle, the export settings are mostly the same. In Qubicle 1, the option color format should be "RGBA" and the "Single Object" option should be checked only if you want all your matrices to be merged into a single one. Uncheck it to keep your matrices separated within the same exported file (e.g. for animation).</p>
+<p>If you happen to use an older version of Qubicle, the export settings are mostly the same. In Qubicle 1, the option color format should be "RGBA" and the "Single Object" option should be checked only if you want all your matrices to be merged into a single one. Uncheck it to keep your matrices separated within the same exported file (e.g. for animation):
+<img src="../../../../images/art/modeling/qb_export_settings.png" alt="qb_export_settings"/></p>
 
 
 
-<h2>Modeling an item with Magicavoxel</h2>
+<h2><a name="UsingMagicavoxel"></a>Modeling an item with Magicavoxel</h2>
 
 
-<p><strong>Disclaimer</strong>: At the time this guide was written, the latest version of Magicavoxel was 0.99.1 (alpha). With this version, some old functionality is not available, but we can work with layers in the model, which wasn't previously available. Unfortunately, when exporting to qb, every layer will be exported to a different qb file, so you might want to create the item in the same layer then split it into different layers in Voxelshop, or in Goxel.</p>
+<p><strong>Disclaimer</strong>: At the time this guide was written, the latest version of Magicavoxel was 0.99.1 (alpha). With this version, some old functionality is not available, but we can work with layers in the model, which wasn't previously available. Unfortunately, when exporting to <strong>.qb</strong>, every layer will be exported to a different <strong>.qb</strong> file, so you might want to create the item in the same layer then split it into different layers in Voxelshop, or in Goxel.</p>
 
 
 
-<h3>Importing models into Magicavoxel</h3>
-
+<h3><a name="ImportingInMagicavoxel"></a>Importing models into Magicavoxel</h3>
 
 
 <p>This program can be a little finicky, so here's some instructions to import models into the latest version of MagicaVoxel:</p>
@@ -1166,8 +1407,8 @@ Here are the layer names for the left hand. For the right side (which is mirrore
 
 
 <ol>
-    <li>Drag and drop the QB model into the palettes area. This will import the palette.</li>
-    <li>Drag and drop the QB model again into the model area. This will import the model and apply the correct palette that we just imported.</li>
+    <li>Drag and drop the .qb model into the palettes area. This will import the palette.</li>
+    <li>Drag and drop the .qb model again into the model area. This will import the model and apply the correct palette that we just imported.</li>
 </ol>
 
 
@@ -1176,7 +1417,7 @@ Here are the layer names for the left hand. For the right side (which is mirrore
 
 
 
-<h3>Exporting with Magicavoxel</h3>
+<h3><a name="ExportingInMagicavoxel"></a>Exporting with Magicavoxel</h3>
 
 
 <p>With Magicavoxel 0.99.1, you can click on export (on the lower right) and select "qb".
@@ -1186,7 +1427,7 @@ Currently there's no option to export all of the objects (layers) in a single fi
 
 
 
-<h2>Modeling an item with Voxelshop</h2>
+<h2><a name="UsingVoxelshop"></a>Modeling an item with Voxelshop</h2>
 
 
 <p>Many modders model in Magicavoxel, then export the model and import it into Voxelshop to split it into different layers (if the model needs to have several layers).
@@ -1194,14 +1435,14 @@ For this to be efficient, note down the size of the layer when you're working in
 
 
 
-<p>Voxelshop will optimize the size of the layer when exporting, which we don't want when modeling items with several parts for Stonehearth, so we need to use correctly the bounding box that the program provides.</p>
+<p>Voxelshop will optimize the size of the layer when exporting, which we might not want when modeling items with several parts for Stonehearth, so we need to use correctly the bounding box that the program provides.</p>
 
 
 
-<h3>Importing models into Voxelshop</h3>
+<h3><a name="ImportingInVoxelshop"></a>Importing models into Voxelshop</h3>
 
 
-<p>You can import models via the File->Import option, but only one will be shown (unlike in Qubicle, where we can drag and drop many models and all will be shown in the same scene). Voxelshop will correctly display the colors and layers of the imported model, just like Qubicle. There might be an extra empty layer in the Layer list, but you can either delete it or when re-exporting the model Voxelshop will ignore it as long as it's empty.</p>
+<p>You can import models via the 'File->Import' option, but only one will be shown (unlike in Qubicle, where we can drag and drop many models and all will be shown in the same scene). Voxelshop will correctly display the colors and layers of the imported model, just like Qubicle. There might be an extra empty layer in the Layer list, but you can either delete it or when re-exporting the model Voxelshop will ignore it as long as it's empty.</p>
 
 
 
@@ -1213,10 +1454,10 @@ For this to be efficient, note down the size of the layer when you're working in
 
 
 
-<h3>Exporting with Voxelshop</h3>
+<h3><a name="ExportingInVoxelshop"></a>Exporting with Voxelshop</h3>
 
 
-<p>When selecting to export to QB format in Voxelshop, the description of the different export settings will tell you if the option needs to be checked or unchecked for Stonehearth. But just in case, here's a list of the options and the value they must have:</p>
+<p>When selecting to export to <strong>.qb</strong> format in Voxelshop, the description of the different export settings will tell you if the option needs to be checked or unchecked for Stonehearth. But just in case, here's a list of the options and the value they must have:</p>
 
 
 
@@ -1231,28 +1472,28 @@ For this to be efficient, note down the size of the layer when you're working in
 
 
 
-<h2>Modeling an item with Goxel</h2>
+<h2><a name="UsingGoxel"></a>Modeling an item with Goxel</h2>
 
 
 <p>To view the size of each layer in Goxel, select the layer, and click on "Bounded". You can then adjust the size and origin of the layer.</p>
 
 
 
-<h3>Importing models into Goxel</h3>
+<h3><a name="ImportingInGoxel"></a>Importing models into Goxel</h3>
 
 
-<p>Go to File -> Import... -> qubicle and select the QB file you wish to import.</p>
-
-
-
-<h3>Exporting with Goxel</h3>
-
-
-<p>Go to File -> Export As... -> qubicle.</p>
+<p>Go to 'File -> Import... -> qubicle' and select the QB file you wish to import.</p>
 
 
 
-<p>As with Magicavoxel, Goxel doesn't have export options for Qubicle files.</p>
+<h3><a name="ExportingInGoxel"></a>Exporting with Goxel</h3>
+
+
+<p>Go to 'File -> Export As... -> qubicle'.</p>
+
+
+
+<p>Like Magicavoxel, Goxel doesn't have export options for Qubicle files.</p>
 
    
 </div>

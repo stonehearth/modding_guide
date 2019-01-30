@@ -1,0 +1,1602 @@
+<head>
+   <link href='./../../../css/styles.css' rel='stylesheet' type='text/css'>
+   <link rel="icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
+   <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
+   <title>UI</title>
+</head>
+<body id="documentation">
+   <!-- the header of the page -->
+   <a name="top"></a>
+   <div class="inner">
+      <header>
+<div class='logo'>
+</div>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+</header>
+
+      <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
+         <aside class="sidebar">
+   <nav>
+      <ul>
+      
+      
+
+   <li>
+      <a href='./../../.././index.html'>Stonehearth's Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/index.html'>Modding Guide</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/index.html'>Modding Essentials</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/index.html'>Managing mods</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/workshop/index.html'>Steam Workshop mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/managing/unmanaged/index.html'>Local mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/programming_languages/index.html'>Programming Languages</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/modding_scope/index.html'>What can be modded</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/tools/index.html'>Tools for modding</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/stonehearth/index.html'>The Stonehearth mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/json/index.html'>Small intro to JSON</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/manifest/index.html'>The manifest</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/entities_components/index.html'>Entities and components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixins/index.html'>Mixins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/mixintos_overrides/index.html'>Mixintos and overrides</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/removing/index.html'>Mixintypes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/localization/index.html'>Localization</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugging/index.html'>How to debug your errors</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/index.html'>Using debug tools</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/debugtools_mod/index.html'>The debugtools mod</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/debugtools/default_console/index.html'>The default console</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/startermods/index.html'>Startermod example</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/essentials/shed/index.html'>How to save time with SHED</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/index.html'>Basic Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/index.html'>Art Workflow</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/modeling/index.html'>Creating models</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/index.html'>Adding new items</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/entity_forms/index.html'>Entity Forms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_manually/index.html'>Adding items manually</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/cloning_with_shed/index.html'>Adding items with SHED</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/adding_items/item_scale/index.html'>Changing the scale</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/catalog/index.html'>The catalog</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/generic_resources/index.html'>Generic resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/craftables/index.html'>Adding recipes</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/index.html'>Adding equipment</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/armor/index.html'>Armor and hats</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/wearables/weapons/index.html'>Weapons</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/storages/index.html'>Storage items</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/index.html'>Color and material maps</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/color_maps/shaders/index.html'>Materials and shaders</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/customization/index.html'>Adding customizations</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/crops/index.html'>Adding crops</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/renewable_resources/index.html'>Renewable resources</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/plants/index.html'>Plants and trees</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/index.html'>Static scenarios</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/ore_veins/index.html'>Ore veins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/landmarks/index.html'>Landmarks</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/static_scenarios/nests_ruins/index.html'>Critter nests and ruins</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/index.html'>Miscellaneous JSON</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/misc_json/shops/index.html'>Loadouts and shops</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/localization_mod/index.html'>Translating mods</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/index.html'>Intermediate Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/index.html'>Collision regions</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/origins/index.html'>Origins</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/regions/collision_destination/index.html'>Collision and destination</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/building_parts/index.html'>Building parts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/commands/index.html'>Adding commands</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/buffs/index.html'>Buffs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/thoughts/index.html'>Thoughts</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/traits/index.html'>Traits</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/index.html'>Biomes</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/biomes/seasons_weather/index.html'>Seasons and weather</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/index.html'>Adding jobs</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/crafting_jobs/index.html'>Crafting jobs</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/jobs/combat_jobs/index.html'>Combat jobs</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/kingdoms/index.html'>Kingdoms</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/monsters/index.html'>Critters and monsters</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/testing/index.html'>Testing your mod</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/index.html'>Advanced Modding</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/logging/index.html'>User settings and logging</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/events/index.html'>Events</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+      </ul>
+   </nav>
+</aside>
+
+
+         <div id="content">
+   <div class='page_title'>UI</div>
+   <p><p>Stonehearth uses HTML, Javascript (JQuery) and CSS (Less) for the UI. For creating UI views we use Ember and Handlebars templates. The version of Ember that the game uses is 1.8, which is a bit outdated, but was also patched over time for specific issues of the game so upgrading it is not straightforward.</p></p>
+
+
+<p>You can find the existing UI views and all the related files inside <code>stonehearth/ui</code>.</p>
+
+
+
+<ul>
+    <li><a href="#AddingUIView">Adding a simple UI view</a></li>
+    <li><a href="#ShowingUIConditionally">Showing views conditionally</a></li>
+    <li><a href="#AddingToExistingViews">Adding to existing views</a></li>
+    <li><a href="#Overriding">Overriding UI files</a></li>
+    <li><a href="#MoreAboutUI">More about UI</a></li>
+    <li><a href="#LocVariables">About variables inside localization strings</a></li>
+</ul>
+
+
+
+<h2><a name="AddingUIView"></a>Adding a simple UI view</h2>
+
+
+<p>We'll add a small UI view to explain how are the files structured in the mod.</p>
+
+
+
+<ol>
+    <li><p>In your manifest.json, add the <strong>"ui"</strong> section (at the same level than "aliases" or "mixintos"). Inside it, add the HTML, Javascript and Less files inside the corresponding arrays:</p>
+
+<pre><code>"ui" : {
+   "html" : [
+      "file(ui/custom_view/custom_view.html)"
+   ],
+   "js" : [
+      "file(ui/custom_view/custom_ui_view.js)"
+   ],
+   "less" : [
+      "file(ui/custom_view/custom_ui_view.less)"
+   ]
+}
+</code></pre>
+
+<p>  Just with this, the game will already load our UI files. But we need to define some HTML and Javascript for them to actually show something in the screen.</p></li>
+    <li><p><a name="HandlebarsTemplate"></a>Edit the HTML file. As mentioned above, Stonehearth uses Ember with <a href="https://guides.emberjs.com/v1.10.0/templates/handlebars-basics/">handlebars templates</a>. So usually your HTML file will look something like this:</p>
+
+<pre><code>&lt;script type="text/x-handlebars" data-template-name="customView"&gt;
+&lt;/script&gt;
+</code></pre>
+
+<p>  Inside the script tag we'll add our HTML, and we can use Handlebars expressions:</p>
+
+<pre><code>&lt;script type="text/x-handlebars" data-template-name="customView"&gt;
+   &lt;div id="customWindow" class="customWindow"&gt;
+      &lt;div class="customTitle"&gt;
+         The title is "{{view.title}}"
+      &lt;/div&gt;
+   &lt;/div&gt;
+&lt;/script&gt;
+</code></pre></li>
+    <li><p>Edit the Javascript file. In <code>custom_view.js</code> we need to define a view. In general, we extend <code>App.View</code>, but you can extend any other in game view (for example, to create a custom dialog you can extend any of the existing dialogs, that way you'll inherit some functionality).</p>
+
+<pre><code>$(document).ready(function() {
+   $(top).on('stonehearthReady', function (_, e) {
+      var view = App.gameView.addView(App.UIModCustomView);
+   });
+ });
+
+ App.UIModCustomView = App.View.extend({
+    templateName: 'customView',
+    modal: false,
+    closeOnEsc: true,
+
+    didInsertElement: function() {
+       var self = this;
+       self.set('title', 'A new beginning');
+       // Add this line if you want your UI view to be draggable
+       self.$().draggable();
+    }
+ });
+</code></pre>
+
+<p>  First we wait until the game is loaded, and call <code>App.gameView.addView</code> to add our view to the UI. Notice that at this point, our view is permanently visible, but the images from the main menu, embark screens and loading screen are covering it.</p>
+
+<p>  We define our view by extending <code>App.View</code>, add the <strong>templateName</strong> property and give it the name of our Handlebars template as value.</p>
+
+<p>  Then in <code>didInsertElement</code> we set the <code>title</code> property, so that it has a value when we display it in our example template.</p></li>
+    <li><p>Edit the Less file. Right now, our UI view looks like this:</p>
+
+<p>  <img src="../../../images/advanced/ui/ui_view_no_css.png" alt="ui_view_no_css"/>
+  We can add some CSS (Less) in the <code>custom_view.less</code> file to make it look better:</p>
+
+<pre><code>.customWindow {
+    background-position: center;
+    background-size: 1000% 1000%;
+    background-clip: padding-box;
+    border-width: 9px 9px 13px 9px;
+    border-image: url(http://radiant/stonehearth/ui/root/css/images/gui/panel.png) 9 9 13 9 repeat;
+    border-style: solid;
+    background-image: url(http://radiant/stonehearth/ui/root/css/images/gui/panel.png);
+    padding: 5px;
+    text-align: left;
+    width: 320px;
+    min-height: 50px;
+}
+
+.customTitle {
+    background-size: 1000% 1000%;
+    text-shadow: -2px -2px 0px #000000,
+                  0px -2px 0px #000000,
+                  2px -2px 0px #000000,
+                  -2px 0px 0px #000000,
+                   2px 0px 0px #000000,
+                  -2px 2px 0px #000000,
+                   0px 2px 0px #000000,
+                   2px 2px 0px #000000;
+    color: #ffc000;
+    font-size: 20px;
+    font-family: 'groboldregular';
+    position: relative;
+    padding: 5px;
+    border-width: 9px 9px 13px 9px;
+    border-image: url(http://radiant/stonehearth/ui/root/css/images/gui/title.png) 9 9 13 9 repeat;
+    border-style: solid;
+    background-image: url(http://radiant/stonehearth/ui/root/css/images/gui/title.png);
+    background-position: center;
+    background-size: 500% 500%;
+    min-height: 23px;
+    width: 290px;
+    height: 30px;
+}
+</code></pre></li>
+</ol>
+
+
+
+<p>Now it looks like this:</p>
+
+
+
+<p><img src="../../../images/advanced/ui/ui_view_with_css.png" alt="ui_view_with_css"/></p>
+
+
+
+<p>You can reuse any image from the game UI for your views, but be careful when defining your styles since it may conflict with existing CSS classes from other game files and get applied to views that it shouldn't.</p>
+
+
+
+<h2><a name="ShowingUIConditionally"></a>Showing views conditionally</h2>
+
+
+<p>We can have our view hidden until the player clicks somewhere in the UI (e.g.: we fire an event from a unit frame command and react to it).</p>
+
+
+
+<p>For instance, the workshop UI can be shown by clicking in the unit frame command (triggers <code>radiant_show_workshop</code> event) or by directly calling <code>App.workshopManager.toggleWorkshop()</code> (see <code>stonehearth/ui/game/start_menu/start_menu.js</code>).</p>
+
+
+
+<p>From <code>stonehearth/ui/game/show_workshop/show_team_workshop.js</code>:</p>
+
+
+
+<pre><code>  $(document).ready(function () {
+     App.workshopManager.init();
+
+     // Show the crafting UI from the workshops, and from the crafter.
+     $(top).on("radiant_show_workshop", function (_, e) {
+        App.workshopManager.toggleWorkshop(e.event_data.crafter_type);
+     });
+     $(top).on("radiant_show_workshop_from_crafter", function (_, e) {
+        App.workshopManager.toggleWorkshop(e.event_data.crafter_type);
+     });
+  });
+</code></pre>
+
+<h2><a name="AddingToExistingViews"></a>Adding to existing views</h2>
+<p>All the actions from the start menu are executed from <code>start_menu.js</code>. So if we mixinto a new menu or submenu to it, how can we add a new action to the JS file?</p>
+
+
+
+<p>Well, Ember allows to <a href="https://guides.emberjs.com/v1.10.0/object-model/reopening-classes-and-instances/">reopen</a> an instance to modify it from other files.
+From one of our <strong>.js</strong> files we'd do:</p>
+
+
+
+<pre><code>  App.StonehearthStartMenuView.reopen({
+     init: function() {
+        var self = this;
+
+        self.menuActions.create_custom_zone = function(){
+           self.createCustomZone();
+        }
+
+        self._super();
+     },
+
+     createCustomZone : function() {
+        var self = this;
+        // Do something
+     }
+  });
+</code></pre>
+
+<h2><a name="Overriding"></a>Overriding UI files</h2>
+<p>Sometimes we really need to overwrite a Javascript file from the base game. In that case, we'll use an override in the <strong>"overrides"</strong> section of the manifest.</p>
+
+
+
+<p>Be careful since it may break compatibility with other mods.</p>
+
+
+
+<h2><a name="MoreAboutUI"></a>More about UI</h2>
+
+
+<p>With Ember we can <a href="https://guides.emberjs.com/v1.10.0/object-model/observers/">observe changes</a> on properties and automatically update the UI based on them.</p>
+
+
+
+<p>A short example can be seen in <code>stonehearth/ui/game/character_sheets/pet_character_sheet/pet_character_sheet.js</code>. This view is created in <code>stonehearth_client.js</code> and we pass a reference of the pet to it:</p>
+
+
+
+<pre><code>  _petCharacterSheet: null,
+  showPetCharacterSheet: function(entity) {
+     if (this._characterSheet != null &amp;&amp; !this._characterSheet.isDestroyed) {
+        this._characterSheet.destroy();
+        this._characterSheet = null;
+     }
+
+     if (this._petCharacterSheet != null &amp;&amp; !this._petCharacterSheet.isDestroyed) {
+        this._petCharacterSheet.set('uri', entity);
+     } else {
+        this._petCharacterSheet = App.gameView.addView(App.StonehearthPetCharacterSheetView, { uri: entity });
+     }
+  },
+</code></pre>
+
+<p>The function above is called from <code>stonehearth/ui/unit_frame/unit_frame.js</code>:</p>
+
+
+
+<pre><code>  this.$('#nametag').click(function() {
+     if ($(this).hasClass('clickable')) {
+        var isPet = self.get('model.stonehearth:pet');
+        if (isPet) {
+           App.stonehearthClient.showPetCharacterSheet(self.get('uri'));
+        }
+     }
+  });
+</code></pre>
+
+<p><a name="SettingURI"></a>The unit frame listens to the <code>radiant_selection_changed</code> event (it's triggered from the C++ side and returns the selected entity):</p>
+
+
+
+<pre><code>  var updateUnitFrame = function(data) {
+     if (!App.gameView) {
+        return;
+     }
+     let unitFrame = App.gameView.getView(App.StonehearthUnitFrameView);
+     if (unitFrame) {
+        unitFrame.set('uri', data.selected_entity);
+     }
+  };
+
+  $(document).ready(function(){
+     $(top).on("radiant_selection_changed.unit_frame", function (_, data) {
+        updateUnitFrame(data);
+     });
+     $(top).on("radiant_toggle_lock", function(_, data) {
+        if (!App.gameView) {
+           return;
+        }
+        radiant.call('stonehearth:toggle_lock', data.entity);
+     });
+  });
+</code></pre>
+
+<p>and then it sets the <code>'uri'</code> property to the selected entity, for us to use in other views. So we can pass the 'uri' property to <code>pet_character_sheet.js</code> and update variables from the Handlebars template depending on it:</p>
+
+
+
+<pre><code>  _updateNameAndDescription: function() {
+     var alias = this.get('model.uri');
+
+     var description = this.get('model.stonehearth:unit_info.description');
+     var display_name = this.get('model.stonehearth:unit_info.display_name');
+     if (alias) {
+        var catalogData = App.catalog.getCatalogData(alias);
+        if (!catalogData) {
+           console.log("no catalog data found for " + alias);
+        } else {
+           if (!display_name) {
+              display_name = catalogData.display_name;
+           }
+
+           if (!description) {
+              description = catalogData.description;
+           }
+        }
+     }
+     if (display_name) {
+        var unit_name = i18n.t(display_name, {self: this.get('model')});
+        this.set('unit_name', unit_name);
+     }
+     this.set('description', description);
+  }.observes('model.uri'),
+</code></pre>
+
+<p><a name="ObservingComponents"></a>We can also define a <code>"components"</code> variable, listing components that we'll find in pets:</p>
+
+
+
+<pre><code>  components: {
+     'stonehearth:unit_info': {},
+     'stonehearth:attributes' : {},
+     'stonehearth:expendable_resources' : {},
+     'stonehearth:pet' : {
+     }
+  }
+</code></pre>
+
+<p>and observe changes in them to update our UI view's values:</p>
+
+
+
+<pre><code>  _onNameChanged: function() {
+     this._updateNameAndDescription();
+  }.observes('model.stonehearth:unit_info'),
+</code></pre>
+
+<p><a name="HandlebarsActions"></a>We can also use <a href="https://guides.emberjs.com/v1.10.0/templates/actions/">actions</a> in our Handlebars templates.</p>
+
+
+
+<p><a name="ReadingJSON"></a>To retrieve the information from a text file (be it a JSON file, HTML, etc), we can do this:</p>
+
+
+
+<pre><code>  $.get('/stonehearth/data/calendar/calendar_constants.json')
+     .done(function(json) {
+        // Do something
+     });
+</code></pre>
+
+<h2><a name="LocVariables"></a>About variables inside localization strings</h2>
+<p>As explained <a href="../../intermediate/campaigns/encounters/index.html#I18nData">before</a>, if a string for the UI needs variables, use <code>[str(my_var_path.my_variable_name)]</code>:</p>
+
+
+
+<pre><code>  "bulletin_title": "Hello [str(town_name)]!"
+</code></pre>
+
+<p>Then, when you display the bulletin, you need to supply a variable with a town_name in it. Example for Javascript code:</p>
+
+
+
+<pre><code>  i18n.t("stonehearth:bulletin_title", {town_name: App.stonehearthClient.settlementName()}).
+</code></pre>
+
+<p>In Lua we can also pass variables when updating text for the UI:</p>
+
+
+
+<pre><code>  ai:set_status_text_key('stonehearth:ai.actions.status_text.chase_entity', { target = args.target })
+</code></pre>
+
+<p>All strings are displayed and localized in the UI (Javascript), so you need to know what variables your string needs when being displayed and pass those variables into your string when calling i18n.</p>
+
+
+
+<p>Example from an HTML file -- this is how <code>unit_frame.html</code> displays the name of an entity:</p>
+
+
+
+<pre><code>  {{i18n_key view.display_name self=view.model}}
+</code></pre>
+
+<p><code>i18n_key</code> is a new Ember helper that will resolve the first parameter into a string key (so it knows the first parameter is not a flat string, but a variable), and all optional parameters passed in via the <strong>param_name=param_value</strong> are the variables that the string will use.</p>
+
+
+
+<p>In this case, to display a unit's name, we pass in <code>self=this</code>, which says the parameter "self" is the entity we're tracing. That way, we can make a unit's display_name look like: <code>"Chieftan [str(self.stonehearth:unit_info.custom_name)]"</code>, which will display the entity's randomly generated custom name with a Chieftan title around it. Use cached off display names for displaying the name of an entity if that entity can die (e.g.: for boss names in boss death dialogs).</p>
+
+
+
+<p>To pass in the <code>self</code> parameter in Javascript, do:</p>
+
+
+
+<pre><code>  i18n.t(this.get('unit_info.display_name'), {self: this});
+</code></pre>
+
+<p><a name="NestingLocalization"></a>If your string needs a substring that needs to be localized, use <code>i18n(stonehearth:my.loc.var.path)</code> in the <code>en.json</code>:</p>
+
+
+
+<pre><code>  "bulletin_message": "I would like to give you a i18n(stonehearth:entities.food.corn.corn_basket.display_name)!"
+</code></pre>
+
+   
+</div>
+
+      </div>
+      <footer>
+</footer>
+
+   </div>
+</body>

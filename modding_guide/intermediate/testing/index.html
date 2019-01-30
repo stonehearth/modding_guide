@@ -7,14 +7,16 @@
 </head>
 <body id="documentation">
    <!-- the header of the page -->
+   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>December 10th, 2018</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
+<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
 
       <div id="content_wrapper">
+         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -337,6 +339,98 @@
       <a href='./../../.././modding_guide/basic/art/icons/index.html'>Creating 2D assets</a>
 
 
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/index.html'>Creating effects</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/index.html'>Animations</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_existing/index.html'>For existing entities</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animations/anim_custom/index.html'>For custom entities</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/cubemitters/index.html'>Particle effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/animated_lights/index.html'>Light effects</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/basic/art/vfx/other_effects/index.html'>Other effects</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
 
 
 
@@ -881,6 +975,34 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/index.html'>Adding campaigns</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/intermediate/campaigns/encounters/index.html'>Generic encounters</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/intermediate/hotloading/index.html'>Hotloading mods</a>
 
 
@@ -945,7 +1067,95 @@
       
 
    <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/index.html'>Lua scripts</a>
+
+
+
+   <ul>
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/components_renderers/index.html'>Components</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/components_controllers/controllers/index.html'>Controllers</a>
+
+
+
+
+
+</li>
+
+   
+   </ul>
+
+
+
+</li>
+
+   
+      
+
+   <li>
       <a href='./../../.././modding_guide/advanced/ai/index.html'>AI actions</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/services/index.html'>Services</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/call_handlers/index.html'>Call handlers</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/ui/index.html'>UI</a>
+
+
+
+
+
+</li>
+
+   
+      
+
+   <li>
+      <a href='./../../.././modding_guide/advanced/cpp/index.html'>C++ functions</a>
 
 
 
@@ -979,7 +1189,7 @@
 </aside>
 
 
-         <div id="content">         
+         <div id="content">
    <div class='page_title'>Testing your mod</div>
    <p><p>There are several mods that can help us test our own mods, besides using debugtools. Usually we'll create our own test files inside of them, there's no need to make a separate mod with mixintos just for testing your custom mods.</p></p>
 
@@ -999,6 +1209,7 @@
     <ul>
         <li><a href="#CustomAutotests">How to create your own custom autotests</a></li>
     </ul></li>
+    <li><a href="#LuaProfiler">Lua profiler scripts</a></li>
 </ul>
 
 
@@ -1148,11 +1359,6 @@ return SettlementTest
     <li><p>Close the game.</p></li>
     <li><p>Edit your <code>user_settings.json</code> file.</p>
 
-<ul>
-    <li><p>If you installed the game with the Humble Bundle installer, it will normally be at <code>C:\Program Files (x86)\Stonehearth</code>.</p></li>
-    <li><p>If you have installed it via Steam, then it will be at <code>C:\Program Files (x86)\Steam\steamapps\common\Stonehearth</code>.</p></li>
-</ul>
-
 <p>  Some of these keys might already exist, in that case add only what's missing.</p>
 
 <pre><code>{
@@ -1199,11 +1405,6 @@ return SettlementTest
     <li><p>Go to the Mods menu from the main menu, search for the <code>"Autotest Framework"</code> and <code>"Stonehearth Autotests"</code> mods in the Local mods column, and enable both of them.</p></li>
     <li><p>Close the game.</p></li>
     <li><p>Edit your <code>user_settings.json</code> file.</p>
-
-<ul>
-    <li><p>If you installed the game with the Humble Bundle installer, it will normally be at <code>C:\Program Files (x86)\Stonehearth</code>.</p></li>
-    <li><p>If you have installed it via Steam, then it will be at <code>C:\Program Files (x86)\Steam\steamapps\common\Stonehearth</code>.</p></li>
-</ul>
 
 <p>  Some of these keys might already exist, in that case add only what's missing.</p>
 
@@ -1342,6 +1543,61 @@ end
 
 <p>  Be careful since some things might still remain from test to test if you don't reset / clean them up, such as open UI menus.</p></li>
 </ol>
+
+
+
+<h2><a name="LuaProfiler"></a>Lua profiler scripts</h2>
+
+
+<p>With these scripts you can profile your mod's Lua performance. You can find them <a href="https://github.com/stonehearth/lua_profiler_scripts">here</a>.</p>
+
+
+
+<p>Setup instructions:</p>
+
+
+
+<ol>
+    <li><p>Place the following in your <code>user_settings.json</code>:</p>
+
+<pre><code>"lua" : {
+    "enable_cpu_profiler" : true,
+    "enable_memory_profiler" : true,
+    "cpu_profiler_method" : "sampling", // or "time_accumulation"
+    "profiler_instruction_sampling_rate" : 1,
+    "max_profile_length": 10000 //optional, how long in ms we can run the profiler
+},
+"simulation" : {
+    "initial_speed_override" : 0,
+    "long_profile_tick_threshold" : 500
+}
+</code></pre>
+
+<p>  Remove the comments after pasting into your user settings, and adjust the config values as needed.</p></li>
+    <li><p>Build the lua file map by navigating to the folder where you downloaded the <code>lua_profiler</code> scripts folder to, and then running the Python script with the following arguments:</p>
+
+<pre><code>collect_lua_file_map.py [PATH_TO_MODS_FOLDER] lua_file_map.js
+</code></pre></li>
+    <li><p>Replace [PATH_TO_MODS_FOLDER] with the path to your stonehearth mods folder.</p></li>
+    <li><p>Load up the game you want to profile.</p></li>
+    <li><p>Wait for the UI to come up, open the <a href="../../essentials/debugtools/debugtools_mod/index.html#PerformanceMonitor">Performance Monitor</a> debug tool.</p></li>
+    <li><p>When ready (after clicking the speed 1 button and waiting for initial script catch up), click on the profiling button (the play button). If you are looking for what is causing sudden hitches, check the <code>Long Ticks Only</code> checkbox.</p></li>
+    <li><p>Press the stop button to finish profiling.</p></li>
+    <li><p>Open Chrome and navigate to the <code>lua_profiler.html</code> file in the <code>lua_profiler</code> folder.</p></li>
+    <li><p>Click on the "Choose Files" button and navigate to the profile dump under <code>Stonehearth\profiler_output\DATE_AND_TIME_OF_PROFILE_CAPTURE</code>. The <code>profiler_output</code> folder can be found in the same folder as the <code>mods</code> folder.</p></li>
+    <li><p>Select ALL files under that folder and click open.</p></li>
+    <li><p>When the profiler finishes loading the files, it will populate the rows with each method name, total time, # calls, percentage of lua consumption (this number is the important one), and the file path.</p></li>
+    <li><p>Look at the function that is taking the most amount of time and figure out if there's a way to make it faster.</p></li>
+    <li><p>Profile again!</p></li>
+</ol>
+
+
+
+<p><img src="../../../images/common/row_alert2.png" alt="icon"/>IMPORTANT: launch a new tab of <code>lua_profiler/lua_profiler.html</code> every time you need to load a new profile.</p>
+
+
+
+<p>Note: If you are getting a game crash while profiling in <code>ai::CreateAction</code>, add a check for <code>ai.get()</code> on the preceding line.</p>
 
    
 </div>
