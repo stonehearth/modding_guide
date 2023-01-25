@@ -4,19 +4,16 @@
    <link rel="apple-touch-icon" type="image/png" href='./../../../images/favicon_logo_sh.png'>
    <link rel="icon" type="image/png" sizes="144x144" href='./../../../images/favicon_logo_sh.png'>
    <title>Lua scripts</title>
+   <meta http-equiv="refresh" content="0; URL=https://brunosupremo.github.io/modding_guide/index.html" />
 </head>
 <body id="documentation">
    <!-- the header of the page -->
-   <a name="top"></a>
    <div class="inner">
       <header>
 <div class='logo'>
 </div>
-<p>Last updated: <b>January 30th, 2019</b>. Latest version <a href="https://stonehearth.github.io/modding_guide/index.html">here</a>.</p>
 </header>
-
       <div id="content_wrapper">
-         <div id="divTop"><a id="linkTop" href="#top">TOP</a></div>
          <aside class="sidebar">
    <nav>
       <ul>
@@ -1188,8 +1185,7 @@
    </nav>
 </aside>
 
-
-         <div id="content">
+         <div id="content">         
    <div class='page_title'>Lua scripts</div>
    <p><p>In this section we'll talk about components, component renderers, controllers and observers. Also about saved variables and the lifetime cycle of these scripts.</p></p>
 
@@ -1520,13 +1516,10 @@ Ex:
 
 Dynamic sv variables will have their loaded save data completely override the existing self._sv and the sv variable will be a normal lua table instead of an Sv Table. So even if you declare variables in initialize on a dynamic table, those variables might be blown away after load. This makes it hard to maintain save compatibility, so if you need to add a new variable later on to the dynamic Sv table, be sure to add the field back in the restore as well. Fix up post load is never called for controllers that have dynamic sv, so be aware!
 -->
-
    
 </div>
-
       </div>
       <footer>
 </footer>
-
    </div>
 </body>
